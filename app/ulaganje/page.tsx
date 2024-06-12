@@ -1,27 +1,52 @@
+'use client';
 import Main from '../components/layout/Main';
 import CollapsibleContentBlock from '../components/containers/CollapsibleContentBlock';
+import { contentData } from './contentData';
+import ImageModal from '../components/modals/ImageModal';
+import { useState } from 'react';
+import ContentBlock from '../components/containers/ContentBlock';
 
 const Invest = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+  const [modalTitle, setModalTitle] = useState('');
+
+  const openModal = (image: string, title: string) => {
+    setModalImage(image);
+    setModalTitle(title);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <Main>
-      <CollapsibleContentBlock title='Block 1'>
-        <p>
-          This is the content for block 1. You can put any content here, including text, images, or
-          other components.
-        </p>
-      </CollapsibleContentBlock>
-      <CollapsibleContentBlock title='Block 2'>
-        <p>
-          This is the content for block 2. You can put any content here, including text, images, or
-          other components.
-        </p>
-      </CollapsibleContentBlock>
-      <CollapsibleContentBlock title='Block 3'>
-        <p>
-          This is the content for block 3. You can put any content here, including text, images, or
-          other components.
-        </p>
-      </CollapsibleContentBlock>
+      <div className='container mx-auto p-4'>
+        <div className='block lg:hidden'>
+          {contentData.map((block, index) => (
+            <CollapsibleContentBlock
+              key={index}
+              title={block.title}
+              content={block.content}
+              images={block.images}
+              openModal={openModal}
+            />
+          ))}
+        </div>
+        <div className='hidden lg:grid lg:grid-cols-3 lg:gap-4'>
+          {contentData.map((block, index) => (
+            <ContentBlock
+              key={index}
+              title={block.title}
+              content={block.content}
+              images={block.images}
+            />
+          ))}
+        </div>
+        {isModalOpen && <ImageModal src={modalImage} alt={modalTitle} onClose={closeModal} />}
+      </div>
     </Main>
   );
 };

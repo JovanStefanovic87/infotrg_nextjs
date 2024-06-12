@@ -14,10 +14,15 @@ const Header: React.FC = () => {
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+      window.addEventListener('scroll', handleScroll);
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if (mediaQuery.matches) {
+        window.removeEventListener('scroll', handleScroll);
+      }
     };
   }, [prevScrollPos]);
 

@@ -26,7 +26,7 @@ const SidebarIcon: React.FC<Props> = ({ icon, label, targetPath }) => {
       onClick={handleClick}
     >
       <div className='relative h-24 w-24'>
-        <Image src={icon} alt={label} layout='fill' objectFit='contain' />
+        <Image src={icon} alt={label} fill />
       </div>
       <span className='mt-2 text-sm text-white text-center'>{label}</span>
     </div>
