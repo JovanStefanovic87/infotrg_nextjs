@@ -12,6 +12,7 @@ type Props = {
 
 const CollapsibleContentBlock: React.FC<Props> = ({ title, content, images, openModal }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const height = isOpen ? 'auto' : '0';
 
   const toggleContent = () => {
     setIsOpen(!isOpen);
@@ -27,27 +28,23 @@ const CollapsibleContentBlock: React.FC<Props> = ({ title, content, images, open
         {isOpen ? <FaChevronUp /> : <FaChevronDown />}
       </button>
       <div
-        className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-screen' : 'max-h-0'
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? 'max-h-content' : 'max-h-0'
         }`}
       >
         <div className='py-4 px-6 bg-gray-100'>
-          {isOpen && (
-            <>
-              {images.map((img, index) => (
-                <div
-                  key={index}
-                  className='relative w-full h-64 mb-4 cursor-pointer'
-                  onClick={() => openModal(img, title)}
-                >
-                  <Image src={img} alt={`${title}-${index}`} layout='fill' objectFit='cover' />
-                </div>
-              ))}
-              <div className='max-h-96 overflow-y-auto'>
-                <p>{content}</p>
-              </div>
-            </>
-          )}
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className='relative w-full mb-4 cursor-pointer'
+              onClick={() => openModal(img, title)}
+            >
+              <Image src={img} alt={`${title}-${index}`} width={720} height={480} />
+            </div>
+          ))}
+          <div>
+            <p>{content}</p>
+          </div>
         </div>
       </div>
     </div>

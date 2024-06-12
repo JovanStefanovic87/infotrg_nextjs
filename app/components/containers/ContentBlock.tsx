@@ -9,26 +9,28 @@ type Props = {
 };
 
 const ContentBlock: React.FC<Props> = ({ title, content, images }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isContentModalOpen, setIsContentModalOpen] = useState(false);
 
   const openModal = () => {
-    setIsModalOpen(true);
+    setIsContentModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setIsContentModalOpen(false);
     document.body.style.overflow = 'auto';
   };
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div className='flex items-center justify-center relative'>
       <div
         className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10'
-        style={{ display: isModalOpen ? 'block' : 'none' }}
+        style={{ display: isContentModalOpen ? 'block' : 'none' }}
         onClick={closeModal}
       ></div>
-      {isModalOpen && <ContentModal images={images} content={content} onClose={closeModal} />}
+      {isContentModalOpen && (
+        <ContentModal images={images} content={content} onContentModalClose={closeModal} />
+      )}
       <div
         className='bg-gray-100 p-4 cursor-pointer'
         onClick={openModal}
@@ -40,6 +42,11 @@ const ContentBlock: React.FC<Props> = ({ title, content, images }) => {
         </div>
         <div className='max-h-96 overflow-y-auto overflow-x-hidden'>
           <p>{content.slice(0, 100)}</p>
+          {content.length > 100 && (
+            <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md'>
+              Vidi još
+            </button>
+          )}
         </div>
       </div>
     </div>

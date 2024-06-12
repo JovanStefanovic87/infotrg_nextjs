@@ -18,6 +18,11 @@ const config: Config = {
       },
       height: {
         main: 'calc(100dvh - 68px)',
+        content: '10000px',
+      },
+      maxHeight: {
+        main: 'calc(100dvh - 68px)',
+        content: '2000px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
