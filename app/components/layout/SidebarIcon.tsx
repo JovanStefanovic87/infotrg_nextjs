@@ -2,7 +2,6 @@
 
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { useSidebar } from '../../context/SidebarContext';
 
 type Props = {

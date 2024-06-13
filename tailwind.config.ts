@@ -14,6 +14,7 @@ const config: Config = {
         blueLight: '#40c9ff',
         blueLighter: '#76d1ff',
         blueLightest: '#9ddeff',
+        blueMain: '#111827',
         grayDarkest: '#1a1a1a',
       },
       height: {
@@ -22,7 +23,7 @@ const config: Config = {
       },
       maxHeight: {
         main: 'calc(100dvh - 68px)',
-        content: '2000px',
+        content: '10000px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

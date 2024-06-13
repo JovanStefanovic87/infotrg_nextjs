@@ -12,7 +12,6 @@ type Props = {
 
 const CollapsibleContentBlock: React.FC<Props> = ({ title, content, images, openModal }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const height = isOpen ? 'auto' : '0';
 
   const toggleContent = () => {
     setIsOpen(!isOpen);
