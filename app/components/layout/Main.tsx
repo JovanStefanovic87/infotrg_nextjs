@@ -6,7 +6,7 @@ interface Props {
 
 const Main: React.FC<Props> = ({ children }) => {
   return (
-    <main className='bg-blueMain flex flex-col flex-grow min-h-screen items-center relative w-full mt-header md:ml-slotsWidth overflow-hidden'>
+    <main className='bg-blueMain flex flex-col flex-grow min-h-screen items-center relative mt-header md:ml-slotsWidth overflow-hidden'>
       {children}
     </main>
   );

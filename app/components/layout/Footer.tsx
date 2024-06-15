@@ -1,5 +1,6 @@
-import Link from 'next/link';
+'use client';
 import { useIsMobile } from '../../helpers/universalFunctions';
+import FooterButton from '../buttons/FooterButton';
 
 interface Props {}
 
@@ -13,17 +14,17 @@ const Footer: React.FC<Props> = () => {
           <h2 className='text-lg font-bold text-white mb-2'>Linkovi</h2>
           {isMobile ? (
             <ul className='space-y-2'>
-              <FooterLink href='/' label='Home' />
-              <FooterLink href='/o-nama' label='O Nama' />
-              <FooterLink href='/ulaganja' label='Ulaganja' />
-              <FooterLink href='/kontakt' label='Kontakt' />
+              <FooterButton href='/' label='Home' />
+              <FooterButton href='/o-nama' label='O Nama' />
+              <FooterButton href='/ulaganja' label='Ulaganja' />
+              <FooterButton href='/kontakt' label='Kontakt' />
             </ul>
           ) : (
             <ul className='flex gap-5'>
-              <FooterLink href='/' label='Početna' />
-              <FooterLink href='/o-nama' label='O Nama' />
-              <FooterLink href='/ulaganja' label='Ulaganja' />
-              <FooterLink href='/kontakt' label='Kontakt' />
+              <FooterButton href='/' label='Početna' />
+              <FooterButton href='/o-nama' label='O Nama' />
+              <FooterButton href='/ulaganja' label='Ulaganja' />
+              <FooterButton href='/kontakt' label='Kontakt' />
             </ul>
           )}
         </div>
@@ -32,8 +33,22 @@ const Footer: React.FC<Props> = () => {
         <div className='mb-4'>
           <h2 className='text-lg font-bold text-white mb-2'>Kontaktirajte nas</h2>
           <p className='text-gray-300'>
-            <span className='block'>Telefon: (123) 456-7890</span>
-            <span className='block'>Email: office@infotrg.com</span>
+            <span className='block'>
+              <a
+                href='tel:+1234567890'
+                className='cursor-pointer text-gray-300 hover:text-white transition duration-300'
+              >
+                Telefon: (123) 456-7890
+              </a>
+            </span>
+            <span className='block'>
+              <a
+                href='mailto:office@infotrg.com'
+                className='cursor-pointer text-gray-300 hover:text-white transition duration-300'
+              >
+                Email: office@infotrg.com
+              </a>
+            </span>
           </p>
         </div>
       </>
@@ -54,20 +69,5 @@ const Footer: React.FC<Props> = () => {
     </footer>
   );
 };
-
-interface FooterLinkProps {
-  href: string;
-  label: string;
-}
-
-const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => (
-  <li>
-    <Link href={href}>
-      <span className='cursor-pointer text-gray-300 hover:text-white transition duration-300'>
-        {label}
-      </span>
-    </Link>
-  </li>
-);
 
 export default Footer;

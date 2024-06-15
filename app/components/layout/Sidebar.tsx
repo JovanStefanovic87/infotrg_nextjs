@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 import { useSidebar } from '../../context/SidebarContext';
 import SidebarIcon from './SidebarIcon';

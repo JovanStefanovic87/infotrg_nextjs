@@ -1,17 +1,37 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import ContentModal from '../modals/ContentModal';
+import CoverImage from '../image/CoverImage';
 
-type Props = {
+interface ContentBlockItem {
+  type: 'text' | 'image';
+  content: string | string[];
+}
+
+interface Props {
   title: string;
-  content: string;
-  images: string[];
-};
+  description: string;
+  coverImage?: string;
+  contentBlocks: ContentBlockItem[];
+}
 
-const ContentBlock: React.FC<Props> = ({ title, content, images }) => {
+const ContentBlock: React.FC<Props> = ({ title, description, coverImage, contentBlocks }) => {
   const [isContentModalOpen, setIsContentModalOpen] = useState(false);
+  const [modalImages, setModalImages] = useState<string[]>([]);
+  const [modalText, setModalText] = useState<string>('');
 
-  const openModal = () => {
+  const openModal = (content: ContentBlockItem) => {
+    if (content.type === 'image') {
+      setModalImages(
+        Array.isArray(content.content) ? content.content : [content.content as string],
+      );
+      setModalText('');
+    } else if (content.type === 'text') {
+      setModalText(
+        Array.isArray(content.content) ? content.content.join(' ') : (content.content as string),
+      );
+      setModalImages([]);
+    }
     setIsContentModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
@@ -29,24 +49,18 @@ const ContentBlock: React.FC<Props> = ({ title, content, images }) => {
         onClick={closeModal}
       ></div>
       {isContentModalOpen && (
-        <ContentModal images={images} content={content} onContentModalClose={closeModal} />
+        <ContentModal images={modalImages} content={modalText} onContentModalClose={closeModal} />
       )}
-      <div
-        className='bg-gray-100 p-4 cursor-pointer'
-        onClick={openModal}
-        style={{ maxWidth: '80vw', margin: '0 auto' }}
-      >
-        <h2 className='text-lg font-semibold'>{title}</h2>
-        <div className='relative w-full mb-4'>
-          <Image src={images[0]} alt={title} width={500} height={500} />
-        </div>
+      <div className='bg-gray-100 p-4 cursor-pointer min-h-96 overflow-hidden w-full'>
+        <h2 className='text-lg font-semibold mb-4'>{title}</h2>
+        {coverImage && <CoverImage src={coverImage} alt={title} />}
+        <p className='text-gray-800 break-words w-full text-base leading-relaxed mb-2 max-w-xl'>
+          {description}
+        </p>
         <div className='max-h-96 overflow-y-auto overflow-x-hidden'>
-          <p>{content.slice(0, 100)}</p>
-          {content.length > 100 && (
-            <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md'>
-              Vidi još
-            </button>
-          )}
+          <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md'>
+            Vidi još
+          </button>
         </div>
       </div>
     </div>

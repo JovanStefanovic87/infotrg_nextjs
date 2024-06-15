@@ -1,5 +1,5 @@
+'use client';
 import React, { useState, useEffect } from 'react';
-import HamburgerButton from '../buttons/HamburgerButton';
 import LogoButton from '../buttons/LogoButton';
 import NavButtons from '../buttons/NavButtons';
 
@@ -28,9 +28,9 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-main flex justify-between items-center px-4 py-4 fixed w-screen z-10 h-header transition-transform duration-300 ease-in-out transform ${
+      className={`bg-main flex justify-between items-center px-4 py-4 fixed z-10 h-header transition-transform duration-300 ease-in-out transform ${
         isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
-      }`}
+      } w-screen`}
     >
       <div className='flex items-center space-x-4'>
         <div className='hidden md:flex'>
