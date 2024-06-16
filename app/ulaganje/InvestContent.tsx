@@ -1,24 +1,40 @@
 'use client';
-import CollapsibleContentBlock from './CollapsibleContentBlock';
-import { contentData } from './contentData';
-import ImageModal from '../components/modals/ImageModal';
-import { useState } from 'react';
-import ContentBlock from '../components/containers/ContentBlock';
+import React, { useState } from 'react';
 import { NextPage } from 'next';
+import { contentData } from './contentData';
+import { ContentBlockItem } from '../helpers/types';
+import CollapsibleContentBlock from './CollapsibleContentBlock';
+import ContentBlock from './ContentBlock';
+import ImageModal from '../components/modals/ImageModal';
+import ContentModal from '../components/modals/ContentModal';
 
 const InvestContent: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState('');
   const [modalTitle, setModalTitle] = useState('');
+  const [isContentModalOpen, setIsContentModalOpen] = useState(false);
+  const [modalContentBlocks, setModalContentBlocks] = useState<ContentBlockItem[]>([]);
 
-  const openModal = (image: string, title: string) => {
+  const openImageModal = (image: string, title: string) => {
     setModalImage(image);
     setModalTitle(title);
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeImageModal = () => {
     setIsModalOpen(false);
+  };
+
+  const openContentModal = (contentBlocks: ContentBlockItem[], title: string) => {
+    setModalContentBlocks(contentBlocks);
+    setModalTitle(title); // Set modal title here
+    setIsContentModalOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeContentModal = () => {
+    setIsContentModalOpen(false);
+    document.body.style.overflow = 'auto';
   };
 
   return (
@@ -29,7 +45,7 @@ const InvestContent: NextPage = () => {
           <CollapsibleContentBlock
             key={index}
             title={block.title}
-            openModal={openModal}
+            openModal={openImageModal}
             contentBlocks={block.contentBlocks}
           />
         ))}
@@ -42,10 +58,18 @@ const InvestContent: NextPage = () => {
             description={block.description}
             coverImage={block.coverImage}
             contentBlocks={block.contentBlocks}
+            openContentModal={() => openContentModal(block.contentBlocks, block.title)}
           />
         ))}
       </div>
-      {isModalOpen && <ImageModal src={modalImage} alt={modalTitle} onClose={closeModal} />}
+      {isModalOpen && <ImageModal src={modalImage} alt={modalTitle} onClose={closeImageModal} />}
+      {isContentModalOpen && (
+        <ContentModal
+          title={modalTitle}
+          contentBlocks={modalContentBlocks}
+          onContentModalClose={closeContentModal}
+        />
+      )}
     </div>
   );
 };
