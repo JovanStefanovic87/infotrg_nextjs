@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NextPage } from 'next';
 import { contentData } from './contentData';
 import { ContentBlockItem } from '../helpers/types';
-import CollapsibleContentBlock from './CollapsibleContentBlock';
+import CollapsibleContentBlock from './collapsible/CollapsibleContentBlock';
 import ContentBlock from './ContentBlock';
 import ImageModal from '../components/modals/ImageModal';
 import ContentModal from '../components/modals/ContentModal';

@@ -4,6 +4,11 @@ import ImageModal from './ImageModal';
 import { MdClose } from 'react-icons/md';
 import { ContentBlockItem } from '../../helpers/types';
 import ContentModalContainer from '../containers/ContentModalContainer';
+import CloseButton from '../buttons/CloseButtonX';
+import TitleMain from '../text/TitleMain';
+import ImageBlock from '@/app/ulaganje/ImageBlock';
+import TextWrapped from '../text/TextWrapped';
+import ContentModalInnerContainer from '../containers/ContentModalInnerContainer';
 
 interface Props {
   title: string;
@@ -24,71 +29,40 @@ const ContentModal: React.FC<Props> = ({ title, contentBlocks, onContentModalClo
     setIsImageModalOpen(false);
   };
 
-  console.log(contentBlocks);
-
   return (
     <>
       <ContentModalContainer onContentModalClose={onContentModalClose}>
-        <div className='relative bg-white rounded-lg shadow-lg p-6 lg:overflow-y-auto overflow-y-hidden w-full h-full border-4 border-blueLighter'>
-          <button
-            onClick={onContentModalClose}
-            className='absolute top-4 right-4 bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-red-700 focus:outline-none transition duration-200 ease-in-out transform hover:scale-110 cursor-pointer z-50'
-            aria-label='Close Modal'
-          >
-            <MdClose className='w-6 h-6' />
-          </button>
-          <h2 className='text-2xl font-bold text-center mb-4'>{title}</h2>
-          <div className='relative z-40 pt-16'>
+        <ContentModalInnerContainer>
+          <CloseButton onClose={onContentModalClose} />
+          <TitleMain title={title} />
+          <div className='relative z-40 pt-6'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='mb-6'>
                 {block.type === 'image' ? (
                   Array.isArray(block.content) ? (
                     block.content.map((image, imgIndex) => (
-                      <div
+                      <ImageBlock
                         key={imgIndex}
-                        className='relative mb-4 flex items-center justify-center'
-                      >
-                        <div
-                          onClick={() => openImageModal(image)}
-                          className='cursor-pointer transition duration-200 ease-in-out transform hover:scale-105'
-                        >
-                          <Image
-                            src={image}
-                            alt={`Image ${imgIndex + 1}`}
-                            sizes='(max-width: 768px) 100vw, 33vw'
-                            className='rounded-md shadow-md'
-                            width={500}
-                            height={500}
-                          />
-                        </div>
-                      </div>
+                        image={image}
+                        imgIndex={imgIndex}
+                        openImageModal={openImageModal}
+                      />
                     ))
                   ) : (
-                    <div className='relative mb-4 flex items-center justify-center'>
-                      <div
-                        onClick={() => openImageModal(block.content as string)}
-                        className='cursor-pointer transition duration-200 ease-in-out transform hover:scale-105'
-                      >
-                        <Image
-                          src={block.content as string}
-                          alt={`Image`}
-                          sizes='(max-width: 768px) 100vw, 33vw'
-                          className='rounded-md shadow-md'
-                          width={500}
-                          height={500}
-                        />
-                      </div>
-                    </div>
+                    <ImageBlock
+                      key={index}
+                      image={block.content as string}
+                      imgIndex={index}
+                      openImageModal={openImageModal}
+                    />
                   )
                 ) : (
-                  <p className='break-words overflow-wrap-anywhere text-lg text-gray-800'>
-                    {block.content as string}
-                  </p>
+                  <TextWrapped block={block.content} />
                 )}
               </div>
             ))}
           </div>
-        </div>
+        </ContentModalInnerContainer>
       </ContentModalContainer>
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
