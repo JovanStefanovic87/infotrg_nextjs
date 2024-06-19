@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import ImageModal from './ImageModal';
-import { MdClose } from 'react-icons/md';
 import { ContentBlockItem } from '../../helpers/types';
 import ContentModalContainer from '../containers/ContentModalContainer';
 import CloseButton from '../buttons/CloseButtonX';

@@ -6,7 +6,7 @@ type Props = {
 };
 
 const CollapsibleContentBlockConainer: React.FC<Props> = ({ children }) => {
-  return <div className='border-b border-gray-300 my-4'>{children}</div>;
+  return <div className='my-4'>{children}</div>;
 };
 
 export default CollapsibleContentBlockConainer;

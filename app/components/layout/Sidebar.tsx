@@ -44,10 +44,10 @@ const Sidebar = () => {
           <span className='text-white text-2xl'></span>
         </div>
         <div className='grid grid-cols-2 gap-4 p-4'>
-          <SidebarIcon icon='/icons/home.svg' label='Početna' targetPath='/' />
-          <SidebarIcon icon='/icons/about.svg' label='O nama' targetPath='/o-nama' />
-          <SidebarIcon icon='/icons/invest.svg' label='Ulaganje' targetPath='/ulaganje' />
-          <SidebarIcon icon='/icons/phoneMail.svg' label='Kontakt' targetPath='/kontakt' />
+          <SidebarIcon icon='/icons/home.svg' label='Početna' href='/' />
+          <SidebarIcon icon='/icons/about.svg' label='O nama' href='/o-nama' />
+          <SidebarIcon icon='/icons/invest.svg' label='Ulaganje' href='/ulaganje' />
+          <SidebarIcon icon='/icons/phoneMail.svg' label='Kontakt' href='/kontakt' />
         </div>
       </div>
       {isOpen && (

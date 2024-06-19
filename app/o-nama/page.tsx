@@ -1,5 +1,10 @@
 import Main from '../components/layout/Main';
 
+export const metadata = {
+  title: 'Infotrg | O nama ',
+  description: 'Upoznajte naš tim, misiju i viziju.',
+};
+
 const AboutUs = () => {
   return (
     <Main>
