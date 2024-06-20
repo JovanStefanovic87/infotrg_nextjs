@@ -7,11 +7,10 @@ interface Props {
 
 const CoverImage: React.FC<Props> = ({ src, alt }) => {
   return (
-    <div
-      className='relative mb-4 cursor-pointer rounded-lg overflow-hidden'
-      style={{ height: '200px', borderRadius: '1rem' }}
-    >
-      <Image src={src} alt={alt} fill style={{ objectFit: 'cover' }} sizes='400px' priority />
+    <div className='flex items-center justify-center cursor-pointer transition duration-200 ease-in-out transform hover:scale-105 rounded-lg'>
+      <div className='relative mb-4 overflow-hidden' style={{ width: '400px', height: '250px' }}>
+        <Image src={src} alt={alt} fill style={{ objectFit: 'contain' }} priority sizes='100%' />
+      </div>
     </div>
   );
 };

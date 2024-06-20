@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './styles.module.css';
 
 interface Props {
   image: string;
@@ -12,17 +13,15 @@ const ImageBlock: React.FC<Props> = ({ image, imgIndex, openImageModal }) => {
     <div key={imgIndex} className='relative mb-4 flex items-center justify-center'>
       <div
         onClick={() => openImageModal(image)}
-        className='relative mb-4 flex items-center justify-center cursor-pointer transition duration-200 ease-in-out transform hover:scale-105'
+        className={`relative mb-4 flex items-center justify-center cursor-pointer transition duration-200 ease-in-out transform hover:scale-105, shadow-md ${styles.image_block}`}
       >
         <Image
           src={image}
           alt={`Image ${imgIndex + 1}`}
-          height={0}
-          width={0}
-          sizes='(max-width: 768px) 100vw, 33vw'
-          style={{ width: '100%', height: 'auto' }}
-          className='rounded-md shadow-md'
+          fill
+          style={{ objectFit: 'contain' }}
           priority
+          sizes='100%'
         />
       </div>
     </div>
