@@ -17,12 +17,13 @@ const ImageModal: React.FC<ImageModalProps> = ({ src, alt, onClose }) => {
         <div className='relative border-4 border-blueLighter rounded-md overflow-hidden'>
           <Image
             src={src}
+            alt={alt}
             height={0}
             width={0}
-            alt={alt}
-            sizes='(max-width: 768px) 100vw, 33vw'
+            sizes='(max-width: 768px) 100vw, (min-width: 769px) 50vw'
             style={{ width: '100%', height: 'auto' }}
             priority
+            quality={100}
           />
         </div>
       </div>
