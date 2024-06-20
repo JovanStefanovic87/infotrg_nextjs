@@ -30,7 +30,7 @@ const SidebarIcon: React.FC<Props> = ({ icon, label, href }) => {
       onClick={handleClick}
     >
       <div className='relative h-16 w-16'>
-        <Image src={icon} alt={label} layout='fill' objectFit='contain' />
+        <Image src={icon} alt={label} fill />
       </div>
       <span className={`mt-2 text-sm text-center ${isActive ? 'text-white' : 'text-gray-300'}`}>
         {label}

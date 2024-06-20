@@ -15,7 +15,15 @@ const ImageModal: React.FC<ImageModalProps> = ({ src, alt, onClose }) => {
       <div className='relative z-10'>
         <CloseButtonX onClose={onClose} />
         <div className='relative border-4 border-blueLighter rounded-md overflow-hidden'>
-          <Image src={src} height={720} width={1280} alt={alt} />
+          <Image
+            src={src}
+            height={0}
+            width={0}
+            alt={alt}
+            sizes='(max-width: 768px) 100vw, 33vw'
+            style={{ width: '100%', height: 'auto' }}
+            priority
+          />
         </div>
       </div>
     </div>

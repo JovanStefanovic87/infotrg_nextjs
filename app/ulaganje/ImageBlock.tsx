@@ -19,8 +19,10 @@ const ImageBlock: React.FC<Props> = ({ image, imgIndex, openImageModal }) => {
           alt={`Image ${imgIndex + 1}`}
           sizes='(max-width: 768px) 100vw, 33vw'
           className='rounded-md shadow-md'
-          width={500}
-          height={500}
+          width={0}
+          height={0}
+          style={{ width: '500px', height: 'auto' }}
+          priority
         />
       </div>
     </div>
