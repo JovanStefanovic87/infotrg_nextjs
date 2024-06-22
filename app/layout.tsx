@@ -1,9 +1,11 @@
-import '../styles/globals.css';
+// Layout.tsx
+
 import Header from './components/layout/Header';
 import Sidebar from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
 import { SidebarProvider } from './context/SidebarContext';
 import { Providers } from './globalRedux/provider';
+import '../styles/globals.css';
 
 export const metadata = {
   title: 'Dobrodošli na Infotrg',
@@ -15,7 +17,7 @@ export const generateViewport = () => ({
   initialScale: 1,
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
       <head />

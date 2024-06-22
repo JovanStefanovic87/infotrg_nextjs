@@ -1,6 +1,9 @@
+// Sidebar.tsx
+
 'use client';
 import { useEffect, useState } from 'react';
 import { useSidebar } from '../../context/SidebarContext';
+import { routes } from '../../routes';
 import SidebarIcon from './SidebarIcon';
 
 const Sidebar = () => {
@@ -23,10 +26,30 @@ const Sidebar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const toggleBodyScroll = () => {
+      if (isOpen) {
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.documentElement.style.overflow = 'auto';
+        document.body.style.overflow = 'auto';
+      }
+    };
+
+    toggleBodyScroll();
+    return () => {
+      document.documentElement.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   return (
-    <div className='lg:hidden'>
+    <div className={'lg:hidden'}>
       <button
-        className={`fixed lg:hidden top-4 left-4 z-50 p-2 bg-gradient-to-r from-blue via-blueLight to-blue hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm text-center h-10 w-16 flex flex-col items-center justify-between transition-transform duration-300 ease-in-out ${
+        className={`fixed lg:hidden top-4 left-4 ${
+          isOpen ? '-translate-y-52' : 'translate-y-0'
+        } z-50 p-2 bg-gradient-to-r from-blue via-blueLight to-blue hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm text-center h-10 w-16 flex flex-col items-center justify-between transition-transform duration-300 ease-in-out ${
           isScrollingUp ? 'translate-x-0' : '-translate-x-20'
         }`}
         onClick={toggleSidebar}
@@ -38,16 +61,17 @@ const Sidebar = () => {
       <div
         className={`fixed inset-0 z-40 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col h-screen w-3/4 lg:w-0 shadow-lg lg:shadow-none`}
+        } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col h-screen w-3/4 lg:w-0 shadow-lg lg:shadow-none ${
+          isOpen ? 'overflow-y-auto' : ''
+        }`}
       >
         <div className='flex items-center justify-center h-16 bg-gray-900'>
           <span className='text-white text-2xl'></span>
         </div>
-        <div className='grid grid-cols-2 gap-4 p-4'>
-          <SidebarIcon icon='/icons/home.svg' label='Početna' href='/' />
-          <SidebarIcon icon='/icons/about.svg' label='O nama' href='/o-nama' />
-          <SidebarIcon icon='/icons/invest.svg' label='Ulaganje' href='/ulaganje' />
-          <SidebarIcon icon='/icons/phoneMail.svg' label='Kontakt' href='/kontakt' />
+        <div className='flex flex-col p-4 space-y-2 pb-20'>
+          {routes.map((route) => (
+            <SidebarIcon key={route.href} {...route} />
+          ))}
         </div>
       </div>
       {isOpen && (
