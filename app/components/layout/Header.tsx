@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       } w-screen`}
     >
       <div className='flex items-center space-x-4'>
-        <div className='hidden md:flex'>
+        <div className='hidden lg:flex'>
           <NavButtons />
         </div>
       </div>

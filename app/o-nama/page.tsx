@@ -1,5 +1,3 @@
-import Main from '../components/layout/Main';
-
 export const metadata = {
   title: 'Infotrg | O nama ',
   description: 'Upoznajte naš tim, misiju i viziju.',
@@ -7,7 +5,8 @@ export const metadata = {
 
 const AboutUs = () => {
   return (
-    <Main>
+    <>
+      <div>O NJUMA</div>
       <div>O NAMA</div>
       <div>O NAMA</div>
       <div>O NAMA</div>
@@ -511,8 +510,7 @@ const AboutUs = () => {
       <div>O NAMA</div>
       <div>O NAMA</div>
       <div>O NAMA</div>
-      <div>O NAMA</div>
-    </Main>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
-// routes.ts
-export const routes = [
+import { Route } from './helpers/types';
+
+export const routes: Route[] = [
   {
     label: 'Početna',
     href: '/',
