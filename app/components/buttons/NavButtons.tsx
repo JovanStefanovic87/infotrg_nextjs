@@ -1,26 +1,13 @@
 import React from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import HeaderLinkButton from './HeaderLinkButton';
 import { routes } from '../../routes';
 import { Route } from '../../helpers/types';
 
 const NavButtons: React.FC = () => {
-  const router = useRouter();
   const currentPath = usePathname();
 
-  const handleMouseEnter = (href: string) => {
-    // Implement logic here if needed when mouse enters a button
-  };
-
-  const handleMouseLeave = (href: string) => {
-    // Implement logic here if needed when mouse leaves a button
-  };
-
-  return (
-    <nav className='flex space-x-4'>
-      {renderButtons(routes, true)} {/* Pass true for top-level links */}
-    </nav>
-  );
+  return <nav className='flex space-x-4'>{renderButtons(routes, true)}</nav>;
 
   function renderButtons(routes: Route[], isTopLevel: boolean) {
     return routes.map((route) => {
@@ -32,7 +19,6 @@ const NavButtons: React.FC = () => {
           <HeaderLinkButton
             label={route.label}
             href={route.href}
-            icon={route.icon}
             isActive={isActive}
             hasChildren={hasChildren}
             subRoutes={route.subRoutes}

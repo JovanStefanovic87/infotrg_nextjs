@@ -91,7 +91,20 @@ export const routes: Route[] = [
             label: 'Inostrane',
             href: '/ulaganje/akcije/inostrane',
             icon: '/icons/foreign.svg',
-            subRoutes: [],
+            subRoutes: [
+              {
+                label: 'Stanovi',
+                href: '/ulaganje/nekretnine/stanovi',
+                icon: '/icons/apartment.svg',
+                subRoutes: [],
+              },
+              {
+                label: 'Kuće',
+                href: '/ulaganje/nekretnine/kuce',
+                icon: '/icons/house.svg',
+                subRoutes: [],
+              },
+            ],
           },
         ],
       },

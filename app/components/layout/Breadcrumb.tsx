@@ -87,7 +87,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ routes }) => {
         breadcrumbPath.map((route, index) => (
           <React.Fragment key={route.href}>
             {index === breadcrumbPath.length - 1 ? (
-              <span className='font-medium text-blue-600'>{route.label}</span>
+              <span className='font-medium text-white'>{route.label}</span>
             ) : (
               <Link href={route.href}>
                 <span className='text-gray-500 hover:text-blue-600'>{route.label}</span>

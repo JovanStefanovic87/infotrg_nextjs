@@ -38,7 +38,7 @@ const InvestContent: NextPage = () => {
   };
 
   return (
-    <div className='container mx-auto p-6 bg-blueMain'>
+    <div className='container mx-auto p-6 '>
       <h1 className='text-5xl font-bold mb-10 text-center text-yellow-400'>MOGUĆNOST ULAGANJA</h1>
       <div className='block lg:hidden'>
         {contentData.map((block, index) => (

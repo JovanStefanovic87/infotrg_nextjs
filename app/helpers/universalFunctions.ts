@@ -19,3 +19,34 @@ export const useIsMobile = () => {
 
   return isMobile;
 };
+
+import { MutableRefObject } from 'react';
+
+interface HandleMouseLeaveProps {
+  event: React.MouseEvent;
+  hasChildren: boolean;
+  dropdownRef: MutableRefObject<HTMLDivElement | null>;
+  setIsOpen: (isOpen: boolean) => void;
+  onMouseLeave?: () => void;
+}
+
+export const handleMouseLeave = ({
+  event,
+  hasChildren,
+  dropdownRef,
+  setIsOpen,
+  onMouseLeave,
+}: HandleMouseLeaveProps) => {
+  const relatedTarget = event.relatedTarget as Node | null;
+  if (
+    hasChildren &&
+    dropdownRef.current &&
+    relatedTarget instanceof Node &&
+    !dropdownRef.current.contains(relatedTarget)
+  ) {
+    setIsOpen(false);
+    if (onMouseLeave) {
+      onMouseLeave();
+    }
+  }
+};
