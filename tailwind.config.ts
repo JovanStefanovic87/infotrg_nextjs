@@ -16,6 +16,7 @@ const config: Config = {
         blueLightest: '#9ddeff',
         blueMain: '#111827',
         grayDarkest: '#1a1a1a',
+        yellowLighter: 'rgb(254 240 138)',
       },
       height: {
         main: 'calc(100dvh - 68px)',

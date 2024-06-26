@@ -45,7 +45,7 @@ const Sidebar = () => {
   }, [isOpen]);
 
   return (
-    <div className={'lg:hidden'}>
+    <div className={'lg:hidden h-screen'}>
       <button
         className={`fixed lg:hidden top-4 left-4 ${
           isOpen ? '-translate-y-52' : 'translate-y-0'
@@ -61,7 +61,7 @@ const Sidebar = () => {
       <div
         className={`fixed inset-0 z-40 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col h-screen w-3/4 lg:w-0 shadow-lg lg:shadow-none ${
+        } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col w-3/4 lg:w-0 shadow-lg lg:shadow-none ${
           isOpen ? 'overflow-y-auto' : ''
         }`}
       >

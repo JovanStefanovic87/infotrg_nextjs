@@ -75,7 +75,7 @@ const HeaderLinkButton: React.FC<Props> = ({
   };
 
   const className = `relative ${isTopLevel ? 'flex' : 'inline-block'} ${
-    checkIsActive(href, subRoutes) ? 'text-yellow-200' : 'text-gray-300'
+    checkIsActive(href, subRoutes) ? 'text-yellowLighter' : 'text-gray-300'
   } `;
 
   return (
@@ -85,7 +85,7 @@ const HeaderLinkButton: React.FC<Props> = ({
       onMouseLeave={handleMouseLeaveLocal}
     >
       <button
-        className='focus:outline-none relative flex items-center justify-between gap-2 w-full h-full px-4 transition-colors duration-300 hover:text-gray-50 hover:bg-yellow-200 hover:bg-opacity-35'
+        className='focus:outline-none relative flex items-center justify-between gap-2 w-full h-full px-4 transition-colors duration-300 hover:text-gray-50 hover:bg-yellowLighter hover:bg-opacity-35'
         onClick={handleClick}
       >
         <span className='relative z-10 py-4'>{label}</span>

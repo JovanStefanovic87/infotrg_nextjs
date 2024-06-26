@@ -30,7 +30,7 @@ const Header: React.FC = () => {
     <header
       className={`bg-main flex justify-between items-center px-4 py-4 fixed z-10 h-header transition-transform duration-300 ease-in-out transform ${
         isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
-      } w-screen`}
+      } w-full lg:w-screen`}
     >
       <div className='flex items-center space-x-4'>
         <div className='hidden lg:flex'>

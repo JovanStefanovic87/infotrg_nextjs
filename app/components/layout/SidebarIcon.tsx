@@ -41,7 +41,7 @@ const SidebarIcon: React.FC<Props> = ({ icon, label, href, subRoutes = [] }) => 
     <div className='bg-blueMain rounded-lg'>
       <div
         className={`flex items-center justify-between p-3 cursor-pointer transition-colors duration-300 ${
-          isActive ? 'bg-blue-500 text-white' : 'text-gray-700'
+          isActive ? 'bg-blue-500 text-yellowLighter' : 'text-gray-700'
         }`}
         onClick={handleItemClick}
       >
@@ -53,13 +53,17 @@ const SidebarIcon: React.FC<Props> = ({ icon, label, href, subRoutes = [] }) => 
         </div>
         {subRoutes.length > 0 && <SidebarArrow isOpen={isOpen} onClick={handleArrowClick} />}
       </div>
-      {isOpen && (
+      <div
+        className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+          isOpen ? 'max-h-screen' : 'max-h-0'
+        }`}
+      >
         <div className='pl-6'>
           {subRoutes.map((subRoute) => (
             <SidebarIcon key={subRoute.href} {...subRoute} />
           ))}
         </div>
-      )}
+      </div>
     </div>
   );
 };
