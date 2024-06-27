@@ -17,6 +17,7 @@ const config: Config = {
         blueMain: '#111827',
         grayDarkest: '#1a1a1a',
         yellowLighter: 'rgb(254 240 138)',
+        hyperlink: '#0000EE',
       },
       height: {
         main: 'calc(100dvh - 68px)',

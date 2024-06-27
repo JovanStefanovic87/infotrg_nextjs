@@ -1,9 +1,20 @@
+interface LinkData {
+  text: string;
+  url: string;
+}
 interface ContentBlockItem {
   type: 'text' | 'image';
-  content: string | string[];
+  content: string | string[] | LinkData[];
 }
 
-export const contentData: {
+interface ContentData {
+  id: string;
+  title: string;
+  description: string;
+  coverImage: string;
+}
+
+/* export const contentData: {
   title: string;
   description: string;
   coverImage: string;
@@ -157,4 +168,70 @@ export const contentData: {
       { type: 'text', content: 'Final part of the explanation.' },
     ],
   },
+]; */
+
+export const contentData: ContentData[] = [
+  {
+    id: 'block1',
+    title: 'Block 1',
+    description: 'This is the first block.',
+    coverImage: '/images/image1.jpg',
+  },
+  {
+    id: 'block2',
+    title: 'Block 2',
+    description: 'This is the second block.',
+    coverImage: '/images/image2.jpg',
+  },
+  {
+    id: 'block3',
+    title: 'Block 3',
+    description: 'This is the second block.',
+    coverImage: '/images/image2.jpg',
+  },
+  {
+    id: 'block4',
+    title: 'Block 4',
+    description: 'This is the second block.',
+    coverImage: '/images/image2.jpg',
+  },
+];
+
+export const contentBlocksData = {
+  block1: [
+    {
+      type: 'text',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    { type: 'image', content: ['/images/image1.jpg'] },
+    { type: 'text', content: 'Here is some more explanation with an image below.' },
+    { type: 'image', content: ['/images/image1.jpg', '/images/image2.jpg'] },
+    { type: 'text', content: 'Final part of the explanation.' },
+  ],
+  block2: [
+    { type: 'text', content: 'This is the first part of the explanation.' },
+    { type: 'image', content: ['/images/image1.jpg'] },
+    { type: 'text', content: 'Here is some more explanation with an image below.' },
+    { type: 'image', content: ['/images/image1.jpg', '/images/image2.jpg'] },
+    { type: 'text', content: 'Final part of the explanation.' },
+  ],
+  block3: [
+    { type: 'text', content: 'This is the first part of the explanation.' },
+    { type: 'image', content: ['/images/image1.jpg'] },
+    { type: 'text', content: 'Here is some more explanation with an image below.' },
+    { type: 'image', content: ['/images/image1.jpg', '/images/image2.jpg'] },
+    { type: 'text', content: 'Final part of the explanation.' },
+  ],
+  block4: [
+    { type: 'text', content: 'This is the first part of the explanation.' },
+    { type: 'image', content: ['/images/image1.jpg'] },
+    { type: 'text', content: 'Here is some more explanation with an image below.' },
+    { type: 'image', content: ['/images/image1.jpg', '/images/image2.jpg'] },
+    { type: 'text', content: 'Final part of the explanation.' },
+  ],
+};
+
+export const hyperlinks = [
+  { text: 'ipsum', url: '/ulaganje/block1' },
+  { text: 'explanation', url: '/ulaganje/block2' },
 ];
