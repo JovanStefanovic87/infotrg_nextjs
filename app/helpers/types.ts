@@ -4,8 +4,16 @@ export interface LinkData {
 }
 
 export interface ContentBlockItem {
-  type: 'text' | 'image';
-  content: string | string[];
+  type: 'h2' | 'text' | 'image' | 'devider' | 'list' | 'paragraph1' | 'paragraph2' | 'hr';
+  content?: string;
+  url?: string | string[];
+  image?: string[];
+  listContent?: { type: 'paragraph1' | 'paragraph2'; text: string; amount: string }[];
+  list?: string[];
+}
+
+export interface ContentBlocksData {
+  [key: string]: ContentBlockItem[];
 }
 
 export interface Route {
