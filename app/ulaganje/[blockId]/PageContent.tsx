@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { contentData, contentBlocksData } from '../contentData';
 import ImageModal from '../../components/modals/ImageModal';
-import { ContentBlocksData } from '../../helpers/types';
 import ImageBlock from '../ImageBlock';
 import TextWrapped from '../../components/text/TextWrapped';
 import PageTitle from '@/app/components/text/PageTitle';
 import PageContainer from '@/app/components/containers/PageContainer';
-import InvestmentFund from '../InvestmentFund';
 import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
+import TitleSecond from '@/app/components/text/TitleSecond';
+import TextBoldCenter from '@/app/components/text/TextBoldCenter';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -65,9 +65,13 @@ const PageContent: React.FC = () => {
               ) : block.type === 'paragraph1' || block.type === 'paragraph2' ? (
                 <TextWrapped block={block.content || ''} />
               ) : block.type === 'hr' ? (
-                <hr />
+                <Devider />
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
+              ) : block.type === 'h2' ? (
+                <TitleSecond text={block.content} />
+              ) : block.type === '2XLboldCenter' ? (
+                <TextBoldCenter text={block.content} />
               ) : null}
             </div>
           ))}

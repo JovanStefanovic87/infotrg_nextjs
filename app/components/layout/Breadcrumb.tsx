@@ -2,62 +2,30 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Route } from '../../helpers/types';
 import BreadcrumbsContainer from '../containers/BreadcrumbsContainer';
 
-interface BreadcrumbProps {
-  routes: Route[];
-}
+const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
-const findRouteByHref = (routes: Route[], href: string): Route | undefined => {
-  for (const route of routes) {
-    if (route.href === href) {
-      return route;
-    }
-    if (route.subRoutes) {
-      const foundRoute = findRouteByHref(route.subRoutes, href);
-      if (foundRoute) {
-        return foundRoute;
-      }
-    }
+const truncateLabel = (label: string, maxLength: number) => {
+  if (label.length > maxLength) {
+    return `${label.slice(0, maxLength)}...`;
   }
-  return undefined;
+  return label;
 };
 
-const findBreadcrumbPath = (routes: Route[], href: string): Route[] => {
-  for (const route of routes) {
-    if (href.startsWith(route.href)) {
-      if (route.href === href) {
-        return [route];
-      }
-      if (route.subRoutes) {
-        const subPath = findBreadcrumbPath(route.subRoutes, href);
-        if (subPath.length > 0) {
-          return [route, ...subPath];
-        }
-      }
-    }
-  }
-  return [];
-};
-
-const getFullBreadcrumbPath = (routes: Route[], href: string): Route[] => {
-  const path = findBreadcrumbPath(routes, href);
-  const homeRoute = routes.find((route) => route.href === '/');
-  if (homeRoute && path[0]?.href !== '/') {
-    return [homeRoute, ...path];
-  }
-  return path;
-};
-
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ routes }) => {
+const Breadcrumb: React.FC = () => {
   const currentPath = usePathname();
-  const [breadcrumbPath, setBreadcrumbPath] = useState<Route[]>([]);
+  const [breadcrumbPath, setBreadcrumbPath] = useState<{ href: string; label: string }[]>([]);
 
   useEffect(() => {
-    const path = getFullBreadcrumbPath(routes, currentPath);
-    setBreadcrumbPath(path);
-  }, [currentPath, routes]);
+    const pathSegments = currentPath.split('/').filter(Boolean);
+    const pathArray = pathSegments.map((segment, index) => {
+      const href = `/${pathSegments.slice(0, index + 1).join('/')}`;
+      const label = capitalize(segment.replace(/-/g, ' '));
+      return { href, label };
+    });
+    setBreadcrumbPath([{ href: '/', label: 'Pocetna' }, ...pathArray]);
+  }, [currentPath]);
 
   if (breadcrumbPath.length === 0) {
     return null;
@@ -65,38 +33,20 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ routes }) => {
 
   return (
     <BreadcrumbsContainer>
-      {breadcrumbPath.length > 3 ? (
-        <>
-          <Link href={breadcrumbPath[0].href}>
-            <span className='text-gray-500 hover:text-blue-600'>{breadcrumbPath[0].label}</span>
-          </Link>
-          <span className='mx-1'>/</span>
-          <span className='text-gray-500'>...</span>
-          <span className='mx-1'>/</span>
-          <Link href={breadcrumbPath[breadcrumbPath.length - 2].href}>
-            <span className='text-gray-500 hover:text-blue-600'>
-              {breadcrumbPath[breadcrumbPath.length - 2].label}
-            </span>
-          </Link>
-          <span className='mx-1'>/</span>
-          <span className='font-medium text-blue-600'>
-            {breadcrumbPath[breadcrumbPath.length - 1].label}
-          </span>
-        </>
-      ) : (
-        breadcrumbPath.map((route, index) => (
-          <React.Fragment key={route.href}>
-            {index === breadcrumbPath.length - 1 ? (
-              <span className='font-medium text-white'>{route.label}</span>
-            ) : (
-              <Link href={route.href}>
-                <span className='text-gray-500 hover:text-blue-600'>{route.label}</span>
-              </Link>
-            )}
-            {index < breadcrumbPath.length - 1 && <span className='mx-1'>/</span>}
-          </React.Fragment>
-        ))
-      )}
+      {breadcrumbPath.map((route, index) => (
+        <React.Fragment key={route.href}>
+          {index > 0 && <span className='mx-1'>/</span>}
+          {index === breadcrumbPath.length - 1 ? (
+            <span className='font-medium text-white'>{truncateLabel(route.label, 20)}</span>
+          ) : (
+            <Link href={route.href}>
+              <span className='text-gray-500 hover:text-blue-600'>
+                {truncateLabel(route.label, 10)}
+              </span>
+            </Link>
+          )}
+        </React.Fragment>
+      ))}
     </BreadcrumbsContainer>
   );
 };

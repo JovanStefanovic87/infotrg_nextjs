@@ -4,9 +4,6 @@ import { hyperlinks } from '../../ulaganje/contentData';
 import { isTextHyperlinked } from '../../helpers/universalFunctions';
 import Link from 'next/link';
 
-// Define your Url type if it's not imported from somewhere else
-type Url = string;
-
 interface Props {
   items: ContentBlockItem[];
 }
@@ -20,8 +17,10 @@ const OrderedList: React.FC<Props> = ({ items }) => {
             <div key={listIndex} className='mb-4 pt-4'>
               {listItem.type === 'paragraph1' && (
                 <div className='flex flex-col md:flex-row items-start md:items-center justify-between mb-2 border-b border-dotted border-gray-700'>
-                  <div className='font-bold mb-2 md:mb-0 flex-1'>{`${listIndex}. ${listItem.text}`}</div>
-                  <div className='text-right font-bold w-full md:w-auto'>{listItem.amount}</div>
+                  <div className='font-bold mb-2 md:mb-0 flex-1 text-grayDarkest'>{`${listIndex}. ${listItem.text}`}</div>
+                  <div className='text-right font-bold w-full md:w-auto text-grayDarkest'>
+                    {listItem.amount}
+                  </div>
                 </div>
               )}
               {listItem.type === 'paragraph1' && listItem.subitems && (

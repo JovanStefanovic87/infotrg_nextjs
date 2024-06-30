@@ -4,7 +4,16 @@ export interface LinkData {
 }
 
 export interface ContentBlockItem {
-  type: 'h2' | 'text' | 'image' | 'divider' | 'list' | 'paragraph1' | 'paragraph2' | 'hr';
+  type:
+    | 'h2'
+    | 'text'
+    | 'image'
+    | 'divider'
+    | 'list'
+    | 'paragraph1'
+    | 'paragraph2'
+    | 'hr'
+    | '2XLboldCenter';
   content?: string;
   url?: string | string[];
   image?: string[];

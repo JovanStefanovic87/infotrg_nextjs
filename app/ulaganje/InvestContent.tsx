@@ -13,7 +13,7 @@ const InvestContent: NextPage = () => {
     <PageContainer>
       <PageTitle title='MOGUĆNOST ULAGANJA' />
 
-      <div className='hidden lg:grid lg:grid-cols-3 lg:gap-8'>
+      <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
         {contentData.map((block) => (
           <Link key={block.id} href={`/ulaganje/${block.id}`}>
             <ContentBlock

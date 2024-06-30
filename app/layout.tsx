@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <Providers>
                 <Header />
                 <Main>
-                  <Breadcrumb routes={routes} />
+                  <Breadcrumb />
                   {children}
                 </Main>
               </Providers>

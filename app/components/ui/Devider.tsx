@@ -1,3 +1,3 @@
-const Devider = () => <hr className='my-6 border-gray-300' />;
+const Devider = () => <hr className='my-6 border-grayLight' />;
 
 export default Devider;

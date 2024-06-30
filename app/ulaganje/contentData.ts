@@ -34,7 +34,7 @@ export const contentData: BasicInformation[] = [
   },
   {
     id: 'investiocioni-fond',
-    title: 'Investicioni Fond',
+    title: 'Investiocioni fond',
     description:
       'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta. Nakon faze pripreme i prikupljanja finansijskih sredstava, projekat započinje eskperimentalno delovanje na manjoj lokaciji poput tržnog centra (buvljaka), sa manjim tehničkim kapacitetima koji se sve više razvijaju kako projekat napreduje iz etape u etapu. Potom se novac ulaže u prostornu ekspanziju projekta na čitav grad (Suboticu), a u završnoj fazi projekat se širi i na druge gradove.',
   },
@@ -72,6 +72,19 @@ export const contentBlocksData: ContentBlocksData = {
         'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta. Nakon faze pripreme i prikupljanja finansijskih sredstava, projekat započinje eskperimentalno delovanje na manjoj lokaciji poput tržnog centra (buvljaka), sa manjim tehničkim kapacitetima koji se sve više razvijaju kako projekat napreduje iz etape u etapu. Potom se novac ulaže u prostornu ekspanziju projekta na čitav grad (Suboticu), a u završnoj fazi projekat se širi i na druge gradove.',
     },
     { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'VREDNOST INVESTICIONOG FONDA',
+    },
+    {
+      type: '2XLboldCenter',
+      content: '50.000 EUR',
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'RASPODELA INVESTICIONOG FONDA',
+    },
     {
       type: 'list',
       listContent: [
