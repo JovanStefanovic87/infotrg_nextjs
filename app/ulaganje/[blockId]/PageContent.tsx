@@ -67,7 +67,7 @@ const PageContent: React.FC = () => {
               ) : block.type === 'hr' ? (
                 <hr />
               ) : block.type === 'list' ? (
-                <OrderedList items={block.listContent} />
+                <OrderedList items={[block]} />
               ) : null}
             </div>
           ))}

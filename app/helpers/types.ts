@@ -4,11 +4,20 @@ export interface LinkData {
 }
 
 export interface ContentBlockItem {
-  type: 'h2' | 'text' | 'image' | 'devider' | 'list' | 'paragraph1' | 'paragraph2' | 'hr';
+  type: 'h2' | 'text' | 'image' | 'divider' | 'list' | 'paragraph1' | 'paragraph2' | 'hr';
   content?: string;
   url?: string | string[];
   image?: string[];
-  listContent?: { type: 'paragraph1' | 'paragraph2'; text: string; amount: string }[];
+  listContent?: Array<{
+    type: 'paragraph1' | 'paragraph2';
+    text: string;
+    amount?: string;
+    subitems?: Array<{
+      type: 'paragraph2';
+      text: string;
+      amount?: string;
+    }>;
+  }>;
   list?: string[];
 }
 
