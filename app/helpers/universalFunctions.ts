@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { LinkData } from './types';
 
 export const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -49,4 +50,9 @@ export const handleMouseLeave = ({
       onMouseLeave();
     }
   }
+};
+
+export const isTextHyperlinked = (text: string, hyperlinks: LinkData[]) => {
+  const foundLink = hyperlinks.find((link) => link.text === text);
+  return foundLink ? foundLink.url : undefined;
 };

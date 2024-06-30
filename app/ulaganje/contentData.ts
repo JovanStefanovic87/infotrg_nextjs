@@ -33,7 +33,7 @@ export const contentData: BasicInformation[] = [
     coverImage: '/images/image2.jpg',
   },
   {
-    id: 'investiocioniFond',
+    id: 'investiocioni-fond',
     title: 'Investicioni Fond',
     description:
       'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta. Nakon faze pripreme i prikupljanja finansijskih sredstava, projekat započinje eskperimentalno delovanje na manjoj lokaciji poput tržnog centra (buvljaka), sa manjim tehničkim kapacitetima koji se sve više razvijaju kako projekat napreduje iz etape u etapu. Potom se novac ulaže u prostornu ekspanziju projekta na čitav grad (Suboticu), a u završnoj fazi projekat se širi i na druge gradove.',
@@ -65,7 +65,7 @@ export const contentBlocksData: ContentBlocksData = {
     { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
     { type: 'text', content: 'Final part of the explanation.' },
   ],
-  investiocioniFond: [
+  'investiocioni-fond': [
     {
       type: 'text',
       content:
@@ -290,6 +290,127 @@ export const contentBlocksData: ContentBlocksData = {
 };
 
 export const hyperlinks = [
-  { text: 'ipsum', url: '/ulaganje/block1' },
-  { text: 'explanation', url: '/ulaganje/block2' },
+  { text: 'ipsum', url: '/ulaganje/block6' },
+  { text: 'explanation', url: '/ulaganje/block8' },
+  { text: 'Fond za planiranje i pripremu', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  { text: 'Priprema nacrta tehničkog plana', url: '/ulaganje/Priprema-nacrta-tehničkog-plana' },
+  { text: 'Nominacija projekta', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  { text: 'Okupljanje saradnika', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  { text: 'Testiranje i izrada Tehničkog plana', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  { text: 'Priprema Plana i programa poslovanja', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  { text: 'Priprema Ugovora o saradnji', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  { text: 'Priprema i održavanje budžeta', url: '/ulaganje/Fond-za-planiranje-i-pripremu' },
+  {
+    text: 'Priprema Investicionog plana i programa',
+    url: '/ulaganje/Fond-za-prikupljanje-finansijskih-sredstava',
+  },
+  {
+    text: 'Priprema platforme za investicioni fond',
+    url: '/ulaganje/Fond-za-prikupljanje-finansijskih-sredstava',
+  },
+  {
+    text: 'Oglašavanje Investicionog plana i programa',
+    url: '/ulaganje/Fond-za-prikupljanje-finansijskih-sredstava',
+  },
+  {
+    text: 'Kontaktiranje potencijalnih investitora',
+    url: '/ulaganje/Fond-za-prikupljanje-finansijskih-sredstava',
+  },
+  {
+    text: 'Priprema platforme za preglednik po mapama',
+    url: '/ulaganje/Fond-za-uvođenje-preglednika-po-mapama-za-buvljak',
+  },
+  {
+    text: 'Popis buvljaka i objavljivanje informacija',
+    url: '/ulaganje/Fond-za-uvođenje-preglednika-po-mapama-za-buvljak',
+  },
+  {
+    text: 'Upoznavanje prodavaca sa platformom',
+    url: '/ulaganje/Fond-za-uvođenje-preglednika-po-mapama-za-buvljak',
+  },
+  {
+    text: 'Objavljivanje probnih besplatnih reklama',
+    url: '/ulaganje/Fond-za-uvođenje-preglednika-po-mapama-za-buvljak',
+  },
+  {
+    text: 'Navođenje kupaca na veliki broj pregleda',
+    url: '/ulaganje/Fond-za-uvođenje-preglednika-po-mapama-za-buvljak',
+  },
+  {
+    text: 'Navođenje prodavaca na plaćeno oglašavanje',
+    url: '/ulaganje/Fond-za-uvođenje-preglednika-po-mapama-za-buvljak',
+  },
+  {
+    text: 'Priprema platforme za veb izloge',
+    url: '/ulaganje/Fond-za-uvođenje-veb-izloga-za-prodajne-objekte-na-buvljaku',
+  },
+  {
+    text: 'Otvaranje promotivnog veb izloga',
+    url: '/ulaganje/Fond-za-uvođenje-veb-izloga-za-prodajne-objekte-na-buvljaku',
+  },
+  {
+    text: 'Promocija veb izloga prodavcima',
+    url: '/ulaganje/Fond-za-uvođenje-veb-izloga-za-prodajne-objekte-na-buvljaku',
+  },
+  {
+    text: 'Priprema platforme za enciklopediju proizvoda',
+    url: '/ulaganje/Fond-za-uvođenje-enciklopedije-proizvoda-na-buvljaku',
+  },
+  {
+    text: 'Otvaranje promotivnih stranica enciklopedije proizvoda',
+    url: '/ulaganje/Fond-za-uvođenje-enciklopedije-proizvoda-na-buvljaku',
+  },
+  {
+    text: 'Promocija enciklopedije proizvoda prodavcima',
+    url: '/ulaganje/Fond-za-uvođenje-enciklopedije-proizvoda-na-buvljaku',
+  },
+  {
+    text: 'Priprema platforme za Suboticu',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-u-Subotici',
+  },
+  {
+    text: 'Popis Subotice i objavljivanje informacija',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-u-Subotici',
+  },
+  {
+    text: 'Navođenje prodavaca na upotrebu veb izloga',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-u-Subotici',
+  },
+  {
+    text: 'Objavljivanje probnih besplatnih reklama',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-u-Subotici',
+  },
+  {
+    text: 'Navođenje kupaca na veliki broj pregleda',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-u-Subotici',
+  },
+  {
+    text: 'Navođenje prodavaca na plaćeno oglašavanje',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-u-Subotici',
+  },
+  {
+    text: 'Priprema platforme za Srbiju',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice',
+  },
+  { text: 'Osnivanje firme', url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice' },
+  {
+    text: 'Organizovanje međugradskih inkasanata',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice',
+  },
+  {
+    text: 'Pribavljanje spiska svih prodajnih objekata',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice',
+  },
+  {
+    text: 'Priprema prezentacije uspešnosti oglašavanja',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice',
+  },
+  {
+    text: 'Navođenje prodavaca na plaćeno oglašavanje',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice',
+  },
+  {
+    text: 'Promocija platforme putem medija',
+    url: '/ulaganje/Fond-za-ekspanziju-projekta-izvan-Subotice',
+  },
 ];
