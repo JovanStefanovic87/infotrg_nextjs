@@ -27,7 +27,20 @@ export const routes: Route[] = [
             label: 'Član 2',
             href: '/o-nama/tim/clan-2',
             icon: '/icons/about.svg',
-            subRoutes: [],
+            subRoutes: [
+            {
+              label: 'Član 1',
+              href: '/o-nama/tim/clan-1',
+              icon: '/icons/about.svg',
+              subRoutes: [],
+            },
+            {
+              label: 'Član 2',
+              href: '/o-nama/tim/clan-2',
+              icon: '/icons/about.svg',
+              subRoutes: [],
+            },
+          ],
           },
         ],
       },

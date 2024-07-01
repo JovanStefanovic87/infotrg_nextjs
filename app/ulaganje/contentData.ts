@@ -93,7 +93,23 @@ export const contentBlocksData: ContentBlocksData = {
           text: 'Fond za planiranje i pripremu',
           amount: '4.272 EUR',
           subitems: [
-            { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
+            { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR', subitems: [
+              { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
+              { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
+              { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
+              {
+                type: 'paragraph2',
+                text: 'Testiranje i izrada Tehničkog plana',
+                amount: '2.349 EUR',
+              },
+              {
+                type: 'paragraph2',
+                text: 'Priprema Plana i programa poslovanja',
+                amount: '468,5 EUR',
+              },
+              { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
+              { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
+            ], },
             { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
             { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
             {
@@ -119,11 +135,94 @@ export const contentBlocksData: ContentBlocksData = {
               type: 'paragraph2',
               text: 'Priprema Investicionog plana i programa',
               amount: '407 EUR',
+              subitems: [
+                { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR', subitems: [
+                  { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
+                  { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
+                  { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
+                  {
+                    type: 'paragraph2',
+                    text: 'Testiranje i izrada Tehničkog plana',
+                    amount: '2.349 EUR',
+                  },
+                  {
+                    type: 'paragraph2',
+                    text: 'Priprema Plana i programa poslovanja',
+                    amount: '468,5 EUR',
+                  },
+                  { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
+                  { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR', subitems: [
+                    { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
+                    { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
+                    { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
+                    {
+                      type: 'paragraph2',
+                      text: 'Testiranje i izrada Tehničkog plana',
+                      amount: '2.349 EUR',
+                    },
+                    {
+                      type: 'paragraph2',
+                      text: 'Priprema Plana i programa poslovanja',
+                      amount: '468,5 EUR',
+                    },
+                    { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
+                    { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR', subitems: [
+                      { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
+                      { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
+                      { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
+                      {
+                        type: 'paragraph2',
+                        text: 'Testiranje i izrada Tehničkog plana',
+                        amount: '2.349 EUR',
+                      },
+                      {
+                        type: 'paragraph2',
+                        text: 'Priprema Plana i programa poslovanja',
+                        amount: '468,5 EUR',
+                      },
+                      { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
+                      { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
+                    ], },
+                  ], },
+                ], },
+                { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
+                { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
+                {
+                  type: 'paragraph2',
+                  text: 'Testiranje i izrada Tehničkog plana',
+                  amount: '2.349 EUR',
+                },
+                {
+                  type: 'paragraph2',
+                  text: 'Priprema Plana i programa poslovanja',
+                  amount: '468,5 EUR',
+                },
+                { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
+                { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
+              ],
+              
             },
             {
               type: 'paragraph2',
               text: 'Priprema platforme za investicioni fond',
               amount: '993 EUR',
+              subitems: [
+                { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
+                { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
+                { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
+                {
+                  type: 'paragraph2',
+                  text: 'Testiranje i izrada Tehničkog plana',
+                  amount: '2.349 EUR',
+                },
+                {
+                  type: 'paragraph2',
+                  text: 'Priprema Plana i programa poslovanja',
+                  amount: '468,5 EUR',
+                },
+                { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
+                { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
+              ],
             },
             {
               type: 'paragraph2',

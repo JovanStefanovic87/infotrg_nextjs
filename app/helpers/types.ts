@@ -3,6 +3,13 @@ export interface LinkData {
   url: string;
 }
 
+export interface Subitem {
+  type: 'paragraph2';
+  text: string;
+  amount?: string;
+  subitems?: Subitem[];
+}
+
 export interface ContentBlockItem {
   type:
     | 'h2'
@@ -21,11 +28,7 @@ export interface ContentBlockItem {
     type: 'paragraph1' | 'paragraph2';
     text: string;
     amount?: string;
-    subitems?: Array<{
-      type: 'paragraph2';
-      text: string;
-      amount?: string;
-    }>;
+    subitems?: Subitem[];
   }>;
   list?: string[];
 }
