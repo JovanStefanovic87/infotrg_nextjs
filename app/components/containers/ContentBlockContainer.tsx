@@ -14,7 +14,7 @@ const ContentBlockContainer: React.FC<ContainerProps> = ({
 }) => {
   return (
     <div
-      className='flex items-center justify-center relative transition-transform cursor-pointer transform hover:scale-105 lg:hover:scale-105'
+      className='flex items-center justify-center relative transition-transform cursor-pointer transform hover:scale-105 lg:hover:scale-105 mb-4 lg:mb-0'
       onClick={() => openContentModal(contentBlocks)}
     >
       {children}

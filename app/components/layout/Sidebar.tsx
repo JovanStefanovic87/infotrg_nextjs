@@ -1,5 +1,3 @@
-// Sidebar.tsx
-
 'use client';
 import { useEffect, useState } from 'react';
 import { useSidebar } from '../../context/SidebarContext';
@@ -59,7 +57,7 @@ const Sidebar = () => {
         <span className='block w-7 h-1 bg-black'></span>
       </button>
       <div
-        className={`fixed inset-0 z-40 transform ${
+        className={`fixed inset-0 z-45 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col w-3/4 lg:w-0 shadow-lg lg:shadow-none ${
           isOpen ? 'overflow-y-auto' : ''
@@ -70,7 +68,13 @@ const Sidebar = () => {
         </div>
         <div className='flex flex-col p-4 space-y-2 pb-20'>
           {routes.map((route) => (
-            <SidebarIcon key={route.href} {...route} />
+            <SidebarIcon
+              key={route.href}
+              href={route.href}
+              icon={route.icon}
+              label={route.label}
+              subRoutes={route.subRoutes}
+            />
           ))}
         </div>
       </div>

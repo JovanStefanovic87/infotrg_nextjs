@@ -8,7 +8,6 @@ import PageTitle from '../components/text/PageTitle';
 import PageContainer from '../components/containers/PageContainer';
 
 const InvestContent: NextPage = () => {
-  console.log(contentData);
   return (
     <PageContainer>
       <PageTitle title='MOGUĆNOST ULAGANJA' />

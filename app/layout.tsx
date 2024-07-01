@@ -5,7 +5,6 @@ import Footer from './components/layout/Footer';
 import Breadcrumb from './components/layout/Breadcrumb';
 import { SidebarProvider } from './context/SidebarContext';
 import { Providers } from './globalRedux/provider';
-import { routes } from './routes';
 import '../styles/globals.css';
 
 interface LayoutProps {

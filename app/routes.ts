@@ -60,18 +60,18 @@ export const routes: Route[] = [
       {
         label: 'Nekretnine',
         href: '/ulaganje/nekretnine',
-        icon: '/icons/realEstate.svg',
+        icon: '/icons/about.svg',
         subRoutes: [
           {
             label: 'Stanovi',
             href: '/ulaganje/nekretnine/stanovi',
-            icon: '/icons/apartment.svg',
+            icon: '/icons/about.svg',
             subRoutes: [],
           },
           {
             label: 'Kuće',
             href: '/ulaganje/nekretnine/kuce',
-            icon: '/icons/house.svg',
+            icon: '/icons/about.svg',
             subRoutes: [],
           },
         ],
@@ -79,29 +79,29 @@ export const routes: Route[] = [
       {
         label: 'Akcije',
         href: '/ulaganje/akcije',
-        icon: '/icons/stocks.svg',
+        icon: '/icons/about.svg',
         subRoutes: [
           {
             label: 'Domaće',
             href: '/ulaganje/akcije/domace',
-            icon: '/icons/domestic.svg',
+            icon: '/icons/about.svg',
             subRoutes: [],
           },
           {
             label: 'Inostrane',
             href: '/ulaganje/akcije/inostrane',
-            icon: '/icons/foreign.svg',
+            icon: '/icons/about.svg',
             subRoutes: [
               {
                 label: 'Stanovi',
                 href: '/ulaganje/nekretnine/stanovi',
-                icon: '/icons/apartment.svg',
+                icon: '/icons/about.svg',
                 subRoutes: [],
               },
               {
                 label: 'Kuće',
                 href: '/ulaganje/nekretnine/kuce',
-                icon: '/icons/house.svg',
+                icon: '/icons/about.svg',
                 subRoutes: [],
               },
             ],

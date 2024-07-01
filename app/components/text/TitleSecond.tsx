@@ -6,16 +6,18 @@ interface Props {
   padding?: number;
 }
 
-const TitleSecond: React.FC<Props> = ({ text, align, padding = 0 }) => {
+const TitleSecond: React.FC<Props> = ({ text, align = 'left', padding = 0 }) => {
   const maxWidth = `calc(100% - ${2 * padding}px)`;
 
   return (
-    <h2
-      className={`text-lg text-grayMedium font-semibold mb-4 text-${align} pb-${padding} overflow-hidden whitespace-nowrap`}
-      style={{ maxWidth }}
-    >
-      {text}
-    </h2>
+    <div>
+      <h2
+        className={`text-lg text-grayMedium font-semibold mb-4 text-${align} pb-${padding} overflow-hidden whitespace-nowrap`}
+        style={{ maxWidth }}
+      >
+        {text}
+      </h2>
+    </div>
   );
 };
 

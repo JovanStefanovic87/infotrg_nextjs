@@ -28,7 +28,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-main flex justify-between items-center px-4 py-4 fixed z-10 h-header transition-transform duration-300 ease-in-out transform ${
+      className={`bg-main flex justify-between items-center px-4 py-4 fixed z-10 md:z-40 h-header transition-transform duration-300 ease-in-out transform ${
         isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
       } w-full lg:w-screen`}
     >

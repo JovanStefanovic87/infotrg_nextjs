@@ -24,6 +24,7 @@ const config: Config = {
       height: {
         main: 'calc(100dvh - 68px)',
         content: '10000px',
+        '120': '30rem',
       },
       maxHeight: {
         main: 'calc(100dvh - 68px)',
@@ -38,6 +39,7 @@ const config: Config = {
       },
       zIndex: {
         '45': '45',
+        '44': '44',
       },
     },
   },
