@@ -5,12 +5,12 @@ import { contentData, contentBlocksData } from '../ulaganjeData';
 import ImageModal from '../../components/modals/ImageModal';
 import ImageBlock from '../ImageBlock';
 import TextWrapped from '../../components/text/TextWrapped';
-import PageTitle from '@/app/components/text/PageTitle';
+import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
-import TitleSecond from '@/app/components/text/TitleSecond';
-import TextBoldCenter from '@/app/components/text/TextBoldCenter';
+import H2 from '@/app/components/text/H2';
+import H2BoldCenter from '@/app/components/text/H2BoldCenter';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -35,7 +35,7 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <PageTitle title={block.title} />
+      <H1 title={block.title} />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
@@ -69,9 +69,9 @@ const PageContent: React.FC = () => {
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
-                <TitleSecond text={block.content} align='center' />
+                <H2 text={block.content} align='center' />
               ) : block.type === '2XLboldCenter' ? (
-                <TextBoldCenter text={block.content} />
+                <H2BoldCenter text={block.content} />
               ) : null}
             </div>
           ))}

@@ -3,7 +3,7 @@ import ImageModal from './ImageModal';
 import { ContentBlockItem } from '../../helpers/types';
 import ContentModalContainer from '../containers/ContentModalContainer';
 import CloseButton from '../buttons/CloseButtonX';
-import TitleMain from '../text/TitleMain';
+import TitleMain from '../text/H2';
 import ImageBlock from '@/app/ulaganje/ImageBlock';
 import TextWrapped from '../text/TextWrapped';
 import ContentModalInnerContainer from '../containers/ContentModalInnerContainer';
@@ -55,7 +55,7 @@ const ContentModal: React.FC<Props> = ({ title, contentBlocks, onContentModalClo
                     />
                   )
                 ) : (
-                  <TextWrapped block={block.content} />
+                  <p></p>
                 )}
               </div>
             ))}

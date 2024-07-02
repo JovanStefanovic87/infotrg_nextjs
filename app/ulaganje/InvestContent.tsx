@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { NextPage } from 'next';
 import { contentData } from './ulaganjeData';
 import ContentBlock from './ContentBlock';
-import PageTitle from '../components/text/PageTitle';
+import H1 from '../components/text/H1';
 import PageContainer from '../components/containers/PageContainer';
 
 const InvestContent: NextPage = () => {
   return (
     <PageContainer>
-      <PageTitle title='MOGUĆNOST ULAGANJA' />
+      <H1 title='MOGUĆNOST ULAGANJA' />
 
       <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
         {contentData.map((block) => (

@@ -1,9 +1,9 @@
 interface Props {
-  title: string;
+  title: string
 }
 
-const PageTitle: React.FC<Props> = ({ title }) => {
+const H1: React.FC<Props> = ({ title }) => {
   return <h1 className='text-5xl font-bold mb-10 text-center text-yellow-400'>{title}</h1>;
 };
 
-export default PageTitle;
+export default H1;

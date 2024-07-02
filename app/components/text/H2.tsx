@@ -6,7 +6,7 @@ interface Props {
   padding?: number;
 }
 
-const TitleSecond: React.FC<Props> = ({ text, align = 'left', padding = 0 }) => {
+const H2: React.FC<Props> = ({ text, align = 'left', padding = 0 }) => {
   const maxWidth = `calc(100% - ${2 * padding}px)`;
 
   return (
@@ -21,4 +21,4 @@ const TitleSecond: React.FC<Props> = ({ text, align = 'left', padding = 0 }) => 
   );
 };
 
-export default TitleSecond;
+export default H2;

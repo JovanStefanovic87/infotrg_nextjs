@@ -13,15 +13,18 @@ export interface Subitem {
 
 export interface ContentBlockItem {
   type:
+    'h1' 
     | 'h2'
+    | 'H2BoldCenter'
+    | 'h3'
+    | 'h4'
     | 'text'
     | 'image'
     | 'divider'
     | 'list'
     | 'paragraph1'
     | 'paragraph2'
-    | 'hr'
-    | '2XLboldCenter';
+    | 'hr';
   content?: string;
   url?: string | string[];
   image?: string[];
@@ -48,4 +51,7 @@ export interface Route {
 
 export interface InvesticioniFondLinksData {
   id: string;
+  label: string;
+  listOrder: string;
+  amount: string;
 }
