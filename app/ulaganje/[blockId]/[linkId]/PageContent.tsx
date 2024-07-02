@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { investicioniFondLinksData, contentBlocksData } from './contentData';
+import { investicioniFondLinksData, contentBlocksData } from './investicioniFondData';
 import ImageModal from '../../../components/modals/ImageModal';
 import ImageBlock from '../../ImageBlock';
 import TextWrapped from '../../../components/text/TextWrapped';

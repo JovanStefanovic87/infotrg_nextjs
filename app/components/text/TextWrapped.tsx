@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { hyperlinks } from '../../ulaganje/contentData';
+import { hyperlinks } from '../../ulaganje/ulaganjeData';
 
 interface Props {
   block: string;

@@ -301,7 +301,7 @@ export const contentBlocksData: ContentBlocksData = {
         {
           type: 'paragraph1',
           text: 'Fond za planiranje i pripremu',
-          amount: '4.272 EUR',
+          amount: '4.315 EUR',
           subitems: [
             { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
             { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
@@ -314,7 +314,7 @@ export const contentBlocksData: ContentBlocksData = {
             {
               type: 'paragraph2',
               text: 'Priprema Plana i programa poslovanja',
-              amount: '468,5 EUR',
+              amount: '511,5 EUR',
             },
             { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
             { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
@@ -458,10 +458,10 @@ export const contentBlocksData: ContentBlocksData = {
         {
           type: 'paragraph1',
           text: 'Fond za ekspanziju projekta izvan Subotice',
-          amount: '3.059 EUR',
+          amount: '3.016 EUR',
           subitems: [
             { type: 'paragraph2', text: 'Priprema platforme za Srbiju', amount: '8 EUR' },
-            { type: 'paragraph2', text: 'Osnivanje firme', amount: '958 EUR' },
+            { type: 'paragraph2', text: 'Osnivanje firme', amount: '915 EUR' },
             {
               type: 'paragraph2',
               text: 'Organizovanje međugradskih inkasanata',

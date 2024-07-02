@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { NextPage } from 'next';
-import { contentData } from './contentData';
+import { contentData } from './ulaganjeData';
 import ContentBlock from './ContentBlock';
 import PageTitle from '../components/text/PageTitle';
 import PageContainer from '../components/containers/PageContainer';

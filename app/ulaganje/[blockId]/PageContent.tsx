@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { contentData, contentBlocksData } from '../contentData';
+import { contentData, contentBlocksData } from '../ulaganjeData';
 import ImageModal from '../../components/modals/ImageModal';
 import ImageBlock from '../ImageBlock';
 import TextWrapped from '../../components/text/TextWrapped';

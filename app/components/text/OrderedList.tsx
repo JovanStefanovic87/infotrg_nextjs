@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContentBlockItem, Subitem } from '../../helpers/types';
-import { hyperlinks } from '../../ulaganje/contentData';
+import { hyperlinks } from '../../ulaganje/ulaganjeData';
 import { isTextHyperlinked } from '../../helpers/universalFunctions';
 import Link from 'next/link';
 
