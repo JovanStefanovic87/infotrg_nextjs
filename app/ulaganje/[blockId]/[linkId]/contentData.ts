@@ -1,42 +1,101 @@
-import { ContentBlocksData } from '../helpers/types';
+import { ContentBlocksData, InvesticioniFondLinksData } from '@/app/helpers/types';
 
-export interface BasicInformation {
-  id: string;
-  title: string;
-  description: string;
-  coverImage?: string;
-}
-
-export const contentData: BasicInformation[] = [
+export const investicioniFondLinksData: InvesticioniFondLinksData[] = [
   {
-    id: 'block1',
-    title: 'Block 1',
-    description: 'This is the first block.',
-    coverImage: '/images/image1.jpg',
+    id: 'priprema-nacrta-tehnickog-plana',
   },
   {
-    id: 'block2',
-    title: 'Block 2',
-    description: 'This is the second block.',
-    coverImage: '/images/image2.jpg',
+    id: 'nominacija-projekta',
   },
   {
-    id: 'block3',
-    title: 'Block 3',
-    description: 'This is the second block.',
-    coverImage: '/images/image2.jpg',
+    id: 'okupljanje-saradnika',
   },
   {
-    id: 'block4',
-    title: 'Block 4',
-    description: 'This is the second block.',
-    coverImage: '/images/image2.jpg',
+    id: 'testiranje-i-izrada-tehnickog-plana',
   },
   {
-    id: 'investiocioni-fond',
-    title: 'Investiocioni fond',
-    description:
-      'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
+    id: 'priprema-plana-i-programa-poslovanja',
+  },
+  {
+    id: 'priprema-ugovora-o-saradnji',
+  },
+  {
+    id: 'priprema-i-odrzavanje-budzeta',
+  },
+  {
+    id: 'priprema-platforme-za-preglednik-po-mapama',
+  },
+  {
+    id: 'popis-buvljaka-i-objavljivanje-informacija',
+  },
+  {
+    id: 'upoznavanje-prodavaca-sa-platformom',
+  },
+  {
+    id: 'objavljivanje-probnih-besplatnih-reklama',
+  },
+  {
+    id: 'navodjenje-kupaca-na-veliki-broj-pregleda',
+  },
+  {
+    id: 'navodjenje-prodavaca-na-placeno-oglasavanje',
+  },
+  {
+    id: 'priprema-platforme-za-veb-izloge',
+  },
+  {
+    id: 'otvaranje-promotivnog-veb-izloga',
+  },
+  {
+    id: 'promocija-veb-izloga-prodavcima',
+  },
+  {
+    id: 'priprema-platforme-za-enciklopediju-proizvoda',
+  },
+  {
+    id: 'otvaranje-promotivnih-stranica-enciklopedije-proizvoda',
+  },
+  {
+    id: 'promocija-enciklopedije-proizvoda-prodavcima',
+  },
+  {
+    id: 'priprema-platforme-za-suboticu',
+  },
+  {
+    id: 'popis-subotice-i-objavljivanje-informacija',
+  },
+  {
+    id: 'navodjenje-prodavaca-na-upotrebu-veb-izloga',
+  },
+  {
+    id: 'objavljivanje-probnih-besplatnih-reklama',
+  },
+  {
+    id: 'navodjenje-kupaca-na-veliki-broj-pregleda',
+  },
+  {
+    id: 'navodjenje-prodavaca-na-placeno-oglasavanje',
+  },
+  {
+    id: 'priprema-platforme-za-srbiju',
+  },
+  {
+    id: 'osnivanje-firme',
+  },
+  {
+    id: 'organizovanje-medjugradskih-inkasanata',
+  },
+  {
+    id: 'pribavljanje-spiska-svih-prodajnih-objekata',
+  },
+  {
+    id: 'priprema-prezentacije-uspesnosti-oglasavanja',
+  },
+  {
+    id: 'navodjenje-prodavaca-na-oglasavanje',
+  },
+  {
+    id: 'promocija-platforme-putem-medija',
   },
 ];
 
@@ -65,7 +124,7 @@ export const contentBlocksData: ContentBlocksData = {
     { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
     { type: 'text', content: 'Final part of the explanation.' },
   ],
-  'investiocioni-fond': [
+  'nominacija-projekta': [
     {
       type: 'text',
       content:
@@ -486,228 +545,3 @@ export const contentBlocksData: ContentBlocksData = {
     },
   ],
 };
-
-export const hyperlinks = [
-  {
-    text: 'Fond za planiranje i pripremu',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Fond-za-planiranje-i-pripremu',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema nacrta tehničkog plana',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-nacrta-tehnickog-plana',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Nominacija projekta',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent('Nominacija-projekta').toLowerCase()}`,
-  },
-  {
-    text: 'Okupljanje saradnika',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent('Okupljanje-saradnika').toLowerCase()}`,
-  },
-  {
-    text: 'Testiranje i izrada Tehničkog plana',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Testiranje-i-izrada-Tehničkog-plana',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema Plana i programa poslovanja',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'priprema-plana-i-programa-poslovanja',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema Ugovora o saradnji',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'priprema-govora-o-saradnji',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema i održavanje budžeta',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Fond-za-planiranje-i-pripremu',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema Investicionog plana i programa',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-Investicionog-plana-i-programa',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema platforme za investicioni fond',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-investicioni-fond',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Oglašavanje Investicionog plana i programa',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Oglasavanje-Investicionog-plana-i-programa',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Kontaktiranje potencijalnih investitora',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Kontaktiranje-potencijalnih-investitora',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema platforme za preglednik po mapama',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-preglednik-po-mapama',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Popis buvljaka i objavljivanje informacija',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Popis-buvljaka-i-objavljivanje-informacija',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Upoznavanje prodavaca sa platformom',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Upoznavanje-prodavaca-sa-platformom',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Objavljivanje probnih besplatnih reklama',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Objavljivanje-probnih-besplatnih-reklama',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje kupaca na veliki broj pregleda',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-kupaca-na-veliki-broj-pregleda',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje prodavaca na plaćeno oglašavanje',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-prodavaca-na-placeno-oglasavanje',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema platforme za veb izloge',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-veb-izloge',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Otvaranje promotivnog veb izloga',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Otvaranje-promotivnog-veb-izloga',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Promocija veb izloga prodavcima',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Promocija-veb-izloga-prodavcima',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema platforme za enciklopediju proizvoda',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-enciklopediju-proizvoda',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Otvaranje promotivnih stranica enciklopedije proizvoda',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Otvaranje-promotivnih-stranica-enciklopedije-proizvoda',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Promocija enciklopedije proizvoda prodavcima',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Promocija-enciklopedije-proizvoda-prodavcima',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema platforme za Suboticu',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-Suboticu',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Popis Subotice i objavljivanje informacija',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Popis-Subotice-i-objavljivanje-informacija',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje prodavaca na upotrebu veb izloga',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-prodavaca-na-upotrebu-veb-izloga',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Objavljivanje probnih besplatnih reklama',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Objavljivanje-probnih-besplatnih-reklama',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje kupaca na veliki broj pregleda',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-kupaca-na-veliki-broj-pregleda',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje prodavaca na plaćeno oglašavanje',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-prodavaca-na-placeno-oglasavanje',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema platforme za Srbiju',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-Srbiju',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Osnivanje firme',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent('Osnivanje-firme').toLowerCase()}`,
-  },
-  {
-    text: 'Organizovanje međugradskih inkasanata',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Organizovanje-medjugradskih-inkasanata',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Pribavljanje spiska svih prodajnih objekata',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Pribavljanje-spiska-svih-prodajnih-objekata',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Priprema prezentacije uspešnosti oglašavanja',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-prezentacije-uspesnosti-oglasavanja',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje prodavaca na plaćeno oglašavanje',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-prodavaca-na-placeno-oglasavanje',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Navođenje prodavaca na oglašavanje',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-prodavaca-na-oglasavanje',
-    ).toLowerCase()}`,
-  },
-  {
-    text: 'Promocija platforme putem medija',
-    url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Promocija-platforme-putem-medija',
-    ).toLowerCase()}`,
-  },
-];

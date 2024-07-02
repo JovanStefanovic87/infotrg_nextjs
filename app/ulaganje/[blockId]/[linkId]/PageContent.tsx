@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { contentData, contentBlocksData } from '../contentData';
-import ImageModal from '../../components/modals/ImageModal';
-import ImageBlock from '../ImageBlock';
-import TextWrapped from '../../components/text/TextWrapped';
+import { investicioniFondLinksData, contentBlocksData } from './contentData';
+import ImageModal from '../../../components/modals/ImageModal';
+import ImageBlock from '../../ImageBlock';
+import TextWrapped from '../../../components/text/TextWrapped';
 import PageTitle from '@/app/components/text/PageTitle';
 import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';
@@ -28,14 +28,14 @@ const PageContent: React.FC = () => {
   const pathname = usePathname();
   const blockId: string = pathname.split('/').pop() || '';
 
-  const block = contentData.find((item) => item.id === blockId);
+  const block = investicioniFondLinksData.find((item) => item.id === blockId);
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
 
   if (!block) return <p>Block not found</p>;
 
   return (
     <PageContainer>
-      <PageTitle title={block.title} />
+      <PageTitle title={block.id} />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (

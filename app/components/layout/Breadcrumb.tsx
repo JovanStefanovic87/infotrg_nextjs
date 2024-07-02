@@ -24,7 +24,7 @@ const Breadcrumb: React.FC = () => {
       const label = capitalize(segment.replace(/-/g, ' '));
       return { href, label };
     });
-    setBreadcrumbPath([{ href: '/', label: 'Pocetna' }, ...pathArray]);
+    setBreadcrumbPath([{ href: '/', label: 'Početna' }, ...pathArray]);
   }, [currentPath]);
 
   if (breadcrumbPath.length === 0) {

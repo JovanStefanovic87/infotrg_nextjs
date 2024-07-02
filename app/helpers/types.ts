@@ -8,6 +8,7 @@ export interface Subitem {
   text: string;
   amount?: string;
   subitems?: Subitem[];
+  listStyle?: 'number' | 'alphabet';
 }
 
 export interface ContentBlockItem {
@@ -29,6 +30,7 @@ export interface ContentBlockItem {
     text: string;
     amount?: string;
     subitems?: Subitem[];
+    listStyle?: 'number' | 'alphabet';
   }>;
   list?: string[];
 }
@@ -42,4 +44,8 @@ export interface Route {
   href: string;
   icon: string;
   subRoutes: Route[];
+}
+
+export interface InvesticioniFondLinksData {
+  id: string;
 }

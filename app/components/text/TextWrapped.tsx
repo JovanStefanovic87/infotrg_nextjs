@@ -24,8 +24,7 @@ const TextWrapped: React.FC<Props> = ({ block }) => {
 
     const processedContent = wordsAndSpaces.map((unit, index) => {
       if (unit.trim() !== '') {
-        const cleanWord = unit.replace(/^[.,?!:;()"[\]{}]+|[.,?!:;()"[\]{}]+$/g, '');
-        return convertWordToLink(cleanWord, index);
+        return convertWordToLink(unit, index);
       }
       return unit;
     });
