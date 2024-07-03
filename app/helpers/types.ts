@@ -13,10 +13,11 @@ export interface Subitem {
 
 export interface ContentBlockItem {
   type:
-    'h1' 
+    | 'h1'
     | 'h2'
     | 'H2BoldCenter'
     | 'h3'
+    | 'H3BoldCenter'
     | 'h4'
     | 'text'
     | 'image'
@@ -24,10 +25,12 @@ export interface ContentBlockItem {
     | 'list'
     | 'paragraph1'
     | 'paragraph2'
+    | 'p'
     | 'hr';
   content?: string;
   url?: string | string[];
   image?: string[];
+  items?: ContentBlockItem[];
   listContent?: Array<{
     type: 'paragraph1' | 'paragraph2';
     text: string;
@@ -36,6 +39,12 @@ export interface ContentBlockItem {
     listStyle?: 'number' | 'alphabet';
   }>;
   list?: string[];
+  paddingLeft?: number;
+  align?: 'left' | 'center' | 'right';
+  weight?: 'normal' | 'bold' | 'semibold';
+  size?: 'sm' | 'md' | 'lg';
+  marginBottom?: string;
+  marginY?: string;
 }
 
 export interface ContentBlocksData {

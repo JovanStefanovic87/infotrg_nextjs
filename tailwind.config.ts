@@ -19,6 +19,7 @@ const config: Config = {
         grayMedium: '#374151',
         grayLight: '#9c9c9c',
         yellowLighter: 'rgb(254 240 138)',
+        yellowStrong: '#facc15',
         hyperlink: '#0000EE',
       },
       height: {

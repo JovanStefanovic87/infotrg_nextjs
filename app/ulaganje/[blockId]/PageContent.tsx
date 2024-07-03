@@ -10,7 +10,6 @@ import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2 from '@/app/components/text/H2';
-import H2BoldCenter from '@/app/components/text/H2BoldCenter';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -71,7 +70,7 @@ const PageContent: React.FC = () => {
               ) : block.type === 'h2' ? (
                 <H2 text={block.content} align='center' />
               ) : block.type === '2XLboldCenter' ? (
-                <H2BoldCenter text={block.content} />
+                <H2 text={block.content} weight='bold' align='center' />
               ) : null}
             </div>
           ))}

@@ -33,7 +33,9 @@ const TextWrapped: React.FC<Props> = ({ block }) => {
   };
 
   return (
-    <p className='break-words overflow-wrap-anywhere text-lg text-gray-800'>{processText(block)}</p>
+    <p className='break-words overflow-wrap-anywhere text-lg text-grayDarkest'>
+      {processText(block)}
+    </p>
   );
 };
 

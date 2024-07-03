@@ -1,5 +1,8 @@
 import { ContentBlocksData, InvesticioniFondLinksData } from '@/app/helpers/types';
 
+const marginLeftSmall = 10;
+const marginLeftMedium = 24;
+
 export const investicioniFondLinksData: InvesticioniFondLinksData[] = [
   {
     id: 'priprema-nacrta-tehnickog-plana',
@@ -222,12 +225,7 @@ export const investicioniFondLinksData: InvesticioniFondLinksData[] = [
 export const contentBlocksData: ContentBlocksData = {
   'priprema-nacrta-tehnickog-plana': [
     {
-      type: 'H2BoldCenter',
-      content:
-        'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
-    },
-    {
-      type: 'text',
+      type: 'p',
       content:
         'Autor priprema nacrt tehničkog plana u kojem izlaže svoju ideju o funkcionisanju veb platforme za oglašavanje proizvoda (Infotrg platforma).',
     },
@@ -237,412 +235,139 @@ export const contentBlocksData: ContentBlocksData = {
       content: '0.1.1.) GRAFIČKA PRIPREMA NACRTA TEHNIČKOG PLANA - autor',
     },
     {
-      type: 'H2BoldCenter',
-      content: '50.000 EUR',
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
     },
-    { type: 'hr' },
-    {
-      type: 'h2',
-      content: 'RASPODELA INVESTICIONOG FONDA',
-    },
-    {
-      type: 'list',
-      listContent: [
-        {
-          type: 'paragraph1',
-          text: 'Fond za planiranje i pripremu',
-          amount: '4.272 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
-            { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
-            { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Testiranje i izrada Tehničkog plana',
-              amount: '2.349 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema Plana i programa poslovanja',
-              amount: '468,5 EUR',
-            },
-            { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
-            { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za prikupljanje finansijskih sredstava',
-          amount: '3.261 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema Investicionog plana i programa',
-              amount: '407 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za investicioni fond',
-              amount: '993 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Oglašavanje Investicionog plana i programa',
-              amount: '1.125,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Kontaktiranje potencijalnih investitora',
-              amount: '735,5 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za uvođenje  preglednika po mapama za buvljak',
-          amount: '15.011 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za preglednik po mapama',
-              amount: '5.341 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Popis buvljaka i objavljivanje informacija',
-              amount: '3.890 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Upoznavanje prodavaca sa platformom',
-              amount: '655,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
-              amount: '416 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
-              amount: '3.958,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
-              amount: '750 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za uvođenje veb izloga za prodajne objekte na buvljaku',
-          amount: '5.625 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za veb izloge', amount: '3.928 EUR' },
-            { type: 'paragraph2', text: 'Otvaranje promotivnog veb izloga', amount: '397 EUR' },
-            { type: 'paragraph2', text: 'Promocija veb izloga prodavcima', amount: '1.300 EUR' },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za uvođenje enciklopedije proizvoda na buvljaku',
-          amount: '2.553,5 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za enciklopediju proizvoda',
-              amount: '1.373 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Otvaranje promotivnih stranica enciklopedije proizvoda',
-              amount: '526,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Promocija enciklopedije proizvoda prodavcima',
-              amount: '654 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za ekspanziju projekta u Subotici',
-          amount: '16.218,5 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Suboticu', amount: '8 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Popis Subotice i objavljivanje informacija',
-              amount: '8.887,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na upotrebu veb izloga',
-              amount: '3.660 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
-              amount: '119 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
-              amount: '2.644 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
-              amount: '900 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za ekspanziju projekta izvan Subotice',
-          amount: '3.059 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Srbiju', amount: '8 EUR' },
-            { type: 'paragraph2', text: 'Osnivanje firme', amount: '958 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Organizovanje međugradskih inkasanata',
-              amount: '443,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Pribavljanje spiska svih prodajnih objekata',
-              amount: '90,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema prezentacije uspešnosti oglašavanja',
-              amount: '0 EUR',
-            },
-            { type: 'paragraph2', text: 'Navođenje prodavaca na oglašavanje', amount: '436 EUR' },
-            { type: 'paragraph2', text: 'Promocija platforme putem medija', amount: '1.123 EUR' },
-          ],
-          listStyle: 'number',
-        },
-      ],
-    },
-  ],
-  'Priprema nacrta tehnickog plana': [
     {
       type: 'text',
       content:
-        'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
+        'Autor izrađuje nacrt tehničkog plana projekta čija centralna tema je veb platforma namenjena za oglašavanje proizvoda. U tehničkom planu je predstavljeno funkcionisanje platforme i njen dizajn.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
     },
     { type: 'hr' },
     {
-      type: 'h2',
-      content: 'VREDNOST INVESTICIONOG FONDA',
+      type: 'h3',
+      content: '0.1.2.) ŠTAMPANJE NACRTA TEHNIČKOG PLANA - autor',
     },
     {
-      type: 'H2BoldCenter',
-      content: '50.000 EUR',
+      type: 'p',
+      content: '7,5 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Autor priprema nacrt tehničkog plana u štampanoj formi, pogodan za pokazivanje i deljenje potencijalnim saradnicima.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Količina stranica u koloru u jednom nacrtu = 6 stranica u koloru',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Količina potrebnih nacrta = 5 nacrta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Količina stranica u koloru za 5 nacrta = (a x b) = 30 stranica u koloru',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Cena štampanja 1 stranice u koloru = 30 dinara',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Cena štampanja 30 stranica u koloru (c x d) = 900 dinara = 7,5 EUR',
+      paddingLeft: marginLeftMedium,
+    },
+  ],
+  'nominacija-projekta': [
+    {
+      type: 'p',
+      content:
+        'Autor vrši zaštitu autorskih prava projekta i zakupljuje internet domen na kojem će biti uspostavljena platforma.',
     },
     { type: 'hr' },
     {
-      type: 'h2',
-      content: 'RASPODELA INVESTICIONOG FONDA',
+      type: 'h3',
+      content: '0.2.1.) ZAŠTITA AUTORSKIH PRAVA - autor',
     },
     {
-      type: 'list',
-      listContent: [
-        {
-          type: 'paragraph1',
-          text: 'Fond za planiranje i pripremu',
-          amount: '4.272 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema nacrta tehničkog plana', amount: '7,5 EUR' },
-            { type: 'paragraph2', text: 'Nominacija projekta', amount: '46 EUR' },
-            { type: 'paragraph2', text: 'Okupljanje saradnika', amount: '171 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Testiranje i izrada Tehničkog plana',
-              amount: '2.349 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema Plana i programa poslovanja',
-              amount: '468,5 EUR',
-            },
-            { type: 'paragraph2', text: 'Priprema Ugovora o saradnji', amount: '155 EUR' },
-            { type: 'paragraph2', text: 'Priprema i održavanje budžeta', amount: '1.075 EUR' },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za prikupljanje finansijskih sredstava',
-          amount: '3.261 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema Investicionog plana i programa',
-              amount: '407 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za investicioni fond',
-              amount: '993 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Oglašavanje Investicionog plana i programa',
-              amount: '1.125,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Kontaktiranje potencijalnih investitora',
-              amount: '735,5 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za uvođenje  preglednika po mapama za buvljak',
-          amount: '15.011 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za preglednik po mapama',
-              amount: '5.341 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Popis buvljaka i objavljivanje informacija',
-              amount: '3.890 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Upoznavanje prodavaca sa platformom',
-              amount: '655,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
-              amount: '416 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
-              amount: '3.958,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
-              amount: '750 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za uvođenje veb izloga za prodajne objekte na buvljaku',
-          amount: '5.625 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za veb izloge', amount: '3.928 EUR' },
-            { type: 'paragraph2', text: 'Otvaranje promotivnog veb izloga', amount: '397 EUR' },
-            { type: 'paragraph2', text: 'Promocija veb izloga prodavcima', amount: '1.300 EUR' },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za uvođenje enciklopedije proizvoda na buvljaku',
-          amount: '2.553,5 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za enciklopediju proizvoda',
-              amount: '1.373 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Otvaranje promotivnih stranica enciklopedije proizvoda',
-              amount: '526,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Promocija enciklopedije proizvoda prodavcima',
-              amount: '654 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za ekspanziju projekta u Subotici',
-          amount: '16.218,5 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Suboticu', amount: '8 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Popis Subotice i objavljivanje informacija',
-              amount: '8.887,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na upotrebu veb izloga',
-              amount: '3.660 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
-              amount: '119 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
-              amount: '2.644 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
-              amount: '900 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za ekspanziju projekta izvan Subotice',
-          amount: '3.059 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Srbiju', amount: '8 EUR' },
-            { type: 'paragraph2', text: 'Osnivanje firme', amount: '958 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Organizovanje međugradskih inkasanata',
-              amount: '443,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Pribavljanje spiska svih prodajnih objekata',
-              amount: '90,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema prezentacije uspešnosti oglašavanja',
-              amount: '0 EUR',
-            },
-            { type: 'paragraph2', text: 'Navođenje prodavaca na oglašavanje', amount: '436 EUR' },
-            { type: 'paragraph2', text: 'Promocija platforme putem medija', amount: '1.123 EUR' },
-          ],
-          listStyle: 'number',
-        },
-      ],
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
     },
+    {
+      type: 'text',
+      content: 'Autor određuje ima projekta i na isti vrši zaštitu autorskih prava.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
+    },
+    { type: 'hr' },
+    {
+      type: 'h3',
+      content: '0.2.2.) ZAKUP INTERNET DOMENA - autor',
+    },
+    {
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content: 'U skladu sa imenom projekta, autor zakupljuje internet domen prikladnog naziva.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
+    },
+    { type: 'hr' },
+    {
+      type: 'h3',
+      content: '0.2.3.) OBNOVA INTERNET DOMENA ZA 3 GODINE - autor',
+    },
+    {
+      type: 'p',
+      content: '46 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content: 'Autor vrši godišnju obnovu internet domena sredstvima iz investicionog fonda.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Cena domena na godišnjem nivou = 1.800 dinara',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Period obnavljanja domena = 3 godine',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupna cena obnove domena = (a x b) = 4.400 dinara = 46 EUR',
+      paddingLeft: marginLeftMedium,
+    },
+    { type: 'hr' },
   ],
 };

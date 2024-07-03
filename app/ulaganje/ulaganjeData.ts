@@ -33,8 +33,8 @@ export const contentData: BasicInformation[] = [
     coverImage: '/images/image2.jpg',
   },
   {
-    id: 'investiocioni-fond',
-    title: 'Investiocioni fond',
+    id: 'investicioni-fond',
+    title: 'Investicioni fond',
     description:
       'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
   },
@@ -65,13 +65,13 @@ export const contentBlocksData: ContentBlocksData = {
     { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
     { type: 'text', content: 'Final part of the explanation.' },
   ],
-  'investiocioni-fond': [
+  'investicioni-fond': [
     {
       type: 'text',
       content:
         'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
     },
-    { type: 'hr' },
+    { type: 'hr', marginY: '4' },
     {
       type: 'h2',
       content: 'VREDNOST INVESTICIONOG FONDA',
@@ -80,7 +80,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'H2BoldCenter',
       content: '50.000 EUR',
     },
-    { type: 'hr' },
+    { type: 'hr', marginY: '4' },
     {
       type: 'h2',
       content: 'RASPODELA INVESTICIONOG FONDA',
@@ -281,7 +281,7 @@ export const contentBlocksData: ContentBlocksData = {
       content:
         'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
     },
-    { type: 'hr' },
+    { type: 'hr', marginY: '4' },
     {
       type: 'h2',
       content: 'VREDNOST INVESTICIONOG FONDA',
@@ -290,7 +290,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'H2BoldCenter',
       content: '50.000 EUR',
     },
-    { type: 'hr' },
+    { type: 'hr', marginY: '4' },
     {
       type: 'h2',
       content: 'RASPODELA INVESTICIONOG FONDA',

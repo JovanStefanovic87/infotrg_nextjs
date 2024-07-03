@@ -10,10 +10,9 @@ import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2 from '@/app/components/text/H2';
-import H2BoldCenter from '@/app/components/text/H2BoldCenter';
 import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
-import TextBold from '@/app/components/text/TextBold';
+import Text from '@/app/components/text/Text';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -40,12 +39,12 @@ const PageContent: React.FC = () => {
     <PageContainer>
       <H1 title={'Investicioni fond'} />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
-        <H2BoldCenter text={block.listOrder} />
-        <H2BoldCenter text={`${block.label}`} />
-        <TextBold text={block.amount} align='center' />
+        <H2 text={block.listOrder} weight='bold' align='center' />
+        <H2 text={block.label.toUpperCase()} weight='bold' align='center' size='md' />
+        <Text text={block.amount} align='center' weight='bold' />
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='mb-6'>
+            <div key={index} className='mb-6 mt-6 flex flex-col'>
               {block.type === 'text' ? (
                 <TextWrapped block={block.content || ''} />
               ) : block.type === 'image' ? (
@@ -76,12 +75,20 @@ const PageContent: React.FC = () => {
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
                 <H2 text={block.content} align='center' />
-              ) : block.type === '2XLboldCenter' ? (
-                <H2BoldCenter text={block.content} />
+              ) : block.type === 'H2BoldCenter' ? (
+                <H2 text={block.content} align='center' weight='bold' />
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} />
               ) : block.type === 'h4' ? (
                 <H4 text={block.content} />
+              ) : block.type === 'p' ? (
+                <Text
+                  text={block.content}
+                  weight={block.weight}
+                  paddingLeft={block.paddingLeft}
+                  align={block.align}
+                  size={block.size}
+                />
               ) : null}
             </div>
           ))}
