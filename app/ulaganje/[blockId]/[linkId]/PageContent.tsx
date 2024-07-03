@@ -13,7 +13,7 @@ import H2 from '@/app/components/text/H2';
 import H2BoldCenter from '@/app/components/text/H2BoldCenter';
 import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
-import H3BoldCenter from '@/app/components/text/H3BoldCenter';
+import TextBold from '@/app/components/text/TextBold';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -38,10 +38,11 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title={block.listOrder} />
+      <H1 title={'Investicioni fond'} />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
-      <H2BoldCenter text={block.label} />
-      <H3BoldCenter text={block.listOrder} />
+        <H2BoldCenter text={block.listOrder} />
+        <H2BoldCenter text={`${block.label}`} />
+        <TextBold text={block.amount} align='center' />
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
             <div key={index} className='mb-6'>

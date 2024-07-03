@@ -220,41 +220,21 @@ export const investicioniFondLinksData: InvesticioniFondLinksData[] = [
 ];
 
 export const contentBlocksData: ContentBlocksData = {
-  block1: [
-    {
-      type: 'text',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    },
-    { type: 'image', url: ['/images/image1.jpg'] },
-    { type: 'text', content: 'Here is some more explanation with an image below.' },
-    { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
-    { type: 'text', content: 'Final part of the explanation.' },
-  ],
-  block2: [
-    { type: 'text', content: 'This is the first part of the explanation.' },
-    { type: 'image', url: ['/images/image1.jpg'] },
-    { type: 'text', content: 'Here is some more explanation with an image below.' },
-    { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
-    { type: 'text', content: 'Final part of the explanation.' },
-  ],
-  block3: [
-    { type: 'text', content: 'This is the first part of the explanation.' },
-    { type: 'image', url: ['/images/image1.jpg'] },
-    { type: 'text', content: 'Here is some more explanation with an image below.' },
-    { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
-    { type: 'text', content: 'Final part of the explanation.' },
-  ],
   'priprema-nacrta-tehnickog-plana': [
-
     {
       type: 'H2BoldCenter',
       content:
         'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
     },
+    {
+      type: 'text',
+      content:
+        'Autor priprema nacrt tehničkog plana u kojem izlaže svoju ideju o funkcionisanju veb platforme za oglašavanje proizvoda (Infotrg platforma).',
+    },
     { type: 'hr' },
     {
-      type: 'h2',
-      content: 'VREDNOST INVESTICIONOG FONDA',
+      type: 'h3',
+      content: '0.1.1.) GRAFIČKA PRIPREMA NACRTA TEHNIČKOG PLANA - autor',
     },
     {
       type: 'H2BoldCenter',

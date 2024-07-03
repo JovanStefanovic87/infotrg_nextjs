@@ -77,7 +77,7 @@ export const contentBlocksData: ContentBlocksData = {
       content: 'VREDNOST INVESTICIONOG FONDA',
     },
     {
-      type: '2XLboldCenter',
+      type: 'H2BoldCenter',
       content: '50.000 EUR',
     },
     { type: 'hr' },
@@ -287,7 +287,7 @@ export const contentBlocksData: ContentBlocksData = {
       content: 'VREDNOST INVESTICIONOG FONDA',
     },
     {
-      type: '2XLboldCenter',
+      type: 'H2BoldCenter',
       content: '50.000 EUR',
     },
     { type: 'hr' },
