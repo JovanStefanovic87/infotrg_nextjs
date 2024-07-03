@@ -511,7 +511,7 @@ export const hyperlinks = [
   {
     text: 'Testiranje i izrada Tehničkog plana',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Testiranje-i-izrada-Tehničkog-plana',
+      'Testiranje-i-izrada-Tehnickog-plana',
     ).toLowerCase()}`,
   },
   {
@@ -523,7 +523,7 @@ export const hyperlinks = [
   {
     text: 'Priprema Ugovora o saradnji',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'priprema-govora-o-saradnji',
+      'priprema-ugovora-o-saradnji',
     ).toLowerCase()}`,
   },
   {

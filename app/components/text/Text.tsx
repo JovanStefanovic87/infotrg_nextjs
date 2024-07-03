@@ -23,7 +23,7 @@ const Text: React.FC<Props> = ({
     >
       {hasSpecialEnding ? (
         <>
-          <span className='font-bold'>{parts[0]}</span>
+          <span className='font-semibold'>{parts[0]}</span>
           {parts[1]}
           {parts.slice(2).join('')}
         </>
