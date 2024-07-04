@@ -7131,7 +7131,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'f.) Ukupno vreme potrebno za distribuciju flajera = (c + d + e) = 121,5 evra',
+      content: 'f.) Ukupno vreme potrebno za distribuciju flajera = (c + d + e) = 121,5 sati',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -7190,7 +7190,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'f.) Ukupno vreme potrebno za usmenu promociju = (c + d + e) = 121,5 evra',
+      content: 'f.) Ukupno vreme potrebno za usmenu promociju = (c + d + e) = 121,5 sati',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -7248,7 +7248,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'f.) Ukupno vreme potrebno za odvođenje kupaca = (c + d + e) = 121,5 evra',
+      content: 'f.) Ukupno vreme potrebno za odvođenje kupaca = (c + d + e) = 121,5 sati',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -7307,7 +7307,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'f.) Ukupno vreme potrebno za navođenje na mreže = (c + d + e) = 121,5 evra',
+      content: 'f.) Ukupno vreme potrebno za navođenje na mreže = (c + d + e) = 121,5 sati',
       paddingLeft: marginLeftMedium,
     },
     {
