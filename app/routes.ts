@@ -28,19 +28,19 @@ export const routes: Route[] = [
             href: '/o-nama/tim/clan-2',
             icon: '/icons/about.svg',
             subRoutes: [
-            {
-              label: 'Član 1',
-              href: '/o-nama/tim/clan-1',
-              icon: '/icons/about.svg',
-              subRoutes: [],
-            },
-            {
-              label: 'Član 2',
-              href: '/o-nama/tim/clan-2',
-              icon: '/icons/about.svg',
-              subRoutes: [],
-            },
-          ],
+              {
+                label: 'Član 1',
+                href: '/o-nama/tim/clan-1',
+                icon: '/icons/about.svg',
+                subRoutes: [],
+              },
+              {
+                label: 'Član 2',
+                href: '/o-nama/tim/clan-2',
+                icon: '/icons/about.svg',
+                subRoutes: [],
+              },
+            ],
           },
         ],
       },
@@ -71,8 +71,8 @@ export const routes: Route[] = [
     icon: '/icons/invest.svg',
     subRoutes: [
       {
-        label: 'Nekretnine',
-        href: '/ulaganje/nekretnine',
+        label: 'Investicioni fond',
+        href: '/ulaganje/investicioni-fond',
         icon: '/icons/about.svg',
         subRoutes: [
           {

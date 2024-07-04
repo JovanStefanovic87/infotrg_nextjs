@@ -1,24 +1,17 @@
 interface Props {
   text: string;
   align?: 'left' | 'center' | 'right';
-  size?: 'sm' | 'md' | 'lg';
   weight?: 'normal' | 'bold' | 'semibold';
   paddingLeft?: string;
 }
 
-const Text: React.FC<Props> = ({
-  text,
-  align = 'left',
-  size = 'lg',
-  weight = 'normal',
-  paddingLeft = '0',
-}) => {
+const Text: React.FC<Props> = ({ text, align = 'left', weight = 'normal', paddingLeft = '0' }) => {
   const hasSpecialEnding = text.includes('.)');
   const parts = hasSpecialEnding ? text.split(/(\.\))/) : [text];
 
   return (
     <p
-      className={`text-${align} font-${weight} text-grayDarkest text-${size} tracking-wide`}
+      className={`text-${align} font-${weight} text-grayDarkest text-sm md:text-base lg:text-lg tracking-wide`}
       style={{ paddingLeft }}
     >
       {hasSpecialEnding ? (

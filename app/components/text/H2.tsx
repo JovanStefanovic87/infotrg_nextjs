@@ -4,7 +4,8 @@ interface Props {
   text: string;
   align?: 'left' | 'center' | 'right';
   padding?: number;
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+  responsiveSize?: 'sm' | 'md' | 'lg' | 'xl';
   weight?: 'normal' | 'bold' | 'semibold';
   marginBottom?: string;
 }
@@ -13,7 +14,6 @@ const H2: React.FC<Props> = ({
   text,
   align = 'left',
   padding = 0,
-  size = 'lg',
   weight = 'semibold',
   marginBottom = '0',
 }) => {
@@ -21,7 +21,7 @@ const H2: React.FC<Props> = ({
 
   return (
     <h2
-      className={`text-${size} text-grayDarkest font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
+      className={`text-base md:text-lg text-grayDarkest font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
       style={{ maxWidth }}
     >
       {text}

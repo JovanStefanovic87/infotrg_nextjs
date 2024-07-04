@@ -529,7 +529,7 @@ export const hyperlinks = [
   {
     text: 'Priprema i održavanje budžeta',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Fond-za-planiranje-i-pripremu',
+      'priprema-i-odrzavanje-budzeta',
     ).toLowerCase()}`,
   },
   {

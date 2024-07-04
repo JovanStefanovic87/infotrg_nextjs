@@ -39,7 +39,7 @@ export interface ContentBlockItem {
     listStyle?: 'number' | 'alphabet';
   }>;
   list?: string[];
-  paddingLeft?: number;
+  paddingLeft?: number | string;
   align?: 'left' | 'center' | 'right';
   weight?: 'normal' | 'bold' | 'semibold';
   size?: 'sm' | 'md' | 'lg';

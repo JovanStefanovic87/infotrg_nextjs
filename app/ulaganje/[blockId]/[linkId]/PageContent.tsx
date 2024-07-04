@@ -40,7 +40,7 @@ const PageContent: React.FC = () => {
       <H1 title={'Investicioni fond'} />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
         <H2 text={block.listOrder} weight='bold' align='center' />
-        <H2 text={block.label.toUpperCase()} weight='bold' align='center' size='md' />
+        <H2 text={block.label.toUpperCase()} weight='bold' align='center' />
         <Text text={block.amount} align='center' weight='bold' />
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
@@ -87,7 +87,6 @@ const PageContent: React.FC = () => {
                   weight={block.weight}
                   paddingLeft={block.paddingLeft}
                   align={block.align}
-                  size={block.size}
                 />
               ) : null}
             </div>
