@@ -141,7 +141,7 @@ export const contentBlocksData: ContentBlocksData = {
         },
         {
           type: 'paragraph1',
-          text: 'Fond za uvođenje  preglednika po mapama za buvljak',
+          text: 'Fond za uvođenje preglednika po mapama za buvljak',
           amount: '15.011 EUR',
           subitems: [
             {
@@ -229,17 +229,17 @@ export const contentBlocksData: ContentBlocksData = {
             },
             {
               type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
+              text: 'Objavljivanje probnih besplatnih reklama Subotica',
               amount: '119 EUR',
             },
             {
               type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
+              text: 'Navođenje kupaca na veliki broj pregleda Subotica',
               amount: '2.644 EUR',
             },
             {
               type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
+              text: 'Navođenje prodavaca na plaćeno oglašavanje Subotica',
               amount: '900 EUR',
             },
           ],
@@ -250,7 +250,7 @@ export const contentBlocksData: ContentBlocksData = {
           text: 'Fond za ekspanziju projekta izvan Subotice',
           amount: '3.059 EUR',
           subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Srbiju', amount: '8 EUR' },
+            { type: 'paragraph2', text: 'Priprema platforme za objavljivanje informacija širom Srbije', amount: '8 EUR' },
             { type: 'paragraph2', text: 'Osnivanje firme', amount: '958 EUR' },
             {
               type: 'paragraph2',
@@ -351,44 +351,6 @@ export const contentBlocksData: ContentBlocksData = {
         },
         {
           type: 'paragraph1',
-          text: 'Fond za uvođenje  preglednika po mapama za buvljak',
-          amount: '15.011 EUR',
-          subitems: [
-            {
-              type: 'paragraph2',
-              text: 'Priprema platforme za preglednik po mapama',
-              amount: '5.341 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Popis buvljaka i objavljivanje informacija',
-              amount: '3.890 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Upoznavanje prodavaca sa platformom',
-              amount: '655,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
-              amount: '416 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
-              amount: '3.958,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
-              amount: '750 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
           text: 'Fond za uvođenje veb izloga za prodajne objekte na buvljaku',
           amount: '5.625 EUR',
           subitems: [
@@ -418,67 +380,6 @@ export const contentBlocksData: ContentBlocksData = {
               text: 'Promocija enciklopedije proizvoda prodavcima',
               amount: '654 EUR',
             },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za ekspanziju projekta u Subotici',
-          amount: '16.218,5 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Suboticu', amount: '8 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Popis Subotice i objavljivanje informacija',
-              amount: '8.887,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na upotrebu veb izloga',
-              amount: '3.660 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Objavljivanje probnih besplatnih reklama',
-              amount: '119 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje kupaca na veliki broj pregleda',
-              amount: '2.644 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Navođenje prodavaca na plaćeno oglašavanje',
-              amount: '900 EUR',
-            },
-          ],
-          listStyle: 'number',
-        },
-        {
-          type: 'paragraph1',
-          text: 'Fond za ekspanziju projekta izvan Subotice',
-          amount: '3.016 EUR',
-          subitems: [
-            { type: 'paragraph2', text: 'Priprema platforme za Srbiju', amount: '8 EUR' },
-            { type: 'paragraph2', text: 'Osnivanje firme', amount: '915 EUR' },
-            {
-              type: 'paragraph2',
-              text: 'Organizovanje međugradskih inkasanata',
-              amount: '443,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Pribavljanje spiska svih prodajnih objekata',
-              amount: '90,5 EUR',
-            },
-            {
-              type: 'paragraph2',
-              text: 'Priprema prezentacije uspešnosti oglašavanja',
-              amount: '0 EUR',
-            },
-            { type: 'paragraph2', text: 'Navođenje prodavaca na oglašavanje', amount: '436 EUR' },
-            { type: 'paragraph2', text: 'Promocija platforme putem medija', amount: '1.123 EUR' },
           ],
           listStyle: 'number',
         },
@@ -647,15 +548,15 @@ export const hyperlinks = [
     ).toLowerCase()}`,
   },
   {
-    text: 'Objavljivanje probnih besplatnih reklama',
+    text: 'Objavljivanje probnih besplatnih reklama Subotica',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Objavljivanje-probnih-besplatnih-reklama',
+      'Objavljivanje-probnih-besplatnih-reklama-subotica',
     ).toLowerCase()}`,
   },
   {
-    text: 'Navođenje kupaca na veliki broj pregleda',
+    text: 'Navođenje kupaca na veliki broj pregleda Subotica',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-kupaca-na-veliki-broj-pregleda',
+      'Navodjenje-kupaca-na-veliki-broj-pregleda-subotica',
     ).toLowerCase()}`,
   },
   {
@@ -665,9 +566,9 @@ export const hyperlinks = [
     ).toLowerCase()}`,
   },
   {
-    text: 'Priprema platforme za Srbiju',
+    text: 'Priprema platforme za objavljivanje informacija širom Srbije',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Priprema-platforme-za-Srbiju',
+      'Priprema-platforme-za-objavljivanje-informacija-sirom-srbije',
     ).toLowerCase()}`,
   },
   {
@@ -693,9 +594,9 @@ export const hyperlinks = [
     ).toLowerCase()}`,
   },
   {
-    text: 'Navođenje prodavaca na plaćeno oglašavanje',
+    text: 'Navođenje prodavaca na plaćeno oglašavanje Subotica',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Navodjenje-prodavaca-na-placeno-oglasavanje',
+      'Navodjenje-prodavaca-na-placeno-oglasavanje-subotica',
     ).toLowerCase()}`,
   },
   {
