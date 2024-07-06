@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { investicioniFondLinksData, contentBlocksData } from './investicioniFondData';
 import ImageModal from '../../../components/modals/ImageModal';
-import ImageBlock from '../../ImageBlock';
+import ImageBlock from '../../../components/image/ImageBlock';
 import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';

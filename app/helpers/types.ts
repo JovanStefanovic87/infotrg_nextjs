@@ -21,6 +21,7 @@ export interface ContentBlockItem {
     | 'h4'
     | 'text'
     | 'image'
+    | 'imageBlockWithDescription'
     | 'divider'
     | 'list'
     | 'paragraph1'

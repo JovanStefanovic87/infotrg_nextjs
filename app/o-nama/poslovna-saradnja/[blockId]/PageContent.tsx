@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { contentData, contentBlocksData } from '../ulaganjeData';
-import ImageModal from '../../components/modals/ImageModal';
-import ImageBlock from '../../components/image/ImageBlock';
-import TextWrapped from '../../components/text/TextWrapped';
+import { contentData, contentBlocksData } from '../../AboutData';
+import ImageModal from '../../../components/modals/ImageModal';
+import ImageBlock from '../../../components/image/ImageBlock';
+import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';

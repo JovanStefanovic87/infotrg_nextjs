@@ -1,4 +1,4 @@
-import { ContentBlocksData } from '../helpers/types';
+import { ContentBlocksData } from '../../helpers/types';
 
 export interface BasicInformation {
   id: string;
@@ -33,7 +33,7 @@ export const contentData: BasicInformation[] = [
     coverImage: '/images/image2.jpg',
   },
   {
-    id: 'investicioni-fond',
+    id: 'poslovna-saradnja',
     title: 'Investicioni fond',
     description:
       'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
@@ -65,7 +65,7 @@ export const contentBlocksData: ContentBlocksData = {
     { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
     { type: 'text', content: 'Final part of the explanation.' },
   ],
-  'investicioni-fond': [
+  'poslovna-saradnja': [
     {
       type: 'text',
       content:

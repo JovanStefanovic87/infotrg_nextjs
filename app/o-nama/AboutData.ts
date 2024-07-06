@@ -33,10 +33,9 @@ export const contentData: BasicInformation[] = [
     coverImage: '/images/image2.jpg',
   },
   {
-    id: 'investicioni-fond',
-    title: 'Investicioni fond',
-    description:
-      'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
+    id: 'poslovna-saradnja',
+    title: 'Poslovna saradnja',
+    description: 'Upoznajte naš i tim i politiku.',
   },
 ];
 
@@ -65,20 +64,56 @@ export const contentBlocksData: ContentBlocksData = {
     { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
     { type: 'text', content: 'Final part of the explanation.' },
   ],
-  'investicioni-fond': [
-    {
-      type: 'text',
-      content:
-        'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
-    },
-    { type: 'hr', marginY: '4' },
+  'poslovna-saradnja': [
     {
       type: 'h2',
-      content: 'VREDNOST INVESTICIONOG FONDA',
+      content: 'SAŽET PRIKAZ POSLOVNE SARADNJE',
     },
     {
-      type: 'H2BoldCenter',
-      content: '50.000 EUR',
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps03.jpg',
+      content: 'Članovi upravnog tima pronalaze lica zainteresovana za finansiranje projekta.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps04.jpg',
+      content:
+        'Koordinator upravlja prikupljenim finansijama i preko članova tima organizuje realizaciju projekta.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps05.jpg',
+      content:
+        'Vebmaster izrađuje platformu za oglašavanje proizvoda i njihovih prodajnih objekata.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps06.jpg',
+      content:
+        'Administrator sakuplja sve potrebne informacije o proizvodima i unosi ih na platformu.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps07.jpg',
+      content:
+        'Marketing menadžer navodi korisnike interneta da posećuju stranice sa proizvodima na platformi.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps08.jpg',
+      content:
+        'PR menadžer navodi kupce da objavljuju plaćene oglase na posećenim stranicama platforme.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps09.jpg',
+      content: 'Koordinator prikuplja novac od plaćenih oglasa i drugih poslovnih transakcija.',
+    },
+    {
+      type: 'imageBlockWithDescription',
+      url: '/images/poslovna-saradnja/ps10.jpg',
+      content:
+        'Koordinator deo prihoda daje investitorima i članovima tima, a ostatak odlaže u budžet projekta.',
     },
     { type: 'hr', marginY: '4' },
     {
