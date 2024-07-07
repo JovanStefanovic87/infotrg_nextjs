@@ -11,6 +11,23 @@ export interface Subitem {
   listStyle?: 'number' | 'alphabet';
 }
 
+export interface BasicInformation {
+  id: string;
+  title: string;
+  description: string;
+  coverImage?: string;
+}
+
+export interface ListOfLinks {
+  id: string;
+  type: 'H2BoldCenter' | 'h3' | 'H3BoldCenter' | 'h4' | 'text' | 'divider' | 'list' | 'p' | 'hr';
+  text: string;
+}
+
+export interface ListOfLinksData {
+  [key: string]: ListOfLinks;
+}
+
 export interface ContentBlockItem {
   type:
     | 'h1'

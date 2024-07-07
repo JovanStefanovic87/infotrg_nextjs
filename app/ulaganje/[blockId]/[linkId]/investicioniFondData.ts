@@ -10331,764 +10331,83 @@ export const contentBlocksData: ContentBlocksData = {
   'popis-subotice-i-objavljivanje-informacija': [
     {
       type: 'text',
-      content:'Administrator obilazi grad, posećuje prodajne objekte koji još nisu samostalno pristupili Infotrgu, popisuje njihove proizvode, otvara njihove privremene veb izloge i preko njih objavljuje informacije o proizvodima.',
+      content:
+        'Administrator obilazi grad, posećuje prodajne objekte koji još nisu samostalno pristupili Infotrgu, popisuje njihove proizvode, otvara njihove privremene veb izloge i preko njih objavljuje informacije o proizvodima.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '5.2.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - koordinator'
+      content:
+        '5.2.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi administratorovi radni zadaci, rokovi i naknade za petu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi administratorovi radni zadaci, rokovi i naknade za petu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - administrator'
-    },
-    {
-      type: 'p',
-      content: '0 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator potpisuje Ugovor o delu za petu etapu.'
-    },
-    {
-      type: 'p',
-      content: 'Nema troškova',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - koordinator'
-    },
-    {
-      type: 'p',
-      content: '0 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Koordinator potpisuje Ugovor o delu sa administratorom za petu etapu.'
-    },
-    {
-      type: 'p',
-      content: 'Nema troškova',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.4.) POPISIVANJE PRODAJNIH OBJEKATA I PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '2.250 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator obilazi Suboticu, popisuje sve prodajne objekte i asortiman njihovih proizvoda.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Prosečno vreme potrebno za obilazak jednog objekta u Subotici = 0,15 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Prosečno vreme potrebno za popis jednog objekta u Subotici = 0,1 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme potrebno za obilazak i popis = (a + b) = 0,25 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Broj prodajnih objekata u Subotici za popisivanje = 1.800 objekata',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Ukupno vreme potrebno za popisivanje objekata u Subotici = (c x d) = 450 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena popisivanja prodajnih objekata u Subotici = (e x f) = 2.250 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.5.) PERIODIČNO PONOVNO POPISIVANJE PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '2.250 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Nakon prvog popisa, administrator tokom narednog meseca ponovo obilazi Suboticu i iznova popisuje sve vrste proizvoda kako bi mogao obnoviti spisak i izvršiti neke eventualne izmene u asortimanu ukoliko za tim ima potrebe.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za obilazak i popis jednog objekta u Subotici = 0,25 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Broj prodajnih objekata na buvljaku za popisivanje = 1.800 objekata',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme potrebno za popisivanje objekata u Subotici = (a x b) = 450 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Ukupna cena popisivanja prodajnih objekata za jedan mesec = (c x d) = 2.250 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Period mogućih ponovnih popisivanja = 1 mesec',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena ponovnih popisivanja prodajnih objekata = (e x f) = 2.250 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.6.) ADMINISTRATIVNA DOPUNA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '105 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator grupiše sve tipove prodajnih objekata u Subotici koji nemaju veb izloge i pridodaje ih određenim kategorijama.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za selekciju i nominaciju jednog prodajnog objekta = 0,2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Vreme potrebno za svrstavanje jedne kategorije u njenu grupu = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme za organizovanje jedne kategorije = (a + b) = 0,7 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Broj kategorisanih prodajnih objekata = 1.800 objekata',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Vreme potrebno za organizovanje svih kategorija = (c x d) = 1.260 minuta = 21 sat',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena administrativne pripreme = (e x f) = 105 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.7.) PRIPREMA SLIKA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '65 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator pronalazi slike odgovarajuće tematike za kategorije prodajnih objekata, a potom ih grafički priprema za unos na platformu.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za pronalaženje i obradu jedne sličice = 5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Vreme potrebno za učitavanje jedne sličice na platformu = 1 minut',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme za pripremu jedne sličice kategorije = (a + b) = 6 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Broj potrebnih sličica = 130 sličica',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Ukupno vreme potrebno za pripremu svih sličica (c x d) = 780 minuta = 13 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena pripreme sličica kategorija prodajnih objekata = (e x f) = 65 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.8.) ELEKTRONSKA DOPUNA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - vebmaster'
-    },
-    {
-      type: 'p',
-      content: '0 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Vebmaster vrši unos pripremljenog spiska kategorija proizvoda na platformu.'
-    },
-    {
-      type: 'p',
-      content: 'Nema troškova',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.9.) OTVARANJE SVIH VEB IZLOGA PRODAJNIH OBJEKATA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '900 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator dopunjuje otvaranje veb izloga svih prodajnih objekata u Subotici i priprema ih za unos svih potrebnih informacija.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za registraciju jednog veb izloga = 2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Prosečno vreme potrebno za unos vrsta proizvoda u jedan veb izlog = 4 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme potrebno za pripremu jednog veb izloga = (a + b) = 6 minuta = 0,1 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Broj aktivnih veb izloga za pripremu = 1.800 veb izloga',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Ukupno vreme za pripremu svih aktivnih veb izloga = (c x d) = 180 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena pripreme svih aktivnih veb izloga = (e x f) = 900 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.10.) ADMINISTRATIVNA DOPUNA KATEGORIJA PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '232,5 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator uvodi sve nove kategorije proizvoda koji se prodaju u Subotici i sortira ih u odgovarajući poredak.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za selekciju i nominaciju jedne vrste proizvoda = 0,2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Vreme potrebno za svrstavanje jedne kategorije u njenu grupu = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme za organizovanje jedne kategorije = (a + b) = 0,7 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Broj kategorija vrsta proizvoda = 4.000 vrsta proizvoda',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Vreme potrebno za organizovanje svih kategorija = (c x d) = 2.800 minuta = 46,5 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena administrativne pripreme = (e x f) = 232,5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.11.) PRIPREMA SLIKA KATEGORIJA PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '1.000 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator pronalazi slike odgovarajuće tematike za kategorije proizvoda, a potom ih grafički priprema za unos na platformu.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za pronalaženje i obradu jedne sličice = 2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Vreme potrebno za učitavanje jedne sličice na platformu = 1 minut',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme za pripremu jedne sličice kategorije = (a + b) = 3 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Broj potrebnih sličica = 4.000 sličica',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Ukupno vreme potrebno za pripremu svih sličica (c x d) = 12.000 minuta = 200 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Ukupna cena pripreme sličica kategorija proizvoda u Subotici = (e x f) = 1.000 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.12.) ELEKTRONSKA DOPUNA KATEGORIJA PROIZVODA U SUBOTICI - vebmaster'
-    },
-    {
-      type: 'p',
-      content: '0 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Vebmaster vrši unos pripremljenog spiska kategorija proizvoda na platformu.'
-    },
-    {
-      type: 'p',
-      content: 'Nema troškova',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.13.) DOPUNA VEZA SRODNIH STRANICA SVIH PREGLEDNIKA ZA SUBOTICU - administrator'
-    },
-    {
-      type: 'p',
-      content: '500 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator na već postavljenim smernicama dorađuje linkove ka drugim stranicama koje on proizvoljno odredi.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme grafičke pripreme jedne ikonice za smernicu = 0,15 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Učitavanje jedne ikonice = 0,1 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Dodavanje linka jednoj ikonici = 0,25 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Ukupno vreme umetanja jedne smernice = (a + b + c) = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Broj smernica po stranici = 1 smernica',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Ukupno vreme umetanja smernica po stranici = (d x e) = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Broj stranica u svim preglednicima Subotice = 12.000 stranica',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'h.) Ukupno vreme umetanja svih smernica u pregledniku = (f x g) = 6.000 minuta = 100 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'i.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'j.) Ukupna cena dopune svih smernica stranica za Suboticu = (h x i) = 500 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.14.) ADMINISTRATIVNA DOPUNA POPISANIH PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '450 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator zavodi spisak proizvoda u Subotici u već postojeće administrativne datoteke iz prethodnih etapa i priprema spisak za unos na platformu.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za analizu jednog prodajnog objekta na snimku = 2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Prepisivanje asortimana jednog prodajnog objekta na snimku = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Arhiviranje asortimana jednog prodajnog objekta = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Ukupno vreme obrade asortimana jednog prodajnog objekta = (a + b + c) = 3 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Broj analiziranih prodajnih objekata = 1.800 objekata',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Ukupno vreme pripreme spiska asortimana Subotice = (d x e) = 5.400 minuta = 90 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'h.) Ukupna cena popisivanja asortimana prodajnih objekata = (f x g) = 450 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.15.) PERIODIČNO ADMINISTRATIVNO AŽURIRANJE POPISANIH PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '450 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Nakon prvog popisa, administrator tokom sledećeg meseca obnavlja spisak popisanih vrsta proizvoda kako ne bi došlo do zastarelosti informacija.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Vreme potrebno za analizu jednog prodajnog objekta na snimku = 2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Prepisivanje asortimana jednog prodajnog objekta na snimku = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Arhiviranje asortimana jednog prodajnog objekta = 0,5 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Ukupno vreme obrade asortimana jednog prodajnog objekta = (a + b + c) = 3 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Broj analiziranih prodajnih objekata = 1.800 objekata',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'f.) Ukupno vreme pripreme spiska asortimana Subotice = (d x e) = 5.400 minuta = 90 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'g.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'h.) Ukupna cena popisivanja asortimana prodajnih objekata za jedan mesec = (f x g) = 450 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'i.) Period mogućih ponovnih popisivanja asortimana = 1 mesec',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'j.) Ukupna cena ponovnih popisivanja asortimana prodajnih objekata = (h x i) = 450 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.16.) UNOS NA PLATFORMU SPISKA PROIZVODA U SUBOTICI - administrator'
-    },
-    {
-      type: 'p',
-      content: '300 EUR',
-      paddingLeft: marginLeftSmall,
-      weight: 'bold'
-    },
-    {
-      type: 'text',
-      content: 'Administrator putem otvorenih naloga prodajnih objekata u panelu, unosi spiskove proizvoda i vrši objavljivanje njihovih lokacija na mapi.'
-    },
-    {
-      type: 'p',
-      content: 'a.) Broj aktivnih prodajnih objekata za unos na platformu = 1.800 objekata',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'b.) Vreme potrebno za unos asortimana jednog prodajnog objekta na sajt = 2 minuta',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'c.) Ukupno vreme za unos asortimana svih objekata na sajt = (a x b) = 3.600 minuta = 60 sati',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'd.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'p',
-      content: 'e.) Ukupna cena unosa asortimana na platformu = (c x d) = 300 evra',
-      paddingLeft: marginLeftMedium
-    },
-    {
-      type: 'hr'
-    },
-    {
-      type: 'h3',
-      content: '5.2.17.) OGLAŠAVANJE LOKACIJA PRODAJE ZA SVE VRSTE PROIZVODA U SUBOTICI - administrator',
+      content:
+        '5.2.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - administrator',
     },
     {
       type: 'p',
@@ -11098,7 +10417,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Bez obzira na to da li su veb izloge samostalno otvorili prodavci ili ne, administrator u veb izloge svih prodajnih objekata u Subotici unosi vrste proizvoda koji oni prodaju i objavljuje njihove lokacije prodaje na nivou celog grada.',
+      content: 'Administrator potpisuje Ugovor o delu za petu etapu.',
     },
     {
       type: 'p',
@@ -11110,513 +10429,1250 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.2.18.) PERIODIČAN UNOS AŽURIRANOG SPISKA PROIZVODA NA PLATFORMU - administrator'
+      content: '5.2.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - koordinator',
+    },
+    {
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content: 'Koordinator potpisuje Ugovor o delu sa administratorom za petu etapu.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.4.) POPISIVANJE PRODAJNIH OBJEKATA I PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '2.250 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator obilazi Suboticu, popisuje sve prodajne objekte i asortiman njihovih proizvoda.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Prosečno vreme potrebno za obilazak jednog objekta u Subotici = 0,15 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Prosečno vreme potrebno za popis jednog objekta u Subotici = 0,1 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupno vreme potrebno za obilazak i popis = (a + b) = 0,25 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Broj prodajnih objekata u Subotici za popisivanje = 1.800 objekata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Ukupno vreme potrebno za popisivanje objekata u Subotici = (c x d) = 450 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Ukupna cena popisivanja prodajnih objekata u Subotici = (e x f) = 2.250 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.5.) PERIODIČNO PONOVNO POPISIVANJE PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '2.250 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Nakon prvog popisa, administrator tokom narednog meseca ponovo obilazi Suboticu i iznova popisuje sve vrste proizvoda kako bi mogao obnoviti spisak i izvršiti neke eventualne izmene u asortimanu ukoliko za tim ima potrebe.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za obilazak i popis jednog objekta u Subotici = 0,25 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Broj prodajnih objekata na buvljaku za popisivanje = 1.800 objekata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupno vreme potrebno za popisivanje objekata u Subotici = (a x b) = 450 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'e.) Ukupna cena popisivanja prodajnih objekata za jedan mesec = (c x d) = 2.250 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Period mogućih ponovnih popisivanja = 1 mesec',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Ukupna cena ponovnih popisivanja prodajnih objekata = (e x f) = 2.250 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content:
+        '5.2.6.) ADMINISTRATIVNA DOPUNA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '105 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator grupiše sve tipove prodajnih objekata u Subotici koji nemaju veb izloge i pridodaje ih određenim kategorijama.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za selekciju i nominaciju jednog prodajnog objekta = 0,2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Vreme potrebno za svrstavanje jedne kategorije u njenu grupu = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupno vreme za organizovanje jedne kategorije = (a + b) = 0,7 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Broj kategorisanih prodajnih objekata = 1.800 objekata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'e.) Vreme potrebno za organizovanje svih kategorija = (c x d) = 1.260 minuta = 21 sat',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Ukupna cena administrativne pripreme = (e x f) = 105 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.7.) PRIPREMA SLIKA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '65 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator pronalazi slike odgovarajuće tematike za kategorije prodajnih objekata, a potom ih grafički priprema za unos na platformu.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za pronalaženje i obradu jedne sličice = 5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Vreme potrebno za učitavanje jedne sličice na platformu = 1 minut',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupno vreme za pripremu jedne sličice kategorije = (a + b) = 6 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Broj potrebnih sličica = 130 sličica',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Ukupno vreme potrebno za pripremu svih sličica (c x d) = 780 minuta = 13 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Ukupna cena pripreme sličica kategorija prodajnih objekata = (e x f) = 65 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.8.) ELEKTRONSKA DOPUNA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - vebmaster',
+    },
+    {
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content: 'Vebmaster vrši unos pripremljenog spiska kategorija proizvoda na platformu.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.9.) OTVARANJE SVIH VEB IZLOGA PRODAJNIH OBJEKATA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '900 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator dopunjuje otvaranje veb izloga svih prodajnih objekata u Subotici i priprema ih za unos svih potrebnih informacija.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za registraciju jednog veb izloga = 2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Prosečno vreme potrebno za unos vrsta proizvoda u jedan veb izlog = 4 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'c.) Ukupno vreme potrebno za pripremu jednog veb izloga = (a + b) = 6 minuta = 0,1 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Broj aktivnih veb izloga za pripremu = 1.800 veb izloga',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Ukupno vreme za pripremu svih aktivnih veb izloga = (c x d) = 180 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Ukupna cena pripreme svih aktivnih veb izloga = (e x f) = 900 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.10.) ADMINISTRATIVNA DOPUNA KATEGORIJA PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '232,5 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator uvodi sve nove kategorije proizvoda koji se prodaju u Subotici i sortira ih u odgovarajući poredak.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za selekciju i nominaciju jedne vrste proizvoda = 0,2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Vreme potrebno za svrstavanje jedne kategorije u njenu grupu = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupno vreme za organizovanje jedne kategorije = (a + b) = 0,7 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Broj kategorija vrsta proizvoda = 4.000 vrsta proizvoda',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'e.) Vreme potrebno za organizovanje svih kategorija = (c x d) = 2.800 minuta = 46,5 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Ukupna cena administrativne pripreme = (e x f) = 232,5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.11.) PRIPREMA SLIKA KATEGORIJA PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '1.000 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator pronalazi slike odgovarajuće tematike za kategorije proizvoda, a potom ih grafički priprema za unos na platformu.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za pronalaženje i obradu jedne sličice = 2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Vreme potrebno za učitavanje jedne sličice na platformu = 1 minut',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Ukupno vreme za pripremu jedne sličice kategorije = (a + b) = 3 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Broj potrebnih sličica = 4.000 sličica',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'e.) Ukupno vreme potrebno za pripremu svih sličica (c x d) = 12.000 minuta = 200 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'g.) Ukupna cena pripreme sličica kategorija proizvoda u Subotici = (e x f) = 1.000 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.12.) ELEKTRONSKA DOPUNA KATEGORIJA PROIZVODA U SUBOTICI - vebmaster',
+    },
+    {
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content: 'Vebmaster vrši unos pripremljenog spiska kategorija proizvoda na platformu.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.13.) DOPUNA VEZA SRODNIH STRANICA SVIH PREGLEDNIKA ZA SUBOTICU - administrator',
+    },
+    {
+      type: 'p',
+      content: '500 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator na već postavljenim smernicama dorađuje linkove ka drugim stranicama koje on proizvoljno odredi.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme grafičke pripreme jedne ikonice za smernicu = 0,15 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Učitavanje jedne ikonice = 0,1 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Dodavanje linka jednoj ikonici = 0,25 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Ukupno vreme umetanja jedne smernice = (a + b + c) = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Broj smernica po stranici = 1 smernica',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'f.) Ukupno vreme umetanja smernica po stranici = (d x e) = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Broj stranica u svim preglednicima Subotice = 12.000 stranica',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'h.) Ukupno vreme umetanja svih smernica u pregledniku = (f x g) = 6.000 minuta = 100 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'i.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'j.) Ukupna cena dopune svih smernica stranica za Suboticu = (h x i) = 500 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.14.) ADMINISTRATIVNA DOPUNA POPISANIH PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '450 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Administrator zavodi spisak proizvoda u Subotici u već postojeće administrativne datoteke iz prethodnih etapa i priprema spisak za unos na platformu.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za analizu jednog prodajnog objekta na snimku = 2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Prepisivanje asortimana jednog prodajnog objekta na snimku = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Arhiviranje asortimana jednog prodajnog objekta = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'd.) Ukupno vreme obrade asortimana jednog prodajnog objekta = (a + b + c) = 3 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Broj analiziranih prodajnih objekata = 1.800 objekata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'f.) Ukupno vreme pripreme spiska asortimana Subotice = (d x e) = 5.400 minuta = 90 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'h.) Ukupna cena popisivanja asortimana prodajnih objekata = (f x g) = 450 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content:
+        '5.2.15.) PERIODIČNO ADMINISTRATIVNO AŽURIRANJE POPISANIH PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '450 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Nakon prvog popisa, administrator tokom sledećeg meseca obnavlja spisak popisanih vrsta proizvoda kako ne bi došlo do zastarelosti informacija.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Vreme potrebno za analizu jednog prodajnog objekta na snimku = 2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Prepisivanje asortimana jednog prodajnog objekta na snimku = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'c.) Arhiviranje asortimana jednog prodajnog objekta = 0,5 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'd.) Ukupno vreme obrade asortimana jednog prodajnog objekta = (a + b + c) = 3 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Broj analiziranih prodajnih objekata = 1.800 objekata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'f.) Ukupno vreme pripreme spiska asortimana Subotice = (d x e) = 5.400 minuta = 90 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'g.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'h.) Ukupna cena popisivanja asortimana prodajnih objekata za jedan mesec = (f x g) = 450 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'i.) Period mogućih ponovnih popisivanja asortimana = 1 mesec',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'j.) Ukupna cena ponovnih popisivanja asortimana prodajnih objekata = (h x i) = 450 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.16.) UNOS NA PLATFORMU SPISKA PROIZVODA U SUBOTICI - administrator',
     },
     {
       type: 'p',
       content: '300 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Nakon unosa prvog spiska proizvoda na platformu, administrator tokom sledećeg meseca iznova unosi ažurirane spiskove proizvoda, da bi informacije na platformi mogle biti periodično obnovljene.'
+      content:
+        'Administrator putem otvorenih naloga prodajnih objekata u panelu, unosi spiskove proizvoda i vrši objavljivanje njihovih lokacija na mapi.',
     },
     {
       type: 'p',
       content: 'a.) Broj aktivnih prodajnih objekata za unos na platformu = 1.800 objekata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za unos asortimana jednog prodajnog objekta na sajt = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c.) Ukupno vreme za unos asortimana svih objekata na sajt = (a x b) = 3.600 minuta = 60 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'c.) Ukupno vreme za unos asortimana svih objekata na sajt = (a x b) = 3.600 minuta = 60 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'e.) Ukupna cena unosa asortimana na platformu = (c x d) = 300 evra',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content:
+        '5.2.17.) OGLAŠAVANJE LOKACIJA PRODAJE ZA SVE VRSTE PROIZVODA U SUBOTICI - administrator',
+    },
+    {
+      type: 'p',
+      content: '0 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Bez obzira na to da li su veb izloge samostalno otvorili prodavci ili ne, administrator u veb izloge svih prodajnih objekata u Subotici unosi vrste proizvoda koji oni prodaju i objavljuje njihove lokacije prodaje na nivou celog grada.',
+    },
+    {
+      type: 'p',
+      content: 'Nema troškova',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: '5.2.18.) PERIODIČAN UNOS AŽURIRANOG SPISKA PROIZVODA NA PLATFORMU - administrator',
+    },
+    {
+      type: 'p',
+      content: '300 EUR',
+      paddingLeft: marginLeftSmall,
+      weight: 'bold',
+    },
+    {
+      type: 'text',
+      content:
+        'Nakon unosa prvog spiska proizvoda na platformu, administrator tokom sledećeg meseca iznova unosi ažurirane spiskove proizvoda, da bi informacije na platformi mogle biti periodično obnovljene.',
+    },
+    {
+      type: 'p',
+      content: 'a.) Broj aktivnih prodajnih objekata za unos na platformu = 1.800 objekata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'b.) Vreme potrebno za unos asortimana jednog prodajnog objekta na sajt = 2 minuta',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content:
+        'c.) Ukupno vreme za unos asortimana svih objekata na sajt = (a x b) = 3.600 minuta = 60 sati',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'p',
+      content: 'd.) Cena angažmana administratora po satu = 5 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena unosa asortimana na platformu za jedan mesec = (c x d) = 300 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Period mogućih ponovnih unosa asortimana = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena ponovnih unosa asortimana = (e x f) = 300 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.19.) SLIKANJE I PRIKUPLJANJE INFORMACIJA O ARTIKLIMA ZA PROBNE VEB IZLOGE U SUBOTICI - administrator'
+      content:
+        '5.2.19.) SLIKANJE I PRIKUPLJANJE INFORMACIJA O ARTIKLIMA ZA PROBNE VEB IZLOGE U SUBOTICI - administrator',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Odlaskom na teren ili preko interneta, administrator pribavlja slike artikala i prikuplja sve neophodne informacije o njima (opis proizvoda, karakteristika, cena, itd…), za potrebe izrade privremenih veb izloga koje prodavci nisu samostalno pokrenuli.'
+      content:
+        'Odlaskom na teren ili preko interneta, administrator pribavlja slike artikala i prikuplja sve neophodne informacije o njima (opis proizvoda, karakteristika, cena, itd…), za potrebe izrade privremenih veb izloga koje prodavci nisu samostalno pokrenuli.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za obilazak i i pronalaženje odgovarajućeg artikla = 6 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Slikanje artikla i prikupljanje njegovih osnovnih informacija = 6 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c.) Ukupno vreme potrrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'c.) Ukupno vreme potrrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj potrebnih artikala za jedan promotivni veb izlog = 20 artikala',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupno vreme potrebno za selekciju proizvoda = (c x d) = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena selekcije proizvoda za promotivni veb izlog = (e x f) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.20.) PERIODIČNA PROVERA INFORMACIJA O PROBNIM ARTIKLIMA ZA VEB IZLOG - administrator'
+      content:
+        '5.2.20.) PERIODIČNA PROVERA INFORMACIJA O PROBNIM ARTIKLIMA ZA VEB IZLOG - administrator',
     },
     {
       type: 'p',
       content: '10 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator vrši periodičnu kontrolu odabranih proizvoda, proveravajući da li se i dalje prodaju na istim lokacijama i po istim cenama.'
+      content:
+        'Administrator vrši periodičnu kontrolu odabranih proizvoda, proveravajući da li se i dalje prodaju na istim lokacijama i po istim cenama.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za obilazak i pronalaženje odgovarajućeg artikla = 6 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj potrebnih artikala za jedan promotivni veb izlog = 20 artikala',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za proveru proizvoda = (a x b) = 120 minuta = 2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupna cena provera proizvoda za promotivni veb izlog mesečno = (c x d) = 10 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupna cena provera proizvoda za promotivni veb izlog mesečno = (c x d) = 10 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Period mogućih ponovnih provera informacija o artiklima = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena ponovnih provera artikala za promo veb izlog = (e x f) = 10 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.21.) ADMINISTRATIVNA PRIPREMA ARTIKALA ZA PROBNE VEB IZLOGE U SUBOTICI - administrator'
+      content:
+        '5.2.21.) ADMINISTRATIVNA PRIPREMA ARTIKALA ZA PROBNE VEB IZLOGE U SUBOTICI - administrator',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator sortira prikupljene informacije o proizvodima za probne veb izloge i priprema ih za unos na platformu.'
+      content:
+        'Administrator sortira prikupljene informacije o proizvodima za probne veb izloge i priprema ih za unos na platformu.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku obradu jedne slike artikla = 5 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za opisivanje jednog artikla = 5 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Vreme potrebno za administrativno zavođenje jednog artikla = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Ukupno vreme za pripremu jednog artikla za veb izlog = (a + b + c) = 12 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Broj prezentacionih artikala jednog veb izloga = 20 artikala',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'f.) Ukupno vreme za za pripremu prez. artikala veb izloga = (d x e) = 240 minuta = 4 sata',
-      paddingLeft: marginLeftMedium
+      content:
+        'f.) Ukupno vreme za za pripremu prez. artikala veb izloga = (d x e) = 240 minuta = 4 sata',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Ukupna cena pripreme proizvoda za probni veb izlog = (f x g) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.22.) GRAFIČKA PRIPREMA PROBNIH ARTIKALA VEB IZLOGA U SUBOTICI - grafički dizajner'
+      content:
+        '5.2.22.) GRAFIČKA PRIPREMA PROBNIH ARTIKALA VEB IZLOGA U SUBOTICI - grafički dizajner',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Grafički dizajner obrađuje slike proizvoda za probne veb izloge.'
+      content: 'Grafički dizajner obrađuje slike proizvoda za probne veb izloge.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku pripremu artikla za veb izlog = 0,2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana grafičkog dizajnera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena grafičke pripreme artikla za veb izlog (a x b) = 1 evro',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj potrebnih probnih artikala = 20 artikala',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena izrade probnih artikala = (c x d) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.23.) PERIODIČNA GRAFIČKA I ADMINISTRATIVNA DOPUNA PROBNIH ARTIKALA ZA VEB IZLOG - administrator'
+      content:
+        '5.2.23.) PERIODIČNA GRAFIČKA I ADMINISTRATIVNA DOPUNA PROBNIH ARTIKALA ZA VEB IZLOG - administrator',
     },
     {
       type: 'p',
       content: '3 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Ukoliko tokom održavanja probnih veb izloga dođe do promene asortimana proizvoda, administrator u saradnji sa grafičkim dizajnerom priprema slike novih proizvoda.'
+      content:
+        'Ukoliko tokom održavanja probnih veb izloga dođe do promene asortimana proizvoda, administrator u saradnji sa grafičkim dizajnerom priprema slike novih proizvoda.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku obradu jedne slike artikla = 5 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za opisivanje jednog artikla = 5 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Vreme potrebno za administrativno zavođenje jednog artikla = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Ukupno vreme za pripremu jednog artikla za veb izlog = (a + b + c) = 12 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Očekivani broj izmena artikala promotivnog veb izloga = 3 artikla',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'f.) Ukupno vreme za pripremu prez. artikala veb izloga = (d x e) = 36 minuta = 0,6 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'f.) Ukupno vreme za pripremu prez. artikala veb izloga = (d x e) = 36 minuta = 0,6 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Ukupna cena dopune proizvoda za probni veb izlog mesečno = (f x g) = 3 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Period mogućih ponovnih dopuna proizvoda = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena ponovnih dopuna proizvoda za veb izlog = (h x i) = 3 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.24.) UNOS ARTIKALA U PRIVREMENE VEB IZLOGE PRODAJNIH OBJEKATA U SUBOTICI - administrator'
+      content:
+        '5.2.24.) UNOS ARTIKALA U PRIVREMENE VEB IZLOGE PRODAJNIH OBJEKATA U SUBOTICI - administrator',
     },
     {
       type: 'p',
       content: '3,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator unosi slike i druge podatke o proizvodima u privremene veb izloge odabranih privremenih prodajnih objekata u Subotici.'
+      content:
+        'Administrator unosi slike i druge podatke o proizvodima u privremene veb izloge odabranih privremenih prodajnih objekata u Subotici.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za učitavanje jedne slike proizvoda = 1 minut',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za učitavanje teksta za jedan proizvod = 1 minut',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za objavljivanje jednog proizvoda (a + b) = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj proizvoda za objavljivanje = 20 proizvoda',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupno vreme potrebno za objavljivanje svih proizvoda = (c x d) = 40 minuta = 0,66 sata',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupno vreme potrebno za objavljivanje svih proizvoda = (c x d) = 40 minuta = 0,66 sata',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena objavljivanja probnog veb izloga = (e x f) = 3,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.2.25.) PERIODIČNI UNOS ARTIKALA IZ SUBOTICE U PROBNE VEB IZLOGE - administrator'
+      content: '5.2.25.) PERIODIČNI UNOS ARTIKALA IZ SUBOTICE U PROBNE VEB IZLOGE - administrator',
     },
     {
       type: 'p',
       content: '0,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Ukoliko tokom održavanja probnih veb izloga nastupe neke promene koji se tiču njihovih artikala, administrator ažurira sve potrebne informacije u tim veb izlozima.'
+      content:
+        'Ukoliko tokom održavanja probnih veb izloga nastupe neke promene koji se tiču njihovih artikala, administrator ažurira sve potrebne informacije u tim veb izlozima.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za učitavanje jedne slike proizvoda = 1 minut',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za učitavanje teksta za jedan proizvod = 1 minut',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za objavljivanje jednog proizvoda (a + b) = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Očekivani broj proizvoda za ponovno objavljivanje = 3 proizvoda',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupno vreme potrebno za objavljivanje svih proizvoda = (c x d) = 6 minuta = 0,1 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupno vreme potrebno za objavljivanje svih proizvoda = (c x d) = 6 minuta = 0,1 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena objavljivanja probnog veb izloga mesečno = (e x f) = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Period mogućih ponovnih unosa proizvoda = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Ukupna cena ponovnih unosa proizvoda = (g x h) = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
   ],
-  'navodjenje-prodavaca-na-upotrebu-veb-izloga' : [
+  'navodjenje-prodavaca-na-upotrebu-veb-izloga': [
     {
       type: 'text',
-      content: 'PR menadžer kontaktira vlasnike svih prodajnih objekata u Subotici, pokazuje im njihove privremene veb izloge i navodi ih na samostalno ili uslužno održavanje veb izloga.'
+      content:
+        'PR menadžer kontaktira vlasnike svih prodajnih objekata u Subotici, pokazuje im njihove privremene veb izloge i navodi ih na samostalno ili uslužno održavanje veb izloga.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '5.3.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA PETU ETAPU - koordinator'
+      content:
+        '5.3.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA PETU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade PR menadžera za petu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade PR menadžera za petu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -11664,198 +11720,206 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.3.4.) PRIPREMA I ŠTAMPANJE FLAJERA ZA PROMOCIJU PLATFORME PRODAVCIMA U SUBOTICI - PR menadžer'
+      content:
+        '5.3.4.) PRIPREMA I ŠTAMPANJE FLAJERA ZA PROMOCIJU PLATFORME PRODAVCIMA U SUBOTICI - PR menadžer',
     },
     {
       type: 'p',
       content: '712 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'PR menadžer osmišljava sadržaj promotivnih flajera preko kojih prodavci u Subotici treba da budu upoznati da su njihovi proizvodi označeni na platformi i da imaju mogućnost daljeg samostalnog uređivanja veb izloga. Pored toga, PR menadžer je zadužen za štampanje flajera.'
+      content:
+        'PR menadžer osmišljava sadržaj promotivnih flajera preko kojih prodavci u Subotici treba da budu upoznati da su njihovi proizvodi označeni na platformi i da imaju mogućnost daljeg samostalnog uređivanja veb izloga. Pored toga, PR menadžer je zadužen za štampanje flajera.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za smišljanje i pisanje sadržaja flajera = 2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Cena pisanja sadržaja flajera = (a x b) = 12 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena štampanja jedne stranice flajera A6 kolor = 9 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Broj stranica jednog flajera = 4 stranice',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jednog flajera sa popustom = (d x e) = 36 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Broj potrebnih flajera = 1.800 komada',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Cena štampanja flajera = (f x g) = 63.000 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja jedne nalepnice = 2 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Broj potrebnih nalepnica = 1.800 nalepnica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'k.) Cena štampanja svih nalepnica = (i x j) = 3.600 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'l.) Cena koverte = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'm.) Ukupan broj koverti = 1.800 koverti',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'n.) Cena svih koverti = (l x m) = 9.000 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'o.) Vreme potrebno za izlepljivanje jednog flajera = 0,3 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'p.) Ukupno vreme za izlepljivanje flajera = (j x o) = 540 minuta = 9 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'r.) Ukupna cena izlepljivanja flajera = (b x p) = 54 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 's.) Ukupna cena izrade flajera = (c + h + k + n + r) = 75.600 dinara + 66 evra = 712 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        's.) Ukupna cena izrade flajera = (c + h + k + n + r) = 75.600 dinara + 66 evra = 712 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.3.5.) GRAFIČKA PRIPREMA FLAJERA ZA PROMOCIJU PLATFORME PRODAVCIMA U SUBOTICI - grafički dizajner'
+      content:
+        '5.3.5.) GRAFIČKA PRIPREMA FLAJERA ZA PROMOCIJU PLATFORME PRODAVCIMA U SUBOTICI - grafički dizajner',
     },
     {
       type: 'p',
       content: '15 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Po instrukciji PR menadžera, grafički dizajner priprema dizajn promotivnih letaka.'
+      content: 'Po instrukciji PR menadžera, grafički dizajner priprema dizajn promotivnih letaka.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku pripremu flajera = 3 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana grafičkog dizajnera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena grafičke pripreme flajera = (a x b) = 15 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.3.6.) DOSTAVLJANJE FLAJERA PRODAVCIMA U SUBOTICI U SVRSI PROMOVISANJA PLATFORME - PR menadžer'
+      content:
+        '5.3.6.) DOSTAVLJANJE FLAJERA PRODAVCIMA U SUBOTICI U SVRSI PROMOVISANJA PLATFORME - PR menadžer',
     },
     {
       type: 'p',
       content: '2.160 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'PR menadžer dostavlja flajere svim onim prodajnim objektima u Subotici koji se nisu oglašavali na Infotrgu, navodeći ih na samostalno otvaranje veb izloga, a preko njih i na oglašavanje proizvoda, a sve po uzoru na već uspostavljen model koji se primenjuje na buvljaku.'
+      content:
+        'PR menadžer dostavlja flajere svim onim prodajnim objektima u Subotici koji se nisu oglašavali na Infotrgu, navodeći ih na samostalno otvaranje veb izloga, a preko njih i na oglašavanje proizvoda, a sve po uzoru na već uspostavljen model koji se primenjuje na buvljaku.',
     },
     {
       type: 'p',
       content: 'a.) Prosečno vreme potrebno za obilazak jednog objekta u Subotici = 0,2 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Prosečno vreme potrebno za dostavu po jednom objektu u Subotici = 0 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za obilazak i dostavu = (a + b) = 0,2 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj prodajnih objekata u Subotici za dostavu flajera = 1.800 objekata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupno vreme potrebno za dostavu flajera u Subotici = (c x d) = 360 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'g.) Ukupna cena dostave flajera prodajnim objektima u Subotici = (e x f) = 2.160 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'g.) Ukupna cena dostave flajera prodajnim objektima u Subotici = (e x f) = 2.160 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.3.7.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI USLUŽNOG ODRŽAVANJA VEB IZLOGA - PR menadžer',
+      content:
+        '5.3.7.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI USLUŽNOG ODRŽAVANJA VEB IZLOGA - PR menadžer',
     },
     {
       type: 'p',
@@ -11865,7 +11929,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'PR menadžer putem dopisa navodi prodavce u Subotici na samostalno održavanje veb izloga.',
+      content:
+        'PR menadžer putem dopisa navodi prodavce u Subotici na samostalno održavanje veb izloga.',
     },
     {
       type: 'p',
@@ -11877,175 +11942,184 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA TOKOM 5 MESECI - administrator'
+      content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA TOKOM 5 MESECI - administrator',
     },
     {
       type: 'p',
       content: '382,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator proverava svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.'
+      content:
+        'Administrator proverava svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
     },
     {
       type: 'p',
       content: 'a.) Predviđeno prosečno vreme za moderaciju veb izloga na dnevnom nivou = 0,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prosečnih dana u mesecu neophodnih za moderaciju = 30,5 dana',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupan vremenski period neophodan za moderaciju veb izloga = 5 meseci',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Ukupan broj sati neophodnih za moderaciju veb izloga = (a x b x c) = 76,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Ukupna cena periodične moderacije veb izloga = 382,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA TOKOM 5 MESECI - administrator'
+      content:
+        '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA TOKOM 5 MESECI - administrator',
     },
     {
       type: 'p',
       content: '382,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator proverava svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.'
+      content:
+        'Administrator proverava svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
     },
     {
       type: 'p',
-      content: 'a.) Predviđeno prosečno vreme za moderaciju enciklopedije na dnevnom nivou = 0,5 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'a.) Predviđeno prosečno vreme za moderaciju enciklopedije na dnevnom nivou = 0,5 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prosečnih dana u mesecu neophodnih za moderaciju = 30,5 dana',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupan vremenski period neophodan za moderaciju enciklopedije = 5 meseci',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'd.) Ukupan broj sati neophodnih za moderaciju enciklopedije = (a x b x c) = 76,5 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'd.) Ukupan broj sati neophodnih za moderaciju enciklopedije = (a x b x c) = 76,5 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Ukupna cena periodične moderacije enciklopedije proizvoda = 382,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
   ],
-  'objavljivanje-probnih-besplatnih-reklama-subotica' : [
+  'objavljivanje-probnih-besplatnih-reklama-subotica': [
     {
       type: 'text',
-      content: 'U saradnji sa veb dizajnerom, administrator objavljuje na platformi probne besplatne reklame pojedinačnih prodajnih objekata i njihovih proizvoda.'
+      content:
+        'U saradnji sa veb dizajnerom, administrator objavljuje na platformi probne besplatne reklame pojedinačnih prodajnih objekata i njihovih proizvoda.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '5.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - koordinator'
+      content:
+        '5.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade grafičkog dizajnera za petu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade grafičkog dizajnera za petu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.4.2.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - koordinator',
+      content:
+        '5.4.2.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - koordinator',
     },
     {
       type: 'p',
@@ -12067,7 +12141,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.4.3.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - grafički dizajner',
+      content:
+        '5.4.3.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - grafički dizajner',
     },
     {
       type: 'p',
@@ -12089,107 +12164,111 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.4.4.) SELEKCIJA PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator'
+      content: '5.4.4.) SELEKCIJA PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator',
     },
     {
       type: 'p',
       content: '50 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator bira nekoliko proizvoda u Subotici, snima ih, upisuje njihove cene i beleži lokacije na kojima se prodaju.'
+      content:
+        'Administrator bira nekoliko proizvoda u Subotici, snima ih, upisuje njihove cene i beleži lokacije na kojima se prodaju.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za obilazak i i pronalaženje odgovarajućeg artikla = 6 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Slikanje artikla i prikupljanje osnovnih informacija o njemu = 6 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c.) Ukupno vreme potrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'c.) Ukupno vreme potrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj potrebnih artikala za besplatno reklamiranje = 50 artikala',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupno vreme potrebno za selekciju proizvoda = (c x d) = 10 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena selekcije proizvoda za besplatne reklame = (e x f) = 50 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.4.5.) PERIODIČNO OBNAVLJANJE PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator'
+      content: '5.4.5.) PERIODIČNO OBNAVLJANJE PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator',
     },
     {
       type: 'p',
       content: '25 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator vrši periodičnu kontrolu odabranih proizvoda, proveravajući da li se i dalje prodaju na istim lokacijama i po istim cenama.'
+      content:
+        'Administrator vrši periodičnu kontrolu odabranih proizvoda, proveravajući da li se i dalje prodaju na istim lokacijama i po istim cenama.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za obilazak i proveru odgovarajućeg proizvoda = 6 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj potrebnih artikala za besplatno reklamiranje = 50 artikala',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za proveru proizvoda = (a x b) = 300 minuta = 5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupna cena selekcije proizvoda za besplatne reklame za jedan mesec = (c x d) = 25 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupna cena selekcije proizvoda za besplatne reklame za jedan mesec = (c x d) = 25 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Period mogućih ponovnih provera proizvoda = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena ponovnih provera proizvoda = (e x f) = 25 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -12215,233 +12294,242 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.4.7.) OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator'
+      content: '5.4.7.) OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator',
     },
     {
       type: 'p',
       content: '16,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator objavljuje reklame odabranih proizvod na odgovarajućim stranicama platforme.'
+      content:
+        'Administrator objavljuje reklame odabranih proizvod na odgovarajućim stranicama platforme.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za učitavanje jedne besplatne reklame = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za sortiranje linkova jedne besplatne reklame = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za objavljivanje jedne reklame (a + b) = 4 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj reklama za objavljivanje = 50 reklama',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupno vreme potrebno za objavljivanje svih reklama = (c x d) = 200 minuta = 3,3 sata',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupno vreme potrebno za objavljivanje svih reklama = (c x d) = 200 minuta = 3,3 sata',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena objavljivanja besplatnih reklama = (e x f) = 16,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.4.8.) KOMUNIKACIJA SA PRODAVCIMA ZA DOZVOLJENO BESPLATNO REKLAMIRANJE - PR menadžer'
+      content:
+        '5.4.8.) KOMUNIKACIJA SA PRODAVCIMA ZA DOZVOLJENO BESPLATNO REKLAMIRANJE - PR menadžer',
     },
     {
       type: 'p',
       content: '18 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.'
+      content:
+        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za potvrdu promotivnih reklama po jednom prodavcu = 0,3 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prodavaca za potvrdu promotivnih reklama = 10 prodavaca',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za potvrdu promotivnih reklama = (a x b) = 3 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena potvrde promotivnih reklama = (c x d) = 18 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.4.9.) PERIODIČNO OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator'
+      content: '5.4.9.) PERIODIČNO OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator',
     },
     {
       type: 'p',
       content: '1,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.'
+      content:
+        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za učitavanje jedne besplatne reklame = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za sortiranje linkova jedne besplatne reklame = 2 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za objavljivanje jedne reklame (a + b) = 4 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Očekivani broj reklama za ponovno objavljivanje = 5 reklama',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupno vreme potrebno za objavljivanje svih reklama = (c x d) = 20 minuta = 0,3 sata',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupno vreme potrebno za objavljivanje svih reklama = (c x d) = 20 minuta = 0,3 sata',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'g.) Ukupna cena objavljivanja besplatnih reklama za jedan mesec = (e x f) = 1,5 evro',
-      paddingLeft: marginLeftMedium
+      content:
+        'g.) Ukupna cena objavljivanja besplatnih reklama za jedan mesec = (e x f) = 1,5 evro',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Period mogućih ponovnih objavljivanja reklama = 1 meseci',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Ukupna cena ponovnih objavljivanja reklama = (g x h) = 1,5 evro',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
   ],
-  'navodjenje-kupaca-na-veliki-broj-pregleda-subotica' : [
+  'navodjenje-kupaca-na-veliki-broj-pregleda-subotica': [
     {
       type: 'text',
-      content: 'navodjenje-kupaca-na-veliki-broj-pregleda-suboticaMarketing menadžer sprovodi strategiju promovisanja platforme na teritoriji cele Subotice, u cilju privlačenja što većeg broja kupaca i privlačenja što većeg broja pregleda platforme.'
+      content:
+        'navodjenje-kupaca-na-veliki-broj-pregleda-suboticaMarketing menadžer sprovodi strategiju promovisanja platforme na teritoriji cele Subotice, u cilju privlačenja što većeg broja kupaca i privlačenja što većeg broja pregleda platforme.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '5.5.1.) IZRADA UGOVORA SA MARKETING MENADŽEROM ZA PETU ETAPU - koordinator'
+      content: '5.5.1.) IZRADA UGOVORA SA MARKETING MENADŽEROM ZA PETU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade marketing menadžera za petu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade marketing menadžera za petu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -12467,7 +12555,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.5.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA PETU ETAPU - marketing menadžer',
+      content:
+        '5.5.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA PETU ETAPU - marketing menadžer',
     },
     {
       type: 'p',
@@ -12489,243 +12578,254 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.5.4.) OBJAVLJIVANJE INFORMACIJA O PROIZVODIMA U SUBOTICI NA DRUŠTVENIM MREŽAMA TOKOM 3 MESECA - marketing menadžer'
+      content:
+        '5.5.4.) OBJAVLJIVANJE INFORMACIJA O PROIZVODIMA U SUBOTICI NA DRUŠTVENIM MREŽAMA TOKOM 3 MESECA - marketing menadžer',
     },
     {
       type: 'p',
       content: '270 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer uz pomoć angažovanog asistenta i putem društvenih mreža objavljuje informacije o proizvodima u Subotici i postavlja linkove za direktno prebacivanje na pojedinačne stranice Infotrg platforme.'
+      content:
+        'Marketing menadžer uz pomoć angažovanog asistenta i putem društvenih mreža objavljuje informacije o proizvodima u Subotici i postavlja linkove za direktno prebacivanje na pojedinačne stranice Infotrg platforme.',
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno za objavljivanje informacija na jednom nalogu po nedelji = 1 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'a.) Vreme potrebno za objavljivanje informacija na jednom nalogu po nedelji = 1 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj naloga na društvenim mrežama = 4 naloga',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c.) Vreme potrebno za objavljivanje informacija po jednom nedelji = (a x b) = 4 sata',
-      paddingLeft: marginLeftMedium
+      content:
+        'c.) Vreme potrebno za objavljivanje informacija po jednom nedelji = (a x b) = 4 sata',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Prosečan broj aktivnih nedelja za objavljivanje u mesecu = 4,5 nedelje',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Period aktivnog objavljivanja na društvenim mrežama za Suboticu = 3 meseci',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'f.) Ukupan broj sati potrebnih za objavljivanje na društvenim mrežama = (c x d x e) = 54 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'f.) Ukupan broj sati potrebnih za objavljivanje na društvenim mrežama = (c x d x e) = 54 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'h.) Ukupna cena objavljivanja informacija na društvenim mrežama = (f x g) = 270 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'h.) Ukupna cena objavljivanja informacija na društvenim mrežama = (f x g) = 270 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.5.) USPOSTAVLJANJE I ŠIRENJE KONTAKTA PUTEM DRUŠTVENIH MREŽA TOKOM 3 MESECA - marketing menadžer'
+      content:
+        '5.5.5.) USPOSTAVLJANJE I ŠIRENJE KONTAKTA PUTEM DRUŠTVENIH MREŽA TOKOM 3 MESECA - marketing menadžer',
     },
     {
       type: 'p',
       content: '67,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer koristi uspostavljene kontakte na društvenim mrežama i preko njih širi kontakte u pravcu ciljne grupe, birajući za prijatelje i pratioce na mrežama sva ona lica za koja postoji uverenje da su potencijalni korisnici platforme.'
+      content:
+        'Marketing menadžer koristi uspostavljene kontakte na društvenim mrežama i preko njih širi kontakte u pravcu ciljne grupe, birajući za prijatelje i pratioce na mrežama sva ona lica za koja postoji uverenje da su potencijalni korisnici platforme.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za povezivanje na jednom nalogu po nedelji = 0,25 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj naloga na društvenim mrežama = 4 naloga',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Vreme potrebno za povezivanje na mrežama po jednom nedelji = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Prosečan broj aktivnih nedelja za povezivanje u mesecu = 4,5 nedelje',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Period aktivnog povezivanja na društvenim mrežama za Suboticu = 3 meseca',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'f.) Ukupan broj sati potrebnih za povezivanje na društvenim mrežama = (c x d x e) = 13,5 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'f.) Ukupan broj sati potrebnih za povezivanje na društvenim mrežama = (c x d x e) = 13,5 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Ukupna cena povezivanja na društvenim mrežama = (f x g) = 67,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.6.) OSMIŠLJAVANJE I NADGLEDANJE IZRADE BILBORDA - marketing menadžer'
+      content: '5.5.6.) OSMIŠLJAVANJE I NADGLEDANJE IZRADE BILBORDA - marketing menadžer',
     },
     {
       type: 'p',
       content: '10 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer osmišljava koncept, vizuelni motiv i tekstulni slogan bilborda putem kojeg će se reklamirati Infotrg platforma.'
+      content:
+        'Marketing menadžer osmišljava koncept, vizuelni motiv i tekstulni slogan bilborda putem kojeg će se reklamirati Infotrg platforma.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za osmišljavanje i nadgledanje izrade bilborda = 2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena osmišljavanja i nadgledanje izrade flajera = (a x b) = 10 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.7.) GRAFIČKA PRIPREMA BILBORDA - grafički dizajner'
+      content: '5.5.7.) GRAFIČKA PRIPREMA BILBORDA - grafički dizajner',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'U saradnji sa marketing menadžerom, grafički dizajner grafički priprema dizajn bilborda.'
+      content:
+        'U saradnji sa marketing menadžerom, grafički dizajner grafički priprema dizajn bilborda.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku pripremu bilborda = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana grafičkog dizajnera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena grafičke pripreme bilborda (a x b) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.8.) ŠTAMPANJE BILBORDA - marketing menadžer'
+      content: '5.5.8.) ŠTAMPANJE BILBORDA - marketing menadžer',
     },
     {
       type: 'p',
       content: '166 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer štampa bilborde koristeći sredstva iz investicionog fonda.'
+      content: 'Marketing menadžer štampa bilborde koristeći sredstva iz investicionog fonda.',
     },
     {
       type: 'p',
       content: 'a.) Cena štampanja bilborda m2 = 6,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Površina bilborda = 12 m2',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Cena štampanja jednog bilborda = (a x b) = 78 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj potrebnih bilborda = 2',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena štampanja bilborda = (c x d) = 156 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Utrošeno vreme marketing menadžera za štampanje bilborda = 2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Cena angažmana marketing menadžera za štampanje bilborda = (f x g) = 10 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Ukupna cena izrade bilborda = (e + h) = 166 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -12739,7 +12839,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Marketing menadžer organizuje postavljanje bilborda na pogodnim lokacijama u Subotici.',
+      content:
+        'Marketing menadžer organizuje postavljanje bilborda na pogodnim lokacijama u Subotici.',
     },
     {
       type: 'p',
@@ -12751,385 +12852,403 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '5.5.10.) ODRŽAVANJE BILBORDA - marketing menadžer'
+      content: '5.5.10.) ODRŽAVANJE BILBORDA - marketing menadžer',
     },
     {
       type: 'p',
       content: '780 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer organizuje održavanje bilborda na pogodnim lokacijama tokom određenog vremenskog perioda.'
+      content:
+        'Marketing menadžer organizuje održavanje bilborda na pogodnim lokacijama tokom određenog vremenskog perioda.',
     },
     {
       type: 'p',
       content: 'Cena održavanja bilborda za tri nedelje = 390 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'Broj bilborda = 2 bilborda',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'Ukupna cena održavanja bilborda = (a x b) = 780 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.11.) OSMIŠLJAVANJE I NADGLEDANJE IZRADE OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - marketing menadžer'
+      content:
+        '5.5.11.) OSMIŠLJAVANJE I NADGLEDANJE IZRADE OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - marketing menadžer',
     },
     {
       type: 'p',
       content: '10 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer osmišljava koncept obaveštajnih flajera koji treba da sadrže sve neophodne informacije za upućivanje posetilaca na platformu i uputstva za njenu upotrebu.'
+      content:
+        'Marketing menadžer osmišljava koncept obaveštajnih flajera koji treba da sadrže sve neophodne informacije za upućivanje posetilaca na platformu i uputstva za njenu upotrebu.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za osmišljavanje i nadgledanje izrade flajera = 2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena osmišljavanja i nadgledanje izrade flajera = (a x b) = 10 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.12.) GRAFIČKA PRIPREMA OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - grafički dizajner'
+      content:
+        '5.5.12.) GRAFIČKA PRIPREMA OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - grafički dizajner',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Grafički dizajner priprema za štampu obaveštajne flajere sa svim neophodnim informacijama za upućivanje posetilaca na platformu i sa uputstvima za njenu upotrebu.'
+      content:
+        'Grafički dizajner priprema za štampu obaveštajne flajere sa svim neophodnim informacijama za upućivanje posetilaca na platformu i sa uputstvima za njenu upotrebu.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku pripremu flajera = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana grafičkog dizajnera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena grafičke pripreme flajera (a x b) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.13.) ŠTAMPANJE OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - marketing menadžer'
+      content:
+        '5.5.13.) ŠTAMPANJE OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - marketing menadžer',
     },
     {
       type: 'p',
       content: '437,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Grafički dizajner štampa obaveštajne flajere.'
+      content: 'Grafički dizajner štampa obaveštajne flajere.',
     },
     {
       type: 'p',
       content: 'a.) Cena izrade jednog flajera kolor A5 dvostrano = 2,5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj potrebnih flajera za korisnike u Subotici = 20.000 flajera',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena štampanja flajera = (a x b) = 50.000 dinara = 427,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Utrošeno vreme marketing menadžera za štampanje bilborda = 2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana marketing menadžera za štampanje bilborda = (d x e) = 10 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena izrade flajera za posetioce buvljaka = (c + f) = 437,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.5.14.) DISTRIBUCIJA PROMOTIVNIH FLAJERA U SUBOTICI - marketing menadžer'
+      content: '5.5.14.) DISTRIBUCIJA PROMOTIVNIH FLAJERA U SUBOTICI - marketing menadžer',
     },
     {
       type: 'p',
       content: '855 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer putem distributera realizuje dostavu promotivnih letaka na adrese građana Subotice.'
+      content:
+        'Marketing menadžer putem distributera realizuje dostavu promotivnih letaka na adrese građana Subotice.',
     },
     {
       type: 'p',
       content: 'a.) Cena distribucije jednog flajera u Subotici = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj letaka za distribuciju = 20.000',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c.) Ukupna cena distribucije promotivnih flajera u Subotici = (a x b) = 100.000 dinara = 855 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'c.) Ukupna cena distribucije promotivnih flajera u Subotici = (a x b) = 100.000 dinara = 855 evra',
+      paddingLeft: marginLeftMedium,
     },
   ],
-  'navodjenje-prodavaca-na-placeno-oglasavanje-subotica' : [
+  'navodjenje-prodavaca-na-placeno-oglasavanje-subotica': [
     {
       type: 'text',
-      content: 'PR menadžer obilazi prodavce širom Subotice i pokazuje im ostvareni broj pregleda njihovih probnih reklama i drugih objava, navodeći ih na dalje samostalno plaćeno oglašavanje.'
+      content:
+        'PR menadžer obilazi prodavce širom Subotice i pokazuje im ostvareni broj pregleda njihovih probnih reklama i drugih objava, navodeći ih na dalje samostalno plaćeno oglašavanje.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '5.6.1.) PROMOVISANJE OSTVARENOG BROJA PREGLEDA PROBNIH REKLAMA U SUBOTICI - PR menadžer'
+      content:
+        '5.6.1.) PROMOVISANJE OSTVARENOG BROJA PREGLEDA PROBNIH REKLAMA U SUBOTICI - PR menadžer',
     },
     {
       type: 'p',
       content: '450 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'PR menadžer obilazi prodavce u Subotici, pokazuje im objavljene promotivne reklame, predočava ostvarene preglede i navodi prodavce na dalje reklamiranje proizvoda uz određenu mesečnu naknadu.'
+      content:
+        'PR menadžer obilazi prodavce u Subotici, pokazuje im objavljene promotivne reklame, predočava ostvarene preglede i navodi prodavce na dalje reklamiranje proizvoda uz određenu mesečnu naknadu.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za promociju reklama po prodavcu = 0,3 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prodavaca za promociju reklama = 250 prodavaca',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za promociju reklama = (a x b) = 75 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena promocije reklama = (c x d) = 450 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.6.2.) PROMOVISANJE IZRADE REKLAMA ZA PODRUČJE SUBOTICE - PR menadžer'
+      content: '5.6.2.) PROMOVISANJE IZRADE REKLAMA ZA PODRUČJE SUBOTICE - PR menadžer',
     },
     {
       type: 'p',
       content: '300 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Ukoliko prodavci u Subotici iz nekog razloga nisu u mogućnosti da samostalno pripreme reklame za svoje proizvode, PR menadžer iznosi ponudu u uslužnoj izradi reklama uz odgovarajuću naknadu.'
+      content:
+        'Ukoliko prodavci u Subotici iz nekog razloga nisu u mogućnosti da samostalno pripreme reklame za svoje proizvode, PR menadžer iznosi ponudu u uslužnoj izradi reklama uz odgovarajuću naknadu.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za promovisanje izrade reklama po prodavcu = 0,2 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prodavaca za promovisanje izrade reklama = 250 prodavaca',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za promovisanje izrade reklama = (a x b) = 50 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena promocije izrade reklama = (c x d) = 300 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '5.6.3.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI AFFILIATE POSREDNIŠTVA U SUBOTICI - PR menadžer'
+      content:
+        '5.6.3.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI AFFILIATE POSREDNIŠTVA U SUBOTICI - PR menadžer',
     },
     {
       type: 'p',
       content: '150 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'PR menadžer može sa prodavcima u Subotici ugovoriti postavljanje besplatne reklame u zamenu za procenat ostvarene prodaje u slučaju da se prodaja proizvoda realizuje preko te reklame.'
+      content:
+        'PR menadžer može sa prodavcima u Subotici ugovoriti postavljanje besplatne reklame u zamenu za procenat ostvarene prodaje u slučaju da se prodaja proizvoda realizuje preko te reklame.',
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno za promovisanje izrade reklama po prodavcu = 0,2 sati',
-      paddingLeft: marginLeftMedium
+      content: 'a.) Vreme potrebno za promovisanje affiliate posredništva po prodavcu = 0,1 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'b.) Broj prodavaca za promovisanje izrade reklama = 250 prodavaca',
-      paddingLeft: marginLeftMedium
+      content: 'b.) Broj prodavaca za promovisanje affiliate posredništva = 250 prodavaca',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c.) Ukupno vreme potrebno za promovisanje izrade reklama = (a x b) = 50 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'c.) Ukupno vreme potrebno za promovisanje affiliate posredništva = (a x b) = 25 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupna cena promocije izrade reklama = (c x d) = 300 evra',
-      paddingLeft: marginLeftMedium
+      content: 'e.) Ukupna cena promovisanje affiliate posredništva = (c x d) = 150 evra',
+      paddingLeft: marginLeftMedium,
     },
-    {type: 'hr'},
+    { type: 'hr' },
   ],
-  'priprema-platforme-za-objavljivanje-informacija-sirom-srbije' : [
+  'priprema-platforme-za-objavljivanje-informacija-sirom-srbije': [
     {
       type: 'text',
-      content: 'Vebmaster osposobljava platformu za šestu etapu, odnosno za unos i objavljivanje informacija o proizvodima koji se prodaju u svim opštinama Srbije.'
+      content:
+        'Vebmaster osposobljava platformu za šestu etapu, odnosno za unos i objavljivanje informacija o proizvodima koji se prodaju u svim opštinama Srbije.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '6.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA ŠESTU ETAPU - koordinator'
+      content:
+        '6.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi vebmasterovi radni zadaci, rokovi i naknade za šestu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi vebmasterovi radni zadaci, rokovi i naknade za šestu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade Ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13187,7 +13306,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana, vebmaster izrađuje platformu za šestu etapu razvoja, dodatno je osposobljavajući za unos svih informacija o proizvodima i prodajnim objektima na teritoriji cele Srbije.',
+      content:
+        'Na osnovu Tehničkog plana, vebmaster izrađuje platformu za šestu etapu razvoja, dodatno je osposobljavajući za unos svih informacija o proizvodima i prodajnim objektima na teritoriji cele Srbije.',
     },
     {
       type: 'p',
@@ -13209,7 +13329,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Vebmaster testira platformu i uverava se u njeno efikasno funkcionisanje predviđeno za šestu etapu razvoja projekta.',
+      content:
+        'Vebmaster testira platformu i uverava se u njeno efikasno funkcionisanje predviđeno za šestu etapu razvoja projekta.',
     },
     {
       type: 'p',
@@ -13223,75 +13344,77 @@ export const contentBlocksData: ContentBlocksData = {
   'osnivanje-firme': [
     {
       type: 'text',
-      content: 'Ukoliko to nije učinjeno tokom neke od prethodnih etapa, obustavlja se period istraživanja tržišta projekta, a Infotrg se registruje kao društvo sa ograničenom odgovornošću.'
+      content:
+        'Ukoliko to nije učinjeno tokom neke od prethodnih etapa, obustavlja se period istraživanja tržišta projekta, a Infotrg se registruje kao društvo sa ograničenom odgovornošću.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '6.2.1.) IZRADA UGOVORA O DELU SA KOORDINATOROM ZA ŠESTU ETAPU - koordinator'
+      content: '6.2.1.) IZRADA UGOVORA O DELU SA KOORDINATOROM ZA ŠESTU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi njegovi radni zadaci, rokovi i naknade za šestu etapu.'
+      content:
+        'Na osnovu Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi njegovi radni zadaci, rokovi i naknade za šestu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13339,25 +13462,26 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.2.4.) REGISTRACIJA DRUŠTVA SA OGRANIČENOM ODGOVORNOŠĆU - koordinator'
+      content: '6.2.4.) REGISTRACIJA DRUŠTVA SA OGRANIČENOM ODGOVORNOŠĆU - koordinator',
     },
     {
       type: 'p',
       content: '107 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator samostalno ili preko drugog pravnog lica registruje agenciju za posredovanje u trgovini Infotrg d.o.o.'
+      content:
+        'Koordinator samostalno ili preko drugog pravnog lica registruje agenciju za posredovanje u trgovini Infotrg d.o.o.',
     },
     {
       type: 'p',
       content: 'a.) Cena usluge registracije firme = 107 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13371,7 +13495,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Ukoliko to nije učinio prilikom osnivanja budžetne kase, koordinator otvara račun u banci i pribavlja sve pogodnosti e-bankinga.',
+      content:
+        'Ukoliko to nije učinio prilikom osnivanja budžetne kase, koordinator otvara račun u banci i pribavlja sve pogodnosti e-bankinga.',
     },
     {
       type: 'p',
@@ -13383,35 +13508,35 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.2.6.) ODRŽAVANJE RAČUNA TOKOM 6 MESECI - koordinator'
+      content: '6.2.6.) ODRŽAVANJE RAČUNA TOKOM 6 MESECI - koordinator',
     },
     {
       type: 'p',
       content: '60 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator održava račun u banci tokom čitvog perioda rada.'
+      content: 'Koordinator održava račun u banci tokom čitvog perioda rada.',
     },
     {
       type: 'p',
       content: 'a.) Održavanje računa mesečno = 10 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj meseci potrebnih za održavanje računa = 6 meseci',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Cena održavanja računa = (a x b) = 60 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13437,35 +13562,36 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE TOKOM 6 MESECI - koordinator'
+      content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE TOKOM 6 MESECI - koordinator',
     },
     {
       type: 'p',
       content: '720 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator finansira sve knjigovodstvene usluge tokom šest meseci razvojnog perioda sredstvima iz investicionog fonda.'
+      content:
+        'Koordinator finansira sve knjigovodstvene usluge tokom šest meseci razvojnog perioda sredstvima iz investicionog fonda.',
     },
     {
       type: 'p',
       content: 'a.) Angažman knjigovođe (mesečno) = 120 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj meseci potrebnih za održavanje knjigovodstvenih usluga = 6 meseci',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Cena održavanja knjigovodstvenih usluga = (a x b) = 720 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13479,7 +13605,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator nudi mogućnost svim članovima upravnog tima, njihovim asistentima i investitorima mogućnost prijave njihovih prihoda ostvarenih radom na projektu, uz odbijanja svih naknada na ime uplate za PIO fond i poreza na plate.',
+      content:
+        'Koordinator nudi mogućnost svim članovima upravnog tima, njihovim asistentima i investitorima mogućnost prijave njihovih prihoda ostvarenih radom na projektu, uz odbijanja svih naknada na ime uplate za PIO fond i poreza na plate.',
     },
     {
       type: 'p',
@@ -13501,7 +13628,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator prijavljuje poreskoj upravi sve prihode koji su nastali pre registracije firme i vrši njihovu uplatu regulišući sve naknade koje idu na ime poreza na profit i poreza na plate zaposlenih.',
+      content:
+        'Koordinator prijavljuje poreskoj upravi sve prihode koji su nastali pre registracije firme i vrši njihovu uplatu regulišući sve naknade koje idu na ime poreza na profit i poreza na plate zaposlenih.',
     },
     {
       type: 'p',
@@ -13513,25 +13641,26 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.2.11.) UVOĐENJE BIZNIS MEJLA - vebmaster'
+      content: '6.2.11.) UVOĐENJE BIZNIS MEJLA - vebmaster',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator otvara biznis mejl i uspostavlja sve pogodnosti komunikacije preko istog.'
+      content:
+        'Koordinator otvara biznis mejl i uspostavlja sve pogodnosti komunikacije preko istog.',
     },
     {
       type: 'p',
       content: 'a.) Uspostavljanje biznis mejla = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13545,7 +13674,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator oprema kancelariju agencije sa svim neophodnim kancelarijskim priborom i materijalom.',
+      content:
+        'Koordinator oprema kancelariju agencije sa svim neophodnim kancelarijskim priborom i materijalom.',
     },
     {
       type: 'p',
@@ -13567,7 +13697,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator prijavljuje sve komunalne troškove nastale zbog potrebe projekta na ime registrovane agencije.',
+      content:
+        'Koordinator prijavljuje sve komunalne troškove nastale zbog potrebe projekta na ime registrovane agencije.',
     },
     {
       type: 'p',
@@ -13576,59 +13707,63 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'hr',
-    },                                        
+    },
   ],
-  'organizovanje-medjugradskih-inkasanata' : [
+  'organizovanje-medjugradskih-inkasanata': [
     {
       type: 'text',
-      content: 'Koordinator organizuje inkasante za kontrolu uplata prihoda na nivou svih opština u Srbiji.'
+      content:
+        'Koordinator organizuje inkasante za kontrolu uplata prihoda na nivou svih opština u Srbiji.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '6.3.1.) IZRADA NACRTA UGOVORA O SARADNJI SA INKASANTIMA - koordinator'
+      content: '6.3.1.) IZRADA NACRTA UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
       type: 'p',
       content: '131 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator izrađuje nacrt ugovora o saradnji u kojem, u kratkim crtama, opisuje sve aspekte potencijalne saradnje sa inkasantima zaduženima za prikupljanje prihoda van teritorije opštine Subotice.'
+      content:
+        'Koordinator izrađuje nacrt ugovora o saradnji u kojem, u kratkim crtama, opisuje sve aspekte potencijalne saradnje sa inkasantima zaduženima za prikupljanje prihoda van teritorije opštine Subotice.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica nacrta ugovora = 7 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'b.) Vreme potrebno za smišljanje, pisanje i proveru jedne stranice nacrta ugovora = 2,5 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'b.) Vreme potrebno za smišljanje, pisanje i proveru jedne stranice nacrta ugovora = 2,5 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu nacrta ugovora = (a x b) = 17,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu nacrta ugovora = (c x d) = 131 evro',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.3.2.) RAZMATRANJE NACRTA UGOVORA O SARADNJI SA MEĐUGRADSKIM INKASANTIMA - vebmaster',
+      content:
+        '6.3.2.) RAZMATRANJE NACRTA UGOVORA O SARADNJI SA MEĐUGRADSKIM INKASANTIMA - vebmaster',
     },
     {
       type: 'p',
@@ -13638,7 +13773,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Vebmaster razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
+      content:
+        'Vebmaster razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
     },
     {
       type: 'p',
@@ -13660,7 +13796,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Administrator razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
+      content:
+        'Administrator razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
     },
     {
       type: 'p',
@@ -13682,7 +13819,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Marketing menadžer razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
+      content:
+        'Marketing menadžer razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
     },
     {
       type: 'p',
@@ -13704,7 +13842,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'PR menadžer razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
+      content:
+        'PR menadžer razmatra predloženi nacrt ugovora sa inkasantima i odlučuje o njegovim eventualnim izmenama ili dopunama.',
     },
     {
       type: 'p',
@@ -13716,45 +13855,46 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.3.6.) IZRADA UGOVORA O SARADNJI SA INKASANTIMA - koordinator'
+      content: '6.3.6.) IZRADA UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
       type: 'p',
       content: '22,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator izrađuje u elektronskoj formi Ugovor o saradnji u kojem se navode svi radni zadaci, prava i obaveze budućih inkasanata zaduženih za prikupljanje uplata od oglašivača širom Srbije i prosleđivanje istih tih uplata na račun Infotrga.'
+      content:
+        'Koordinator izrađuje u elektronskoj formi Ugovor o saradnji u kojem se navode svi radni zadaci, prava i obaveze budućih inkasanata zaduženih za prikupljanje uplata od oglašivača širom Srbije i prosleđivanje istih tih uplata na račun Infotrga.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 3 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 22,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13768,7 +13908,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator osmišljava dokument za oglašavanje radne pozicije međugradskih inkasanata, sa sadržajem predloga ugovora, opisa posla, prava i obaveza inkasanata.',
+      content:
+        'Koordinator osmišljava dokument za oglašavanje radne pozicije međugradskih inkasanata, sa sadržajem predloga ugovora, opisa posla, prava i obaveza inkasanata.',
     },
     {
       type: 'p',
@@ -13780,35 +13921,36 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.3.8.) IZRADA OGLASA ZA ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - grafički dizajner'
+      content: '6.3.8.) IZRADA OGLASA ZA ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - grafički dizajner',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Grafički dizajner digitalno priprema dokument za oglašavanje radne pozicije međugradskih inkasanata.'
+      content:
+        'Grafički dizajner digitalno priprema dokument za oglašavanje radne pozicije međugradskih inkasanata.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za grafičku pripremu materijala = 4 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana grafičkog dizajnera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena grafičke pripreme materijala (a x b) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13822,7 +13964,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Administrator na platformi Infotrga oglašava dokument u kojem se opisuje posao međugradskog inkasanta.',
+      content:
+        'Administrator na platformi Infotrga oglašava dokument u kojem se opisuje posao međugradskog inkasanta.',
     },
     {
       type: 'p',
@@ -13834,87 +13977,89 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.3.10.) ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - koordinator'
+      content: '6.3.10.) ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - koordinator',
     },
     {
       type: 'p',
       content: '225 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator uspostavlja neposrednu komunikaciju sa svim zainteresovanim inkasantima i odlučuje o njihovom angažovanju.'
+      content:
+        'Koordinator uspostavlja neposrednu komunikaciju sa svim zainteresovanim inkasantima i odlučuje o njihovom angažovanju.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za angažovanje jednog inkasanta = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Ukupan broj potrebnih inkasanata = 30 inkasanata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupan broj potrošenih sati na inkasante = (a x b) = 15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za angažovanje inkasanata = 225 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.3.11.) POPUNJAVANJE ELEKTRONSKIH UGOVORA O SARADNJI SA INKASANTIMA - koordinator'
+      content: '6.3.11.) POPUNJAVANJE ELEKTRONSKIH UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
       type: 'p',
       content: '45 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Koordinator uzima lične podatke od angažovanih inkasanata i unosi ih u kopije unapred pripremljene elektronske matrice Ugovora o saradnji sa inkasantima.'
+      content:
+        'Koordinator uzima lične podatke od angažovanih inkasanata i unosi ih u kopije unapred pripremljene elektronske matrice Ugovora o saradnji sa inkasantima.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za popunjavanje jednog ugovora = 0,2 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Predviđeni broj ugovora potrebnih za ispunjavanje = 30 ugovora',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme utrošeno na ispunjavanje ugovora = (a x b) = 6 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za ispunjavanje ugovora = (c x d) = 45 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -13928,7 +14073,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator i angažovani inkasanti elektronskim potpisima overavaju Ugovor o saradnji.',
+      content:
+        'Koordinator i angažovani inkasanti elektronskim potpisima overavaju Ugovor o saradnji.',
     },
     {
       type: 'p',
@@ -13937,84 +14083,88 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'hr',
-    },    
+    },
   ],
-  'pribavljanje-spiska-svih-prodajnih-objekata' : [
+  'pribavljanje-spiska-svih-prodajnih-objekata': [
     {
       type: 'text',
-      content: 'Administrator dostavlja spisak I elektronske kontakte svih prodajnih objekata u Srbiji.'
+      content:
+        'Administrator dostavlja spisak I elektronske kontakte svih prodajnih objekata u Srbiji.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '6.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - koordinator'
+      content:
+        '6.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi administratorovi radni zadaci, rokovi i naknade za šestu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi administratorovi radni zadaci, rokovi i naknade za šestu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.4.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - administrator',
+      content:
+        '6.4.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - administrator',
     },
     {
       type: 'p',
@@ -14036,7 +14186,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.4.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - koordinator',
+      content:
+        '6.4.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - koordinator',
     },
     {
       type: 'p',
@@ -14058,63 +14209,67 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.4.4.) POPISIVANJE PRODAJNIH OBJEKATA U SRBIJI - administrator'
+      content: '6.4.4.) POPISIVANJE PRODAJNIH OBJEKATA U SRBIJI - administrator',
     },
     {
       type: 'p',
       content: '82,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator putem interneta pribavlja spisak i kontakte svih registrovanih prodajnih objekata u Srbiji'
+      content:
+        'Administrator putem interneta pribavlja spisak i kontakte svih registrovanih prodajnih objekata u Srbiji',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za pretragu i selekciju jednog prodajnog objekta = 0,5 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pregled kontakta jednog prodajnog objekta = 0,5 minuta',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme obrade kontakta jednog prodajnog objekta = (a + b) = 1 minut',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Broj prodajnih objekata u Srbiji za cirkularnu promociju = 1.000 objekata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Ukupno vreme obrade svih objekata za kontakte = (c x d) = 1.000 minuta = 16,5 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'e.) Ukupno vreme obrade svih objekata za kontakte = (c x d) = 1.000 minuta = 16,5 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Ukupna cena pripreme kontakta odabranih proizvoda = (e x f) = 82,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
-    },            
+      type: 'hr',
+    },
   ],
-'priprema-prezentacije-uspesnosti-oglasavanja' : [
-    { type: 'text', 
-      content: 'Koordinator priprema dokumentovane izveštaje o pogodnosti plaćenog oglašavanja preko Infotrg platforme, iskustva zadovoljnih oglašivača na teritoriji Subotice i predlog matrice koji može da se preslika na sve druge prodajne objekte van Subotice.'
+  'priprema-prezentacije-uspesnosti-oglasavanja': [
+    {
+      type: 'text',
+      content:
+        'Koordinator priprema dokumentovane izveštaje o pogodnosti plaćenog oglašavanja preko Infotrg platforme, iskustva zadovoljnih oglašivača na teritoriji Subotice i predlog matrice koji može da se preslika na sve druge prodajne objekte van Subotice.',
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -14128,7 +14283,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator izrađuje prezentacioni materijal u elektronskom obliku za sve prodajne objekte u Srbiji, u kojem sažeto objašnjava svrhu Infotrg platforme.',
+      content:
+        'Koordinator izrađuje prezentacioni materijal u elektronskom obliku za sve prodajne objekte u Srbiji, u kojem sažeto objašnjava svrhu Infotrg platforme.',
     },
     {
       type: 'p',
@@ -14150,7 +14306,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Koordinator izrađuje prezentacioni materijal u elektronskom obliku za sve prodajne objekte u Srbiji, u kojem sažeto navodi primere dobre prakse oglašavanja preko Infotrg platforme, po uzoru na pojedine prodajne objekte u Subotici.',
+      content:
+        'Koordinator izrađuje prezentacioni materijal u elektronskom obliku za sve prodajne objekte u Srbiji, u kojem sažeto navodi primere dobre prakse oglašavanja preko Infotrg platforme, po uzoru na pojedine prodajne objekte u Subotici.',
     },
     {
       type: 'p',
@@ -14159,80 +14316,83 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'hr',
-    },    
-],
-'navodjenje-prodavaca-na-oglasavanje' : [
+    },
+  ],
+  'navodjenje-prodavaca-na-oglasavanje': [
     {
       type: 'text',
-      content: 'PR menadžer elektronskim putem dostavlja izveštaj predloga o plaćenom oglašavanju svim prodajnim objektima u Srbiji, po uzoru na postojeći model koji funkcioniše u Subotici, kao i najavu predstojeće kampanje međugradske promocije Infotrga i povećane preglednosti plaćenih reklama.'
+      content:
+        'PR menadžer elektronskim putem dostavlja izveštaj predloga o plaćenom oglašavanju svim prodajnim objektima u Srbiji, po uzoru na postojeći model koji funkcioniše u Subotici, kao i najavu predstojeće kampanje međugradske promocije Infotrga i povećane preglednosti plaćenih reklama.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '6.6.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA ŠESTU ETAPU - koordinator'
+      content:
+        '6.6.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade PR menadžera za šestu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade PR menadžera za šestu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -14280,213 +14440,220 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.6.4.) KOMUNIKACIJA SA PRODAVCIMA ŠIROM SRBIJE U SVRSI PROMOVISANJA PLATFORME - PR menadžer'
+      content:
+        '6.6.4.) KOMUNIKACIJA SA PRODAVCIMA ŠIROM SRBIJE U SVRSI PROMOVISANJA PLATFORME - PR menadžer',
     },
     {
       type: 'p',
       content: '123 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu dostavljenog spiska, PR menadžer uspostavlja cirkularnu on-lajn komunikaciju sa svim onim prodajnim objektima u Srbiji koji se nisu oglašavali na Infotrgu, navodeći ih na samostalno otvaranje veb izloga, a preko njih i na oglašavanje proizvoda, po uzoru na već uspostavljen model koji se primenjuje u Subotici.'
+      content:
+        'Na osnovu dostavljenog spiska, PR menadžer uspostavlja cirkularnu on-lajn komunikaciju sa svim onim prodajnim objektima u Srbiji koji se nisu oglašavali na Infotrgu, navodeći ih na samostalno otvaranje veb izloga, a preko njih i na oglašavanje proizvoda, po uzoru na već uspostavljen model koji se primenjuje u Subotici.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za sastavljanje cirkularnog dopisa = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za slanje cirkularnog dopisa = 16,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme za slanje cirkularnog dopisa = (a + b) = 20,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana PR menadžera po satu = 6 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena komunikacije preko cirkularnog dopisa = (c x d) = 123 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.6.5.) PERIODIČNA MODERACIJA VEB IZLOGA - administrator'
+      content: '6.6.5.) PERIODIČNA MODERACIJA VEB IZLOGA - administrator',
     },
     {
       type: 'p',
       content: '152,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.'
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
     },
     {
       type: 'p',
       content: 'a.) Predviđeno prosečno vreme za moderaciju veb izloga na dnevnom nivou = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prosečnih dana u mesecu neophodnih za moderaciju = 30,5 dana',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupan vremenski period neophodan za moderaciju veb izloga = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Ukupan broj sati neophodnih za moderaciju veb izloga = (a x b x c) = 30,5 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Ukupna cena periodične moderacije veb izloga = 152,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.6.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA - administrator'
+      content: '6.6.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA - administrator',
     },
     {
       type: 'p',
       content: '152,5 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.'
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
     },
     {
       type: 'p',
       content: 'a.) Predviđeno prosečno vreme za moderaciju enciklopedije na dnevnom nivou = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj prosečnih dana u mesecu neophodnih za moderaciju = 30,5 dana',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupan vremenski period neophodan za moderaciju enciklopedije = 1 mesec',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'd.) Ukupan broj sati neophodnih za moderaciju enciklopedije = (a x b x c) = 30,5 sati',
-      paddingLeft: marginLeftMedium
+      content:
+        'd.) Ukupan broj sati neophodnih za moderaciju enciklopedije = (a x b x c) = 30,5 sati',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana administratora po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Ukupna cena periodične moderacije enciklopedije proizvoda = 152,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
-    },            
+      type: 'hr',
+    },
   ],
-  'promocija-platforme-putem-medija' : [
+  'promocija-platforme-putem-medija': [
     {
       type: 'text',
-      content: 'Marketing menadžer sprovodi najavljenu strategiju promovisanja Infotrg platforme na teritoriji cele Srbije, u cilju privlačenja što većeg broja kupaca i privlačenja što većeg broja pregleda svih plaćenih reklama.'
+      content:
+        'Marketing menadžer sprovodi najavljenu strategiju promovisanja Infotrg platforme na teritoriji cele Srbije, u cilju privlačenja što većeg broja kupaca i privlačenja što većeg broja pregleda svih plaćenih reklama.',
     },
     { type: 'hr' },
     {
       type: 'h3',
-      content: '6.7.1.) IZRADA UGOVORA SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - koordinator'
+      content: '6.7.1.) IZRADA UGOVORA SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
       type: 'p',
       content: '8 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade marketing menadžera za šestu etapu.'
+      content:
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi radni zadaci, rokovi i naknade marketing menadžera za šestu etapu.',
     },
     {
       type: 'p',
       content: 'a.) Broj stranica ugovora o delu = 6 stranica',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Vreme potrebno za pisanje jedne stranice ugovora = 0,15 sati',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupno vreme potrebno za izradu ugovora = (a x b) = 1 sat',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'd.) Cena angažmana koordinatora po satu = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Cena angažmana koordinatora za izradu ugovora = (c x d) = 7,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'f.) Cena štampanja jedne stranice crno-belo = 5 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'h.) Broj primeraka ugovora = 2 primerka',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'i.) Cena štampanja svih primeraka ugovora = (g x h) = 60 dinara = 0,5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'j.) Ukupna cena izrade ugovora = (e + i) = 8 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
@@ -14512,7 +14679,8 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.7.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - marketing menadžer',
+      content:
+        '6.7.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - marketing menadžer',
     },
     {
       type: 'p',
@@ -14534,141 +14702,146 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: '6.7.4.) OSMIŠLJAVANJE VIDEO REKLAME - marketing menadžer'
+      content: '6.7.4.) OSMIŠLJAVANJE VIDEO REKLAME - marketing menadžer',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer osmišljava koncept, scenario i tekst video reklame.'
+      content: 'Marketing menadžer osmišljava koncept, scenario i tekst video reklame.',
     },
     {
       type: 'p',
       content: 'a.) Vreme potrebno za osmišljavanje video reklame = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Cena osmišljavanja reklame = (a x b) = 20 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.7.5.) IZRADA VIDEO REKLAME - marketing menadžer'
+      content: '6.7.5.) IZRADA VIDEO REKLAME - marketing menadžer',
     },
     {
       type: 'p',
       content: '220 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer angažuje eksternog stručnjaka za izradu planirane video reklame.'
+      content:
+        'Marketing menadžer angažuje eksternog stručnjaka za izradu planirane video reklame.',
     },
     {
       type: 'p',
       content: 'a.) Cena snimanja video reklame = 200 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Utrošeno vreme marketing menadžera za snimanje video reklame = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'd.) Cena angažmana marketing menadžera za snimanje video reklame = (b x c) = 20 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'd.) Cena angažmana marketing menadžera za snimanje video reklame = (b x c) = 20 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'e.) Ukupna cena izrade video reklame = (a + d) = 220 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.7.6.) OGLAŠAVANJE VIDEO REKLAME PUTEM MEDIJA - marketing menadžer'
+      content: '6.7.6.) OGLAŠAVANJE VIDEO REKLAME PUTEM MEDIJA - marketing menadžer',
     },
     {
       type: 'p',
       content: '20 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer realizuje objavljivanje video reklame putem medija uz pomoć sredstava iz investicionog fonda.'
+      content:
+        'Marketing menadžer realizuje objavljivanje video reklame putem medija uz pomoć sredstava iz investicionog fonda.',
     },
     {
       type: 'p',
       content: 'a.) Utrošeno vreme marketing menadžera za oglašavanje video reklame = 4 sata',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Cena angažmana marketing menadžera po satu = 5 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'c) Cena angažmana marketing menadžera za oglašavanje video reklame = (a x b) = 20 evra',
-      paddingLeft: marginLeftMedium
+      content:
+        'c) Cena angažmana marketing menadžera za oglašavanje video reklame = (a x b) = 20 evra',
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
+      type: 'hr',
     },
     {
       type: 'h3',
-      content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA - marketing menadžer'
+      content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA - marketing menadžer',
     },
     {
       type: 'p',
       content: '855 EUR',
       paddingLeft: marginLeftSmall,
-      weight: 'bold'
+      weight: 'bold',
     },
     {
       type: 'text',
-      content: 'Marketing menadžer realizuje održavanje video reklame u određenom vremenskom periodu.'
+      content:
+        'Marketing menadžer realizuje održavanje video reklame u određenom vremenskom periodu.',
     },
     {
       type: 'p',
       content: 'a.) Cena održavanje video reklame po pregledu = 0,2 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'b.) Broj potrebnih pregleda video reklame = 500.000 pregleda',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
       content: 'c.) Ukupna cena održavanja video reklame = (a x b) = 100.000 dinara = 855 evra',
-      paddingLeft: marginLeftMedium
+      paddingLeft: marginLeftMedium,
     },
     {
-      type: 'hr'
-    },            
+      type: 'hr',
+    },
   ],
 };

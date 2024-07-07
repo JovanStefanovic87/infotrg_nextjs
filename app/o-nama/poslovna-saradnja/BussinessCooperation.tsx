@@ -1,19 +1,22 @@
 'use client';
-import React from 'react';
-import Link from 'next/link';
-import { NextPage } from 'next';
-import { contentData } from './BussinessCooperation';
+import { contentData, listOfLinks } from './BussinessCooperationData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
-import PageContainer from '../..//components/containers/PageContainer';
+import PageContainer from '../../components/containers/PageContainer';
+import H2Title from '@/app/components/text/H2Title';
+import Devider from '@/app/components/ui/Devider';
+import UnorderedList from '@/app/components/text/UnorderedList';
 
-const BussinessCooperation: NextPage = () => {
+const BussinessCooperation = () => {
   return (
     <PageContainer>
-      <H1 title='MOGUĆNOST ULAGANJA' />
-      <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
+      <H1 title='POSLOVNA SARADNJA' mb={10} />
+      <div className='p-2'>
+        <H2Title text='SAŽET PRIKAZ POSLOVNE SARADNJE' padding={2} />
+      </div>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-0 sm:gap-8 bg-white sm:bg-transparent'>
         {contentData.map((block) => (
-          <Link key={block.id} href={`/ulaganje/${block.id}`}>
+          <div key={block.id}>
             <ContentBlock
               title={block.title}
               description={block.description}
@@ -21,8 +24,15 @@ const BussinessCooperation: NextPage = () => {
               contentBlocks={[]}
               openContentModal={() => {}}
             />
-          </Link>
+          </div>
         ))}
+      </div>
+      <div className='py-8'>
+        <Devider />
+      </div>
+      <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={2} />
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-0 sm:gap-8 bg-white sm:bg-transparent'>
+        <UnorderedList items={listOfLinks} />
       </div>
     </PageContainer>
   );

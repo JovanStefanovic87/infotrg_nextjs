@@ -1,8 +1,11 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import ContentBlockContainer from '../../components/containers/ContentBlockContainer';
 import CoverImage from '../../components/image/CoverImage';
-import BlockTitle from '../../components/text/BlockTitle';
 import { ContentBlockItem } from '../../helpers/types';
+import ImageModal from '@/app/components/modals/ImageModal';
+import Devider from '@/app/components/ui/Devider';
+import BlockText from '@/app/components/text/BlockText';
 
 interface Props {
   title: string;
@@ -19,29 +22,44 @@ const ContentBlock: React.FC<Props> = ({
   contentBlocks,
   openContentModal,
 }) => {
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
   const maxLines = 6;
 
+  const openImageModal = (image: string) => {
+    setSelectedImage(image);
+    setIsImageModalOpen(true);
+  };
+
+  const closeImageModal = () => {
+    setIsImageModalOpen(false);
+  };
+
   return (
-    <ContentBlockContainer contentBlocks={contentBlocks} openContentModal={openContentModal}>
-      <div className='cursor-pointer w-full md:p-2 md:h-120 h-auto'>
-        <div className='flex flex-col h-full bg-white p-4'>
-          <BlockTitle text={title} />
-          <div className='text-gray-800 text-base leading-relaxed mb-2 max-w-full flex-grow overflow-hidden'>
-            <p className={`line-clamp-${maxLines}`}>{description}</p>
-          </div>
-          {coverImage && (
-            <div className='mt-4'>
-              <CoverImage src={coverImage} alt={title} />
-            </div>
-          )}
-          <div className='mt-auto'>
-            <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
-              Vidi još
-            </button>
+    <>
+      <ContentBlockContainer
+        contentBlocks={contentBlocks}
+        openContentModal={() => openContentModal}
+        isLink={false}
+      >
+        <div className='cursor-pointer w-full sm:p-2 sm:h-100  h-auto'>
+          <div className='flex flex-col h-full bg-white px-4'>
+            {coverImage && (
+              <div className='mt-4'>
+                <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
+              </div>
+            )}
+            <BlockText description={description} maxLines={2} />
           </div>
         </div>
+      </ContentBlockContainer>
+      <div className='block sm:hidden'>
+        <Devider />
       </div>
-    </ContentBlockContainer>
+      {isImageModalOpen && (
+        <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
+      )}
+    </>
   );
 };
 

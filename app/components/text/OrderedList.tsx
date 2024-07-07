@@ -24,13 +24,19 @@ const OrderedList: React.FC<Props> = ({ items }) => {
             : `${getAlphabet(subIndex)}.)`;
 
         return (
-          <div key={`${parentIndex}.${subIndex}`} className='border-b border-dotted border-gray-400 pt-2'>
+          <div
+            key={`${parentIndex}.${subIndex}`}
+            className='border-b border-dotted border-gray-400 pt-2'
+          >
             <div className='flex flex-col md:flex-row items-center justify-between'>
               <div className='font-normal mb-2 md:mb-0 w-full'>
-                <h4>{`${prefix} `}
+                <h4>
+                  {`${prefix} `}
                   {isTextHyperlinked(subItem.text, hyperlinks) ? (
                     <Link href={isTextHyperlinked(subItem.text, hyperlinks) as string}>
-                      <span className='text-blue-500 hover:underline text-hyperlink'>{subItem.text}</span>
+                      <span className='text-blue-500 hover:underline text-hyperlink'>
+                        {subItem.text}
+                      </span>
                     </Link>
                   ) : (
                     subItem.text
@@ -39,7 +45,8 @@ const OrderedList: React.FC<Props> = ({ items }) => {
               </div>
               <div className='w-full text-right'>{subItem.amount}</div>
             </div>
-            {subItem.subitems && renderSubitems(subItem.subitems, `${parentIndex}.${subIndex + 1}`, subItem.listStyle)}
+            {subItem.subitems &&
+              renderSubitems(subItem.subitems, `${parentIndex}.${subIndex + 1}`, subItem.listStyle)}
           </div>
         );
       })}
@@ -55,10 +62,14 @@ const OrderedList: React.FC<Props> = ({ items }) => {
               {listItem.type === 'paragraph1' && (
                 <div className='flex flex-col md:flex-row items-start md:items-center justify-between mb-2 border-b border-dotted border-gray-700'>
                   <h3 className='font-bold mb-2 md:mb-0 flex-1 text-gray-900'>{`${listIndex}.) ${listItem.text}`}</h3>
-                  <div className='text-right font-bold w-full md:w-auto text-gray-900'>{listItem.amount}</div>
+                  <div className='text-right font-bold w-full md:w-auto text-gray-900'>
+                    {listItem.amount}
+                  </div>
                 </div>
               )}
-              {listItem.type === 'paragraph1' && listItem.subitems && renderSubitems(listItem.subitems, `${listIndex}`, listItem.listStyle)}
+              {listItem.type === 'paragraph1' &&
+                listItem.subitems &&
+                renderSubitems(listItem.subitems, `${listIndex}`, listItem.listStyle)}
             </div>
           ))}
         </div>

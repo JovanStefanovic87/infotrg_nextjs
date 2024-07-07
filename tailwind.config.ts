@@ -22,10 +22,14 @@ const config: Config = {
         yellowStrong: '#facc15',
         hyperlink: '#0000EE',
       },
+      width: {
+        '120': '30rem',
+      },
       height: {
         main: 'calc(100dvh - 68px)',
         content: '10000px',
         '120': '30rem',
+        '100': '25rem',
       },
       maxHeight: {
         main: 'calc(100dvh - 68px)',
