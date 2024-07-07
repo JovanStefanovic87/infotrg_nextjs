@@ -1,4 +1,4 @@
-import { BasicInformation, ListOfLinksData } from '../../helpers/types';
+import { BasicInformation, ListOfLinks } from '../../helpers/types';
 
 export const contentData: BasicInformation[] = [
   {
@@ -68,26 +68,33 @@ export const contentData: BasicInformation[] = [
   },
 ];
 
-export const listOfLinks: ListOfLinksData[] = [
-  {
-    poslovnaSaradnja: {
-      id: 'poslovnaSaradnja',
-      type: 'H2BoldCenter',
-      text: 'SAŽET PRIKAZ POSLOVNE SARADNJE',
+export const listOfLinks: ListOfLinks[] = [
+    {
+      id: 'PripremaProjekta',
+      type: 'h3',
+      text: 'Priprema projekta',
     },
-    poslovnaSaradnja2: {
-      id: 'poslovnaSaradnja',
-      type: 'H2BoldCenter',
-      text: 'SAŽET PRIKAZ POSLOVNE SARADNJE',
+    {
+      id: 'PripremaTehnickogplana',
+      type: 'h4',
+      text: 'Priprema Tehničkog plana',
     },
-  },
+    {
+      id: 'poslovnaSaradnja',
+      type: 'h4',
+      text: 'Priprema Tehničkog plana',
+    },{
+      id: 'poslovnaSaradnja',
+      type: 'h4',
+      text: 'Priprema Tehničkog plana',
+    },
 ];
 
 export const hyperlinks = [
   {
-    text: 'Fond za planiranje i pripremu',
+    text: 'Priprema Tehničkog plana',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
-      'Fond-za-planiranje-i-pripremu',
+      'Priprema-Projekta',
     ).toLowerCase()}`,
   },
   {

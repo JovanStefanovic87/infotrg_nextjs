@@ -24,10 +24,6 @@ export interface ListOfLinks {
   text: string;
 }
 
-export interface ListOfLinksData {
-  [key: string]: ListOfLinks;
-}
-
 export interface ContentBlockItem {
   type:
     | 'h1'
