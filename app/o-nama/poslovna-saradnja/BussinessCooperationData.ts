@@ -70,29 +70,144 @@ export const contentData: BasicInformation[] = [
 
 export const listOfLinks: ListOfLinks[] = [
     {
-      id: 'PripremaProjekta',
+      id: 'priprema-projekta',
       type: 'h3',
       text: 'Priprema projekta',
     },
     {
-      id: 'PripremaTehnickogplana',
+      id: 'priprema-tehnickog-plana',
       type: 'h4',
-      text: 'Priprema Tehničkog plana',
+      text: 'Priprema tehničkog plana',
     },
     {
-      id: 'poslovnaSaradnja',
+      id: 'osnivanje-upravnog-tima',
       type: 'h4',
-      text: 'Priprema Tehničkog plana',
+      text: 'Osnivanje upravnog tima',
     },{
-      id: 'poslovnaSaradnja',
+      id: 'priprema-plana-i-programa ',
       type: 'h4',
-      text: 'Priprema Tehničkog plana',
+      text: 'Priprema Plana i programa',
+    },
+    {
+      id: 'realizacija-projekta',
+      type: 'h3',
+      text: 'Realizacija projekta',
+    },
+    {
+      id: 'osnivanje-investicionog-fonda',
+      type: 'h4',
+      text: 'Osnivanje investicionog fonda',
+    },
+    {
+      id: 'izrada-i-pokretanje-platforme',
+      type: 'h4',
+      text: 'Izrada i pokretanje platforme',
+    },
+    {
+      id: 'odrzavanje-platforme',
+      type: 'h4',
+      text: 'Održavanje platforme',
+    },
+    {
+      id: 'prihodovanje',
+      type: 'h3',
+      text: 'Prihodovanje',
+    },
+    {
+      id: 'prihodovanje-od-objavljivanja-reklama',
+      type: 'h4',
+      text: 'Prihodovanje od objavljivanja reklama',
+    },
+    {
+      id: 'prihodovanje-od-izrade-reklama',
+      type: 'h4',
+      text: 'Prihodovanje od izrade reklama',
+    },
+    {
+      id: 'prihodovanje-od-usluznog-upravljanja-veb-izlozima',
+      type: 'h4',
+      text: 'Prihodovanje od uslužnog upravljanja veb izlozima',
+    },
+    {
+      id: 'prihodovanje-od-affiliate-posrednistva',
+      type: 'h4',
+      text: 'Prihodovanje od affiliate posredništva',
+    },
+    {
+      id: 'prihodovanje-od-strater-posrednistva',
+      type: 'h4',
+      text: 'Prihodovanje od strater posredništva',
+    },
+    {
+      id: 'prihodovanje-od-aukcija',
+      type: 'h4',
+      text: 'Prihodovanje od aukcija',
+    },
+    {
+      id: 'prihodovanje-od-dostave',
+      type: 'h4',
+      text: 'Prihodovanje od dostave',
+    },
+    {
+      id: 'prihodovanje-na-osnovu-odlozenog-placanja',
+      type: 'h4',
+      text: 'Prihodovanje na osnovu odloženog plaćanja',
+    },
+    {
+      id: 'raspodela-prihoda',
+      type: 'h4',
+      text: 'Raspodela prihoda',
+    },
+    {
+      id: 'rashodovanje',
+      type: 'h3',
+      text: 'Rashodovanje',
+    },
+    {
+      id: 'regulisanje-stalnih-troskova',
+      type: 'h4',
+      text: 'Regulisanje stalnih troškova',
+    },
+    {
+      id: 'regulisanje-vanrednih-troskova',
+      type: 'h4',
+      text: 'Regulisanje vanrednih troškova',
+    },
+    {
+      id: 'regulisanje-iznenadnih-troskova',
+      type: 'h4',
+      text: 'Regulisanje iznenadnih troškova',
+    },
+    {
+      id: 'kadrovski-odnosi',
+      type: 'h3',
+      text: 'Kadrovski odnosi',
+    },
+    {
+      id: 'izmene-projektne-dokumentacije',
+      type: 'h4',
+      text: 'Izmene projektne dokumentacije',
+    },
+    {
+      id: 'izvestavanje-o-postignutim-rezultatima',
+      type: 'h4',
+      text: 'Izveštavanje o postignutim rezultatima',
+    },
+    {
+      id: 'kadrovske-izmene',
+      type: 'h4',
+      text: 'Kadrovske izmene',
+    },
+    {
+      id: 'organizacija-zamenika',
+      type: 'h4',
+      text: 'Organizacija zamenika',
     },
 ];
 
 export const hyperlinks = [
   {
-    text: 'Priprema Tehničkog plana',
+    text: 'Priprema tehničkog plana',
     url: `/ulaganje/investicioni-fond/${encodeURIComponent(
       'Priprema-Projekta',
     ).toLowerCase()}`,
