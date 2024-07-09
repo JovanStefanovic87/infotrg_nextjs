@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { contentData, contentBlocksData } from '../../AboutData';
+import { fullDescriptionDataLinksData, contentBlocksData } from './fullDescriptionData';
 import ImageModal from '../../../components/modals/ImageModal';
 import ImageBlock from '../../../components/image/ImageBlock';
 import TextWrapped from '../../../components/text/TextWrapped';
@@ -27,14 +27,19 @@ const PageContent: React.FC = () => {
   const pathname = usePathname();
   const blockId: string = pathname.split('/').pop() || '';
 
-  const block = contentData.find((item) => item.id === blockId);
+  console.log('blockId:', blockId);
+
+  const block = fullDescriptionDataLinksData.find((item) => item.id === blockId);
+  console.log('block:', block);
+
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
+  console.log('contentBlocks:', contentBlocks);
 
   if (!block) return <p>Block not found</p>;
 
   return (
     <PageContainer>
-      <H1 title={block.title} />
+      <H1 title={block.label} />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (

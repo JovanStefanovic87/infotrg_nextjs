@@ -208,12 +208,15 @@ export const listOfLinks: ListOfLinks[] = [
 
 const h4Blocks = listOfLinks.filter((item) => item.type === 'h4');
 
-export const hyperlinks = h4Blocks.map((block) => ({
+export const hyperlinks = h4Blocks.map((block, index) => ({
+  key: block.id,
   text: block.text,
-  url: `/ulaganje/investicioni-fond/${encodeURIComponent(
+  url: `/o-nama/poslovna-saradnja/${encodeURIComponent(
     block.text
       .toLowerCase()
       .replace(/[^a-zA-Z0-9 ]/g, '')
-      .replace(/\s+/g, '-'),
+      .replace(/\s+/g, '-')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, ''),
   )}`,
 }));

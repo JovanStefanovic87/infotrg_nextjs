@@ -15,8 +15,8 @@ const BussinessCooperation = () => {
         <H2Title text='SAŽET PRIKAZ POSLOVNE SARADNJE' padding={10} />
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-0 sm:gap-8 bg-white sm:bg-transparent'>
-        {contentData.map((block) => (
-          <div key={block.id}>
+        {contentData.map((block, i) => (
+          <div key={i}>
             <ContentBlock
               title={block.title}
               description={block.description}

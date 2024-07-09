@@ -24,7 +24,7 @@ const TextWrapped: React.FC<Props> = ({ block }) => {
 
     const processedContent = wordsAndSpaces.map((unit, index) => {
       if (unit.trim() !== '') {
-        return convertWordToLink(unit, index);
+        return <React.Fragment key={index}>{convertWordToLink(unit, index)}</React.Fragment>;
       }
       return unit;
     });

@@ -25,13 +25,18 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
             currentBlock = []; // Clear currentBlock for the new block
             h4Count = 0; // Reset h4 count for new block
           }
-          currentH3 = <H3 text={item.text} key={index} />;
+          currentH3 = <H3 text={item.text} key={item.id} />;
           break;
         case 'h4':
           // Push h4 element if there's an existing h3
           if (currentH3) {
             currentBlock.push(
-              <TextLinked text={item.text} key={index} hyperlinks={hyperlinks} className='pl-4' />,
+              <TextLinked
+                text={item.text}
+                key={`${item.id}-${h4Count}-${Math.random()}`}
+                hyperlinks={hyperlinks}
+                className='pl-4'
+              />,
             );
             h4Count++;
           }
@@ -68,7 +73,7 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
           ];
 
           blocks[i] = (
-            <div className='flex flex-col gap-4 ' key={`block-${i}`}>
+            <div className='flex flex-col gap-4 ' key={`merged-block-${i}`}>
               {mergedChildren}
             </div>
           );
