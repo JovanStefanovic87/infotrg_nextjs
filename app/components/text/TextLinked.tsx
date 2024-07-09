@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { LinkData } from '../../helpers/types'
+import { LinkData } from '../../helpers/types';
 import { isTextHyperlinked } from '../../helpers/universalFunctions';
 
 interface Props {
@@ -9,14 +9,12 @@ interface Props {
   className?: string;
 }
 
-const TextLinked: React.FC<Props> = ({ text, hyperlinks, className = '', }) => {
+const TextLinked: React.FC<Props> = ({ text, hyperlinks, className = '' }) => {
   return (
     <h4 className={className}>
       {isTextHyperlinked(text, hyperlinks) ? (
         <Link href={isTextHyperlinked(text, hyperlinks) as string}>
-          <span className='text-blue-500 hover:underline text-hyperlink'>
-            {text}
-          </span>
+          <span className='text-blue-500 hover:underline text-hyperlink'>{text}</span>
         </Link>
       ) : (
         text

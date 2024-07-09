@@ -20,7 +20,7 @@ export interface BasicInformation {
 
 export interface ListOfLinks {
   id: string;
-  type: 'H2BoldCenter' | 'h3' | 'H3BoldCenter' | 'h4' | 'text' | 'divider' | 'list' | 'p' | 'hr';
+  type: 'H2BoldCenter' | 'h3' | 'H3BoldCenter' | 'h4' | 'text' | 'divider' | 'list' | 'p';
   text: string;
 }
 
