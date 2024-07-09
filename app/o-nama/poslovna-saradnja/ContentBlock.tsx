@@ -42,8 +42,8 @@ const ContentBlock: React.FC<Props> = ({
         openContentModal={() => openContentModal}
         isLink={false}
       >
-        <div className='cursor-pointer w-full sm:p-2 sm:h-100  h-auto'>
-          <div className='flex flex-col h-full bg-white px-4'>
+        <div className='cursor-pointer w-full sm:p-2 sm:h-100 h-auto rounded-md'>
+          <div className='flex flex-col h-full bg-white px-4 rounded-md'>
             {coverImage && (
               <div className='mt-4'>
                 <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />

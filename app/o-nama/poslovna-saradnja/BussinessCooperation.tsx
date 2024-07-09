@@ -31,7 +31,7 @@ const BussinessCooperation = () => {
         <Devider />
       </div>
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
-      <div className='flex flex-col bg-white p-8 items-start md:items-center'>
+      <div className='flex flex-col bg-white p-8 items-start md:items-center rounded-md'>
         <UnorderedList items={listOfLinks} />
       </div>
     </PageContainer>
