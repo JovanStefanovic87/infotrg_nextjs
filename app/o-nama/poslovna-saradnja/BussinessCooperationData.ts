@@ -2,66 +2,66 @@ import { BasicInformation, ListOfLinks } from '../../helpers/types';
 
 export const contentData: BasicInformation[] = [
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-01',
+    title: '',
     description: 'Autor priprema projektnu dokumentaciju u kojoj predstavlja svoju ideju.',
     coverImage: '/images/poslovna-saradnja/ps01.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-02',
+    title: '',
     description: 'Okuplja se tim zainteresovan za realizaciju projekta.',
     coverImage: '/images/poslovna-saradnja/ps02.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-03',
+    title: '',
     description: 'Članovi upravnog tima pronalaze lica zainteresovana za finansiranje projekta.',
     coverImage: '/images/poslovna-saradnja/ps03.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-04',
+    title: '',
     description:
       'Koordinator upravlja prikupljenim finansijama i preko članova tima organizuje realizaciju projekta.',
     coverImage: '/images/poslovna-saradnja/ps04.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-05',
+    title: '',
     description:
       'Vebmaster izrađuje platformu za oglašavanje proizvoda i njihovih prodajnih objekata.',
     coverImage: '/images/poslovna-saradnja/ps05.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-06',
+    title: '',
     description: 'Autor priprema projektnu dokumentaciju u kojoj predstavlja svoju ideju.',
     coverImage: '/images/poslovna-saradnja/ps06.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-07',
+    title: '',
     description:
       'Marketing menadžer navodi korisnike interneta da posećuju stranice sa proizvodima na platformi.',
     coverImage: '/images/poslovna-saradnja/ps07.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-08',
+    title: '',
     description:
       'PR menadžer navodi kupce da objavljuju plaćene oglase na posećenim stranicama platforme.',
     coverImage: '/images/poslovna-saradnja/ps08.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-09',
+    title: '',
     description: 'Koordinator prikuplja novac od plaćenih oglasa i drugih poslovnih transakcija.',
     coverImage: '/images/poslovna-saradnja/ps09.jpg',
   },
   {
-    id: 'poslovna-saradnja',
-    title: 'Poslovna saradnja',
+    id: 'poslovna-saradnja-10',
+    title: '',
     description:
       'Koordinator deo prihoda daje investitorima i članovima tima, a ostatak odlaže u budžet projekta.',
     coverImage: '/images/poslovna-saradnja/ps10.jpg',
@@ -221,7 +221,7 @@ const replaceSpecialCharacters = (text: string): string => {
   return text
     .toLowerCase()
     .split('')
-    .map(char => specialCharsMap[char] || char)
+    .map((char) => specialCharsMap[char] || char)
     .join('')
     .replace(/[^a-zA-Z0-9-]/g, '')
     .normalize('NFD')

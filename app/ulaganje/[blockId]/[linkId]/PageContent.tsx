@@ -37,7 +37,7 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title={'Investicioni fond'} />
+      <H1 title='Investicioni fond' />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
         <H2 text={block.listOrder} weight='bold' align='center' />
         <H2 text={block.label.toUpperCase()} weight='bold' align='center' />

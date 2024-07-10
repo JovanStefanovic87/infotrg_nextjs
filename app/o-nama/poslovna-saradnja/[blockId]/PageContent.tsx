@@ -3,13 +3,15 @@ import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { fullDescriptionDataLinksData, contentBlocksData } from './fullDescriptionData';
 import ImageModal from '../../../components/modals/ImageModal';
-import ImageBlock from '../../../components/image/ImageBlock';
+import ImageBlockWithDescription from '../../../components/image/ImageBlockWithDescription';
 import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2 from '@/app/components/text/H2';
+import Text from '@/app/components/text/Text';
+import ContentBlock from '../ContentBlock';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -27,62 +29,35 @@ const PageContent: React.FC = () => {
   const pathname = usePathname();
   const blockId: string = pathname.split('/').pop() || '';
 
-  console.log('blockId:', blockId);
-
   const block = fullDescriptionDataLinksData.find((item) => item.id === blockId);
-  console.log('block:', block);
 
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
-  console.log('contentBlocks:', contentBlocks);
 
   if (!block) return <p>Block not found</p>;
 
   return (
     <PageContainer>
-      <H1 title={block.label} />
+      <H1 title='Poslovna saradnja' />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
-        {contentBlocks.length > 0 &&
-          contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='mb-6'>
-              {block.type === 'text' ? (
-                <TextWrapped block={block.content || ''} />
-              ) : block.type === 'image' ? (
-                Array.isArray(block.url) ? (
-                  block.url.map((image: string, imgIndex: number) => (
-                    <ImageBlock
-                      key={imgIndex}
-                      image={image}
-                      imgIndex={imgIndex}
-                      openImageModal={openImageModal}
-                    />
-                  ))
-                ) : (
-                  <ImageBlock
-                    key={index}
-                    image={block.content || ''}
-                    imgIndex={index}
-                    openImageModal={openImageModal}
-                  />
-                )
-              ) : block.type === 'devider' ? (
-                <Devider />
-              ) : block.type === 'paragraph1' || block.type === 'paragraph2' ? (
-                <TextWrapped block={block.content || ''} />
-              ) : block.type === 'hr' ? (
-                <Devider />
-              ) : block.type === 'list' ? (
-                <OrderedList items={[block]} />
-              ) : block.type === 'h2' ? (
-                <H2 text={block.content} align='center' />
-              ) : block.type === '2XLboldCenter' ? (
-                <H2 text={block.content} weight='bold' align='center' />
-              ) : null}
-            </div>
-          ))}
+        <H2 text={block.label.toUpperCase()} weight='bold' align='center' padding={4} />
+        <div className='flex flex-wrap'>
+          {contentBlocks.length > 0 &&
+            contentBlocks.map((block: any, index: number) => (
+              <div key={index} className='mb-6'>
+                <ContentBlock
+                  title={block.title}
+                  description={block.description}
+                  coverImage={block.coverImage}
+                  contentBlocks={[]}
+                  openContentModal={() => {}}
+                />
+              </div>
+            ))}
+        </div>
+        {isImageModalOpen && (
+          <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
+        )}
       </div>
-      {isImageModalOpen && (
-        <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
-      )}
     </PageContainer>
   );
 };

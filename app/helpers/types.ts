@@ -78,3 +78,12 @@ export interface InvesticioniFondLinksData {
   listOrder: string;
   amount: string;
 }
+
+export interface PoslovnaSaradnjaData {
+  [key: string]: BasicInformation[];
+}
+
+export interface FullDescriptionDataLinksData {
+  id: string;
+  label: string;
+}

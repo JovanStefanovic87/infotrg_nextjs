@@ -1,16 +1,11 @@
 interface Props {
   title: string;
-  mb?: number;
+  mb?: number | string;
 }
 
-const H1: React.FC<Props> = ({ title, mb = 4 }) => {
+const H1: React.FC<Props> = ({ title }) => {
   return (
-    <h1
-      className={`text-3xl md:text-4xl font-bold text-center text-yellowStrong`}
-      style={{ marginBottom: mb }}
-    >
-      {title}
-    </h1>
+    <h1 className={`text-3xl md:text-4xl font-bold text-center text-yellowStrong pb-6`}>{title}</h1>
   );
 };
 
