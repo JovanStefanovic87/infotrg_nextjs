@@ -208,15 +208,28 @@ export const listOfLinks: ListOfLinks[] = [
 
 const h4Blocks = listOfLinks.filter((item) => item.type === 'h4');
 
-export const hyperlinks = h4Blocks.map((block, index) => ({
+const replaceSpecialCharacters = (text: string): string => {
+  const specialCharsMap: { [key: string]: string } = {
+    č: 'c',
+    ć: 'c',
+    ž: 'z',
+    đ: 'dj',
+    š: 's',
+    ' ': '-',
+  };
+
+  return text
+    .toLowerCase()
+    .split('')
+    .map(char => specialCharsMap[char] || char)
+    .join('')
+    .replace(/[^a-zA-Z0-9-]/g, '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+};
+
+export const hyperlinks = h4Blocks.map((block) => ({
   key: block.id,
   text: block.text,
-  url: `/o-nama/poslovna-saradnja/${encodeURIComponent(
-    block.text
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9 ]/g, '')
-      .replace(/\s+/g, '-')
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, ''),
-  )}`,
+  url: `/o-nama/poslovna-saradnja/${replaceSpecialCharacters(block.text)}`,
 }));

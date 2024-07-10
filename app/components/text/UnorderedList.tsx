@@ -14,26 +14,24 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
     const blocks: JSX.Element[] = [];
     let currentBlock: JSX.Element[] = [];
     let currentH3: JSX.Element | null = null;
-    let h4Count = 0; // Counter for h4 elements
+    let h4Count = 0;
 
     items.forEach((item, index) => {
       switch (item.type) {
         case 'h3':
-          // If there's an existing currentH3 and currentBlock has content, push the block
           if (currentH3 && currentBlock.length > 0) {
-            blocks.push(renderBlock(currentH3, currentBlock));
-            currentBlock = []; // Clear currentBlock for the new block
-            h4Count = 0; // Reset h4 count for new block
+            blocks.push(renderBlock(currentH3, currentBlock, `block-${index}`));
+            currentBlock = [];
+            h4Count = 0;
           }
           currentH3 = <H3 text={item.text} key={item.id} />;
           break;
         case 'h4':
-          // Push h4 element if there's an existing h3
           if (currentH3) {
             currentBlock.push(
               <TextLinked
                 text={item.text}
-                key={`${item.id}-${h4Count}-${Math.random()}`}
+                key={`${item.id}-${h4Count}-${index}`}
                 hyperlinks={hyperlinks}
                 className='pl-4'
               />,
@@ -42,9 +40,8 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
           }
           break;
         case 'divider':
-          // Push divider element if there's an existing h3
           if (currentH3) {
-            currentBlock.push(<Devider key={index} />);
+            currentBlock.push(<Devider key={`divider-${index}`} />);
           }
           break;
         default:
@@ -52,12 +49,10 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
       }
     });
 
-    // Push the last block if there's any remaining content
     if (currentH3 && currentBlock.length > 0) {
-      blocks.push(renderBlock(currentH3, currentBlock));
+      blocks.push(renderBlock(currentH3, currentBlock, `final-block`));
     }
 
-    // Merge blocks if less than 11 h4 elements in total
     if (blocks.length >= 4) {
       for (let i = 3; i < blocks.length - 1; i++) {
         const currentBlockH3 = blocks[i].props.children[0];
@@ -66,22 +61,18 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
         const nextBlockH4Elements = blocks[i + 1].props.children.slice(1);
 
         if (currentBlockH4Elements.length + nextBlockH4Elements.length < 11) {
-          // Merge h4 elements
           const mergedChildren = [
-            renderBlock(currentBlockH3, currentBlockH4Elements),
-            renderBlock(nextBlockH3, nextBlockH4Elements),
+            renderBlock(currentBlockH3, currentBlockH4Elements, `merged-h3-${i}`),
+            renderBlock(nextBlockH3, nextBlockH4Elements, `merged-h3-${i + 1}`),
           ];
 
           blocks[i] = (
-            <div className='flex flex-col gap-4 ' key={`merged-block-${i}`}>
+            <div className='flex flex-col gap-4' key={`merged-block-${i}`}>
               {mergedChildren}
             </div>
           );
 
-          // Remove next block
           blocks.splice(i + 1, 1);
-
-          // Decrement index to adjust for the removed block
           i--;
         }
       }
@@ -90,8 +81,8 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
     return blocks;
   };
 
-  const renderBlock = (h3: JSX.Element, h4Elements: JSX.Element[]) => (
-    <div>
+  const renderBlock = (h3: JSX.Element, h4Elements: JSX.Element[], key: string) => (
+    <div key={key}>
       {h3}
       {h4Elements}
     </div>
@@ -100,7 +91,7 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
   return (
     <div className='bg-white grid gap-x-4 lg:gap-x-24 gap-y-4 md:gap-y-4 grid-cols-1 md:grid-cols-2 justify-center items-center'>
       {renderBlocks(items).map((block, index) => (
-        <div key={index}>{block}</div>
+        <div key={`block-${index}`}>{block}</div>
       ))}
     </div>
   );
