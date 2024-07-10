@@ -9,7 +9,7 @@ import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
-import H2 from '@/app/components/text/H2';
+import H2Title from '@/app/components/text/H2Title';
 import Text from '@/app/components/text/Text';
 import ContentBlock from '../ContentBlock';
 
@@ -37,27 +37,31 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='Poslovna saradnja' />
-      <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
-        <H2 text={block.label.toUpperCase()} weight='bold' align='center' padding={4} />
-        <div className='flex flex-wrap'>
-          {contentBlocks.length > 0 &&
-            contentBlocks.map((block: any, index: number) => (
-              <div key={index} className='mb-6'>
-                <ContentBlock
-                  title={block.title}
-                  description={block.description}
-                  coverImage={block.coverImage}
-                  contentBlocks={[]}
-                  openContentModal={() => {}}
-                />
-              </div>
-            ))}
-        </div>
+      <H1 title='POSLOVNA SARADNJA' />
+      <div className='p-2'>
+        <H2Title text={block.label.toUpperCase()} padding={10} />
+      </div>
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-0 sm:gap-8 bg-white sm:bg-transparent
+        }`}
+      >
+        {contentBlocks.length > 0 &&
+          contentBlocks.map((block: any, index: number) => (
+            <div key={index}>
+              <ContentBlock
+                title={block.title}
+                description={block.description}
+                coverImage={block.coverImage}
+                contentBlocks={[]}
+                openContentModal={() => {}}
+              />
+            </div>
+          ))}
+      </div>
+
         {isImageModalOpen && (
           <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
         )}
-      </div>
     </PageContainer>
   );
 };
