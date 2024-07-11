@@ -97,17 +97,70 @@ export const fullDescriptionDataLinksData: FullDescriptionDataLinksData[] = [
 export const contentBlocksData: PoslovnaSaradnjaData = {
   'priprema-tehnickog-plana': [
     {
-      id: '01',
-      title: '',
       description:
         'U samom početku, autor projekta priprema Tehnički plan za izradu veb platforme.',
       coverImage: '/images/poslovna-saradnja/ps11.jpg',
     },
     {
-      id: '02',
-      title: '',
       description: 'Tehnički plan sadrži detaljan opis svih funkcija platforme.',
       coverImage: '/images/poslovna-saradnja/ps12.jpg',
+    },
+  ],
+  'osnivanje-upravnog-tima': [
+    {
+      description:
+        'Autor projekta okuplja članove upravnog tima zaduženog za upravljanje projektom.',
+      coverImage: '/images/poslovna-saradnja/ps13.jpg',
+    },
+    {
+      description:
+        'Članovi upravnog tima razmatraju, vrše eventualne korekcije i odobravaju Tehnički plan.',
+      coverImage: '/images/poslovna-saradnja/ps14.jpg',
+    },
+    {
+      description: 'Koordinator projekta priprema Ugovor o saradnji.',
+      coverImage: '/images/poslovna-saradnja/ps15.jpg',
+    },
+    {
+      description:
+        'Ugovorom o saradnji se definišu prava i obaveze svih petoro članova upravnog tima: koordinatora, administratora, vebmastera, marketing menadžera i PR menadžera.',
+      coverImage: '/images/poslovna-saradnja/ps16.jpg',
+    },
+    {
+      description: 'Autor projekta i članovi upravnog tima potpisuju Ugovor o saradnji.',
+      coverImage: '/images/poslovna-saradnja/ps17.jpg',
+    },
+    {
+      description:
+        'Svaki član upravnog tima, uz odobrenje ostalih članova, angažuje određeni broj potrebnih asistenata.',
+      coverImage: '/images/poslovna-saradnja/ps18.jpg',
+    },
+    {
+      description:
+        'Članovi upravnog tima sa odabranim asistentima potpisuju zasebne ugovore u kojima određuju sopstvena pravila saradnje unutar njihovih sektora delovanja.',
+      coverImage: '/images/poslovna-saradnja/ps19.jpg',
+    },
+  ],
+  'priprema-plana-i-programa': [
+    {
+      description:
+        'Na bazi Tehničkog plana, autor priprema Plan i program za razvoj poslovne strategije projekta, u kojem se definišu radni ciljevi i poslovni potezi koje vode do ostvarenja istih.',
+      coverImage: '/images/poslovna-saradnja/ps20.jpg',
+    },
+    {
+      description:
+        'Plan i program poslovanja obuhvata predviđanja tehničke ekspanzije projekta, odnosno faze povećanja tehničkih kapaciteta platforme u određenim etapama razvoja projekta.',
+      coverImage: '/images/poslovna-saradnja/ps21.jpg',
+    },
+    {
+      description:
+        'Plan i program poslovanja obuhvata predviđanja prostorne ekspanzije projekta, odnosno zone proširenja poslovnog delovanja, koje se kreću od lokalne, preko međugradske, pa sve do mogućnosti globalne pokrivenosti.',
+      coverImage: '/images/poslovna-saradnja/ps22.jpg',
+    },
+    {
+      description:
+        'Nakon izrade, članovi upravnog tima razmatraju, vrše eventualne korekcije i odobravaju Plan i program poslovanja.',
+      coverImage: '/images/poslovna-saradnja/ps23.jpg',
     },
   ],
 };

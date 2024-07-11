@@ -12,8 +12,8 @@ export interface Subitem {
 }
 
 export interface BasicInformation {
-  id: string;
-  title: string;
+  id?: string;
+  title?: string;
   description: string;
   coverImage?: string;
 }

@@ -1,11 +1,16 @@
 interface Props {
   title: string;
-  mb?: number | string;
+  pb?: number | string;
 }
 
-const H1: React.FC<Props> = ({ title }) => {
+const H1: React.FC<Props> = ({ title, pb = '1.5rem' }) => {
   return (
-    <h1 className={`text-3xl md:text-4xl font-bold text-center text-yellowStrong pb-6`}>{title}</h1>
+    <h1
+      className={`text-3xl md:text-4xl font-bold text-center text-yellowStrong`}
+      style={{ paddingBottom: pb }}
+    >
+      {title}
+    </h1>
   );
 };
 

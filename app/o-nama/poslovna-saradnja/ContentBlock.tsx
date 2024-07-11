@@ -24,7 +24,6 @@ const ContentBlock: React.FC<Props> = ({
 }) => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
-  const maxLines = 6;
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);
