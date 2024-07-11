@@ -16,7 +16,7 @@ import ContentBlock from '../ContentBlock';
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
-  const [columns, setColumns] = useState(0); // Initialize columns with 0
+  const [columns, setColumns] = useState<number | null>(null); // Initialize columns as null
 
   useEffect(() => {
     const updateColumns = () => {
@@ -53,28 +53,36 @@ const PageContent: React.FC = () => {
 
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
 
-  if (!block) return <p>Block not found</p>;
+  if (!block || columns === null) return null; // Render nothing until columns are calculated
 
   const renderGrid = () => {
-    // Render nothing if columns aren't calculated yet
-    if (columns === 0) return null;
-
     const rows: JSX.Element[] = [];
-    for (let i = 0; i < contentBlocks.length; i += columns) {
-      const rowItems = contentBlocks.slice(i, i + columns);
+    const totalBlocks = contentBlocks.length;
+    const maxColumns = Math.min(columns, totalBlocks); // Ensure we don't exceed the number of content blocks
+
+    for (let i = 0; i < totalBlocks; i += maxColumns) {
+      const rowItems = contentBlocks.slice(i, i + maxColumns);
+      const colWidth = `calc(${100 / maxColumns}% - 1rem)`; // Adjust spacing as needed
+
       rows.push(
-        <div key={i} className={`grid grid-cols-${rowItems.length} gap-0 sm:gap-8`}>
-          {rowItems.map((block: any, index: number) => (
-            <div key={index}>
-              <ContentBlock
-                title={block.title}
-                description={block.description}
-                coverImage={block.coverImage}
-                contentBlocks={[]}
-                openContentModal={() => {}}
-              />
-            </div>
-          ))}
+        <div key={i} className="grid" style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})`, gap: '0px' }}>
+          {rowItems.map((block: any, index: number) => {
+            // Calculate column span based on available items and empty cells
+            const remainingColumns = maxColumns - rowItems.length;
+            const colSpan = remainingColumns > 0 ? maxColumns : 1;
+
+            return (
+              <div key={index} style={{ gridColumn: `span ${colSpan}` }}>
+                <ContentBlock
+                  title={block.title}
+                  description={block.description}
+                  coverImage={block.coverImage}
+                  contentBlocks={[]}
+                  openContentModal={() => openImageModal(block.coverImage)}
+                />
+              </div>
+            );
+          })}
         </div>,
       );
     }
@@ -83,12 +91,11 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='POSLOVNA SARADNJA' pb={0} />
-      <div className='px-2 pb-4 sm:pb-8'>
+      <H1 title='POSLOVNA SARADNJA' />
+      <div className='p-2'>
         <H2Title text={block.label.toUpperCase()} padding={10} />
       </div>
-      {/* Conditionally render grid content */}
-      {columns > 0 && <div className='bg-white sm:bg-transparent'>{renderGrid()}</div>}
+      <div className='bg-white sm:bg-transparent'>{renderGrid()}</div>
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}
