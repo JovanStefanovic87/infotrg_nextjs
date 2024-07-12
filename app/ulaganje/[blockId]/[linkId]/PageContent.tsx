@@ -39,8 +39,8 @@ const PageContent: React.FC = () => {
     <PageContainer>
       <H1 title='Investicioni fond' />
       <div className='relative pt-6 bg-white shadow-md rounded-lg p-4'>
-        <H2 text={block.listOrder} weight='bold' align='center' />
-        <H2 text={block.label.toUpperCase()} weight='bold' align='center' />
+        <H2 text={block.listOrder} weight='bold' align='center' color='black' />
+        <H2 text={block.label.toUpperCase()} weight='bold' align='center' color='black' />
         <Text text={block.amount} align='center' weight='bold' />
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (

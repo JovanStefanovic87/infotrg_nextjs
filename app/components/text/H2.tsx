@@ -8,6 +8,7 @@ interface Props {
   responsiveSize?: 'sm' | 'md' | 'lg' | 'xl';
   weight?: 'normal' | 'bold' | 'semibold';
   marginBottom?: string;
+  color?: string;
 }
 
 const H2: React.FC<Props> = ({
@@ -16,12 +17,13 @@ const H2: React.FC<Props> = ({
   padding = 0,
   weight = 'semibold',
   marginBottom = '0',
+  color = 'white',
 }) => {
   const maxWidth = `calc(100% - ${2 * padding}px)`;
 
   return (
     <h2
-      className={`text-base md:text-lg text-white font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
+      className={`text-base md:text-lg text-${color} font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
       style={{ maxWidth }}
     >
       {text}

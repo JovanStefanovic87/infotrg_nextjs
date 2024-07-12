@@ -65,14 +65,18 @@ const PageContent: React.FC = () => {
       const colWidth = `calc(${100 / maxColumns}% - 1rem)`; // Adjust spacing as needed
 
       rows.push(
-        <div key={i} className="grid" style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})`, gap: '0px' }}>
+        <div
+          key={i}
+          className='grid items-stretch content-stretch justify-stretch '
+          style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
+        >
           {rowItems.map((block: any, index: number) => {
             // Calculate column span based on available items and empty cells
             const remainingColumns = maxColumns - rowItems.length;
             const colSpan = remainingColumns > 0 ? maxColumns : 1;
 
             return (
-              <div key={index} style={{ gridColumn: `span ${colSpan}`}}>
+              <div key={index} style={{ gridColumn: `span ${colSpan}` }} className='bg-red-400'>
                 <ContentBlock
                   title={block.title}
                   description={block.description}
@@ -91,8 +95,8 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='POSLOVNA SARADNJA' />
-      <div className='p-2'>
+      <H1 title='POSLOVNA SARADNJA' pb='0' />
+      <div className='pb-4 sm:pb-10'>
         <H2Title text={block.label.toUpperCase()} padding={10} />
       </div>
       <div className='bg-white sm:bg-transparent'>{renderGrid()}</div>
