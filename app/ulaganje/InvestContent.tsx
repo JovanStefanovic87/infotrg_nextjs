@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { NextPage } from 'next';
 import { contentData } from './ulaganjeData';
@@ -8,6 +8,10 @@ import H1 from '../components/text/H1';
 import PageContainer from '../components/containers/PageContainer';
 
 const InvestContent: NextPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <PageContainer>
       <H1 title='MOGUĆNOST ULAGANJA' />

@@ -125,9 +125,9 @@ export const listOfLinks: ListOfLinks[] = [
     text: 'Prihodovanje od izrade reklama',
   },
   {
-    id: 'prihodovanje-od-usluznog-upravljanja-veb-izlozima',
+    id: 'prihodovanje-od-usluznog-odrzavanja-veb-izloga',
     type: 'h4',
-    text: 'Prihodovanje od uslužnog upravljanja veb izlozima',
+    text: 'Prihodovanje od uslužnog održavanja veb izloga',
   },
   {
     id: 'prihodovanje-od-affiliate-posrednistva',
@@ -135,9 +135,9 @@ export const listOfLinks: ListOfLinks[] = [
     text: 'Prihodovanje od affiliate posredništva',
   },
   {
-    id: 'prihodovanje-od-strater-posrednistva',
+    id: 'prihodovanje-od-starter-posrednistva',
     type: 'h4',
-    text: 'Prihodovanje od strater posredništva',
+    text: 'Prihodovanje od starter posredništva',
   },
   {
     id: 'prihodovanje-od-aukcija',

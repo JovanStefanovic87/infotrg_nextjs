@@ -12,16 +12,20 @@ const BussinessCooperation: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const updateColumns = () => {
       const width = window.innerWidth;
       if (width >= 1280) {
-        setColumns(3); // xl: 3 columns
+        setColumns(3);
       } else if (width >= 1024) {
-        setColumns(2); // lg: 2 columns
+        setColumns(2);
       } else if (width >= 768) {
-        setColumns(2); // md: 2 columns
+        setColumns(2);
       } else {
-        setColumns(1); // sm and below: 1 column
+        setColumns(1);
       }
     };
 
@@ -30,16 +34,16 @@ const BussinessCooperation: React.FC = () => {
     return () => window.removeEventListener('resize', updateColumns);
   }, []);
 
-  if (columns === null) return null; // Render nothing until columns are calculated
+  if (columns === null) return null;
 
   const renderGrid = () => {
     const rows: JSX.Element[] = [];
     const totalBlocks = contentData.length;
-    const maxColumns = Math.min(columns, totalBlocks); // Ensure we don't exceed the number of content blocks
+    const maxColumns = Math.min(columns, totalBlocks);
 
     for (let i = 0; i < totalBlocks; i += maxColumns) {
       const rowItems = contentData.slice(i, i + maxColumns);
-      const colWidth = `calc(${100 / maxColumns}% - 1rem)`; // Adjust spacing as needed
+      const colWidth = `calc(${100 / maxColumns}% - 1rem)`;
 
       rows.push(
         <div

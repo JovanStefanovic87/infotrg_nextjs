@@ -3,38 +3,37 @@ import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { fullDescriptionDataLinksData, contentBlocksData } from './fullDescriptionData';
 import ImageModal from '../../../components/modals/ImageModal';
-import ImageBlockWithDescription from '../../../components/image/ImageBlockWithDescription';
-import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
-import Devider from '@/app/components/ui/Devider';
-import OrderedList from '@/app/components/text/OrderedList';
 import H2Title from '@/app/components/text/H2Title';
-import Text from '@/app/components/text/Text';
 import ContentBlock from './ContentBlock';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
-  const [columns, setColumns] = useState<number | null>(null); // Initialize columns as null
+  const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
     const updateColumns = () => {
       const width = window.innerWidth;
       if (width >= 1280) {
-        setColumns(3); // xl: 3 columns
+        setColumns(3);
       } else if (width >= 1024) {
-        setColumns(2); // lg: 2 columns
+        setColumns(2);
       } else if (width >= 768) {
-        setColumns(2); // md: 2 columns
+        setColumns(2);
       } else {
-        setColumns(1); // sm and below: 1 column
+        setColumns(1);
       }
     };
 
     updateColumns();
     window.addEventListener('resize', updateColumns);
     return () => window.removeEventListener('resize', updateColumns);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   const openImageModal = (image: string) => {
@@ -53,43 +52,56 @@ const PageContent: React.FC = () => {
 
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
 
-  if (!block || columns === null) return null; // Render nothing until columns are calculated
+  if (!block || columns === null) return null;
 
   const renderGrid = () => {
     const rows: JSX.Element[] = [];
     const totalBlocks = contentBlocks.length;
-    const maxColumns = Math.min(columns, totalBlocks); // Ensure we don't exceed the number of content blocks
+    const maxColumns = Math.min(columns || 1, 3);
 
-    for (let i = 0; i < totalBlocks; i += maxColumns) {
-      const rowItems = contentBlocks.slice(i, i + maxColumns);
-      const colWidth = `calc(${100 / maxColumns}% - 1rem)`; // Adjust spacing as needed
+    let rowIndex = 0;
+
+    while (rowIndex < totalBlocks) {
+      const rowItems = contentBlocks.slice(rowIndex, rowIndex + maxColumns);
+
+      let colWidth;
+      if (rowItems.length === 1) {
+        colWidth = `calc(${100}%)`;
+      } else if (rowItems.length === 2) {
+        colWidth = `calc(${50}%)`;
+      } else {
+        colWidth = `calc(${100 / maxColumns}%)`;
+      }
 
       rows.push(
         <div
-          key={i}
-          className='grid items-stretch content-stretch justify-stretch '
+          key={rowIndex}
+          className='grid sm:grid-cols-2 md:grid-cols-3'
           style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
         >
-          {rowItems.map((block: any, index: number) => {
-            // Calculate column span based on available items and empty cells
-            const remainingColumns = maxColumns - rowItems.length;
-            const colSpan = remainingColumns > 0 ? maxColumns : 1;
+          {rowItems.map((block: any, index: number) => (
+            <div key={index} style={{ gridColumn: `span 1` }}>
+              <ContentBlock
+                title={block.title}
+                description={block.description}
+                coverImage={block.coverImage}
+                contentBlocks={[]}
+                openContentModal={() => openImageModal(block.coverImage)}
+              />
+            </div>
+          ))}
 
-            return (
-              <div key={index} style={{ gridColumn: `span ${colSpan}` }} className='bg-red-400'>
-                <ContentBlock
-                  title={block.title}
-                  description={block.description}
-                  coverImage={block.coverImage}
-                  contentBlocks={[]}
-                  openContentModal={() => openImageModal(block.coverImage)}
-                />
-              </div>
-            );
-          })}
+          {Array(maxColumns - rowItems.length)
+            .fill(null)
+            .map((_, emptyIndex) => (
+              <div key={`empty-${emptyIndex}`} />
+            ))}
         </div>,
       );
+
+      rowIndex += maxColumns;
     }
+
     return rows;
   };
 

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { contentData, contentBlocksData } from '../ulaganjeData';
 import ImageModal from '../../components/modals/ImageModal';
@@ -14,6 +14,10 @@ import H2 from '@/app/components/text/H2';
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);
