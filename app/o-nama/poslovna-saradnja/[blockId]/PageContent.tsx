@@ -11,7 +11,7 @@ import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2Title from '@/app/components/text/H2Title';
 import Text from '@/app/components/text/Text';
-import ContentBlock from '../ContentBlock';
+import ContentBlock from './ContentBlock';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -72,7 +72,7 @@ const PageContent: React.FC = () => {
             const colSpan = remainingColumns > 0 ? maxColumns : 1;
 
             return (
-              <div key={index} style={{ gridColumn: `span ${colSpan}` }}>
+              <div key={index} style={{ gridColumn: `span ${colSpan}`}}>
                 <ContentBlock
                   title={block.title}
                   description={block.description}
