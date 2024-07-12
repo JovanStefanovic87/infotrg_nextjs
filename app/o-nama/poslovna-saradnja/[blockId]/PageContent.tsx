@@ -82,7 +82,7 @@ const PageContent: React.FC = () => {
           {rowItems.map((block: any, index: number) => (
             <div key={index} style={{ gridColumn: `span 1` }}>
               <ContentBlock
-                title={block.title}
+                title={block.coverImage}
                 description={block.description}
                 coverImage={block.coverImage}
                 contentBlocks={[]}

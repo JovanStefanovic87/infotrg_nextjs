@@ -69,7 +69,7 @@ export interface Route {
   label: string;
   href: string;
   icon: string;
-  subRoutes: Route[];
+  subRoutes?: Route[];
 }
 
 export interface InvesticioniFondLinksData {

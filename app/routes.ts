@@ -13,36 +13,10 @@ export const routes: Route[] = [
     icon: '/icons/about.svg',
     subRoutes: [
       {
-        label: 'Tim',
-        href: '/o-nama/tim',
+        label: 'Investicioni fond',
+        href: '/investicionifond',
         icon: '/icons/about.svg',
-        subRoutes: [
-          {
-            label: 'Član 1',
-            href: '/o-nama/tim/clan-1',
-            icon: '/icons/about.svg',
-            subRoutes: [],
-          },
-          {
-            label: 'Član 2',
-            href: '/o-nama/tim/clan-2',
-            icon: '/icons/about.svg',
-            subRoutes: [
-              {
-                label: 'Član 1',
-                href: '/o-nama/tim/clan-1',
-                icon: '/icons/about.svg',
-                subRoutes: [],
-              },
-              {
-                label: 'Član 2',
-                href: '/o-nama/tim/clan-2',
-                icon: '/icons/about.svg',
-                subRoutes: [],
-              },
-            ],
-          },
-        ],
+        
       },
       {
         label: 'Istorija',
