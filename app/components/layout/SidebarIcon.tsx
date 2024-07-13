@@ -35,7 +35,7 @@ const SidebarIcon: React.FC<Props> = ({ icon, label, href, subRoutes = [] }) => 
     setIsOpen((prev) => !prev);
   };
 
-  const isActive = pathname === href;
+  const isActive = pathname === href || (href !== '/' && pathname.startsWith(href));
 
   return (
     <div className='bg-blueMain rounded-lg'>
