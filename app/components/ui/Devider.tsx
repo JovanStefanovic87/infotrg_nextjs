@@ -3,7 +3,7 @@ interface Props {
 }
 
 const Devider: React.FC<Props> = ({ marginY = '0' }) => (
-  <hr className={`my-${marginY} border-black bg-black`} />
+  <hr className={`my-${marginY} border-grayLight`} />
 );
 
 export default Devider;

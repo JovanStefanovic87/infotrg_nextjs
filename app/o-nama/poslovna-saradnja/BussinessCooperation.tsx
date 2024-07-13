@@ -83,8 +83,10 @@ const BussinessCooperation: React.FC = () => {
         {renderGrid()}
       </div>
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
-      <div className='flex bg-white p-8 items-start md:items-center rounded-md'>
-        <UnorderedList items={listOfLinks} />
+      <div className='sm:p-2'>
+        <div className='flex justify-center bg-white p-8 items-start md:items-center rounded-md'>
+          <UnorderedList items={listOfLinks} />
+        </div>
       </div>
     </PageContainer>
   );

@@ -3,6 +3,7 @@ import ContentBlockContainer from '../components/containers/ContentBlockContaine
 import CoverImage from '../components/image/CoverImage';
 import BlockTitle from '../components/text/BlockTitle';
 import { ContentBlockItem } from '../helpers/types';
+import BlockText from '../components/text/BlockText';
 
 interface Props {
   title: string;
@@ -26,9 +27,7 @@ const ContentBlock: React.FC<Props> = ({
       <div className='cursor-pointer w-full md:p-2 md:h-120 h-auto'>
         <div className='flex flex-col h-full bg-white p-4'>
           <BlockTitle text={title} />
-          <div className='text-gray-800 text-base leading-relaxed mb-2 max-w-full flex-grow overflow-hidden'>
-            <p className={`line-clamp-${maxLines}`}>{description}</p>
-          </div>
+          <BlockText description={description} maxLines={maxLines} />
           {coverImage && (
             <div className='mt-4'>
               <CoverImage src={coverImage} alt={title} />

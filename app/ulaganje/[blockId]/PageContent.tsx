@@ -72,9 +72,9 @@ const PageContent: React.FC = () => {
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
-                <H2 text={block.content} align='center' />
-              ) : block.type === '2XLboldCenter' ? (
-                <H2 text={block.content} weight='bold' align='center' />
+                <H2 text={block.content} align='center' color='black' />
+              ) : block.type === 'H2BoldCenter' ? (
+                <H2 text={block.content} weight='bold' align='center' color='black' />
               ) : null}
             </div>
           ))}

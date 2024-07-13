@@ -11,7 +11,7 @@ const Text: React.FC<Props> = ({ text, align = 'left', weight = 'normal', paddin
 
   return (
     <p
-      className={`text-${align} font-${weight} text-grayDarkest text-sm md:text-base lg:text-lg tracking-wide`}
+      className={`text-${align} text-balance font-${weight} text-grayDarkest text-sm md:text-base lg:text-lg tracking-wide`}
       style={{ paddingLeft }}
     >
       {hasSpecialEnding ? (

@@ -48,13 +48,13 @@ const ContentBlock: React.FC<Props> = ({
                 <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
               </div>
             )}
-            <BlockTextFullContent description={description} />
+            <BlockTextFullContent description={description} align='center' />
+            <div className='block sm:hidden'>
+              <Devider marginY='4' />
+            </div>
           </div>
         </div>
       </ContentBlockContainer>
-      <div className='block sm:hidden'>
-        <Devider />
-      </div>
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}

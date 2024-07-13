@@ -48,7 +48,7 @@ const ContentBlock: React.FC<Props> = ({
                 <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
               </div>
             )}
-            <BlockText description={description} maxLines={2} />
+            <BlockText description={description} maxLines={2} align='center' />
             <div className='block sm:hidden'>
               <Devider marginY='4' />
             </div>
