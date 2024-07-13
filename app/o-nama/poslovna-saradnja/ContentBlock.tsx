@@ -41,20 +41,21 @@ const ContentBlock: React.FC<Props> = ({
         openContentModal={() => openContentModal}
         isLink={false}
       >
-        <div className='cursor-pointer w-full sm:p-2 sm:h-100 h-auto rounded-md'>
-          <div className='flex flex-col h-full bg-white px-4 rounded-md'>
+        <div className='cursor-pointer w-full sm:p-2 sm:h-100 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
+          <div className='flex flex-col h-full bg-white px-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
             {coverImage && (
               <div className='mt-4'>
                 <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
               </div>
             )}
             <BlockText description={description} maxLines={2} />
+            <div className='block sm:hidden'>
+              <Devider marginY='4' />
+            </div>
           </div>
         </div>
       </ContentBlockContainer>
-      <div className='block sm:hidden'>
-        <Devider />
-      </div>
+
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}

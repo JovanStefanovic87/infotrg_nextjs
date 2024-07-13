@@ -43,7 +43,7 @@ const BussinessCooperation: React.FC = () => {
 
     for (let i = 0; i < totalBlocks; i += maxColumns) {
       const rowItems = contentData.slice(i, i + maxColumns);
-      const colWidth = `calc(${100 / maxColumns}% - 1rem)`;
+      const colWidth = `calc(${100 / maxColumns}%)`;
 
       rows.push(
         <div
@@ -52,7 +52,6 @@ const BussinessCooperation: React.FC = () => {
           style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
         >
           {rowItems.map((block: any, index: number) => {
-            // Calculate column span based on available items and empty cells
             const remainingColumns = maxColumns - rowItems.length;
             const colSpan = remainingColumns > 0 ? maxColumns : 1;
 
@@ -80,12 +79,11 @@ const BussinessCooperation: React.FC = () => {
       <div className='p-2 pb-4 sm:pb-10'>
         <H2Title text='SAŽET PRIKAZ POSLOVNE SARADNJE' padding={10} />
       </div>
-      <div className='bg-white sm:bg-transparent'>{renderGrid()}</div>
-      <div className='py-8'>
-        <Devider />
+      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
+        {renderGrid()}
       </div>
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
-      <div className='flex flex-col bg-white p-8 items-start md:items-center rounded-md'>
+      <div className='flex bg-white p-8 items-start md:items-center rounded-md'>
         <UnorderedList items={listOfLinks} />
       </div>
     </PageContainer>
