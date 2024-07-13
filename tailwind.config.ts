@@ -18,6 +18,7 @@ const config: Config = {
         blueMain: '#111827',
         grayDarkest: '#1a1a1a',
         grayMedium: '#374151',
+        grayMidLight: '#747474',
         grayLight: '#9c9c9c',
         yellowLighter: 'rgb(254 240 138)',
         yellowStrong: '#facc15',

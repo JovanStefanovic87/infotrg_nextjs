@@ -41,7 +41,7 @@ const SidebarIcon: React.FC<Props> = ({ icon, label, href, subRoutes = [] }) => 
     <div className='bg-blueMain rounded-lg'>
       <div
         className={`flex items-center justify-between p-3 cursor-pointer transition-colors duration-300 ${
-          isActive ? 'bg-blue-500 text-yellowLighter' : 'text-gray-700'
+          isActive ? 'bg-blue-500 text-yellowLighter' : 'text-grayMidLight'
         }`}
         onClick={handleItemClick}
       >

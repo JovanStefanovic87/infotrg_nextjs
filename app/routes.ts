@@ -13,29 +13,21 @@ export const routes: Route[] = [
     icon: '/icons/about.svg',
     subRoutes: [
       {
-        label: 'Investicioni fond',
-        href: '/investicionifond',
+        label: 'Poslovna saradnja',
+        href: '/o-nama/poslovna-saradnja',
         icon: '/icons/about.svg',
-        
       },
       {
-        label: 'Istorija',
-        href: '/o-nama/istorija',
+        label: 'Platforma',
+        href: '/o-nama/platforma',
         icon: '/icons/about.svg',
-        subRoutes: [
-          {
-            label: 'Period 1',
-            href: '/o-nama/istorija/period-1',
-            icon: '/icons/about.svg',
-            subRoutes: [],
-          },
-          {
-            label: 'Period 2',
-            href: '/o-nama/istorija/period-2',
-            icon: '/icons/about.svg',
-            subRoutes: [],
-          },
-        ],
+        subRoutes: [],
+      },
+      {
+        label: 'Tim',
+        href: '/o-nama/tim',
+        icon: '/icons/about.svg',
+        subRoutes: [],
       },
     ],
   },
@@ -48,52 +40,19 @@ export const routes: Route[] = [
         label: 'Investicioni fond',
         href: '/ulaganje/investicioni-fond',
         icon: '/icons/about.svg',
-        subRoutes: [
-          {
-            label: 'Stanovi',
-            href: '/ulaganje/nekretnine/stanovi',
-            icon: '/icons/about.svg',
-            subRoutes: [],
-          },
-          {
-            label: 'Kuće',
-            href: '/ulaganje/nekretnine/kuce',
-            icon: '/icons/about.svg',
-            subRoutes: [],
-          },
-        ],
+        subRoutes: [],
       },
       {
-        label: 'Akcije',
-        href: '/ulaganje/akcije',
+        label: 'Investicioni plan i program',
+        href: '/ulaganje/investicioni-plan-i-program',
         icon: '/icons/about.svg',
-        subRoutes: [
-          {
-            label: 'Domaće',
-            href: '/ulaganje/akcije/domace',
-            icon: '/icons/about.svg',
-            subRoutes: [],
-          },
-          {
-            label: 'Inostrane',
-            href: '/ulaganje/akcije/inostrane',
-            icon: '/icons/about.svg',
-            subRoutes: [
-              {
-                label: 'Stanovi',
-                href: '/ulaganje/nekretnine/stanovi',
-                icon: '/icons/about.svg',
-                subRoutes: [],
-              },
-              {
-                label: 'Kuće',
-                href: '/ulaganje/nekretnine/kuce',
-                icon: '/icons/about.svg',
-                subRoutes: [],
-              },
-            ],
-          },
-        ],
+        subRoutes: [],
+      },
+      {
+        label: 'Investitori',
+        href: '/ulaganje/investitori',
+        icon: '/icons/about.svg',
+        subRoutes: [],
       },
     ],
   },

@@ -59,7 +59,7 @@ const Sidebar = () => {
       <div
         className={`fixed inset-0 z-45 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col w-3/4 lg:w-0 shadow-lg lg:shadow-none ${
+        } transition-transform duration-300 ease-in-out bg-gray-800 lg:translate-x-0 lg:static lg:inset-auto lg:flex lg:flex-col w-5/6 lg:w-0 shadow-lg lg:shadow-none ${
           isOpen ? 'overflow-y-auto' : ''
         }`}
       >
