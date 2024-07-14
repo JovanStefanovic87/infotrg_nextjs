@@ -18,6 +18,16 @@ export const routes: Route[] = [
         icon: '/icons/businessCooperation.svg',
       },
       {
+        label: 'Plan i program poslovanja',
+        href: '/o-nama/plan-i-program-poslovanja',
+        icon: '/icons/BusinessPlan.svg',
+      },
+      {
+        label: 'Uslužne delatnosti',
+        href: '/o-nama/usluzne-delatnosti',
+        icon: '/icons/services.svg',
+      },
+      {
         label: 'Platforma',
         href: '/o-nama/platforma',
         icon: '/icons/platform.svg',
