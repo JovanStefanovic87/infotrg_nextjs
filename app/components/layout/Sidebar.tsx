@@ -47,7 +47,7 @@ const Sidebar = () => {
       <button
         className={`fixed lg:hidden top-4 left-4 ${
           isOpen ? '-translate-y-52' : 'translate-y-0'
-        } z-50 p-2 bg-gradient-to-r from-blue via-blueLight to-blue hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm text-center h-10 w-16 flex flex-col items-center justify-between transition-transform duration-300 ease-in-out ${
+        } z-50 p-2 bg-gradient-to-r from-blue via-blueLight to-blue hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm text-center h-10 w-16 flex flex-col items-center justify-between transition-transform duration-500 ease-in-out ${
           isScrollingUp ? 'translate-x-0' : '-translate-x-20'
         }`}
         onClick={toggleSidebar}

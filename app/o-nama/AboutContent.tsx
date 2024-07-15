@@ -16,7 +16,7 @@ const AboutContent: NextPage = () => {
     <PageContainer>
       <H1 title='O NAMA' />
 
-      <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
+      <div className='lg:grid lg:grid-cols-3 lg:gap-8 rounded-md overflow-hidden'>
         {contentData.map((block) => (
           <Link key={block.id} href={`/o-nama/${block.id}`}>
             <ContentBlock

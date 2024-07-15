@@ -24,8 +24,8 @@ const ContentBlock: React.FC<Props> = ({
 
   return (
     <ContentBlockContainer contentBlocks={contentBlocks} openContentModal={openContentModal}>
-      <div className='cursor-pointer w-full md:p-2 md:h-120 h-auto'>
-        <div className='flex flex-col h-full bg-white p-4'>
+      <div className='cursor-pointer w-full sm:p-2 md:h-120 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
+        <div className='flex flex-col h-full bg-gradient-white p-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
           <BlockTitle text={title} />
           <BlockText description={description} maxLines={maxLines} />
           {coverImage && (

@@ -42,7 +42,7 @@ const ContentBlock: React.FC<Props> = ({
         isLink={false}
       >
         <div className='cursor-pointer w-full sm:p-2 sm:h-100 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-          <div className='flex flex-col h-full bg-white px-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
+          <div className='flex flex-col h-full bg-gradient-white px-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
             {coverImage && (
               <div className='mt-4'>
                 <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />

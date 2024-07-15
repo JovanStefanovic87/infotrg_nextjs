@@ -6,7 +6,7 @@ import { Route } from '../../helpers/types';
 
 const NavButtons: React.FC = () => {
   const pathname = usePathname();
-  console.log(pathname);
+
   return <nav className='flex space-x-4'>{renderButtons(routes, true)}</nav>;
 
   function renderButtons(routes: Route[], isTopLevel: boolean) {

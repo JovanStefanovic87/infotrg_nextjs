@@ -89,7 +89,7 @@ const UnorderedList: React.FC<Props> = ({ items }) => {
   );
 
   return (
-    <div className='bg-white grid gap-x-4 lg:gap-x-24 gap-y-4 md:gap-y-4 grid-cols-1 md:grid-cols-2 justify-center items-center'>
+    <div className='grid gap-x-4 lg:gap-x-24 gap-y-4 md:gap-y-4 grid-cols-1 md:grid-cols-2 justify-center items-center'>
       {renderBlocks(items).map((block, index) => (
         <div key={`block-${index}`}>{block}</div>
       ))}

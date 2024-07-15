@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import PageContent from './PageContent';
 
 export const metadata = {
-  title: 'Infotrg | Ulaganje',
+  title: 'Infotrg | Investicioni fond',
   description: 'Pametna mogućnost ulaganja',
 };
 

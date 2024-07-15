@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         main: '#1f1c17',
+        mainWhite: '#F1F1F1',
         blue: '#00aaff',
         blueLight: '#40c9ff',
         blueLighter: '#76d1ff',
@@ -24,6 +25,11 @@ const config: Config = {
         yellowStrong: '#facc15',
         hyperlink: '#0000EE',
       },
+      backgroundImage: {
+        'gradient-white': 'linear-gradient(to right, #FFFFFF, #e9e9e9)',
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
       width: {
         '120': '30rem',
       },
@@ -36,10 +42,6 @@ const config: Config = {
       maxHeight: {
         main: 'calc(100dvh - 68px)',
         content: '10000px',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       margin: {
         header: '68px',

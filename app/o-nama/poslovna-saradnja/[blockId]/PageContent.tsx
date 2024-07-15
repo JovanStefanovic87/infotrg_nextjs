@@ -76,7 +76,7 @@ const PageContent: React.FC = () => {
       rows.push(
         <div
           key={rowIndex}
-          className='grid sm:grid-cols-2 md:grid-cols-3'
+          className='grid sm:grid-cols-2 md:grid-cols-3 '
           style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
         >
           {rowItems.map((block: any, index: number) => (
@@ -111,7 +111,7 @@ const PageContent: React.FC = () => {
       <div className='pb-4 sm:pb-10'>
         <H2Title text={block.label.toUpperCase()} padding={10} />
       </div>
-      <div className='bg-white sm:bg-transparent'>{renderGrid()}</div>
+      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden'>{renderGrid()}</div>
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}
