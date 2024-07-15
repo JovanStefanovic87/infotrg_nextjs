@@ -76,7 +76,7 @@ const PageContent: React.FC = () => {
       rows.push(
         <div
           key={rowIndex}
-          className='grid sm:grid-cols-2 md:grid-cols-3 '
+          className='grid sm:grid-cols-2 md:grid-cols-3'
           style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
         >
           {rowItems.map((block: any, index: number) => (

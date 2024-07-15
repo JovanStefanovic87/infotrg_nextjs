@@ -16,6 +16,7 @@ export interface BasicInformation {
   title?: string;
   description: string;
   coverImage?: string;
+  date?: string;
 }
 
 export interface ListOfLinks {
