@@ -7,7 +7,6 @@ import { handleMouseLeave } from '../../helpers/universalFunctions';
 interface Props {
   label: string;
   href: string;
-  isActive: boolean;
   hasChildren: boolean;
   subRoutes?: Route[];
   onMouseEnter?: () => void;
@@ -18,7 +17,6 @@ interface Props {
 const HeaderLinkButton: React.FC<Props> = ({
   label,
   href,
-  isActive,
   hasChildren,
   subRoutes,
   onMouseEnter,
@@ -26,9 +24,17 @@ const HeaderLinkButton: React.FC<Props> = ({
   isTopLevel = true,
 }) => {
   const router = useRouter();
-  const currentPath = usePathname();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const checkIsActive = (path: string, subRoutes?: Route[]): boolean => {
+    if (pathname === path || pathname.startsWith(`${path}/`)) return true;
+    if (subRoutes) {
+      return subRoutes.some((subRoute) => checkIsActive(subRoute.href, subRoute.subRoutes));
+    }
+    return false;
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -66,14 +72,6 @@ const HeaderLinkButton: React.FC<Props> = ({
     router.push(href);
   };
 
-  const checkIsActive = (path: string, subRoutes?: Route[]): boolean => {
-    if (currentPath === path) return true;
-    if (subRoutes) {
-      return subRoutes.some((subRoute) => checkIsActive(subRoute.href, subRoute.subRoutes));
-    }
-    return false;
-  };
-
   const className = `relative ${isTopLevel ? 'flex' : 'inline-block'} ${
     checkIsActive(href, subRoutes) ? 'text-yellowLighter' : 'text-gray-300'
   } `;
@@ -109,7 +107,6 @@ const HeaderLinkButton: React.FC<Props> = ({
             </svg>
           </span>
         )}
-        {isActive && <span className='absolute inset-x-0 bottom-0'></span>}
       </button>
       {hasChildren && (
         <div
@@ -125,7 +122,6 @@ const HeaderLinkButton: React.FC<Props> = ({
                 key={subRoute.href}
                 label={subRoute.label}
                 href={subRoute.href}
-                isActive={checkIsActive(subRoute.href)}
                 hasChildren={!!subRoute.subRoutes && subRoute.subRoutes.length > 0}
                 subRoutes={subRoute.subRoutes}
                 onMouseEnter={onMouseEnter}
