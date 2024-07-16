@@ -50,6 +50,9 @@ const config: Config = {
         '45': '45',
         '44': '44',
       },
+      fontSize: {
+        xxxs: '0.6rem',
+      },
     },
   },
   plugins: [],

@@ -23,7 +23,7 @@ const H2: React.FC<Props> = ({
 
   return (
     <h2
-      className={`text-base md:text-lg text-${color} font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
+      className={`text-xl text-${color} font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
       style={{ maxWidth }}
     >
       {text}

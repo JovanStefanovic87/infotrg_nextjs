@@ -41,7 +41,8 @@ export interface ContentBlockItem {
     | 'paragraph1'
     | 'paragraph2'
     | 'p'
-    | 'hr';
+    | 'hr'
+    | 'listEvenly';
   content?: string;
   url?: string | string[];
   image?: string[];
@@ -60,6 +61,21 @@ export interface ContentBlockItem {
   size?: 'sm' | 'md' | 'lg';
   marginBottom?: string;
   marginY?: string;
+  circleContent?: {
+    realizator: string;
+    period: string;
+    optimum: string;
+    angažman: string;
+    fond: string;
+  };
+  owner?:
+    | 'autor'
+    | 'administrator'
+    | 'koordinator'
+    | 'webmaster'
+    | 'marketing-manager'
+    | 'pr'
+    | 'graphic-designer';
 }
 
 export interface ContentBlocksData {
@@ -92,4 +108,10 @@ export interface PoslovnaSaradnjaData {
 export interface FullDescriptionDataLinksData {
   id: string;
   label: string;
+}
+
+export interface PppLinksData {
+  id: string;
+  label: string;
+  amount: string;
 }

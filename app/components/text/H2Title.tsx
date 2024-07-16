@@ -13,8 +13,6 @@ const H2Title: React.FC<Props> = ({ text, padding = 0, weight = 'semibold' }) =>
 
   return (
     <div className='flex justify-center '>
-      {' '}
-      {/* This wrapper ensures that title is centered */}
       <h2
         className={`text-xl md:text-2xl text-white font-${weight} text-center overflow-hidden`}
         style={{ maxWidth: maxWidth, paddingBottom: padding }}
