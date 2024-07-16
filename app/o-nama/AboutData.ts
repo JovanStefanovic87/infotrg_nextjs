@@ -1,11 +1,4 @@
-import { ContentBlocksData } from '../helpers/types';
-
-export interface BasicInformation {
-  id: string;
-  title: string;
-  description: string;
-  coverImage?: string;
-}
+import { ContentBlocksData, BasicInformation } from '../helpers/types';
 
 export const contentData: BasicInformation[] = [
   {

@@ -13,7 +13,7 @@ export interface Subitem {
 
 export interface BasicInformation {
   id?: string;
-  title?: string;
+  title: string;
   description: string;
   coverImage?: string;
   date?: string;
@@ -80,8 +80,13 @@ export interface InvesticioniFondLinksData {
   amount: string;
 }
 
+export interface PoslovnaSaradnja {
+  description: string;
+  coverImage?: string;
+}
+
 export interface PoslovnaSaradnjaData {
-  [key: string]: BasicInformation[];
+  [key: string]: PoslovnaSaradnja[];
 }
 
 export interface FullDescriptionDataLinksData {

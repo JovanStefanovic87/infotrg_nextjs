@@ -46,14 +46,16 @@ const ContentBlock: React.FC<Props> = ({
       >
         <div className='cursor-pointer w-full sm:p-2 sm:h-100 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
           <div className='flex flex-col h-full bg-gradient-white px-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-          <BlockTitle text={date} align='center' bgColor='transparent'/>
             {coverImage && (
               <div className='mt-4'>
                 <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
               </div>
             )}
             <BlockText description={description} maxLines={20} align='center' />
-            
+            <div className='sm:block hidden'>
+              <Devider marginY='0' />
+            </div>
+            <BlockTitle text={date} align='center' bgColor='transparent' />
             <div className='block sm:hidden'>
               <Devider marginY='4' />
             </div>
