@@ -30,7 +30,7 @@ const OrderedList: React.FC<Props> = ({ items }) => {
           >
             <div className='flex flex-col md:flex-row items-center justify-between'>
               <div className='font-normal mb-2 md:mb-0 w-full'>
-                <h4>
+                <h4 className='text-sm sm:text-base'>
                   {`${prefix} `}
                   {isTextHyperlinked(subItem.text, hyperlinks) ? (
                     <Link href={isTextHyperlinked(subItem.text, hyperlinks) as string}>
@@ -43,7 +43,7 @@ const OrderedList: React.FC<Props> = ({ items }) => {
                   )}
                 </h4>
               </div>
-              <div className='w-full text-right'>{subItem.amount}</div>
+              <div className='text-sm sm:text-base w-full text-right'>{subItem.amount}</div>
             </div>
             {subItem.subitems &&
               renderSubitems(subItem.subitems, `${parentIndex}.${subIndex + 1}`, subItem.listStyle)}
@@ -61,10 +61,10 @@ const OrderedList: React.FC<Props> = ({ items }) => {
             <div key={listIndex} className='mb-4 pt-4'>
               {listItem.type === 'paragraph1' && (
                 <div className='flex flex-col md:flex-row items-start md:items-center justify-between mb-2 border-b border-dotted border-gray-700'>
-                  <h3 className='font-bold mb-2 md:mb-0 flex-1 text-gray-900'>{`${listIndex}.) ${listItem.text}`}</h3>
-                  <div className='text-right font-bold w-full md:w-auto text-gray-900'>
+                  <h3 className='text-sm md:text-base lg:text-lg font-bold mb-2 md:mb-0 flex-1 text-gray-900'>{`${listIndex}.) ${listItem.text}`}</h3>
+                  <p className='text-sm md:text-base lg:text-lg text-right font-bold w-full md:w-auto text-gray-900'>
                     {listItem.amount}
-                  </div>
+                  </p>
                 </div>
               )}
               {listItem.type === 'paragraph1' &&

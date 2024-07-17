@@ -7,9 +7,11 @@ import ImageBlock from '../../components/image/ImageBlock';
 import TextWrapped from '../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
-import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2 from '@/app/components/text/H2';
+import TextNormal from '@/app/components/text/TextNormal';
+import Devider2 from '@/app/components/ui/Devider2';
+import H3 from '@/app/components/text/H3';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -42,7 +44,7 @@ const PageContent: React.FC = () => {
       <div className='relative pt-6 bg-gradient-white shadow-md rounded-lg p-4'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='mb-6'>
+            <div key={index}>
               {block.type === 'text' ? (
                 <TextWrapped block={block.content || ''} />
               ) : block.type === 'image' ? (
@@ -63,16 +65,23 @@ const PageContent: React.FC = () => {
                     openImageModal={openImageModal}
                   />
                 )
-              ) : block.type === 'devider' ? (
-                <Devider />
               ) : block.type === 'paragraph1' || block.type === 'paragraph2' ? (
                 <TextWrapped block={block.content || ''} />
               ) : block.type === 'hr' ? (
-                <Devider />
+                <Devider2 marginY={12} height={block.height} />
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
                 <H2 text={block.content} align='center' color='black' />
+              ) : block.type === 'h3' ? (
+                <H3 text={block.content} align='center' />
+              ) : block.type === 'pNormal' ? (
+                <TextNormal
+                  text={block.content}
+                  weight={block.weight}
+                  paddingLeft={block.paddingLeft}
+                  align={block.align}
+                />
               ) : block.type === 'H2BoldCenter' ? (
                 <H2 text={block.content} weight='bold' align='center' color='black' />
               ) : null}

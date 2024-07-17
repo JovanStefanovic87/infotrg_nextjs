@@ -17,14 +17,14 @@ const H4: React.FC<Props> = ({
   paddingBottom = 0,
   paddingTop = 0,
   weight = 'semibold',
-  color = 'grayMedium',
+  color = 'black',
 }) => {
   const maxWidth = `calc(100% - ${2 * padding}px)`;
 
   return (
     <div>
       <h4
-        className={`text-sm sm:text-base text-${color} text-wrap font-${weight} text-${align} overflow-hidden whitespace-nowrap`}
+        className={`text-xs sm:text-base text-${color} text-wrap font-${weight} text-${align} overflow-hidden whitespace-nowrap`}
         style={{ maxWidth, paddingBottom, paddingTop }}
       >
         {text}

@@ -7,16 +7,18 @@ import ImageBlock from '../../../components/image/ImageBlock';
 import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
-import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2 from '@/app/components/text/H2';
 import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
 import Text from '@/app/components/text/Text';
+import Devider2 from '@/app/components/ui/Devider2';
+import TextNormal from '@/app/components/text/TextNormal';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
+  const marginLeftSmall = '2vw';
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,16 +43,23 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='Investicioni fond' />
+      <H1 title='INVESTICIONI FOND' />
       <div className='relative pt-6 bg-gradient-white shadow-md rounded-lg p-4'>
         <H2 text={block.listOrder} weight='bold' align='center' color='black' />
-        <H2 text={block.label.toUpperCase()} weight='bold' align='center' color='black' />
-        <Text text={block.amount} align='center' weight='bold' />
+        <H3 text={block.label.toUpperCase()} weight='bold' align='center' />
+        <H3 text={block.amount} align='center' weight='bold' marginBottom='6' />
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='mb-6 mt-6 flex flex-col'>
+            <div key={index} className='flex flex-col'>
               {block.type === 'text' ? (
-                <TextWrapped block={block.content || ''} />
+                <div className='py-3'>
+                  <TextNormal
+                    text={block.content}
+                    weight={block.weight}
+                    paddingLeft={marginLeftSmall}
+                    align={block.align}
+                  />
+                </div>
               ) : block.type === 'image' ? (
                 Array.isArray(block.url) ? (
                   block.url.map((image: string, imgIndex: number) => (
@@ -69,12 +78,10 @@ const PageContent: React.FC = () => {
                     openImageModal={openImageModal}
                   />
                 )
-              ) : block.type === 'devider' ? (
-                <Devider />
               ) : block.type === 'paragraph1' || block.type === 'paragraph2' ? (
                 <TextWrapped block={block.content || ''} />
               ) : block.type === 'hr' ? (
-                <Devider />
+                <Devider2 marginY={12} height={block.height} />
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
@@ -84,7 +91,7 @@ const PageContent: React.FC = () => {
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} />
               ) : block.type === 'h4' ? (
-                <H4 text={block.content} />
+                <H4 text={block.content} paddingBottom={6} />
               ) : block.type === 'p' ? (
                 <Text
                   text={block.content}

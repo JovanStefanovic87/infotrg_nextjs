@@ -20,7 +20,7 @@ const H3: React.FC<Props> = ({
   return (
     <div>
       <h3
-        className={`text-sm md:text-base lg:text-lg text-black font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
+        className={`text-sm md:text-base lg:text-base text-black font-${weight} mb-${marginBottom} text-${align} pb-${padding} overflow-hidden`}
         style={{ maxWidth }}
       >
         {text}

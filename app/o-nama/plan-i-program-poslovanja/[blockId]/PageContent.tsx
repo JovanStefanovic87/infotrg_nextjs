@@ -3,11 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { pppLinksData, contentBlocksData } from './pppData';
 import ImageModal from '../../../components/modals/ImageModal';
-import ImageBlock from '../../../components/image/ImageBlock';
 import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
-import Devider from '@/app/components/ui/Devider';
 import OrderedList from '@/app/components/text/OrderedList';
 import H2 from '@/app/components/text/H2';
 import H3 from '@/app/components/text/H3';
@@ -89,7 +87,7 @@ const PageContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='Investicioni fond' pb='0' />
+      <H1 title='PLAN I PROGRAM POSLOVANJA' pb='0' />
       <H2 text={block.label.toUpperCase()} weight='bold' align='center' />
       <H2 text={block.amount} weight='bold' align='center' />
       <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>

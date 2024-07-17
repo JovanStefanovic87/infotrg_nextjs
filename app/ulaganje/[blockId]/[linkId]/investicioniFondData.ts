@@ -229,9 +229,9 @@ export const contentBlocksData: ContentBlocksData = {
       content:
         'Autor priprema nacrt tehničkog plana u kojem izlaže svoju ideju o funkcionisanju veb platforme za oglašavanje proizvoda (Infotrg platforma).',
     },
-    { type: 'hr' },
+    { type: 'hr', height: 2 },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.1.1.) GRAFIČKA PRIPREMA NACRTA TEHNIČKOG PLANA - autor',
     },
     {
@@ -249,10 +249,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.1.2.) ŠTAMPANJE NACRTA TEHNIČKOG PLANA - autor',
     },
     {
@@ -298,9 +299,9 @@ export const contentBlocksData: ContentBlocksData = {
       content:
         'Autor vrši zaštitu autorskih prava projekta i zakupljuje internet domen na kojem će biti uspostavljena platforma.',
     },
-    { type: 'hr' },
+    { type: 'hr', height: 2 },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.2.1.) ZAŠTITA AUTORSKIH PRAVA - autor',
     },
     {
@@ -317,10 +318,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.2.2.) ZAKUP INTERNET DOMENA - autor',
     },
     {
@@ -337,10 +339,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.2.3.) OBNOVA INTERNET DOMENA ZA 3 GODINE - autor',
     },
     {
@@ -376,9 +379,9 @@ export const contentBlocksData: ContentBlocksData = {
       content:
         'Autor okuplja saradnike (koordinator projekta, vebmaster, administrator, marketing menadžer i PR menadžer), odnosno upravni tim kojem poverava realizaciju projekta i obezbeđuje dogovorene uslove za njihov rad.',
     },
-    { type: 'hr' },
+    { type: 'hr', height: 2 },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.3.1.) OKUPLJANJE SARADNIKA - autor',
     },
     {
@@ -396,10 +399,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.3.2.) NABAVKA LAPTOP RAČUNARA - marketing menadžer',
     },
     {
@@ -438,7 +442,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.1.) RAZMATRANJE NACRTA TEHNIČKOG PLANA - koordinator',
     },
     {
@@ -456,10 +460,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.2.) RAZMATRANJE NACRTA TEHNIČKOG PLANA - vebmaster',
     },
     {
@@ -477,10 +482,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.3.) RAZMATRANJE NACRTA TEHNIČKOG PLANA - administrator',
     },
     {
@@ -498,10 +504,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.4.) RAZMATRANJE NACRTA TEHNIČKOG PLANA - marketing menadžer',
     },
     {
@@ -519,10 +526,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.5.) RAZMATRANJE NACRTA TEHNIČKOG PLANA - PR menadžer',
     },
     {
@@ -540,10 +548,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.6.) STUDIJA TEHNIČKE IZVODLJIVOSTI - vebmaster',
     },
     {
@@ -574,7 +583,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.7.) DORADA NACRTA TEHNIČKOG PLANA - vebmaster',
     },
     {
@@ -605,7 +614,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.8.) IZRADA PROBNE PLATFORME - vebmaster',
     },
     {
@@ -691,7 +700,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.9.) IZRADA I ŠTAMPANJE ANKETNOG FORMULARA - administrator',
     },
     {
@@ -757,7 +766,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.10.) ANKETA TEHNIČKOG PLANA - PR menadžer',
     },
     {
@@ -808,7 +817,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.11.) ANKETA TEHNIČKOG PLANA - marketing menadžer',
     },
     {
@@ -859,7 +868,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.12.) ANKETA TEHNIČKOG PLANA - vebmaster',
     },
     {
@@ -935,7 +944,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.13.) ANKETA TEHNIČKOG PLANA - grafički dizajner',
     },
     {
@@ -986,7 +995,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.14.) DORADA PROBNE PLATFORME - vebmaster',
     },
     {
@@ -1017,7 +1026,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.15.) IZRADA TEHNIČKOG PLANA - autor',
     },
     {
@@ -1068,7 +1077,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.16.) ŠTAMPANJE TEHNIČKOG PLANA - autor',
     },
     {
@@ -1109,7 +1118,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.17.) POTPISIVANJE TEHNIČKOG PLANA - autor',
     },
     {
@@ -1126,10 +1135,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.18.) POTPISIVANJE TEHNIČKOG PLANA - koordinator',
     },
     {
@@ -1146,10 +1156,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.19.) POTPISIVANJE TEHNIČKOG PLANA - vebmaster',
     },
     {
@@ -1166,10 +1177,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.20.) POTPISIVANJE TEHNIČKOG PLANA - administrator',
     },
     {
@@ -1186,10 +1198,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.21.) POTPISIVANJE TEHNIČKOG PLANA - marketing menadžer',
     },
     {
@@ -1206,10 +1219,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.4.22.) POTPISIVANJE TEHNIČKOG PLANA - PR menadžer',
     },
     {
@@ -1226,6 +1240,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
   ],
@@ -1237,7 +1252,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.1.) PRIPREMA PLANA RADA AUTORA - autor',
     },
     {
@@ -1278,7 +1293,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.2.) PRIPREMA PLANA RADA KOORDINATORA - koordinator',
     },
     {
@@ -1319,7 +1334,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.3.) PRIPREMA PLANA RADA VEBMASTERA - vebmaster',
     },
     {
@@ -1361,7 +1376,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.4.) PRIPREMA PLANA RADA ADMINISTRATORA - administrator',
     },
     {
@@ -1402,7 +1417,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.5.) PRIPREMA PLANA RADA MARKETING MENADŽERA - marketing menadžer',
     },
     {
@@ -1443,7 +1458,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.6.) PRIPREMA PLANA RADA PR MENADŽERA - PR menadžer',
     },
     {
@@ -1474,7 +1489,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.7.) PRIPREMA PLANA RADA GRAFIČKOG DIZAJNERA - grafički dizajner',
     },
     {
@@ -1515,7 +1530,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.8.) IZRADA NACRTA PLANA I PROGRAMA POSLOVANJA - autor',
     },
     {
@@ -1558,7 +1573,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.9.) RAZMATRANJE NACRTA PLANA I PROGRAMA POSLOVANJA - koordinator',
     },
     {
@@ -1576,10 +1591,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.10.) RAZMATRANJE NACRTA PLANA I PROGRAMA POSLOVANJA - vebmaster',
     },
     {
@@ -1597,10 +1613,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.11.) RAZMATRANJE NACRTA PLANA I PROGRAMA POSLOVANJA - administrator',
     },
     {
@@ -1618,10 +1635,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.12.) RAZMATRANJE NACRTA PLANA I PROGRAMA POSLOVANJA - marketing menadžer',
     },
     {
@@ -1639,10 +1657,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.13.) RAZMATRANJE NACRTA PLANA I PROGRAMA POSLOVANJA - PR menadžer',
     },
     {
@@ -1660,10 +1679,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.14.) IZRADA PLANA I PROGRAMA POSLOVANJA - autor',
     },
     {
@@ -1707,7 +1727,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.15.) ŠTAMPANJE PLANA I PROGRAMA POSLOVANJA - autor',
     },
     {
@@ -1748,7 +1768,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.16.) POTPISIVANJE PLANA I PROGRAMA POSLOVANJA - autor',
     },
     {
@@ -1765,10 +1785,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.17.) POTPISIVANJE PLANA I PROGRAMA POSLOVANJA - koordinator',
     },
     {
@@ -1785,10 +1806,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.18.) POTPISIVANJE PLANA I PROGRAMA POSLOVANJA - administrator',
     },
     {
@@ -1805,10 +1827,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.19.) POTPISIVANJE PLANA I PROGRAMA POSLOVANJA - marketing menadžer',
     },
     {
@@ -1825,10 +1848,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.20.) POTPISIVANJE PLANA I PROGRAMA POSLOVANJA - PR menadžer',
     },
     {
@@ -1845,10 +1869,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.21.) POTPISIVANJE PLANA I PROGRAMA POSLOVANJA - vebmaster',
     },
     {
@@ -1865,10 +1890,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.5.22.) IZRADA TABELE ZA BELEŽENJE OSTVARENIH CILJEVA - koordinator',
     },
     {
@@ -1917,7 +1943,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.1.) IZRADA NACRTA UGOVORA O SARADNJI - koordinator',
     },
     {
@@ -1958,7 +1984,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.2.) RAZMATRANJE NACRTA UGOVORA O SARADNJI - autor',
     },
     {
@@ -1976,10 +2002,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.3.) RAZMATRANJE NACRTA UGOVORA O SARADNJI - vebmaster',
     },
     {
@@ -1997,10 +2024,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.4.) RAZMATRANJE NACRTA UGOVORA O SARADNJI - administrator',
     },
     {
@@ -2018,10 +2046,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.5.) RAZMATRANJE NACRTA UGOVORA O SARADNJI - marketing menadžer',
     },
     {
@@ -2039,10 +2068,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.6.) RAZMATRANJE NACRTA UGOVORA O SARADNJI - PR menadžer',
     },
     {
@@ -2060,10 +2090,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.7.) IZRADA I ŠTAMPANJE UGOVORA O SARADNJI - koordinator',
     },
     {
@@ -2129,7 +2160,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.8.) POTPISIVANJE UGOVORA O SARADNJI - autor',
     },
     {
@@ -2146,10 +2177,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.9.) POTPISIVANJE UGOVORA O SARADNJI - koordinator',
     },
     {
@@ -2166,10 +2198,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.10.) POTPISIVANJE UGOVORA O SARADNJI - vebmaster',
     },
     {
@@ -2186,10 +2219,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.11.) POTPISIVANJE UGOVORA O SARADNJI - administrator',
     },
     {
@@ -2206,10 +2240,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.12.) POTPISIVANJE UGOVORA O SARADNJI - marketing menadžer',
     },
     {
@@ -2226,10 +2261,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.6.13.) POTPISIVANJE UGOVORA O SARADNJI - PR menadžer',
     },
     {
@@ -2246,6 +2282,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
   ],
@@ -2257,7 +2294,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.1.) PRIPREMA DOKUMENTA ZA EVIDENCIJU INVENTARA - koordinator',
     },
     {
@@ -2287,7 +2324,7 @@ export const contentBlocksData: ContentBlocksData = {
       paddingLeft: marginLeftMedium,
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.2.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU INVENTARA 21 MESEC - koordinator',
     },
     {
@@ -2338,7 +2375,7 @@ export const contentBlocksData: ContentBlocksData = {
       paddingLeft: marginLeftMedium,
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.3.) PRIPREMA DOKUMENTA ZA EVIDENCIJU BUDŽETA - koordinator',
     },
     {
@@ -2368,7 +2405,7 @@ export const contentBlocksData: ContentBlocksData = {
       paddingLeft: marginLeftMedium,
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.4.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU BUDŽETA 21 MESEC - koordinator',
     },
     {
@@ -2420,7 +2457,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.5.) PRIPREMA BUDŽETNE KASE - koordinator',
     },
     {
@@ -2438,10 +2475,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.6.) IZRADA PRIZNANICA ZA INTERNE NOVČANE TRANSAKCIJE - koordinator',
     },
     {
@@ -2459,10 +2497,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '0.7.7.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE 21 MESEC - koordinator',
     },
@@ -2519,7 +2558,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '0.7.8.) POTPISIVANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE 21 MESEC - koordinator',
     },
     {
@@ -2537,6 +2576,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
   ],
@@ -2548,7 +2588,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '1.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA KOORDINATOROM ZA PRVU ETAPU - koordinator',
     },
@@ -2615,7 +2655,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.2.) POTPISIVANJE UGOVORA O DELU SA KOORDINATOROM ZA PRVU ETAPU - koordinator',
     },
     {
@@ -2632,10 +2672,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.3.) POTPISIVANJE UGOVORA O DELU SA KOORDINATOROM ZA PRVU ETAPU - vebmaster',
     },
     {
@@ -2652,10 +2693,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.4.) IZRADA NACRTA INVESTICIONOG PLANA I PROGRAMA - autor',
     },
     {
@@ -2697,7 +2739,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.5.) RAZMATRANJE NACRTA INVESTICIONOG PLANA I PROGRAMA - koordinator',
     },
     {
@@ -2715,10 +2757,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.6.) RAZMATRANJE NACRTA INVESTICIONOG PLANA I PROGRAMA - vebmaster',
     },
     {
@@ -2736,10 +2779,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.7.) RAZMATRANJE NACRTA INVESTICIONOG PLANA I PROGRAMA - administrator',
     },
     {
@@ -2757,10 +2801,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.8.) RAZMATRANJE NACRTA INVESTICIONOG PLANA I PROGRAMA - marketing menadžer',
     },
     {
@@ -2778,10 +2823,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.9.) RAZMATRANJE NACRTA INVESTICIONOG PLANA I PROGRAMA - PR menadžer',
     },
     {
@@ -2799,10 +2845,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.10.) IZRADA INVESTICIONOG PLANA I PROGRAMA - autor',
     },
     {
@@ -2846,7 +2893,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.11.) ŠTAMPANJE INVESTICIONOG PLANA I PROGRAMA - autor',
     },
     {
@@ -2887,7 +2934,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.12.) POTPISIVANJE INVESTICIONOG PLANA I PROGRAMA - autor',
     },
     {
@@ -2904,10 +2951,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.13.) POTPISIVANJE INVESTICIONOG PLANA I PROGRAMA - koordinator',
     },
     {
@@ -2924,10 +2972,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.14.) POTPISIVANJE INVESTICIONOG PLANA I PROGRAMA - vebmaster',
     },
     {
@@ -2944,10 +2993,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.15.) POTPISIVANJE INVESTICIONOG PLANA I PROGRAMA - administrator',
     },
     {
@@ -2964,10 +3014,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.16.) POTPISIVANJE INVESTICIONOG PLANA I PROGRAMA - marketing menadžer',
     },
     {
@@ -2984,10 +3035,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.17.) POTPISIVANJE INVESTICIONOG PLANA I PROGRAMA - PR menadžer',
     },
     {
@@ -3004,10 +3056,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.18.) PRIPREMA REGISTRA INVESTITORA I NJIHOVIH SUVLASNIČKIH UDELA - koordinator',
     },
     {
@@ -3025,10 +3078,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.19.) PRIPREMA OBRASCA ZA IZVEŠTAVANJE O REZULTATIMA POSLOVANJA - koordinator',
     },
     {
@@ -3046,10 +3100,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.20.) PERIODIČNO IZVEŠTAVANJE INVESTITORIMA TOKOM 21 MESECA - koordinator',
     },
     {
@@ -3099,7 +3154,7 @@ export const contentBlocksData: ContentBlocksData = {
       paddingLeft: marginLeftMedium,
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.21.) PRIPREMA UGOVORA O INVESTICIJI - koordinator',
     },
     {
@@ -3141,7 +3196,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.22.) GRAFIČKA PRIPREMA PRIZNANICE ZA ULOŽENA SREDSTVA - koordinator',
     },
     {
@@ -3159,10 +3214,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.23.) GRAFIČKA PRIPREMA PRIZNANICE ZA ULOŽENA SREDSTVA - grafički dizajner',
     },
     {
@@ -3193,7 +3249,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.24.) GRAFIČKA PRIPREMA OBAVEŠTAJNIH FLAJERA ZA INVESTITORE - koordinator',
     },
     {
@@ -3211,10 +3267,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.25.) GRAFIČKA PRIPREMA OBAVEŠTAJNIH FLAJERA ZA INVESTITORE - grafički dizajner',
     },
     {
@@ -3244,7 +3301,7 @@ export const contentBlocksData: ContentBlocksData = {
       paddingLeft: marginLeftMedium,
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.1.26.) ŠTAMPANJE OBAVEŠTAJNIH FLAJERA ZA INVESTITORE - koordinator',
     },
     {
@@ -3283,7 +3340,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '1.2.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA PRVU ETAPU - koordinator',
     },
@@ -3350,7 +3407,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.2.2.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA PRVU ETAPU - koordinator',
     },
     {
@@ -3367,10 +3424,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.2.3.) POTPISIVANJE UGOVORA O DELU ZA PRVU ETAPU - vebmaster',
     },
     {
@@ -3387,10 +3445,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.2.4.) IZRADA PLATFORME ZA PRVU ETAPU - vebmaster',
     },
     {
@@ -3466,7 +3525,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.2.5.) USPOSTAVLJANJE SSL SERTIFIKATA - vebmaster',
     },
     {
@@ -3484,10 +3543,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.2.6.) ODRŽAVANJE SSL SERTIFIKATA 21 MESEC - vebmaster',
     },
     {
@@ -3517,7 +3577,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.2.7.) TESTIRANJE PLATFORME ZA PRVU ETAPU - vebmaster',
     },
     {
@@ -3535,6 +3595,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
   ],
@@ -3546,7 +3607,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '1.3.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PRVU ETAPU - koordinator',
     },
@@ -3613,7 +3674,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.3.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PRVU ETAPU - koordinator',
     },
     {
@@ -3630,10 +3691,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '1.3.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PRVU ETAPU - administrator',
     },
@@ -3651,10 +3713,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.3.4.) RUTINSKA KONTROLA KOORDINATORA TOKOM 18 MESECI - koordinator',
     },
     {
@@ -3695,7 +3758,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.3.5.) POPUNJAVANJE PLATFORME ZA PROMOCIJU INVESTICIONOG FONDA - administrator',
     },
     {
@@ -3713,10 +3776,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.3.6.) POPUNJAVANJE STRANICE “O NAMA” - administrator',
     },
     {
@@ -3757,7 +3821,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.3.7.) OGLAŠAVANJE INVESTICIONOG PLANA I PROGRAMA - administrator',
     },
     {
@@ -3775,6 +3839,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
   ],
@@ -3786,7 +3851,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.1.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA - autor',
     },
     {
@@ -3804,11 +3869,12 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
 
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA - koordinator',
     },
     {
@@ -3826,11 +3892,12 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
 
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.3.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA - vebmaster',
     },
     {
@@ -3848,11 +3915,12 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
 
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.4.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA - administrator',
     },
     {
@@ -3870,11 +3938,12 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
 
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.5.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA - marketing menadžer',
     },
     {
@@ -3892,11 +3961,12 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
 
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.6.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA - PR menadžer',
     },
     {
@@ -3914,10 +3984,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.7.) POPUNJAVANJE I ŠTAMPANJE UGOVORA O INVESTICIJI - koordinator',
     },
     {
@@ -3983,7 +4054,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.8.) POTPISIVANJE UGOVORA SA INVESTITORIMA - koordinator',
       paddingLeft: marginLeftMedium,
     },
@@ -4001,10 +4072,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.9.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA O ULOŽENIM SREDSTVIMA - koordinator',
     },
     {
@@ -4062,7 +4134,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.10.) POTPISIVANJE PRIZNANICA O INVESTICIONOM ULAGANJU - koordinator',
     },
     {
@@ -4079,10 +4151,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.9.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA O ULOŽENIM SREDSTVIMA - koordinator',
     },
     {
@@ -4140,7 +4213,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '1.4.11.) ZAVOĐENJE VLASNIČKOG UDELA U REGISTAR - koordinator',
     },
     {
@@ -4235,7 +4308,7 @@ export const contentBlocksData: ContentBlocksData = {
         'Veb master osposobljava platformu za drugu etapu poslovanja u kojoj je instalirana funkcija pretrage proizvoda po mapama samo za područje Tržnog centra Mali Bajmok (Buvljak Subotica).',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA DRUGU ETAPU - koordinator',
     },
@@ -4304,7 +4377,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.2.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA DRUGU ETAPU - koordinator',
     },
     {
@@ -4321,10 +4394,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.3.) POTPISIVANJE UGOVORA O DELU ZA DRUGU ETAPU - vebmaster',
     },
     {
@@ -4341,10 +4415,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.4.) DOPUNA TEHNIČKOG PLANA - vebmaster',
     },
     {
@@ -4362,10 +4437,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.5.) DOPUNA TEHNIČKOG PLANA - autor',
     },
     {
@@ -4382,10 +4458,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.6.) RAZMATRANJE DOPUNE TEHNIČKOG PLANA - koordinator',
     },
     {
@@ -4403,10 +4480,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.7.) RAZMATRANJE DOPUNE TEHNIČKOG PLANA - administrator',
     },
     {
@@ -4424,10 +4502,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.8.) RAZMATRANJE DOPUNE TEHNIČKOG PLANA - marketing menadžer',
     },
     {
@@ -4445,10 +4524,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.9.) RAZMATRANJE DOPUNE TEHNIČKOG PLANA - PR menadžer',
     },
     {
@@ -4466,10 +4546,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.10.) POTPISIVANJE DOPUNE TEHNIČKOG PLANA - koordinator',
     },
     {
@@ -4486,10 +4567,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.11.) POTPISIVANJE DOPUNE TEHNIČKOG PLANA - vebmaster',
     },
     {
@@ -4506,10 +4588,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.12.) POTPISIVANJE DOPUNE TEHNIČKOG PLANA - administrator',
     },
     {
@@ -4526,10 +4609,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.13.) POTPISIVANJE DOPUNE TEHNIČKOG PLANA - marketing menadžer',
     },
     {
@@ -4546,10 +4630,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.14.) POTPISIVANJE DOPUNE TEHNIČKOG PLANA - PR menadžer',
     },
     {
@@ -4566,10 +4651,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.15.) IZRADA PLATFORME ZA DRUGU ETAPU - vebmaster',
     },
     {
@@ -4693,7 +4779,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.16.) ODRŽAVANJE PLATFORME 18 MESECI - vebmaster',
     },
     {
@@ -4711,10 +4797,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.17.) ODRŽAVANJE SERVERA 18 MESECI - vebmaster',
     },
     {
@@ -4767,7 +4854,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.1.18.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA DRUGU ETAPU - koordinator',
     },
@@ -4836,7 +4923,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.1.19.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA DRUGU ETAPU - koordinator',
     },
@@ -4854,10 +4941,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.1.20.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA DRUGU ETAPU - administrator',
     },
@@ -4875,10 +4963,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.21.) POPUNJAVANJE STRANICE “OGLAŠAVANJE” NA PLATFORMI - administrator',
     },
     {
@@ -4921,7 +5010,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.22.) POPUNJAVANJE STRANICE “POMOĆ” NA PLATFORMI - administrator',
     },
     {
@@ -4964,7 +5053,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.1.23.) POPUNJAVANJE STRANICA “USLOVI KORIŠĆENJA” I “POLITIKA PRIVATNOSTI” - administrator',
     },
@@ -5008,7 +5097,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.1.24.) TESTIRANJE PLATFORME ZA DRUGU ETAPU - vebmaster',
     },
     {
@@ -5026,6 +5115,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
   ],
@@ -5037,7 +5127,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.1.) POPISIVANJE PRODAJNIH OBJEKATA NA BUVLJAKU - administrator',
     },
     {
@@ -5081,7 +5171,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.2.) ADMINISTRATIVNA PRIPREMA PRODAJNIH OBJEKATA NA BUVLJAKU - administrator',
     },
     {
@@ -5142,7 +5232,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.3.) UNOS PRODAJNIH OBJEKATA NA PLATFORMU - administrator',
     },
     {
@@ -5160,10 +5250,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.4.) UNOS PRODAJNIH OBJEKATA SA BUVLJAKA NA PLATFORMU - vebmaster',
     },
     {
@@ -5181,10 +5272,11 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.5.) ADMINISTRATIVNA PRIPREMA KATEGORIJA PROIZVODA NA BUVLJAKU - administrator',
     },
     {
@@ -5237,7 +5329,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.6.) PRIPREMA SLIKA KATEGORIJA PROIZVODA NA BUVLJAKU - administrator',
     },
     {
@@ -5290,7 +5382,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.7.) ELEKTRONSKA PRIPREMA KATEGORIJA PROIZVODA NA BUVLJAKU - vebmaster',
     },
     {
@@ -5307,12 +5399,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.8.) POVEZIVANJE SRODNIH STRANICA PREGLEDNIKA PO MAPAMA - administrator',
     },
     {
@@ -5380,7 +5473,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.9.) POPISIVANJE PROIZVODA NA BUVLJAKU - administrator',
     },
     {
@@ -5425,7 +5518,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.2.10.) PERIODIČNO PONOVNO POPISIVANJE PROIZVODA NA BUVLJAKU TOKOM 2 MESECA - administrator',
     },
@@ -5482,7 +5575,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.11.) ADMINISTRATIVNA PRIPREMA POPISANIH PROIZVODA - administrator',
     },
     {
@@ -5541,7 +5634,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.2.12.) PERIODIČNO ADMINISTRATIVNO AŽURIRANJE POPISANIH PROIZVODA TOKOM 2 MESECA - administrator',
     },
@@ -5612,7 +5705,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.13.) UNOS PROIZVODA NA PLATFORMU - administrator',
     },
     {
@@ -5656,7 +5749,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.2.14.) PERIODIČAN UNOS AŽURIRANOG SPISKA PROIZVODA NA PLATFORMU TOKOM 3 MESECA - administrator',
     },
@@ -5711,7 +5804,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.2.15.) IZRADA POČETNE STRANICE FUNKCIJE “VODIČ ZA KUPOVINU” - administrator',
     },
     {
@@ -5762,7 +5855,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.3.1.) GRAFIČKA PRIPREMA ŠABLONA PRIZNANICE ZA PLAĆENU REKLAMU - koordinator',
     },
     {
@@ -5780,12 +5873,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.3.2.) GRAFIČKA PRIPREMA ŠABLONA PRIZNANICE ZA PLAĆENU REKLAMU - grafički dizajner',
     },
@@ -5824,7 +5918,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.3.3.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA DRUGU ETAPU - koordinator',
     },
@@ -5893,7 +5987,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.3.4.) POTPISIVANJE UGOVORA O DELU SA PR MENADŽEROM ZA DRUGU ETAPU - koordinator',
     },
     {
@@ -5910,12 +6004,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.3.5.) POTPISIVANJE UGOVORA O DELU ZA DRUGU ETAPU - PR menadžer',
     },
     {
@@ -5932,12 +6027,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.3.6.) KOMUNIKACIJA SA PRODAVCIMA NA BUVLJAKU U SVRSI ODOBRAVANJA OZNAČENIH PROIZVODA - PR menadžer',
     },
@@ -5981,7 +6077,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.3.7.) POPISIVANJE DOPUNSKOG ASORTIMANA PROIZVODA POJEDINIH PRODAJNIH OBJEKATA - PR menadžer',
     },
@@ -6025,7 +6121,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.3.8.) NAKNADNO OZNAČAVANJE PROIZVODA NA BUVLJAKU - administrator',
     },
     {
@@ -6088,7 +6184,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA DRUGU ETAPU - koordinator',
     },
@@ -6157,7 +6253,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.4.2.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA DRUGU ETAPU - koordinator',
     },
@@ -6175,12 +6271,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.4.3.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA DRUGU ETAPU - grafički dizajner',
     },
@@ -6198,12 +6295,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.4.4.) SELEKCIJA PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator',
     },
     {
@@ -6257,7 +6355,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.4.5.) PERIODIČNO PROVERAVANJE PROIZVODA ZA BESPLATNO OGLAŠAVANJE TOKOM 3 MESECA - administrator',
     },
@@ -6312,7 +6410,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.4.6.) IZRADA BESPLATNIH REKLAMA ZA BUVLJAK - grafički dizajner',
     },
     {
@@ -6354,7 +6452,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.4.7.) OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator',
     },
     {
@@ -6408,7 +6506,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.4.8.) PERIODIČNO OBJAVLJIVANJE BESPLATNIH REKLAMA 3 MESECA - administrator',
     },
     {
@@ -6473,7 +6571,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.4.9.) KOMUNIKACIJA SA PRODAVCIMA ZA DOZVOLJENO BESPLATNO REKLAMIRANJE - PR menadžer',
     },
@@ -6525,7 +6623,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.1.) IZRADA I ŠTAMPANJE UGOVORA SA MARKETING MENADŽEROM ZA DRUGU ETAPU - koordinator',
     },
@@ -6594,7 +6692,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.2.) POTPISIVANJE UGOVORA SA MARKETING MENADŽEROM ZA DRUGU ETAPU - koordinator',
     },
     {
@@ -6611,12 +6709,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA DRUGU ETAPU - marketing menadžer',
     },
@@ -6634,12 +6733,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.4.) ANGAŽOVANJE PROMOTERA NA DRUŠTVENIM MREŽAMA - marketing menadžer',
     },
     {
@@ -6682,7 +6782,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.5.) OTVARANJE NALOGA NA DRUŠTVENIM MREŽAMA - marketing menadžer',
     },
     {
@@ -6725,7 +6825,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.6.) OBJAVLJIVANJE INFORMACIJA SA BUVLJAKA NA DRUŠTVENIM MREŽAMA TOKOM 3 MESECA - marketing menadžer',
     },
@@ -6787,7 +6887,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.7.) ANGAŽOVANO POVEZIVANJE NA DRUŠTVENIM MREŽAMA TOKOM 3 MESECA - marketing menadžer',
     },
@@ -6847,7 +6947,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.8.) OSMIŠLJAVANJE OBAVEŠTAJNIH FLAJERA ZA POSETIOCE BUVLJAKA - marketing menadžer',
     },
@@ -6881,7 +6981,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.9.) GRAFIČKA PRIPREMA OBAVEŠTAJNIH FLAJERA ZA POSETIOCE BUVLJAKA - grafički dizajner',
     },
@@ -6915,7 +7015,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.10.) ŠTAMPANJE OBAVEŠTAJNIH FLAJERA ZA POSETIOCE BUVLJAKA - marketing menadžer',
     },
     {
@@ -6995,7 +7095,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.11.) ORGANIZOVANJE PROMOTERKI - marketing menadžer',
     },
     {
@@ -7037,7 +7137,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.12.) IZRADA MAJICA ZA PROMOTERKE - marketing menadžer',
     },
     {
@@ -7090,7 +7190,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.13.) DISTRIBUCIJA PROMOTIVNIH FLAJERA TOKOM 3 MESECA - marketing menadžer',
     },
     {
@@ -7148,7 +7248,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.14.) USMENA PROMOCIJA PLATFORME POSETIOCIMA TOKOM 3 MESECA - marketing menadžer',
     },
@@ -7207,7 +7307,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.15.) ODVOĐENJE KUPACA NA MESTO PRODAJE TOKOM 3 MESECA - marketing menadžer',
     },
     {
@@ -7265,7 +7365,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.5.16.) NAVOĐENJE NA PRAĆENJE PREKO DRUŠTVENIH MREŽA TOKOM 3 MESECA - marketing menadžer',
     },
@@ -7324,7 +7424,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.5.17.) EVIDENCIJA PORASTA PREGLEDA TOKOM 12 MESECI - marketing menadžer',
     },
     {
@@ -7381,7 +7481,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '2.6.1.) KOMUNIKACIJA SA DRUGIM PRODAVCIMA U SVRSI PLAĆENOG OGLAŠAVANJA - PR menadžer',
     },
@@ -7425,7 +7525,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.6.2.) PROMOVISANJE IZRADE REKLAMA - PR menadžer',
     },
     {
@@ -7468,7 +7568,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '2.6.3.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI AFFILIATE POSREDNIŠTVA - PR menadžer',
     },
     {
@@ -7519,7 +7619,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA TREĆU ETAPU - koordinator',
     },
@@ -7588,7 +7688,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.1.2.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA TREĆU ETAPU - koordinator',
     },
     {
@@ -7605,12 +7705,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.1.3.) POTPISIVANJE UGOVORA O DELU ZA TREĆU ETAPU - vebmaster',
     },
     {
@@ -7627,12 +7728,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.1.4.) IZRADA PLATFORME ZA TREĆU ETAPU - vebmaster',
     },
     {
@@ -7801,7 +7903,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.1.5.) TESTIRANJE PLATFORME ZA TREĆU ETAPU - vebmaster',
     },
     {
@@ -7819,6 +7921,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -7832,7 +7935,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA TREĆU ETAPU - koordinator',
     },
@@ -7901,7 +8004,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA TREĆU ETAPU - koordinator',
     },
@@ -7919,12 +8022,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA TREĆU ETAPU - administrator',
     },
@@ -7942,12 +8046,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.4.) ADMINISTRATIVNA KATEGORIZACIJA PRODAJNIH OBJEKATA NA BUVLJAKU - administrator',
     },
@@ -8002,7 +8107,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.2.5.) PRIPREMA SLIKA KATEGORIJA PRODAJNIH OBJEKATA NA BUVLJAKU - administrator',
     },
     {
@@ -8055,7 +8160,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.6.) ELEKTRONSKA PRIPREMA KATEGORIJA PRODAJNIH OBJEKATA - VEB IZLOGA - vebmaster',
     },
@@ -8074,12 +8179,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.7.) POVEZIVANJE SRODNIH STRANICA PREGLEDNIKA PO PRODAJNIM OBJEKTIMA - administrator',
     },
@@ -8149,7 +8255,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.8.) PREPORUKA ZA OTVARANJE PROBNIH VEB IZLOGA PRODAJNIH OBJEKATA NA BUVLJAKU - PR menadžer',
     },
@@ -8168,12 +8274,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.9.) OTVARANJE PROBNIH VEB IZLOGA PRODAJNIH OBJEKATA NA BUVLJAKU - administrator',
     },
@@ -8192,12 +8299,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.10.) SLIKANJE I PRIKUPLJANJE INFORMACIJA O PROBNIM ARTIKLIMA ZA VEB IZLOGE NA BUVLJAKU - administrator',
     },
@@ -8252,7 +8360,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.11.) PERIODIČNA PROVERA INFORMACIJA O PROBNIM ARTIKLIMA ZA VEB IZLOGE - administrator',
     },
@@ -8307,7 +8415,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.12.) ADMINISTRATIVNA PRIPREMA PROBNIH ARTIKALA ZA VEB IZLOGE NA BUVLJAKU - administrator',
     },
@@ -8367,7 +8475,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.2.13.) GRAFIČKA PRIPREMA PROBNIH ARTIKALA ZA VEB IZLOG - grafički dizajner',
     },
     {
@@ -8409,7 +8517,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.2.14.) PERIODIČNA GRAFIČKA I ADMINISTRATIVNA DOPUNA PROBNIH ARTIKALA ZA VEB IZLOGE - administrator',
     },
@@ -8479,7 +8587,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.2.15.) UNOS ARTIKALA SA BUVLJAKA U PROBNE VEB IZLOGE - administrator',
     },
     {
@@ -8533,7 +8641,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.2.16.) PERIODIČNI UNOS ARTIKALA SA BUVLJAKA U PROBNE VEB IZLOGE - administrator',
     },
     {
@@ -8551,12 +8659,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.2.17.) PRIPREMA POČETNE STRANICE FUNKCIJE “VEB IZLOG” - administrator',
     },
     {
@@ -8607,7 +8716,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.3.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA TREĆU ETAPU - koordinator',
     },
@@ -8676,7 +8785,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.3.2.) POTPISIVANJE UGOVORA O DELU SA PR MENADŽEROM ZA TREĆU ETAPU - koordinator',
     },
     {
@@ -8693,12 +8802,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.3.3.) POTPISIVANJE UGOVORA O DELU ZA TREĆU ETAPU - PR menadžer',
     },
     {
@@ -8715,12 +8825,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.3.4.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI DOZVOLJENOG OTVARANJA VEB IZLOGA - PR menadžer',
     },
@@ -8764,7 +8875,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.3.5.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI SAMOSTALNOG ODRŽAVANJA VEB IZLOGA - PR menadžer',
     },
@@ -8808,7 +8919,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '3.3.6.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI USLUŽNOG ODRŽAVANJA VEB IZLOGA - PR menadžer',
     },
@@ -8853,7 +8964,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '3.3.7.) PERIODIČNA MODERACIJA VEBIZLOGA TOKOM 11 MESECI - administrator',
     },
     {
@@ -8908,7 +9019,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA ČETVRTU ETAPU - koordinator',
     },
@@ -8977,7 +9088,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.1.2.) POTPISIVANJE UGOVORA O DELU ZA ČETVRTU ETAPU - vebmaster',
     },
     {
@@ -8994,12 +9105,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.1.3.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA ČETVRTU ETAPU - koordinator',
     },
     {
@@ -9016,12 +9128,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.1.4.) IZRADA PLATFORME ZA ČETVRTU ETAPU - vebmaster',
     },
     {
@@ -9099,7 +9212,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.1.5.) TESTIRANJE PLATFORME ZA ČETVRTU ETAPU - vebmaster',
     },
     {
@@ -9117,6 +9230,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -9130,7 +9244,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ČETVRTU ETAPU - koordinator',
     },
@@ -9199,7 +9313,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ČETVRTU ETAPU - administrator',
     },
@@ -9217,12 +9331,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ČETVRTU ETAPU - koordinator',
     },
@@ -9240,12 +9355,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.4.) ADMINISTRATIVNA PRIPREMA KATEGORIJA ENCIKLOPEDIJE PROIZVODA - administrator',
     },
@@ -9264,12 +9380,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.5.) PRIPREMA SLIKA KATEGORIJA ENCIKLOPEDIJE PROIZVODA - administrator',
     },
     {
@@ -9287,12 +9404,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.6.) ELEKTRONSKA PRIPREMA KATEGORIJA ENCIKLOPEDIJE PROIZVODA - vebmaster',
     },
     {
@@ -9310,12 +9428,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.7.) POVEZIVANJE SRODNIH STRANICA PREGLEDNIKA PO SLIKAMA - administrator',
     },
     {
@@ -9384,7 +9503,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.8.) PREPORUKA ZA OTVARANJE PROBNIH STRANICA ENCIKLOPEDIJE PROIZVODA - PR menadžer',
     },
@@ -9403,12 +9522,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.9.) OTVARANJE PROBNIH STRANICA ENCIKLOPEDIJE PROIZVODA - administrator',
     },
     {
@@ -9452,7 +9572,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.10.) SLIKANJE I PRIKUPLJANJE INFORMACIJA O PROBNIM ARTIKLIMA - administrator',
     },
     {
@@ -9507,7 +9627,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.11.) PERIODIČNA PROVERA INFORMACIJA O PROBNIM ARTIKLIMA ZA ENCIKLOPEDIJU PROIZVODA - administrator',
     },
@@ -9561,7 +9681,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.12.) ADMINISTRATIVNA PRIPREMA PROBNIH ARTIKALA - administrator',
     },
     {
@@ -9621,7 +9741,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.13.) GRAFIČKA PRIPREMA PROBNIH ARTIKALA ZA ENCIKLOPEDIJU - grafički dizajner',
     },
     {
@@ -9664,7 +9784,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.14.) PERIODIČNA GRAFIČKA I ADMINISTRATIVNA DOPUNA PROBNIH ARTIKALA ENCIKLOPEDIJE PROIZVODA - administrator',
     },
@@ -9735,7 +9855,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.2.15.) UNOS ARTIKALA NA PROBNE STRANICE ENCIKLOPEDIJE PROIZVODA - administrator',
     },
     {
@@ -9789,7 +9909,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.16.) PERIODIČNI UNOS ARTIKALA NA PROBNE STRANICE ENCIKLOPEDIJE PROIZVODA - administrator',
     },
@@ -9855,7 +9975,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.2.17.) IZRADA POČETNE STRANICE FUNKCIJE “ENCIKLOPEDIJA PROIZVODA” - administrator',
     },
@@ -9907,7 +10027,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.3.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA ČETVRTU ETAPU - koordinator',
     },
@@ -9976,7 +10096,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '4.3.2.) POTPISIVANJE UGOVORA O DELU ZA ČETVRTU ETAPU - PR menadžer',
     },
     {
@@ -9993,12 +10113,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.3.3.) POTPISIVANJE UGOVORA O DELU SA PR MENADŽEROM ZA ČETVRTU ETAPU - koordinator',
     },
@@ -10016,12 +10137,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.3.4.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI DOZVOLJENOG OBJAVLJIVANJA PROIZVODA U ENCIKLOPEDIJI - PR menadžer',
     },
@@ -10066,7 +10188,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.3.5.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI SAMOSTALNOG ODRŽAVANJA ENCIKLOPEDIJE PROIZVODA - PR menadžer',
     },
@@ -10110,7 +10232,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '4.3.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA TOKOM 8 MESECI - administrator',
     },
@@ -10169,7 +10291,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA PETU ETAPU - koordinator',
     },
@@ -10238,7 +10360,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.1.2.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA PETU ETAPU - vebmaster',
     },
     {
@@ -10255,12 +10377,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.1.3.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA PETU ETAPU - koordinator',
     },
     {
@@ -10277,12 +10400,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.1.4.) IZRADA PLATFORME ZA PETU ETAPU - vebmaster',
     },
     {
@@ -10300,12 +10424,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.1.5.) TESTIRANJE PLATFORME ZA PETU ETAPU - vebmaster',
     },
     {
@@ -10323,6 +10448,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -10336,7 +10462,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - koordinator',
     },
@@ -10405,7 +10531,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - administrator',
     },
@@ -10423,12 +10549,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA PETU ETAPU - koordinator',
     },
     {
@@ -10445,12 +10572,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.4.) POPISIVANJE PRODAJNIH OBJEKATA I PROIZVODA U SUBOTICI - administrator',
     },
     {
@@ -10503,7 +10631,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.5.) PERIODIČNO PONOVNO POPISIVANJE PROIZVODA U SUBOTICI - administrator',
     },
     {
@@ -10557,7 +10685,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.6.) ADMINISTRATIVNA DOPUNA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - administrator',
     },
@@ -10612,7 +10740,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.7.) PRIPREMA SLIKA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - administrator',
     },
     {
@@ -10665,7 +10793,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.8.) ELEKTRONSKA DOPUNA KATEGORIJA PRODAJNIH OBJEKATA U SUBOTICI - vebmaster',
     },
     {
@@ -10682,12 +10810,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.9.) OTVARANJE SVIH VEB IZLOGA PRODAJNIH OBJEKATA U SUBOTICI - administrator',
     },
     {
@@ -10741,7 +10870,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.10.) ADMINISTRATIVNA DOPUNA KATEGORIJA PROIZVODA U SUBOTICI - administrator',
     },
     {
@@ -10795,7 +10924,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.11.) PRIPREMA SLIKA KATEGORIJA PROIZVODA U SUBOTICI - administrator',
     },
     {
@@ -10850,7 +10979,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.12.) ELEKTRONSKA DOPUNA KATEGORIJA PROIZVODA U SUBOTICI - vebmaster',
     },
     {
@@ -10867,12 +10996,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.13.) DOPUNA VEZA SRODNIH STRANICA SVIH PREGLEDNIKA ZA SUBOTICU - administrator',
     },
     {
@@ -10941,7 +11071,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.14.) ADMINISTRATIVNA DOPUNA POPISANIH PROIZVODA U SUBOTICI - administrator',
     },
     {
@@ -11001,7 +11131,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.15.) PERIODIČNO ADMINISTRATIVNO AŽURIRANJE POPISANIH PROIZVODA U SUBOTICI - administrator',
     },
@@ -11074,7 +11204,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.16.) UNOS NA PLATFORMU SPISKA PROIZVODA U SUBOTICI - administrator',
     },
     {
@@ -11118,7 +11248,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.17.) OGLAŠAVANJE LOKACIJA PRODAJE ZA SVE VRSTE PROIZVODA U SUBOTICI - administrator',
     },
@@ -11137,12 +11267,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.18.) PERIODIČAN UNOS AŽURIRANOG SPISKA PROIZVODA NA PLATFORMU - administrator',
     },
     {
@@ -11196,7 +11327,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.19.) SLIKANJE I PRIKUPLJANJE INFORMACIJA O ARTIKLIMA ZA PROBNE VEB IZLOGE U SUBOTICI - administrator',
     },
@@ -11251,7 +11382,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.20.) PERIODIČNA PROVERA INFORMACIJA O PROBNIM ARTIKLIMA ZA VEB IZLOG - administrator',
     },
@@ -11306,7 +11437,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.21.) ADMINISTRATIVNA PRIPREMA ARTIKALA ZA PROBNE VEB IZLOGE U SUBOTICI - administrator',
     },
@@ -11366,7 +11497,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.22.) GRAFIČKA PRIPREMA PROBNIH ARTIKALA VEB IZLOGA U SUBOTICI - grafički dizajner',
     },
@@ -11409,7 +11540,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.23.) PERIODIČNA GRAFIČKA I ADMINISTRATIVNA DOPUNA PROBNIH ARTIKALA ZA VEB IZLOG - administrator',
     },
@@ -11479,7 +11610,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.2.24.) UNOS ARTIKALA U PRIVREMENE VEB IZLOGE PRODAJNIH OBJEKATA U SUBOTICI - administrator',
     },
@@ -11534,7 +11665,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.2.25.) PERIODIČNI UNOS ARTIKALA IZ SUBOTICE U PROBNE VEB IZLOGE - administrator',
     },
     {
@@ -11606,7 +11737,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.3.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA PETU ETAPU - koordinator',
     },
@@ -11675,7 +11806,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.3.2.) POTPISIVANJE UGOVORA O DELU ZA PETU ETAPU - koordinator',
     },
     {
@@ -11692,12 +11823,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.3.3.) POTPISIVANJE UGOVORA O DELU ZA PETU ETAPU - PR menadžer',
     },
     {
@@ -11714,12 +11846,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.3.4.) PRIPREMA I ŠTAMPANJE FLAJERA ZA PROMOCIJU PLATFORME PRODAVCIMA U SUBOTICI - PR menadžer',
     },
@@ -11829,7 +11962,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.3.5.) GRAFIČKA PRIPREMA FLAJERA ZA PROMOCIJU PLATFORME PRODAVCIMA U SUBOTICI - grafički dizajner',
     },
@@ -11862,7 +11995,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.3.6.) DOSTAVLJANJE FLAJERA PRODAVCIMA U SUBOTICI U SVRSI PROMOVISANJA PLATFORME - PR menadžer',
     },
@@ -11917,7 +12050,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.3.7.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI USLUŽNOG ODRŽAVANJA VEB IZLOGA - PR menadžer',
     },
@@ -11936,12 +12069,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA TOKOM 5 MESECI - administrator',
     },
     {
@@ -11989,7 +12123,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA TOKOM 5 MESECI - administrator',
     },
@@ -12048,7 +12182,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - koordinator',
     },
@@ -12117,7 +12251,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.4.2.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - koordinator',
     },
@@ -12135,12 +12269,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.4.3.) POTPISIVANJE UGOVORA O DELU SA GRAFIČKIM DIZAJNEROM ZA PETU ETAPU - grafički dizajner',
     },
@@ -12158,12 +12293,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.4.4.) SELEKCIJA PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator',
     },
     {
@@ -12217,7 +12353,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.4.5.) PERIODIČNO OBNAVLJANJE PROIZVODA ZA BESPLATNO OGLAŠAVANJE - administrator',
     },
     {
@@ -12271,7 +12407,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.4.6.) IZRADA BESPLATNIH REKLAMA ZA SUBOTICU - grafički dizajner',
     },
     {
@@ -12288,12 +12424,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.4.7.) OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator',
     },
     {
@@ -12347,7 +12484,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.4.8.) KOMUNIKACIJA SA PRODAVCIMA ZA DOZVOLJENO BESPLATNO REKLAMIRANJE - PR menadžer',
     },
@@ -12391,7 +12528,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.4.9.) PERIODIČNO OBJAVLJIVANJE BESPLATNIH REKLAMA - administrator',
     },
     {
@@ -12464,7 +12601,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.1.) IZRADA UGOVORA SA MARKETING MENADŽEROM ZA PETU ETAPU - koordinator',
     },
     {
@@ -12532,7 +12669,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.2.) POTPISIVANJE UGOVORA SA MARKETING MENADŽEROM ZA PETU ETAPU - koordinator',
     },
     {
@@ -12549,12 +12686,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.5.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA PETU ETAPU - marketing menadžer',
     },
@@ -12572,12 +12710,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.5.4.) OBJAVLJIVANJE INFORMACIJA O PROIZVODIMA U SUBOTICI NA DRUŠTVENIM MREŽAMA TOKOM 3 MESECA - marketing menadžer',
     },
@@ -12640,7 +12779,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.5.5.) USPOSTAVLJANJE I ŠIRENJE KONTAKTA PUTEM DRUŠTVENIH MREŽA TOKOM 3 MESECA - marketing menadžer',
     },
@@ -12700,7 +12839,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.6.) OSMIŠLJAVANJE I NADGLEDANJE IZRADE BILBORDA - marketing menadžer',
     },
     {
@@ -12733,7 +12872,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.7.) GRAFIČKA PRIPREMA BILBORDA - grafički dizajner',
     },
     {
@@ -12766,7 +12905,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.8.) ŠTAMPANJE BILBORDA - marketing menadžer',
     },
     {
@@ -12828,7 +12967,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.9.) POSTAVLJANJE BILBORDA - marketing menadžer',
     },
     {
@@ -12846,12 +12985,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.10.) ODRŽAVANJE BILBORDA - marketing menadžer',
     },
     {
@@ -12884,7 +13024,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.5.11.) OSMIŠLJAVANJE I NADGLEDANJE IZRADE OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - marketing menadžer',
     },
@@ -12918,7 +13058,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.5.12.) GRAFIČKA PRIPREMA OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - grafički dizajner',
     },
@@ -12952,7 +13092,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.5.13.) ŠTAMPANJE OBAVEŠTAJNIH FLAJERA ZA KORISNIKE U SUBOTICI - marketing menadžer',
     },
@@ -13005,7 +13145,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.5.14.) DISTRIBUCIJA PROMOTIVNIH FLAJERA U SUBOTICI - marketing menadžer',
     },
     {
@@ -13044,7 +13184,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.6.1.) PROMOVISANJE OSTVARENOG BROJA PREGLEDA PROBNIH REKLAMA U SUBOTICI - PR menadžer',
     },
@@ -13088,7 +13228,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '5.6.2.) PROMOVISANJE IZRADE REKLAMA ZA PODRUČJE SUBOTICE - PR menadžer',
     },
     {
@@ -13131,7 +13271,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '5.6.3.) KOMUNIKACIJA SA PRODAVCIMA U SVRSI AFFILIATE POSREDNIŠTVA U SUBOTICI - PR menadžer',
     },
@@ -13182,7 +13322,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA ŠESTU ETAPU - koordinator',
     },
@@ -13251,7 +13391,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.1.2.) POTPISIVANJE UGOVORA O DELU ZA ŠESTU ETAPU - vebmaster',
     },
     {
@@ -13268,12 +13408,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.1.3.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
@@ -13290,12 +13431,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.1.4.) IZRADA PLATFORME ZA ŠESTU ETAPU - vebmaster',
     },
     {
@@ -13313,12 +13455,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.1.5.) TESTIRANJE PLATFORME ZA ŠESTU ETAPU - vebmaster',
     },
     {
@@ -13336,6 +13479,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -13349,7 +13493,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.1.) IZRADA UGOVORA O DELU SA KOORDINATOROM ZA ŠESTU ETAPU - koordinator',
     },
     {
@@ -13417,7 +13561,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.2.) POTPISIVANJE UGOVORA O DELU SA KOORDINATOROM ZA ŠESTU ETAPU - koordinator',
     },
     {
@@ -13434,12 +13578,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.3.) POTPISIVANJE UGOVORA O DELU SA KOORDINATOROM ZA ŠESTU ETAPU - vebmaster',
     },
     {
@@ -13456,12 +13601,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.4.) REGISTRACIJA DRUŠTVA SA OGRANIČENOM ODGOVORNOŠĆU - koordinator',
     },
     {
@@ -13484,7 +13630,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.5.) OTVARANJE RAČUNA - koordinator',
     },
     {
@@ -13502,12 +13648,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.6.) ODRŽAVANJE RAČUNA TOKOM 6 MESECI - koordinator',
     },
     {
@@ -13539,7 +13686,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.7.) ANGAŽOVANJE KNJIGOVOĐE - koordinator',
     },
     {
@@ -13556,12 +13703,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE TOKOM 6 MESECI - koordinator',
     },
     {
@@ -13594,7 +13742,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.9.) REGULISANJE UPLATE ZA PIO NA TERET ZAPOSLENIH - koordinator',
     },
     {
@@ -13612,12 +13760,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.10.) PRIJAVA PRIHODA I POREZA NA PLATE - koordinator',
     },
     {
@@ -13635,12 +13784,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.11.) UVOĐENJE BIZNIS MEJLA - vebmaster',
     },
     {
@@ -13663,7 +13813,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.12.) OPREMANJE KANCELARIJSKIM PRIBOROM I MATERIJALOM - koordinator',
     },
     {
@@ -13681,12 +13831,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.2.13.) PRIJAVA KOMUNALNIH TROŠKOVA KANCELARIJE - koordinator',
     },
     {
@@ -13704,6 +13855,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -13717,7 +13869,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.1.) IZRADA NACRTA UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
@@ -13761,7 +13913,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.3.2.) RAZMATRANJE NACRTA UGOVORA O SARADNJI SA MEĐUGRADSKIM INKASANTIMA - vebmaster',
     },
@@ -13780,12 +13932,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.3.) RAZMATRANJE NACRTA UGOVORA O SARADNJI SA INKASANTIMA - administrator',
     },
     {
@@ -13803,12 +13956,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.4.) RAZMATRANJE NACRTA UGOVORA O SARADNJI SA INKASANTIMA - marketing menadžer',
     },
     {
@@ -13826,12 +13980,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.5.) RAZMATRANJE NACRTA UGOVORA O SARADNJI SA INKASANTIMA - PR menadžer',
     },
     {
@@ -13849,12 +14004,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.6.) IZRADA UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
@@ -13897,7 +14053,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.7.) OSMIŠLJAVANJE OGLASA ZA ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - koordinator',
     },
     {
@@ -13915,12 +14071,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.8.) IZRADA OGLASA ZA ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - grafički dizajner',
     },
     {
@@ -13953,7 +14110,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.9.) OGLAŠAVANJE POZICIJE MEĐUGRADSKIH INKASANATA - administrator',
     },
     {
@@ -13971,12 +14128,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.10.) ANGAŽOVANJE MEĐUGRADSKIH INKASANATA - koordinator',
     },
     {
@@ -14019,7 +14177,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.11.) POPUNJAVANJE ELEKTRONSKIH UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
@@ -14062,7 +14220,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.3.12.) ELEKTRONSKO POTPISIVANJE UGOVORA O SARADNJI SA INKASANTIMA - koordinator',
     },
     {
@@ -14080,6 +14238,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -14093,7 +14252,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.4.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - koordinator',
     },
@@ -14162,7 +14321,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.4.2.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - administrator',
     },
@@ -14180,12 +14339,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.4.3.) POTPISIVANJE UGOVORA O DELU SA ADMINISTRATOROM ZA ŠESTU ETAPU - koordinator',
     },
@@ -14203,12 +14363,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.4.4.) POPISIVANJE PRODAJNIH OBJEKATA U SRBIJI - administrator',
     },
     {
@@ -14272,7 +14433,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.5.1.) IZRADA PREZENTACIONOG MATERIJALA O INFOTRGU - koordinator',
     },
     {
@@ -14290,12 +14451,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.5.2.) IZRADA PREZENTACIONOG MATERIJALA O PREDNOSTI OGLAŠAVANJA - koordinator',
     },
     {
@@ -14313,6 +14475,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
@@ -14326,7 +14489,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.6.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA PR MENADŽEROM ZA ŠESTU ETAPU - koordinator',
     },
@@ -14395,7 +14558,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.6.2.) POTPISIVANJE UGOVORA O DELU ZA ŠESTU ETAPU - PR menadžer',
     },
     {
@@ -14412,12 +14575,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.6.3.) POTPISIVANJE UGOVORA O DELU SA PR MENADŽEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
@@ -14434,12 +14598,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.6.4.) KOMUNIKACIJA SA PRODAVCIMA ŠIROM SRBIJE U SVRSI PROMOVISANJA PLATFORME - PR menadžer',
     },
@@ -14483,7 +14648,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.6.5.) PERIODIČNA MODERACIJA VEB IZLOGA - administrator',
     },
     {
@@ -14531,7 +14696,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.6.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA - administrator',
     },
     {
@@ -14588,7 +14753,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     { type: 'hr' },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.7.1.) IZRADA UGOVORA SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
@@ -14656,7 +14821,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.7.2.) POTPISIVANJE UGOVORA SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - koordinator',
     },
     {
@@ -14673,12 +14838,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content:
         '6.7.3.) POTPISIVANJE UGOVORA O DELU SA MARKETING MENADŽEROM ZA ŠESTU ETAPU - marketing menadžer',
     },
@@ -14696,12 +14862,13 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'p',
       content: 'Nema troškova',
       paddingLeft: marginLeftMedium,
+      weight: 'bold',
     },
     {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.7.4.) OSMIŠLJAVANJE VIDEO REKLAME - marketing menadžer',
     },
     {
@@ -14733,7 +14900,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.7.5.) IZRADA VIDEO REKLAME - marketing menadžer',
     },
     {
@@ -14777,7 +14944,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.7.6.) OGLAŠAVANJE VIDEO REKLAME PUTEM MEDIJA - marketing menadžer',
     },
     {
@@ -14811,7 +14978,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
     {
-      type: 'h3',
+      type: 'h4',
       content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA - marketing menadžer',
     },
     {
