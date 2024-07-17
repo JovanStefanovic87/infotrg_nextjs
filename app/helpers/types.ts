@@ -42,7 +42,8 @@ export interface ContentBlockItem {
     | 'paragraph2'
     | 'p'
     | 'hr'
-    | 'listEvenly';
+    | 'listEvenly'
+    | 'pNormal';
   content?: string;
   url?: string | string[];
   image?: string[];
@@ -61,6 +62,8 @@ export interface ContentBlockItem {
   size?: 'sm' | 'md' | 'lg';
   marginBottom?: string;
   marginY?: string;
+  color?: string;
+  height?: number;
   circleContent?: {
     realizator: string;
     period: string;

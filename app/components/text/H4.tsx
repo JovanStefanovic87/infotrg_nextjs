@@ -5,6 +5,7 @@ interface Props {
   align?: 'left' | 'center' | 'right';
   padding?: number;
   paddingBottom?: number;
+  paddingTop?: number;
   weight?: 'normal' | 'bold' | 'semibold';
   color?: string;
 }
@@ -14,6 +15,7 @@ const H4: React.FC<Props> = ({
   align = 'left',
   padding = 0,
   paddingBottom = 0,
+  paddingTop = 0,
   weight = 'semibold',
   color = 'grayMedium',
 }) => {
@@ -22,8 +24,8 @@ const H4: React.FC<Props> = ({
   return (
     <div>
       <h4
-        className={`text-sm sm:text-md text-${color} text-wrap font-${weight} mb-4 text-${align} pb-${padding} overflow-hidden whitespace-nowrap`}
-        style={{ maxWidth, paddingBottom }}
+        className={`text-sm sm:text-base text-${color} text-wrap font-${weight} text-${align} overflow-hidden whitespace-nowrap`}
+        style={{ maxWidth, paddingBottom, paddingTop }}
       >
         {text}
       </h4>

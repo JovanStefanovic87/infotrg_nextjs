@@ -13,6 +13,8 @@ import H2 from '@/app/components/text/H2';
 import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
 import Text from '@/app/components/text/Text';
+import TextNormal from '@/app/components/text/TextNormal';
+import Devider2 from '@/app/components/ui/Devider2';
 
 interface Props {
   [key: string]: string;
@@ -25,7 +27,7 @@ const PageContent: React.FC = () => {
   const getBgColorByOwner = (owner?: string): string => {
     switch (owner) {
       case 'autor':
-        return 'mainWhite';
+        return 'white';
       case 'administrator':
         return 'darkblue';
       case 'koordinator':
@@ -46,7 +48,7 @@ const PageContent: React.FC = () => {
   const getTextColorByOwner = (owner?: string): string => {
     switch (owner) {
       case 'autor':
-        return 'white';
+        return 'black';
       case 'administrator':
         return 'white';
       case 'koordinator':
@@ -93,49 +95,30 @@ const PageContent: React.FC = () => {
       <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='mb-6 mt-6 flex flex-col'>
+            <div key={index} className='flex flex-col'>
               {block.type === 'text' ? (
                 <TextWrapped block={block.content || ''} />
-              ) : block.type === 'image' ? (
-                Array.isArray(block.url) ? (
-                  block.url.map((image: string, imgIndex: number) => (
-                    <ImageBlock
-                      key={imgIndex}
-                      image={image}
-                      imgIndex={imgIndex}
-                      openImageModal={openImageModal}
-                    />
-                  ))
-                ) : (
-                  <ImageBlock
-                    key={index}
-                    image={block.content || ''}
-                    imgIndex={index}
-                    openImageModal={openImageModal}
-                  />
-                )
-              ) : block.type === 'devider' ? (
-                <Devider />
-              ) : block.type === 'paragraph1' || block.type === 'paragraph2' ? (
-                <TextWrapped block={block.content || ''} />
               ) : block.type === 'hr' ? (
-                <Devider />
+                <Devider2 marginY={24} height={block.height} />
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
-                <div className='h-0'>
-                  <H2 text={block.content} align='center' color='black' />
-                </div>
+                <H2 text={block.content} align='center' color={block.color} />
               ) : block.type === 'H2BoldCenter' ? (
                 <H2 text={block.content} align='center' weight='bold' />
               ) : block.type === 'h3' ? (
-                <div className='h-0'>
-                  <H3 text={block.content} align='center' />
-                </div>
+                <H3 text={block.content} align='center' />
               ) : block.type === 'h4' ? (
-                <div className='h-6 sm:h-2'>
-                  <H4 text={block.content} weight='bold' color='black' />
+                <div className='pt-4'>
+                  <H4 text={block.content} weight='bold' color='black' paddingTop={16} />
                 </div>
+              ) : block.type === 'pNormal' ? (
+                <TextNormal
+                  text={block.content}
+                  weight={block.weight}
+                  paddingLeft={block.paddingLeft}
+                  align={block.align}
+                />
               ) : block.type === 'p' ? (
                 <Text
                   text={block.content}
@@ -145,7 +128,7 @@ const PageContent: React.FC = () => {
                 />
               ) : block.type === 'listEvenly' ? (
                 block.circleContent && (
-                  <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
+                  <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4 pt-4'>
                     <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
                       {Object.entries(block.circleContent as Props).map(([key, value], idx) => {
                         const bgColorClass = getBgColorByOwner(block.owner);
@@ -153,17 +136,17 @@ const PageContent: React.FC = () => {
                         return (
                           <div
                             key={idx}
-                            className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32`}
+                            className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shadow-grayLight shadow-lg border-2 border-l-blueLightest border-r-blueLightest`}
                             style={{ backgroundColor: bgColorClass }}
                           >
                             <p
-                              className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold'
+                              className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold underline underline-offset-4'
                               style={{ color: textColorClass }}
                             >
                               {key.toLocaleUpperCase()}
                             </p>
                             <p
-                              className='text-xxxs sm:text-xxs md:text-xs lg:text-sm'
+                              className='text-xxxs sm:text-xxs md:text-xs lg:text-sm text-center'
                               style={{ color: textColorClass }}
                             >
                               {value}
