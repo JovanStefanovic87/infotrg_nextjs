@@ -219,6 +219,12 @@ export const listOfLinks: BasicInformation[] = [
       'PR menadžer kontaktira vlasnike svih prodajnih objekata u Subotici koji su popisani u prethodnom mesecu i obaveštava ih da su njihovi proizvodi objavljeni na platformi. Administrator objavljuje premijerne stranice enciklopedije proizvoda, oglašava radnu poziciju za međugradske inkasante i vrši ponovni popis i objavu prve trećine svih prodajnih objekata u Subotici u cilju osvežavanja informacija na platformi. Marketing menadžer na društvenim mrežama širi informacije o proizvodima u Subotici.',
   },
   {
+    id: 'avgust-2025',
+    title: 'Avgust 2025.',
+    description:
+      'Administrator vrši ponovni popis i objavu druge trećine svih prodajnih objekata u Subotici u cilju osvežavanja informacija na platformi, a potom priprema prezentacione besplatne reklame za pojedine proizvode koji se prodaju u Subotici. Marketing menadžer priprema bilborde i reklamne flajere putem kojih će se platforma promovisati svim potencijalnim korisnicima u Subotici.',
+  },
+  {
     id: 'septembar-2025',
     title: 'Septembar 2025.',
     description:
