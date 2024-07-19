@@ -44,7 +44,7 @@ export const pppLinksData: PppLinksData[] = [
   {
     id: 'mart-2024',
     label: 'Mart 2024.',
-    amount: 'planirani fond: 200 EUR',
+    amount: 'planirani fond: 300 EUR',
   },
   {
     id: 'maj-2024',
@@ -138,8 +138,8 @@ export const pppLinksData: PppLinksData[] = [
   },
   {
     id: 'novembar-2025-mart-2026',
-    label: 'Novembar 2025. - Mart-2026.',
-    amount: 'planirani fond: 1.157 EUR',
+    label: 'Novembar 2025. - Mart 2026.',
+    amount: 'planirani fond: 5.006 EUR',
   },
 ];
 export const contentBlocksData: ContentBlocksData = {
@@ -240,7 +240,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'pNormal',
-      content: 'Autor određuje ima projekta i na isti vrši zaštitu autorskih prava.',
+      content: 'Autor određuje ime projekta i na isti vrši zaštitu autorskih prava.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -1091,7 +1091,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h2',
-      content: '(20,5 h - 116,5 EUR)',
+      content: '(12 h - 116,5 EUR)',
       weight: 'bold',
       align: 'center',
       color: 'grayMedium',
@@ -1332,7 +1332,7 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'listEvenly',
       owner: 'webmaster',
       circleContent: {
-        realizator: 'pr dizajner',
+        realizator: 'vebmaster',
         period: '2024/03',
         optimum: '1 nacrt',
         angažman: '30 h',
@@ -1362,8 +1362,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'pNormal',
-      content:
-        'Shodno studiji tehničke izvodljivosti, vebmaster vrši doradu ili dopunu nacrta tehničkog plana.',
+      content: 'Autor vrši godišnju obnovu internet domena sredstvima iz investicionog fonda.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -1559,7 +1558,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'pNormal',
-      content: 'Administrator potpisuje Ugovor o delu sa za prvu etapu.',
+      content: 'Administrator potpisuje Ugovor o delu za prvu etapu.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -2260,8 +2259,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'pNormal',
-      content:
-        'Grafički dizajner sprovodi testiranje tehničkog plana tako što obavlja anketu sa nasumičnim ispitanicima, pokazujući im probnu platformu na osnovu čega se procenjuje kako se ispitanici snalaze u upotrebi platforme i kako ocenjuju njenu svrhu, funkcionalnost i dizajn, a rezultati ankete se upisuju u anketni formular.',
+      content: 'Marketing menadžer potpisuje odštampani Tehnički plan.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -3307,19 +3305,40 @@ export const contentBlocksData: ContentBlocksData = {
       circleContent: {
         realizator: 'koordinator',
         period: '2024/07',
-        optimum: '10 flajera',
+        optimum: '100 flajera',
+        angažman: '0 h',
+        fond: '34 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (1/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2024/07',
+        optimum: '1 kontakt',
         angažman: '0 h',
         fond: '0 EUR',
       },
     },
     {
       type: 'h4',
-      content: '1.1.27.) IZVEŠTAJ O PRIPREMLJENIM INVESTICIONIM UGOVORIMA',
+      content: '1.4.7.) POPUNJAVANJE I ŠTAMPANJE UGOVORA O INVESTICIJI (1/20)',
     },
     {
       type: 'pNormal',
       content:
-        'Koordinator daje mesečni izveštaj članovima upravnog tima o statusu pripreme investicionih ugovora i priznanica za uložena sredstva.',
+        'Koordinator popunjava i štampa zasebne ugovore o investiciji za svakog zainteresovanog investitora. Ugovor reguliše sva investitorova prava i obaveze.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -3328,19 +3347,122 @@ export const contentBlocksData: ContentBlocksData = {
       circleContent: {
         realizator: 'koordinator',
         period: '2024/07',
-        optimum: '1 izveštaj',
+        optimum: '1 ugovor',
+        angažman: '0 h',
+        fond: '2 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.8.) POTPISIVANJE UGOVORA SA INVESTITORIMA (1/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitor potpisuju Ugovor o investiciji.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2024/07',
+        optimum: '2 primerka',
+        angažman: '0 h',
+        fond: '2 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.9.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (1/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne priznanice za uložena sredstva, u kojima se navode podaci o investitoru i vrednost uloženih sredstava.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2024/07',
+        optimum: '10 priznanica',
+        angažman: '1 h',
+        fond: '8,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.10.) POTPISIVANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (1/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitori potpisuju priznanice za uložena sredstva.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2024/07',
+        optimum: '20 primeraka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.11.) ZAVOĐENJE VLASNIČKOG UDELA U REGISTAR (1/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator u elektronski registar unosi podatke o svakom investitoru, vrednost njihovih uloženih sredstava i određuje visinu suvlasničkih udela.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2024/07',
+        optimum: '10 ažuriranja',
+        angažman: '2,5 h',
+        fond: '18,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.12.) ZAVOĐENJE ULOŽENIH FINANSIJA U BUDŽETNI FOND (1/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator zavodi prihod od investicionog ulaganja u elektronski dokument za evidenciju budžeta, a gotov novac odlaže u budžetnu kasu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2024/07',
+        optimum: '10 ažuriranja',
         angažman: '1 h',
         fond: '7,5 EUR',
       },
     },
     {
       type: 'h4',
-      content: '1.1.29.) KONSULTACIJA SA PRAVNIM TIMOM O INVESTICIONOM PROGRAMU',
+      content: '2.1.1.) IZRADA I ŠTAMPANJE UGOVORA O DELU SA VEBMASTEROM ZA DRUGU ETAPU',
     },
     {
       type: 'pNormal',
       content:
-        'Koordinator se konsultuje sa pravnim timom oko eventualnih dodatnih pitanja o Investicionom planu i programu.',
+        'Na osnovu Tehničkog plana i Plana i programa poslovanja, koordinator izrađuje i štampa Ugovor o delu u kojem se posebno navode svi vebmasterovi radni zadaci, rokovi i naknade za drugu etapu.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -3349,19 +3471,18 @@ export const contentBlocksData: ContentBlocksData = {
       circleContent: {
         realizator: 'koordinator',
         period: '2024/07',
-        optimum: '1 konsultacija',
+        optimum: '6 stranica',
         angažman: '1 h',
-        fond: '7,5 EUR',
+        fond: '8 EUR',
       },
     },
     {
       type: 'h4',
-      content: '1.2.3.) PRIPREMA IZVEŠTAJA O REALIZACIJI CILJEVA',
+      content: '2.1.2.) POTPISIVANJE UGOVORA O DELU SA VEBMASTEROM ZA DRUGU ETAPU',
     },
     {
       type: 'pNormal',
-      content:
-        'Koordinator priprema izveštaj o realizaciji ciljeva i zadataka na projektu, nakon čega isti predaje članovima upravnog tima.',
+      content: 'Koordinator potpisuje Ugovor o delu sa vebmasterom za drugu etapu.',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -3370,50 +3491,9 @@ export const contentBlocksData: ContentBlocksData = {
       circleContent: {
         realizator: 'koordinator',
         period: '2024/07',
-        optimum: '1 izveštaj',
-        angažman: '1 h',
-        fond: '7,5 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '1.2.4.) PRIPREMA MATERIJALA ZA SASTANAK UPRAVNOG TIMA',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Koordinator priprema sav materijal koji će biti razmatran na sastanku upravnog tima.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2024/07',
-        optimum: '1 materijal',
-        angažman: '1 h',
-        fond: '7,5 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '1.2.8.) UČESTVOVANJE NA SASTANKU UPRAVNOG TIMA',
-    },
-    {
-      type: 'pNormal',
-      content: 'Koordinator aktivno učestvuje na sastanku upravnog tima.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2024/07',
-        optimum: '1 sastanak',
-        angažman: '1 h',
-        fond: '7,5 EUR',
+        optimum: '2 primerka',
+        angažman: '0 h',
+        fond: '0 EUR',
       },
     },
     { type: 'hr' },
@@ -16658,12 +16738,12 @@ export const contentBlocksData: ContentBlocksData = {
     { type: 'hr' },
     {
       type: 'h2',
-      content: 'GRAFIČKI DIZAJNER',
+      content: 'KOORDINATOR',
       color: 'black',
     },
     {
       type: 'h2',
-      content: '(30 h - 375,5 EUR)',
+      content: '(0 h - 0 EUR)',
       weight: 'bold',
       align: 'center',
       color: 'gayMedium',
@@ -16834,166 +16914,6 @@ export const contentBlocksData: ContentBlocksData = {
         optimum: '1 ugovor',
         angažman: '0 h',
         fond: '2 EUR',
-      },
-    },
-    { type: 'hr' },
-    {
-      type: 'h2',
-      content: 'KOORDINATOR',
-      color: 'black',
-    },
-    {
-      type: 'h2',
-      content: '(0 h - 0 EUR)',
-      weight: 'bold',
-      align: 'center',
-      color: 'gayMedium',
-    },
-    {
-      type: 'h4',
-      content: '0.7.2.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU INVENTARA (15/21)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Ukoliko dođe do bilo kakve promene stanja opreme i materijala neophodnih za funkcionisanje projekta, koordinator to beleži u dokumentu za evidenciju. Ažuriranje dokumenta za evidenciju se obavlja tokom celokupnog trajanja projekta.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '2 ažuriranja',
-        angažman: '0,5 h',
-        fond: '4 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '0.7.4.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU BUDŽETA (15/21)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Usled bilo koje promene novčanog stanja u fondovima, koordinator obavlja evidenciju prihoda ili rashoda finansijskih sredstava i objavljuje trenutno stanje budžeta. Evidencija budžeta se sprovodi neprestano tokom celokupnog trajanja projekta.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '30 ažuriranja',
-        angažman: '3 h',
-        fond: '22,5 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '0.7.7.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (15/21)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transkacije, komintenti, iznos i datum.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '30 priznanica',
-        angažman: '3 h',
-        fond: '23,5 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '0.7.8.) POTPISIVANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (15/21)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Svaka odštampana priznanica za novčane transkacije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '30 priznanica',
-        angažman: '0 h',
-        fond: '0 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '1.1.20.) PERIODIČNO IZVEŠTAVANJE INVESTITORIMA (15/21)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Koordinator ima obavezu da svakog meseca izveštava investitore o tome kako projekat napreduje, da predoči realizovane ciljeve u proteklom periodu i zadate ciljeve u narednom periodu. Izveštavanje traje neprekidno tokom svih faza razvoja projekta.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '1 izveštaj',
-        angažman: '1 h',
-        fond: '7,5 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '1.3.4.) RUTINSKA KONTROLA KOORDINATORA (12/18)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Koordinator povremeno sprovodi kontrolu ugovora, evidencionih dokumenata, priznanica, finansijskog stanja, uverava se da nema nikakvih propusta i vrši eventualne korekcije ukoliko za njima ima potrebe.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '1 kontrola',
-        angažman: '8 h',
-        fond: '60 EUR',
-      },
-    },
-    {
-      type: 'h4',
-      content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (15/21)',
-    },
-    {
-      type: 'pNormal',
-      content:
-        'Koordinator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'listEvenly',
-      owner: 'koordinator',
-      circleContent: {
-        realizator: 'koordinator',
-        period: '2025/09',
-        optimum: '1 kontakt',
-        angažman: '0 h',
-        fond: '0 EUR',
       },
     },
     {
@@ -18661,6 +18581,19 @@ export const contentBlocksData: ContentBlocksData = {
   'novembar-2025-mart-2026': [
     {
       type: 'h2',
+      content: 'NOVEMBAR 2025.',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: 'planirani fond: 1.337,5 EUR',
+      color: 'black',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h2',
       content: 'ADMINISTRATOR',
       color: 'black',
     },
@@ -19421,6 +19354,2754 @@ export const contentBlocksData: ContentBlocksData = {
       circleContent: {
         realizator: 'vebmaster',
         period: '2025/11',
+        optimum: '1 server',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    { type: 'hr', height: bolderLine },
+    {
+      type: 'h2',
+      content: 'DECEMBAR 2025.',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: 'planirani fond: 888,5 EUR',
+      color: 'black',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h2',
+      content: 'ADMINISTRATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(61,5 h - 306 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.4.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2025/12',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '3.3.7.) PERIODIČNA MODERACIJA VEB IZLOGA (9/11)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2025/12',
+        optimum: '2.500 veb izloga',
+        angažman: '15 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '4.3.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA (6/8)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2025/12',
+        optimum: '2.000 stranica',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA VEĆEG OBIMA (2/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2025/12',
+        optimum: '1.800 veb izloga',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA VEĆEG OBIMA (2/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2025/12',
+        optimum: '4.000 stranica',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'AUTOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.1.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Autor kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'autor',
+      circleContent: {
+        realizator: 'autor',
+        period: '2025/12',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'KOORDINATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(20,5 h - 284,5 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '0.7.2.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU INVENTARA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Ukoliko dođe do bilo kakve promene stanja opreme i materijala neophodnih za funkcionisanje projekta, koordinator to beleži u dokumentu za evidenciju. Ažuriranje dokumenta za evidenciju se obavlja tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '2 ažuriranja',
+        angažman: '0,5 h',
+        fond: '4 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.4.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU BUDŽETA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Usled bilo koje promene novčanog stanja u fondovima, koordinator obavlja evidenciju prihoda ili rashoda finansijskih sredstava i objavljuje trenutno stanje budžeta. Evidencija budžeta se sprovodi neprestano tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '30 ažuriranja',
+        angažman: '3 h',
+        fond: '22,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.7.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transkacije, komintenti, iznos i datum.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '30 priznanica',
+        angažman: '3 h',
+        fond: '23,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.8.) POTPISIVANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Svaka odštampana priznanica za novčane transkacije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '30 priznanica',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.1.20.) PERIODIČNO IZVEŠTAVANJE INVESTITORIMA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator ima obavezu da svakog meseca izveštava investitore o tome kako projekat napreduje, da predoči realizovane ciljeve u proteklom periodu i zadate ciljeve u narednom periodu. Izveštavanje traje neprekidno tokom svih faza razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 izveštaj',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.3.4.) RUTINSKA KONTROLA KOORDINATORA (15/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator povremeno sprovodi kontrolu ugovora, evidencionih dokumenata, priznanica, finansijskog stanja, uverava se da nema nikakvih propusta i vrši eventualne korekcije ukoliko za njima ima potrebe.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 kontrola',
+        angažman: '8 h',
+        fond: '60 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.10.) POTPISIVANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (18/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitori potpisuju priznanice za uložena sredstva.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '20 primeraka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.11.) ZAVOĐENJE VLASNIČKOG UDELA U REGISTAR (18/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator u elektronski registar unosi podatke o svakom investitoru, vrednost njihovih uloženih sredstava i određuje visinu suvlasničkih udela.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '10 ažuriranja',
+        angažman: '2,5 h',
+        fond: '19 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.12.) ZAVOĐENJE ULOŽENIH FINANSIJA U BUDŽETNI FOND (18/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator zavodi prihod od investicionog ulaganja u elektronski dokument za evidenciju budžeta, a gotov novac odlaže u budžetnu kasu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '10 ažuriranja',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.7.) POPUNJAVANJE I ŠTAMPANJE UGOVORA O INVESTICIJI (18/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne ugovore o investiciji za svakog zainteresovanog investitora. Ugovor reguliše sva investitorova prava i obaveze.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 ugovor',
+        angažman: '0,5 h',
+        fond: '2 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.8.) POTPISIVANJE UGOVORA SA INVESTITORIMA (18/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitor potpisuju Ugovor o investiciji.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '2 primerka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.9.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (18/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne priznanice za uložena sredstva, u kojima se navode podaci o investitoru i vrednost uloženih sredstava.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '10 priznanica',
+        angažman: '1 h',
+        fond: '8,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.6.) ODRŽAVANJE RAČUNA (3/6)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator održava račun u banci tokom čitvog perioda rada.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 račun',
+        angažman: '0 h',
+        fond: '10 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE (3/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator finansira sve knjigovodstvene usluge tokom šest meseci razvojnog perioda sredstvima iz investicionog fonda.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 knjigovođa',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.9.) REGULISANJE UPLATE ZA PIO NA TERET ZAPOSLENIH (3/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator nudi mogućnost svim članovima upravnog tima, njihovim asistentima i investitorima mogućnost prijave njihovih prihoda ostvarenih radom na projektu, uz odbijanja svih naknada na ime uplate za PIO fond i poreza na plate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.10.) PRIJAVA PRIHODA I POREZA NA PLATE (3/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator prijavljuje poreskoj upravi sve prihode koji su nastali pre registracije firme i vrši njihovu uplatu regulišući sve naknade koji idu na ime poreza na profit i poreza na plate zaposlenih.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2025/12',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'MARKETING MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 171 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.5.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2025/12',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA (2/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer realizuje održavanje video reklame u određenom vremenskom periodu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2025/12',
+        optimum: '1 video reklama',
+        angažman: '0 h',
+        fond: '171 EUR',
+      },
+    },
+
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'PR MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(2 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.6.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'PR menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'pr',
+      circleContent: {
+        realizator: 'PR menadžer',
+        period: '2025/12',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'VEBMASTER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 127 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.2.6.) ODRŽAVANJE SSL SERTIFIKATA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Vebmaster održava SSL sertifikat tokom celokupnog perioda razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2025/12',
+        optimum: '1 sertifikat',
+        angažman: '0 h',
+        fond: '7 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.3.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (18/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2025/12',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.16.) ODRŽAVANJE PLATFORME (15/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Nakon izrade, vebmaster ima obavezu da u narednom periodu održava platformu u stabilnom stanju i da interveniše u slučaju da nastupe tehnički problemi koji mogu izazvati delimični ili potpuni zastoj rada platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2025/12',
+        optimum: '1 intervencija',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.17.) ODRŽAVANJE SERVERA (15/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster nadgleda i reguliše sve troškove servera tokom ukupnog perioda funkcionisanja platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2025/12',
+        optimum: '1 server',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    { type: 'hr', height: bolderLine },
+    {
+      type: 'h2',
+      content: 'JANUAR 2026.',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: 'planirani fond: 887,5 EUR',
+      color: 'black',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h2',
+      content: 'ADMINISTRATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(62 h - 305,5 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.4.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/01',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '3.3.7.) PERIODIČNA MODERACIJA VEB IZLOGA (10/11)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/01',
+        optimum: '2.500 veb izloga',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '4.3.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA (7/8)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/01',
+        optimum: '2.000 stranica',
+        angažman: '15,5 h',
+        fond: '76 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA VEĆEG OBIMA (3/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/01',
+        optimum: '1.800 veb izloga',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA VEĆEG OBIMA (3/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/01',
+        optimum: '4.000 stranica',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'AUTOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.1.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Autor kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'autor',
+      circleContent: {
+        realizator: 'autor',
+        period: '2026/01',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'KOORDINATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(20 h - 284,5 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '0.7.2.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU INVENTARA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Ukoliko dođe do bilo kakve promene stanja opreme i materijala neophodnih za funkcionisanje projekta, koordinator to beleži u dokumentu za evidenciju. Ažuriranje dokumenta za evidenciju se obavlja tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '2 ažuriranja',
+        angažman: '0,5 h',
+        fond: '4 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.4.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU BUDŽETA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Usled bilo koje promene novčanog stanja u fondovima, koordinator obavlja evidenciju prihoda ili rashoda finansijskih sredstava i objavljuje trenutno stanje budžeta. Evidencija budžeta se sprovodi neprestano tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '30 ažuriranja',
+        angažman: '3 h',
+        fond: '22,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.7.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transkacije, komintenti, iznos i datum.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '30 priznanica',
+        angažman: '3 h',
+        fond: '23,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.8.) POTPISIVANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Svaka odštampana priznanica za novčane transkacije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '30 priznanica',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.1.20.) PERIODIČNO IZVEŠTAVANJE INVESTITORIMA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator ima obavezu da svakog meseca izveštava investitore o tome kako projekat napreduje, da predoči realizovane ciljeve u proteklom periodu i zadate ciljeve u narednom periodu. Izveštavanje traje neprekidno tokom svih faza razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 izveštaj',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.3.4.) RUTINSKA KONTROLA KOORDINATORA (16/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator povremeno sprovodi kontrolu ugovora, evidencionih dokumenata, priznanica, finansijskog stanja, uverava se da nema nikakvih propusta i vrši eventualne korekcije ukoliko za njima ima potrebe.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 kontrola',
+        angažman: '8 h',
+        fond: '60 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.7.) POPUNJAVANJE I ŠTAMPANJE UGOVORA O INVESTICIJI (19/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne ugovore o investiciji za svakog zainteresovanog investitora. Ugovor reguliše sva investitorova prava i obaveze.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 ugovor',
+        angažman: '0 h',
+        fond: '2 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.8.) POTPISIVANJE UGOVORA SA INVESTITORIMA (19/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitor potpisuju Ugovor o investiciji.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '2 primerka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.9.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (19/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne priznanice za uložena sredstva, u kojima se navode podaci o investitoru i vrednost uloženih sredstava.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '10 priznanica',
+        angažman: '1 h',
+        fond: '8,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.10.) POTPISIVANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (19/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitori potpisuju priznanice za uložena sredstva.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '20 primeraka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.11.) ZAVOĐENJE VLASNIČKOG UDELA U REGISTAR (19/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator u elektronski registar unosi podatke o svakom investitoru, vrednost njihovih uloženih sredstava i određuje visinu suvlasničkih udela.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '10 ažuriranja',
+        angažman: '2,5 h',
+        fond: '19 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.12.) ZAVOĐENJE ULOŽENIH FINANSIJA U BUDŽETNI FOND (19/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator zavodi prihod od investicionog ulaganja u elektronski dokument za evidenciju budžeta, a gotov novac odlaže u budžetnu kasu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '10 ažuriranja',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.6.) ODRŽAVANJE RAČUNA (4/6)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator održava račun u banci tokom čitvog perioda rada.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 račun',
+        angažman: '0 h',
+        fond: '10 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE (4/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator finansira sve knjigovodstvene usluge tokom šest meseci razvojnog perioda sredstvima iz investicionog fonda.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 knjigovođa',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.9.) REGULISANJE UPLATE ZA PIO NA TERET ZAPOSLENIH (4/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator nudi mogućnost svim članovima upravnog tima, njihovim asistentima i investitorima mogućnost prijave njihovih prihoda ostvarenih radom na projektu, uz odbijanje svih naknada na ime uplate za PIO fond i poreza na plate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.10.) PRIJAVA PRIHODA I POREZA NA PLATE (4/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator prijavljuje poreskoj upravi sve prihode koji su nastali pre registracije firme i vrši njihovu uplatu regulišući sve naknade koji idu na ime poreza na profit i poreza na plate zaposlenih.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/01',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'MARKETING MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 171 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.5.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2026/01',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA (3/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer realizuje održavanje video reklame u određenom vremenskom periodu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2026/01',
+        optimum: '1 video reklama',
+        angažman: '0 h',
+        fond: '171 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'PR MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.6.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'PR menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'pr',
+      circleContent: {
+        realizator: 'PR menadžer',
+        period: '2026/01',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'VEBMASTER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 126,5 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.2.6.) ODRŽAVANJE SSL SERTIFIKATA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Vebmaster održava SSL sertifikat tokom celokupnog perioda razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/01',
+        optimum: '1 sertifikat',
+        angažman: '0 h',
+        fond: '6,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.3.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (19/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/01',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.16.) ODRŽAVANJE PLATFORME (16/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Nakon izrade, vebmaster ima obavezu da u narednom periodu održava platformu u stabilnom stanju i da interveniše u slučaju da nastupe tehnički problemi koji mogu izazvati delimični ili potpuni zastoj rada platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/01',
+        optimum: '1 intervencija',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.17.) ODRŽAVANJE SERVERA (16/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster nadgleda i reguliše sve troškove servera tokom ukupnog perioda funkcionisanja platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/01',
+        optimum: '1 server',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    { type: 'hr', height: bolderLine },
+    {
+      type: 'h2',
+      content: 'FEBRUAR 2026.',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: 'planirani fond: 888,5 EUR',
+      color: 'black',
+    },
+    {
+      type: 'hr',
+    },
+
+    {
+      type: 'h2',
+      content: 'ADMINISTRATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(62 h - 306 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.4.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/02',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '3.3.7.) PERIODIČNA MODERACIJA VEB IZLOGA (11/11)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/02',
+        optimum: '2.500 veb izloga',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '4.3.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA (8/8)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/02',
+        optimum: '2.000 stranica',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA VEĆEG OBIMA (4/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/02',
+        optimum: '1.800 veb izloga',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA VEĆEG OBIMA (4/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/02',
+        optimum: '4.000 stranica',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'AUTOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.1.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Autor kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'autor',
+      circleContent: {
+        realizator: 'autor',
+        period: '2026/02',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'KOORDINATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(20 h - 285 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '0.7.2.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU INVENTARA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Ukoliko dođe do bilo kakve promene stanja opreme i materijala neophodnih za funkcionisanje projekta, koordinator to beleži u dokumentu za evidenciju. Ažuriranje dokumenta za evidenciju se obavlja tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '2 ažuriranja',
+        angažman: '0,5 h',
+        fond: '4 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.4.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU BUDŽETA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Usled bilo koje promene novčanog stanja u fondovima, koordinator obavlja evidenciju prihoda ili rashoda finansijskih sredstava i objavljuje trenutno stanje budžeta. Evidencija budžeta se sprovodi neprestano tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '30 ažuriranja',
+        angažman: '3 h',
+        fond: '22,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.7.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transkacije, komintenti, iznos i datum.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '30 priznanica',
+        angažman: '3 h',
+        fond: '23,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.8.) POTPISIVANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Svaka odštampana priznanica za novčane transkacije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '30 priznanica',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.1.20.) PERIODIČNO IZVEŠTAVANJE INVESTITORIMA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator ima obavezu da svakog meseca izveštava investitore o tome kako projekat napreduje, da predoči realizovane ciljeve u proteklom periodu i zadate ciljeve u narednom periodu. Izveštavanje traje neprekidno tokom svih faza razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 izveštaj',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.3.4.) RUTINSKA KONTROLA KOORDINATORA (17/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator povremeno sprovodi kontrolu ugovora, evidencionih dokumenata, priznanica, finansijskog stanja, uverava se da nema nikakvih propusta i vrši eventualne korekcije ukoliko za njima ima potrebe.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 kontrola',
+        angažman: '8 h',
+        fond: '60 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.7.) POPUNJAVANJE I ŠTAMPANJE UGOVORA O INVESTICIJI (20/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne ugovore o investiciji za svakog zainteresovanog investitora. Ugovor reguliše sva investitorova prava i obaveze.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 ugovor',
+        angažman: '0 h',
+        fond: '2 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.8.) POTPISIVANJE UGOVORA SA INVESTITORIMA (20/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitor potpisuju Ugovor o investiciji.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '2 primerka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.9.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (20/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator popunjava i štampa zasebne priznanice za uložena sredstva, u kojima se navode podaci o investitoru i vrednost uloženih sredstava.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '10 priznanica',
+        angažman: '1 h',
+        fond: '9 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.10.) POTPISIVANJE PRIZNANICA O ULOŽENIM SREDSTVIMA (20/20)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator i zainteresovani investitori potpisuju priznanice za uložena sredstva.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '20 primeraka',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.11.) ZAVOĐENJE VLASNIČKOG UDELA U REGISTAR (20/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator u elektronski registar unosi podatke o svakom investitoru, vrednost njihovih uloženih sredstava i određuje visinu suvlasničkih udela.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '10 ažuriranja',
+        angažman: '2,5 h',
+        fond: '19 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.12.) ZAVOĐENJE ULOŽENIH FINANSIJA U BUDŽETNI FOND (20/20)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator zavodi prihod od investicionog ulaganja u elektronski dokument za evidenciju budžeta, a gotov novac odlaže u budžetnu kasu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '10 ažuriranja',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.6.) ODRŽAVANJE RAČUNA (5/6)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator održava račun u banci tokom čitvog perioda rada.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 račun',
+        angažman: '0 h',
+        fond: '10 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE (5/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator finansira sve knjigovodstvene usluge tokom šest meseci razvojnog perioda sredstvima iz investicionog fonda.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 knjigovođa',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.9.) REGULISANJE UPLATE ZA PIO NA TERET ZAPOSLENIH (5/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator nudi mogućnost svim članovima upravnog tima, njihovim asistentima i investitorima mogućnost prijave njihovih prihoda ostvarenih radom na projektu, uz odbijanje svih naknada na ime uplate za PIO fond i poreza na plate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.10.) PRIJAVA PRIHODA I POREZA NA PLATE (5/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator prijavljuje poreskoj upravi sve prihode koji su nastali pre registracije firme i vrši njihovu uplatu regulišući sve naknade koji idu na ime poreza na profit i poreza na plate zaposlenih.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/02',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'MARKETING MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 171 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.5.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2026/02',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA (4/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer realizuje održavanje video reklame u određenom vremenskom periodu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2026/02',
+        optimum: '1 video reklama',
+        angažman: '0 h',
+        fond: '171 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'PR MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.6.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'PR menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'pr',
+      circleContent: {
+        realizator: 'PR menadžer',
+        period: '2026/02',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'VEBMASTER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 126,5 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.2.6.) ODRŽAVANJE SSL SERTIFIKATA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Vebmaster održava SSL sertifikat tokom celokupnog perioda razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/02',
+        optimum: '1 sertifikat',
+        angažman: '0 h',
+        fond: '6,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.3.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (20/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/02',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.16.) ODRŽAVANJE PLATFORME (17/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Nakon izrade, vebmaster ima obavezu da u narednom periodu održava platformu u stabilnom stanju i da interveniše u slučaju da nastupe tehnički problemi koji mogu izazvati delimični ili potpuni zastoj rada platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/02',
+        optimum: '1 intervencija',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.17.) ODRŽAVANJE SERVERA (17/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster nadgleda i reguliše sve troškove servera tokom ukupnog perioda funkcionisanja platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/02',
+        optimum: '1 server',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    { type: 'hr', height: bolderLine },
+    {
+      type: 'h2',
+      content: 'MART 2026.',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: 'planirani fond: 1.004 EUR',
+      color: 'black',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h2',
+      content: 'ADMINISTRATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(92 h - 458 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.4.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/03',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.8.) PERIODIČNA MODERACIJA VEB IZLOGA VEĆEG OBIMA (5/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/03',
+        optimum: '1.800 veb izloga',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '5.3.9.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA VEĆEG OBIMA (5/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/03',
+        optimum: '4.000 stranica',
+        angažman: '15,5 h',
+        fond: '76,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.6.5.) PERIODIČNA MODERACIJA VEB IZLOGA NA NIVOU SRBIJE',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu u otvorenim veb izlozima i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/03',
+        optimum: '1.000 veb izloga',
+        angažman: '30,5 h',
+        fond: '152,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.6.6.) PERIODIČNA MODERACIJA ENCIKLOPEDIJE PROIZVODA NA NIVOU SRBIJE',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Administrator provera svaku novu objavu na stranicama enciklopedije proizvoda i sprovodi cenzuru ukoliko objave nisu u skladu sa uslovima oglašavanja.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'administrator',
+      circleContent: {
+        realizator: 'administrator',
+        period: '2026/03',
+        optimum: '1.000 stranica',
+        angažman: '30,5 h',
+        fond: '152,5 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'AUTOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.1.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Autor kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'autor',
+      circleContent: {
+        realizator: 'autor',
+        period: '2026/03',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'KOORDINATOR',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(15,5 h - 248 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '0.7.2.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU INVENTARA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Ukoliko dođe do bilo kakve promene stanja opreme i materijala neophodnih za funkcionisanje projekta, koordinator to beleži u dokumentu za evidenciju. Ažuriranje dokumenta za evidenciju se obavlja tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '2 ažuriranja',
+        angažman: '0,5 h',
+        fond: '4 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.4.) AŽURIRANJE DOKUMENTA ZA EVIDENCIJU BUDŽETA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Usled bilo koje promene novčanog stanja u fondovima, koordinator obavlja evidenciju prihoda ili rashoda finansijskih sredstava i objavljuje trenutno stanje budžeta. Evidencija budžeta se sprovodi neprestano tokom celokupnog trajanja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '30 ažuriranja',
+        angažman: '3 h',
+        fond: '22,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.7.) POPUNJAVANJE I ŠTAMPANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transkacije, komintenti, iznos i datum.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '30 priznanica',
+        angažman: '3 h',
+        fond: '24 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '0.7.8.) POTPISIVANJE PRIZNANICA ZA NOVČANE TRANSAKCIJE (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Svaka odštampana priznanica za novčane transkacije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '30 priznanica',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.1.20.) PERIODIČNO IZVEŠTAVANJE INVESTITORIMA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator ima obavezu da svakog meseca izveštava investitore o tome kako projekat napreduje, da predoči realizovane ciljeve u proteklom periodu i zadate ciljeve u narednom periodu. Izveštavanje traje neprekidno tokom svih faza razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 izveštaj',
+        angažman: '1 h',
+        fond: '7,5 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.3.4.) RUTINSKA KONTROLA KOORDINATORA (18/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator povremeno sprovodi kontrolu ugovora, evidencionih dokumenata, priznanica, finansijskog stanja, uverava se da nema nikakvih propusta i vrši eventualne korekcije ukoliko za njima ima potrebe.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 kontrola',
+        angažman: '8 h',
+        fond: '60 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.2.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.6.) ODRŽAVANJE RAČUNA (6/6)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Koordinator održava račun u banci tokom čitvog perioda rada.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 račun',
+        angažman: '0 h',
+        fond: '10 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.8.) PERIODIČNE KNJIGOVODSTVENE USLUGE (6/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator finansira sve knjigovodstvene usluge tokom šest meseci razvojnog perioda sredstvima iz investicionog fonda.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 knjigovođa',
+        angažman: '0 h',
+        fond: '120 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.9.) REGULISANJE UPLATE ZA PIO NA TERET ZAPOSLENIH (6/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator nudi mogućnost svim članovima upravnog tima, njihovim asistentima i investitorima mogućnost prijave njihovih prihoda ostvarenih radom na projektu, uz odbijanja svih naknada na ime uplate za PIO fond i poreza na plate.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.2.10.) PRIJAVA PRIHODA I POREZA NA PLATE (6/6)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Koordinator prijavljuje poreskoj upravi sve prihode koji su nastali pre registracije firme i vrši njihovu uplatu regulišući sve naknade koji idu na ime poreza na profit i poreza na plate zaposlenih.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'koordinator',
+      circleContent: {
+        realizator: 'koordinator',
+        period: '2026/03',
+        optimum: '1 prijava',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'MARKETING MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 171 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.5.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2026/03',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '6.7.7.) ODRŽAVANJE VIDEO REKLAME PUTEM MEDIJA (5/5)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Marketing menadžer realizuje održavanje video reklame u određenom vremenskom periodu.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'marketing-manager',
+      circleContent: {
+        realizator: 'marketing menadžer',
+        period: '2026/03',
+        optimum: '1 video reklama',
+        angažman: '0 h',
+        fond: '171 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'PR MENADŽER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 0 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.4.6.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'PR menadžer kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'pr',
+      circleContent: {
+        realizator: 'PR menadžer',
+        period: '2026/03',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    { type: 'hr' },
+    {
+      type: 'h2',
+      content: 'VEBMASTER',
+      color: 'black',
+    },
+    {
+      type: 'h2',
+      content: '(0 h - 127 EUR)',
+      weight: 'bold',
+      align: 'center',
+      color: 'gayMedium',
+    },
+    {
+      type: 'h4',
+      content: '1.2.6.) ODRŽAVANJE SSL SERTIFIKATA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content: 'Vebmaster održava SSL sertifikat tokom celokupnog perioda razvoja projekta.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/03',
+        optimum: '1 sertifikat',
+        angažman: '0 h',
+        fond: '7 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '1.4.3.) KONTAKTIRANJE POTENCIJALNIH INVESTITORA (21/21)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster kontaktira sva lica za koja smatra da su podobna za finansijsko ulaganje u projekat, deleći im promotivne flajere koji ih upućuju na stranice platforme gde su objavljene sve detaljne informacije.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/03',
+        optimum: '1 kontakt',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.16.) ODRŽAVANJE PLATFORME (18/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Nakon izrade, vebmaster ima obavezu da u narednom periodu održava platformu u stabilnom stanju i da interveniše u slučaju da nastupe tehnički problemi koji mogu izazvati delimični ili potpuni zastoj rada platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/03',
+        optimum: '1 intervencija',
+        angažman: '0 h',
+        fond: '0 EUR',
+      },
+    },
+    {
+      type: 'h4',
+      content: '2.1.17.) ODRŽAVANJE SERVERA (18/18)',
+    },
+    {
+      type: 'pNormal',
+      content:
+        'Vebmaster nadgleda i reguliše sve troškove servera tokom ukupnog perioda funkcionisanja platforme.',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'listEvenly',
+      owner: 'webmaster',
+      circleContent: {
+        realizator: 'vebmaster',
+        period: '2026/03',
         optimum: '1 server',
         angažman: '0 h',
         fond: '120 EUR',
