@@ -19,6 +19,14 @@ export interface BasicInformation {
   date?: string;
 }
 
+export interface BasicTimInformation {
+  id: string;
+  title: string;
+  name: string;
+  description: string;
+  coverImage?: string;
+}
+
 export interface ListOfLinks {
   id: string;
   type: 'H2BoldCenter' | 'h3' | 'H3BoldCenter' | 'h4' | 'text' | 'divider' | 'list' | 'p';

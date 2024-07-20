@@ -6,10 +6,12 @@ interface Props {
   align?: 'left' | 'center' | 'right';
 }
 
-const BlockTitle: React.FC<Props> = ({ text, bgColor='yellowLighter', align='left' }) => {
+const BlockTitle: React.FC<Props> = ({ text, bgColor = 'yellowLighter', align = 'left' }) => {
   return (
     <div className={`mb-4 bg-${bgColor} p-2`}>
-      <h2 className={`text-lg text-${align} text-grayDarkest font-semibold overflow-hidden whitespace-nowrap`}>
+      <h2
+        className={`text-lg text-${align} text-grayDarkest font-semibold overflow-hidden whitespace-nowrap`}
+      >
         {text}
       </h2>
     </div>
