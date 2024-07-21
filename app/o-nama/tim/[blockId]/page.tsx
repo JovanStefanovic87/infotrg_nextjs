@@ -1,15 +1,15 @@
 import { NextPage } from 'next';
-import TimContent from './TimContent';
+import PageContent from './PageContent';
 
 export const metadata = {
   title: 'Infotrg | Tim',
-  description: 'Infotrg tim',
+  description: 'Članovi infotrg tima',
 };
 
 const Tim: NextPage = () => {
   return (
     <>
-      <TimContent />
+      <PageContent />
     </>
   );
 };

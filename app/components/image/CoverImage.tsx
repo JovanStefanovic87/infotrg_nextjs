@@ -27,7 +27,7 @@ const CoverImage: React.FC<Props> = ({ src, alt, openImageModal, useModal }) => 
           style={{ objectFit: 'contain' }}
           priority
           sizes='100%'
-          className='sm:hover:shadow-inner transition duration-200 ease-in-out transform hover:scale-105'
+          /* className='sm:hover:shadow-lg sm:hover:shadow-black transition duration-200 ease-in-out transform' */
         />
       </div>
     </div>

@@ -3,8 +3,6 @@ import ContentBlockContainer from '../../components/containers/ContentBlockConta
 import CoverImage from '../../components/image/CoverImage';
 import BlockTitle from '../../components/text/BlockTitle';
 import { ContentBlockItem } from '../../helpers/types';
-import H3 from '@/app/components/text/H3';
-import Text from '@/app/components/text/Text';
 import Devider from '@/app/components/ui/Devider';
 import H2 from '@/app/components/text/H2';
 import TextBlockItem from '@/app/ulaganje/collapsible/TextBlockItem';
@@ -29,17 +27,17 @@ const ContentBlock: React.FC<Props> = ({
   return (
     <ContentBlockContainer contentBlocks={contentBlocks} openContentModal={openContentModal}>
       <div className='cursor-pointer w-full sm:p-2 h-auto rounded-md overflow-hidden'>
-        <div className='flex flex-col h-full bg-gradient-white p-4 rounded-md overflow-hidden'>
+        <div className='flex flex-col h-full bg-gradient-white p-4 rounded-md overflow-hidden bg-yellowLighter'>
           <BlockTitle text={title} />
-          <div className='text-gray-800 text-base leading-relaxed max-w-full flex-grow pl-4'>
-            <TextBlockItem content={description} />
+          <div className='text-gray-800 text-base leading-relaxed max-w-full flex-grow pl-4 '>
+            <TextBlockItem content={description} align='center' />
           </div>
           {coverImage && (
             <div className='mt-4'>
               <CoverImage src={coverImage} alt={title} />
             </div>
           )}
-          <div className='-mt-2'>
+          <div className='-mt-3'>
             <H2 text={name} weight='bold' align='center' color='black' />
           </div>
           <div className='mt-4'>

@@ -21,7 +21,7 @@ const config: Config = {
         grayMedium: '#374151',
         grayMidLight: '#747474',
         grayLight: '#9c9c9c',
-        yellowLighter: 'rgb(254 240 138)',
+        yellowLighter: '#fef08a',
         yellowStrong: '#facc15',
         hyperlink: '#0000EE',
       },
@@ -36,6 +36,7 @@ const config: Config = {
       height: {
         main: 'calc(100dvh - 68px)',
         content: '10000px',
+        header: '54px',
         '120': '30rem',
         '100': '25rem',
       },
@@ -44,7 +45,7 @@ const config: Config = {
         content: '10000px',
       },
       margin: {
-        header: '68px',
+        header: '50px',
       },
       zIndex: {
         '45': '45',

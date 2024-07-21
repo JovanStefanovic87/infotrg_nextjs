@@ -5,6 +5,7 @@ import { contentData } from './timData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
+import Link from 'next/link';
 
 const TimContent: NextPage = () => {
   useEffect(() => {
@@ -65,14 +66,16 @@ const TimContent: NextPage = () => {
         >
           {rowItems.map((block: any, index: number) => (
             <div key={index} style={{ gridColumn: `span 1` }}>
-              <ContentBlock
-                title={block.title}
-                name={block.name}
-                description={block.description}
-                coverImage={block.coverImage}
-                contentBlocks={[]}
-                openContentModal={() => {}}
-              />
+              <Link key={block.id} href={`/o-nama/tim/${block.id}`}>
+                <ContentBlock
+                  title={block.title}
+                  name={block.name}
+                  description={block.description}
+                  coverImage={block.coverImage}
+                  contentBlocks={[]}
+                  openContentModal={() => {}}
+                />
+              </Link>
             </div>
           ))}
         </div>,
