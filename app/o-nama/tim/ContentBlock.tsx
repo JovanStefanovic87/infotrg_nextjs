@@ -3,6 +3,11 @@ import ContentBlockContainer from '../../components/containers/ContentBlockConta
 import CoverImage from '../../components/image/CoverImage';
 import BlockTitle from '../../components/text/BlockTitle';
 import { ContentBlockItem } from '../../helpers/types';
+import H3 from '@/app/components/text/H3';
+import Text from '@/app/components/text/Text';
+import Devider from '@/app/components/ui/Devider';
+import H2 from '@/app/components/text/H2';
+import TextBlockItem from '@/app/ulaganje/collapsible/TextBlockItem';
 
 interface Props {
   title: string;
@@ -21,27 +26,29 @@ const ContentBlock: React.FC<Props> = ({
   contentBlocks,
   openContentModal,
 }) => {
-  const maxLines = 24;
-
   return (
     <ContentBlockContainer contentBlocks={contentBlocks} openContentModal={openContentModal}>
       <div className='cursor-pointer w-full sm:p-2 h-auto rounded-md overflow-hidden'>
         <div className='flex flex-col h-full bg-gradient-white p-4 rounded-md overflow-hidden'>
-          <BlockTitle text={title} align='center' />
-          <div className='text-gray-800 text-base leading-relaxed mb-2 max-w-full flex-grow'>
-            <p>{description}</p>
+          <BlockTitle text={title} />
+          <div className='text-gray-800 text-base leading-relaxed max-w-full flex-grow pl-4'>
+            <TextBlockItem content={description} />
           </div>
           {coverImage && (
             <div className='mt-4'>
               <CoverImage src={coverImage} alt={title} />
             </div>
           )}
-          <p className='text-center'>Angažovano lice:</p>
-          <p className='text-center'>{name}</p>
-          <div className='mt-auto'>
+          <div className='-mt-2'>
+            <H2 text={name} weight='bold' align='center' color='black' />
+          </div>
+          <div className='mt-4'>
             <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
               Vidi još
             </button>
+          </div>
+          <div className='block sm:hidden pt-8'>
+            <Devider />
           </div>
         </div>
       </div>

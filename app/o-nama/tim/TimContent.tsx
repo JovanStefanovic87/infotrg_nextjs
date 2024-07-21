@@ -86,7 +86,7 @@ const TimContent: NextPage = () => {
 
   return (
     <PageContainer>
-      <H1 title='TIM' />
+      <H1 title='INFOTRG TIM' />
 
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGrid()}
