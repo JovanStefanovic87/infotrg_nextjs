@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { contentData, contentBlocksData } from './memebrs';
+import { contentData, contentBlocksData, contentBlocks2Data } from './memebrs';
 import ImageModal from '../../../components/modals/ImageModal';
 import TextWrapped from '../../../components/text/TextWrapped';
 import H1 from '@/app/components/text/H1';
@@ -23,16 +23,22 @@ interface Props {
 
 interface ContentTitleProps {
   keyName: string;
+  type: 'maintain' | 'service';
 }
 
-const ContentTitle: React.FC<ContentTitleProps> = ({ keyName }) => {
+const ContentTitle: React.FC<ContentTitleProps> = ({ keyName, type }) => {
+  const getTitleText = () => {
+    if (type === 'maintain') {
+      return `ZADUŽENJA ${keyName.toUpperCase()}A NA ODRŽAVANJU I UNAPREĐIVANJU INFOTRGA`;
+    } else if (type === 'service') {
+      return `ZADUŽENJA ${keyName.toUpperCase()}A U OKVIRU USLUŽNIH DELATNOSTI INFOTRGA`;
+    }
+    return '';
+  };
+
   return (
     <>
-      <H2
-        text={`ZADUŽENJA ${keyName.toUpperCase()}A NA ODRŽAVANJU I UNAPREĐIVANJU INFOTRGA`}
-        align='center'
-        color='black'
-      />
+      <H2 text={getTitleText()} align='center' color='black' />
       <div className='h-8'></div>
     </>
   );
@@ -102,6 +108,7 @@ const PageContent: React.FC = () => {
 
   const block = contentData.find((item) => item.id === blockId);
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
+  const contentBlocks2 = (contentBlocks2Data as any)[blockId] || [];
 
   if (!block) return <p>Block not found</p>;
 
@@ -144,13 +151,13 @@ const PageContent: React.FC = () => {
       <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
         {contentBlocks.length > 0 && (
           <>
-            <ContentTitle keyName={blockId} />
+            <ContentTitle keyName={blockId} type='maintain' />
             {contentBlocks.map((block: any, index: number) => (
               <div key={index} className='flex flex-col'>
                 {block.type === 'text' ? (
                   <TextWrapped block={block.content || ''} />
                 ) : block.type === 'hr' ? (
-                  <Devider2 marginY={24} height={block.height} />
+                  <Devider2 marginY={8} height={block.height} width='50%' />
                 ) : block.type === 'list' ? (
                   <OrderedList items={[block]} />
                 ) : block.type === 'h2' ? (
@@ -165,7 +172,80 @@ const PageContent: React.FC = () => {
                   </div>
                 ) : block.type === 'pNormal' ? (
                   <TextNormal
+                    text={`► ${block.content}`}
+                    weight={block.weight}
+                    paddingLeft={block.paddingLeft}
+                    align={block.align}
+                  />
+                ) : block.type === 'p' ? (
+                  <Text
                     text={block.content}
+                    weight={block.weight}
+                    paddingLeft={block.paddingLeft}
+                    align={block.align}
+                  />
+                ) : block.type === 'listEvenly' ? (
+                  block.circleContent && (
+                    <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4 pt-4'>
+                      <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
+                        {Object.entries(block.circleContent as Props).map(([key, value], idx) => {
+                          const bgColorClass = getBgColorByOwner(block.owner);
+                          const textColorClass = getTextColorByOwner(block.owner);
+                          return (
+                            <div
+                              key={idx}
+                              className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shadow-grayLight shadow-lg border-2 border-l-blueLightest border-r-blueLightest`}
+                              style={{ backgroundColor: bgColorClass }}
+                            >
+                              <p
+                                className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold underline underline-offset-4'
+                                style={{ color: textColorClass }}
+                              >
+                                {key.toLocaleUpperCase()}
+                              </p>
+                              <p
+                                className='text-xxxs sm:text-xxs md:text-xs lg:text-sm text-center'
+                                style={{ color: textColorClass }}
+                              >
+                                {value}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )
+                ) : null}
+              </div>
+            ))}
+          </>
+        )}
+      </div>
+      <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
+        {contentBlocks2.length > 0 && (
+          <>
+            <ContentTitle keyName={blockId} type='service' />
+            {contentBlocks2.map((block: any, index: number) => (
+              <div key={index} className='flex flex-col'>
+                {block.type === 'text' ? (
+                  <TextWrapped block={block.content || ''} />
+                ) : block.type === 'hr' ? (
+                  <Devider2 marginY={8} height={block.height} width='50%' />
+                ) : block.type === 'list' ? (
+                  <OrderedList items={[block]} />
+                ) : block.type === 'h2' ? (
+                  <H2 text={block.content} align='center' color={block.color} />
+                ) : block.type === 'H2BoldCenter' ? (
+                  <H2 text={block.content} align='center' weight='bold' />
+                ) : block.type === 'h3' ? (
+                  <H3 text={block.content} align='left' />
+                ) : block.type === 'h4' ? (
+                  <div className='pt-4'>
+                    <H4 text={block.content} weight='bold' color='black' paddingTop={16} />
+                  </div>
+                ) : block.type === 'pNormal' ? (
+                  <TextNormal
+                    text={`► ${block.content}`}
                     weight={block.weight}
                     paddingLeft={block.paddingLeft}
                     align={block.align}
