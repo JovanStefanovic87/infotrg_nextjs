@@ -1,16 +1,34 @@
-export const contentData: any[] = [
+import { ContentBlocksData, MemeberData } from '@/app/helpers/types';
+
+const bolderLine = 4;
+
+const marginLeftSmall = '2vw';
+const marginLeftMedium = '4vw';
+
+export const contentData: MemeberData[] = [
   {
-    id: 'autor',
-    label: 'SEPTEMBAR 2022.',
-    amount: 'planirani fond: 7,5 EUR',
+    id: 'administrator',
+    name: 'Miroslav Ostrogonac',
+    birth: '27.04.1975.',
+    profession: 'Grafičar',
+    affinities: 'administracija, grafički dizajn, leksikografija, izrada dokumenata',
+    previousEngagements:
+      'kasarna “Vojvoda Živojin Mišić” (četni evidentičar), trgovina “KMS d.o.o.” (magacioner/referent)',
+    infotrgEngagements: 'od 01.08.2022. godine',
+    phone: '0601451349',
+    email: 'suinfotrg@gmail.com',
   },
 ];
-export const contentBlocksData: any = {
-  autor: [
+export const contentBlocksData: ContentBlocksData = {
+  administrator: [
     {
-      type: 'h2',
-      content: 'ADMINISTRATOR',
-      color: 'black',
+      type: 'h3',
+      content: 'ADMINISTRATIVNA MANIPULACIJA',
+    },
+    {
+      type: 'pNormal',
+      content: '	Administrativna kategorizacija',
+      paddingLeft: marginLeftMedium,
     },
   ],
 };

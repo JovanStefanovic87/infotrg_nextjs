@@ -13,10 +13,30 @@ import H4 from '@/app/components/text/H4';
 import Text from '@/app/components/text/Text';
 import TextNormal from '@/app/components/text/TextNormal';
 import Devider2 from '@/app/components/ui/Devider2';
+import Image from 'next/image';
+import TextSpecifications from '@/app/components/text/TextSpecifications';
+import { ContentBlocksData, MemeberData } from '@/app/helpers/types';
 
 interface Props {
   [key: string]: string;
 }
+
+interface ContentTitleProps {
+  keyName: string;
+}
+
+const ContentTitle: React.FC<ContentTitleProps> = ({ keyName }) => {
+  return (
+    <>
+      <H2
+        text={`ZADUŽENJA ${keyName.toUpperCase()}A NA ODRŽAVANJU I UNAPREĐIVANJU INFOTRGA`}
+        align='center'
+        color='black'
+      />
+      <div className='h-8'></div>
+    </>
+  );
+};
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -89,73 +109,110 @@ const PageContent: React.FC = () => {
     <PageContainer>
       <H1 title='INFOTRG TIM' pb='0' />
       <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
-        {contentBlocks.length > 0 &&
-          contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='flex flex-col'>
-              {block.type === 'text' ? (
-                <TextWrapped block={block.content || ''} />
-              ) : block.type === 'hr' ? (
-                <Devider2 marginY={24} height={block.height} />
-              ) : block.type === 'list' ? (
-                <OrderedList items={[block]} />
-              ) : block.type === 'h2' ? (
-                <H2 text={block.content} align='center' color={block.color} />
-              ) : block.type === 'H2BoldCenter' ? (
-                <H2 text={block.content} align='center' weight='bold' />
-              ) : block.type === 'h3' ? (
-                <H3 text={block.content} align='center' />
-              ) : block.type === 'h4' ? (
-                <div className='pt-4'>
-                  <H4 text={block.content} weight='bold' color='black' paddingTop={16} />
-                </div>
-              ) : block.type === 'pNormal' ? (
-                <TextNormal
-                  text={block.content}
-                  weight={block.weight}
-                  paddingLeft={block.paddingLeft}
-                  align={block.align}
-                />
-              ) : block.type === 'p' ? (
-                <Text
-                  text={block.content}
-                  weight={block.weight}
-                  paddingLeft={block.paddingLeft}
-                  align={block.align}
-                />
-              ) : block.type === 'listEvenly' ? (
-                block.circleContent && (
-                  <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4 pt-4'>
-                    <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
-                      {Object.entries(block.circleContent as Props).map(([key, value], idx) => {
-                        const bgColorClass = getBgColorByOwner(block.owner);
-                        const textColorClass = getTextColorByOwner(block.owner);
-                        return (
-                          <div
-                            key={idx}
-                            className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shadow-grayLight shadow-lg border-2 border-l-blueLightest border-r-blueLightest`}
-                            style={{ backgroundColor: bgColorClass }}
-                          >
-                            <p
-                              className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold underline underline-offset-4'
-                              style={{ color: textColorClass }}
-                            >
-                              {key.toLocaleUpperCase()}
-                            </p>
-                            <p
-                              className='text-xxxs sm:text-xxs md:text-xs lg:text-sm text-center'
-                              style={{ color: textColorClass }}
-                            >
-                              {value}
-                            </p>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                )
-              ) : null}
+        <div className='flex flex-col'>
+          <H2 text={block.id.toUpperCase()} align='center' color={'black'} />
+          <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
+            <div
+              className={`relative mt-4 flex items-center justify-center h-52 w-52 lg:h-120 lg:w-120 cursor-pointer p-4`}
+            >
+              <Image
+                src='/images/memebrs/avatar_miroslav.bmp'
+                alt='Image'
+                fill
+                style={{ objectFit: 'contain' }}
+                priority
+                sizes='100%'
+              />
             </div>
-          ))}
+            <div className='flex flex-col w-full lg:w-auto'>
+              {[
+                { label: 'Ime i prezime:', value: block.name },
+                { label: 'Datum rođenja:', value: block.birth },
+                { label: 'Zanimanje:', value: block.profession },
+                { label: 'Afiniteti:', value: block.affinities },
+                { label: 'Prethodni angažmani:', value: block.previousEngagements },
+                { label: 'Angažman na Infotrgu:', value: block.infotrgEngagements },
+                { label: 'Telefon:', value: block.phone },
+                { label: 'Email:', value: block.email },
+              ].map((item, index) => (
+                <TextSpecifications key={index} label={item.label} value={item.value} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
+        {contentBlocks.length > 0 && (
+          <>
+            <ContentTitle keyName={blockId} />
+            {contentBlocks.map((block: any, index: number) => (
+              <div key={index} className='flex flex-col'>
+                {block.type === 'text' ? (
+                  <TextWrapped block={block.content || ''} />
+                ) : block.type === 'hr' ? (
+                  <Devider2 marginY={24} height={block.height} />
+                ) : block.type === 'list' ? (
+                  <OrderedList items={[block]} />
+                ) : block.type === 'h2' ? (
+                  <H2 text={block.content} align='center' color={block.color} />
+                ) : block.type === 'H2BoldCenter' ? (
+                  <H2 text={block.content} align='center' weight='bold' />
+                ) : block.type === 'h3' ? (
+                  <H3 text={block.content} align='left' />
+                ) : block.type === 'h4' ? (
+                  <div className='pt-4'>
+                    <H4 text={block.content} weight='bold' color='black' paddingTop={16} />
+                  </div>
+                ) : block.type === 'pNormal' ? (
+                  <TextNormal
+                    text={block.content}
+                    weight={block.weight}
+                    paddingLeft={block.paddingLeft}
+                    align={block.align}
+                  />
+                ) : block.type === 'p' ? (
+                  <Text
+                    text={block.content}
+                    weight={block.weight}
+                    paddingLeft={block.paddingLeft}
+                    align={block.align}
+                  />
+                ) : block.type === 'listEvenly' ? (
+                  block.circleContent && (
+                    <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4 pt-4'>
+                      <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
+                        {Object.entries(block.circleContent as Props).map(([key, value], idx) => {
+                          const bgColorClass = getBgColorByOwner(block.owner);
+                          const textColorClass = getTextColorByOwner(block.owner);
+                          return (
+                            <div
+                              key={idx}
+                              className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shadow-grayLight shadow-lg border-2 border-l-blueLightest border-r-blueLightest`}
+                              style={{ backgroundColor: bgColorClass }}
+                            >
+                              <p
+                                className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold underline underline-offset-4'
+                                style={{ color: textColorClass }}
+                              >
+                                {key.toLocaleUpperCase()}
+                              </p>
+                              <p
+                                className='text-xxxs sm:text-xxs md:text-xs lg:text-sm text-center'
+                                style={{ color: textColorClass }}
+                              >
+                                {value}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )
+                ) : null}
+              </div>
+            ))}
+          </>
+        )}
       </div>
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />

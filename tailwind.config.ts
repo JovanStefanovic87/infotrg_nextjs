@@ -21,6 +21,7 @@ const config: Config = {
         grayMedium: '#374151',
         grayMidLight: '#747474',
         grayLight: '#9c9c9c',
+        grayLighter: '#c2c2c2',
         yellowLighter: '#fef08a',
         yellowStrong: '#facc15',
         hyperlink: '#0000EE',

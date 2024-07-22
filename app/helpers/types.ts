@@ -100,6 +100,18 @@ export interface Route {
   subRoutes?: Route[];
 }
 
+export interface MemeberData {
+  id: string;
+  name: string;
+  birth: string;
+  profession: string;
+  affinities: string;
+  previousEngagements: string;
+  infotrgEngagements: string;
+  phone: string;
+  email: string;
+}
+
 export interface InvesticioniFondLinksData {
   id: string;
   label: string;
