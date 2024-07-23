@@ -16,7 +16,7 @@ export const contentData: BasicTimInformation[] = [
     coverImage: '/images/tim/TIM2.jpg',
   },
   {
-    id: 'webmaster',
+    id: 'vebmaster',
     title: '3.) VEBMASTER',
     name: 'Jovan Stefanović',
     description: 'Vebmaster izrađuje platformu i brine se o njenom funkcionisanju.',
@@ -30,21 +30,21 @@ export const contentData: BasicTimInformation[] = [
     coverImage: '/images/tim/TIM4.jpg',
   },
   {
-    id: 'marketing-manager',
+    id: 'marketing-menadzer',
     title: '5.) MARKETING MENADŽER',
     name: 'Nemanja Komazec',
     description: 'Marketing menadžer planira strategiju promocije projekta.',
     coverImage: '/images/tim/TIM5.jpg',
   },
   {
-    id: 'pr-manager',
+    id: 'pr-menadzer',
     title: '6.) PR MENADŽER',
     name: 'Nebojša Lukić',
     description: 'PR menadžer komunicira sa klijentima, kupcima, prodavcima i drugim saradnicima.',
     coverImage: '/images/tim/TIM6.jpg',
   },
   {
-    id: 'graphic-designer',
+    id: 'graficki-dizajner',
     title: '7.) GRAFIČKI DIZAJNER',
     name: 'Miroslav Ostrogonac',
     description: 'Grafički dizajner uređuje slike i izrađuje ilustracije.',
@@ -63,7 +63,7 @@ export const hyperlinks = [
   },
   {
     text: 'Vebmaster',
-    url: `/o-nama/tim/${encodeURIComponent('webmaster').toLowerCase()}`,
+    url: `/o-nama/tim/${encodeURIComponent('vebmaster').toLowerCase()}`,
   },
   {
     text: 'Administrator',
@@ -71,14 +71,14 @@ export const hyperlinks = [
   },
   {
     text: 'Marketing menadžer',
-    url: `/o-nama/tim/${encodeURIComponent('marketing-manager').toLowerCase()}`,
+    url: `/o-nama/tim/${encodeURIComponent('marketing-menadzer').toLowerCase()}`,
   },
   {
     text: 'PR menadžer',
-    url: `/o-nama/tim/${encodeURIComponent('pr-manager').toLowerCase()}`,
+    url: `/o-nama/tim/${encodeURIComponent('pr-menadzer').toLowerCase()}`,
   },
   {
     text: 'Graphički dizajner',
-    url: `/o-nama/tim/${encodeURIComponent('graphic-designer').toLowerCase()}`,
+    url: `/o-nama/tim/${encodeURIComponent('graficki-dizajner').toLowerCase()}`,
   },
 ];

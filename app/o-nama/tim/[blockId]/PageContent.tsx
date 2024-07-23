@@ -15,7 +15,7 @@ import TextNormal from '@/app/components/text/TextNormal';
 import Devider2 from '@/app/components/ui/Devider2';
 import Image from 'next/image';
 import TextSpecifications from '@/app/components/text/TextSpecifications';
-import { ContentBlocksData, MemeberData } from '@/app/helpers/types';
+import { ContentBlocksData, MemberData } from '@/app/helpers/types';
 
 interface Props {
   [key: string]: string;
@@ -123,8 +123,8 @@ const PageContent: React.FC = () => {
               className={`relative mt-4 flex items-center justify-center h-52 w-52 lg:h-120 lg:w-120 cursor-pointer p-4`}
             >
               <Image
-                src='/images/memebrs/avatar_miroslav.bmp'
-                alt='Image'
+                src={block.image}
+                alt={block.image}
                 fill
                 style={{ objectFit: 'contain' }}
                 priority
@@ -221,79 +221,77 @@ const PageContent: React.FC = () => {
           </>
         )}
       </div>
-      <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
-        {contentBlocks2.length > 0 && (
-          <>
-            <ContentTitle keyName={blockId} type='service' />
-            {contentBlocks2.map((block: any, index: number) => (
-              <div key={index} className='flex flex-col'>
-                {block.type === 'text' ? (
-                  <TextWrapped block={block.content || ''} />
-                ) : block.type === 'hr' ? (
-                  <Devider2 marginY={8} height={block.height} width='50%' />
-                ) : block.type === 'list' ? (
-                  <OrderedList items={[block]} />
-                ) : block.type === 'h2' ? (
-                  <H2 text={block.content} align='center' color={block.color} />
-                ) : block.type === 'H2BoldCenter' ? (
-                  <H2 text={block.content} align='center' weight='bold' />
-                ) : block.type === 'h3' ? (
-                  <H3 text={block.content} align='left' />
-                ) : block.type === 'h4' ? (
-                  <div className='pt-4'>
-                    <H4 text={block.content} weight='bold' color='black' paddingTop={16} />
-                  </div>
-                ) : block.type === 'pNormal' ? (
-                  <TextNormal
-                    text={`► ${block.content}`}
-                    weight={block.weight}
-                    paddingLeft={block.paddingLeft}
-                    align={block.align}
-                  />
-                ) : block.type === 'p' ? (
-                  <Text
-                    text={block.content}
-                    weight={block.weight}
-                    paddingLeft={block.paddingLeft}
-                    align={block.align}
-                  />
-                ) : block.type === 'listEvenly' ? (
-                  block.circleContent && (
-                    <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4 pt-4'>
-                      <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
-                        {Object.entries(block.circleContent as Props).map(([key, value], idx) => {
-                          const bgColorClass = getBgColorByOwner(block.owner);
-                          const textColorClass = getTextColorByOwner(block.owner);
-                          return (
-                            <div
-                              key={idx}
-                              className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shadow-grayLight shadow-lg border-2 border-l-blueLightest border-r-blueLightest`}
-                              style={{ backgroundColor: bgColorClass }}
+      {contentBlocks2.length > 0 && (
+        <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
+          <ContentTitle keyName={blockId} type='service' />
+          {contentBlocks2.map((block: any, index: number) => (
+            <div key={index} className='flex flex-col'>
+              {block.type === 'text' ? (
+                <TextWrapped block={block.content || ''} />
+              ) : block.type === 'hr' ? (
+                <Devider2 marginY={8} height={block.height} width='50%' />
+              ) : block.type === 'list' ? (
+                <OrderedList items={[block]} />
+              ) : block.type === 'h2' ? (
+                <H2 text={block.content} align='center' color={block.color} />
+              ) : block.type === 'H2BoldCenter' ? (
+                <H2 text={block.content} align='center' weight='bold' />
+              ) : block.type === 'h3' ? (
+                <H3 text={block.content} align='left' />
+              ) : block.type === 'h4' ? (
+                <div className='pt-4'>
+                  <H4 text={block.content} weight='bold' color='black' paddingTop={16} />
+                </div>
+              ) : block.type === 'pNormal' ? (
+                <TextNormal
+                  text={`► ${block.content}`}
+                  weight={block.weight}
+                  paddingLeft={block.paddingLeft}
+                  align={block.align}
+                />
+              ) : block.type === 'p' ? (
+                <Text
+                  text={block.content}
+                  weight={block.weight}
+                  paddingLeft={block.paddingLeft}
+                  align={block.align}
+                />
+              ) : block.type === 'listEvenly' ? (
+                block.circleContent && (
+                  <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4 pt-4'>
+                    <div className='flex flex-wrap justify-center space-x-2 sm:space-x-4'>
+                      {Object.entries(block.circleContent as Props).map(([key, value], idx) => {
+                        const bgColorClass = getBgColorByOwner(block.owner);
+                        const textColorClass = getTextColorByOwner(block.owner);
+                        return (
+                          <div
+                            key={idx}
+                            className={`flex flex-col items-center justify-center w-20 h-20 text-black p-2 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shadow-grayLight shadow-lg border-2 border-l-blueLightest border-r-blueLightest`}
+                            style={{ backgroundColor: bgColorClass }}
+                          >
+                            <p
+                              className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold underline underline-offset-4'
+                              style={{ color: textColorClass }}
                             >
-                              <p
-                                className='font-boldtext-xs text-xxxs sm:text-xxs md:text-xs lg:text-sm font-bold underline underline-offset-4'
-                                style={{ color: textColorClass }}
-                              >
-                                {key.toLocaleUpperCase()}
-                              </p>
-                              <p
-                                className='text-xxxs sm:text-xxs md:text-xs lg:text-sm text-center'
-                                style={{ color: textColorClass }}
-                              >
-                                {value}
-                              </p>
-                            </div>
-                          );
-                        })}
-                      </div>
+                              {key.toLocaleUpperCase()}
+                            </p>
+                            <p
+                              className='text-xxxs sm:text-xxs md:text-xs lg:text-sm text-center'
+                              style={{ color: textColorClass }}
+                            >
+                              {value}
+                            </p>
+                          </div>
+                        );
+                      })}
                     </div>
-                  )
-                ) : null}
-              </div>
-            ))}
-          </>
-        )}
-      </div>
+                  </div>
+                )
+              ) : null}
+            </div>
+          ))}
+        </div>
+      )}
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}
