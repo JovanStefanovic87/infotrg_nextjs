@@ -4,7 +4,7 @@ import { ContentBlockItem } from '../../helpers/types';
 import ContentModalContainer from '../containers/ContentModalContainer';
 import CloseButton from '../buttons/CloseButtonX';
 import TitleMain from '../text/H2';
-import ImageBlock from '@/app/ulaganje/ImageBlock';
+import ImageBlock from '../image/ImageBlock';
 import TextWrapped from '../text/TextWrapped';
 import ContentModalInnerContainer from '../containers/ContentModalInnerContainer';
 
@@ -32,7 +32,7 @@ const ContentModal: React.FC<Props> = ({ title, contentBlocks, onContentModalClo
       <ContentModalContainer onContentModalClose={onContentModalClose}>
         <ContentModalInnerContainer>
           <CloseButton onClose={onContentModalClose} />
-          <TitleMain title={title} />
+          <TitleMain text={title} />
           <div className='relative z-40 pt-6'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='mb-6'>
