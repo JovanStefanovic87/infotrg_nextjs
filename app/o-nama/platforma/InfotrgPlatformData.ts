@@ -7,6 +7,32 @@ export const vebIzlogData: BasicInformation[] = [
     description:
       'Veb izlog je personalni prostor Infotrg platforme na kojem prodavac može izlagati svoje proizvode.',
     coverImage: '/images/platform/PL01.jpg',
+    content: [
+      {
+        type: 'h3',
+        content: 'Šta je veb izlog?',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'U realnom svetu, većina prodajnih objekata ima izloge u koje se postavljaju najatraktivniji proizvodi kako bi privukli pažnju prolaznika i na taj način ih privukli u samu prodavnicu.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Baš kao što klasični izlozi privlače pažnju prolaznika u realnom svetu, istu svrhu na internetu imaju veb izlozi. U ovim veb izlozima postavljaju se najatraktivniji proizvodi onlajn prodavnica ili drugih vebsajtova koji se bave prodajom različitih proizvoda, kako bi privukli pažnju internet korisnika i usmerili ih ka svom vebsajtu ili onlajn prodavnici.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Tehnički gledano, veb izlog je internet prostor koji svaki prodavac može individualno zakupiti, urediti ga, popuniti artiklima i podacima koje želi da prikaže, povezati sa svojim glavnim vebsajtom, a potom ga javno objaviti.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Infotrg omogućava iznajmljivanje ovakvih internet prostora svakom prodavcu, pružajući im priliku da na atraktivan način predstave svoje proizvode i povećaju svoju vidljivost na internetu.',
+      },
+    ],
   },
   {
     id: 'vebIzlogData-02',
@@ -14,6 +40,32 @@ export const vebIzlogData: BasicInformation[] = [
     description:
       'Veb izlog sadrži opšte informacije o prodajnom objektu, asortiman proizvoda i kontakt formu.',
     coverImage: '/images/platform/PL02.jpg',
+    content: [
+      {
+        type: 'h3',
+        content: 'Šta je veb izlog?',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'U realnom svetu, većina prodajnih objekata ima izloge u koje se postavljaju najatraktivniji proizvodi kako bi privukli pažnju prolaznika i na taj način ih privukli u samu prodavnicu.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Baš kao što klasični izlozi privlače pažnju prolaznika u realnom svetu, istu svrhu na internetu imaju veb izlozi. U ovim veb izlozima postavljaju se najatraktivniji proizvodi onlajn prodavnica ili drugih vebsajtova koji se bave prodajom različitih proizvoda, kako bi privukli pažnju internet korisnika i usmerili ih ka svom vebsajtu ili onlajn prodavnici.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Tehnički gledano, veb izlog je internet prostor koji svaki prodavac može individualno zakupiti, urediti ga, popuniti artiklima i podacima koje želi da prikaže, povezati sa svojim glavnim vebsajtom, a potom ga javno objaviti.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Infotrg omogućava iznajmljivanje ovakvih internet prostora svakom prodavcu, pružajući im priliku da na atraktivan način predstave svoje proizvode i povećaju svoju vidljivost na internetu.',
+      },
+    ],
   },
   {
     id: 'vebIzlogData-03',
@@ -62,6 +114,32 @@ export const gdeDaKupimData: BasicInformation[] = [
     description:
       'Funkcija “gde da kupim” je specijalizovani pretraživač koji prikazuje lokacije na kojima se mogu kupiti određeni proizvodi.',
     coverImage: '/images/platform/PL09.jpg',
+    content: [
+      {
+        type: 'h3',
+        content: 'Šta je veb izlog?',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'U realnom svetu, većina prodajnih objekata ima izloge u koje se postavljaju najatraktivniji proizvodi kako bi privukli pažnju prolaznika i na taj način ih privukli u samu prodavnicu.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Baš kao što klasični izlozi privlače pažnju prolaznika u realnom svetu, istu svrhu na internetu imaju veb izlozi. U ovim veb izlozima postavljaju se najatraktivniji proizvodi onlajn prodavnica ili drugih vebsajtova koji se bave prodajom različitih proizvoda, kako bi privukli pažnju internet korisnika i usmerili ih ka svom vebsajtu ili onlajn prodavnici.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Tehnički gledano, veb izlog je internet prostor koji svaki prodavac može individualno zakupiti, urediti ga, popuniti artiklima i podacima koje želi da prikaže, povezati sa svojim glavnim vebsajtom, a potom ga javno objaviti.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Infotrg omogućava iznajmljivanje ovakvih internet prostora svakom prodavcu, pružajući im priliku da na atraktivan način predstave svoje proizvode i povećaju svoju vidljivost na internetu.',
+      },
+    ],
   },
   {
     id: 'gdeDaKupimData-02',
@@ -133,6 +211,32 @@ export const enciklopedijaData: BasicInformation[] = [
     description:
       'Enciklopedija proizvoda je skup datoteka na platformi koje nude detaljne informacije o pojedinačnim proizvodima.',
     coverImage: '/images/platform/PL19.jpg',
+    content: [
+      {
+        type: 'h3',
+        content: 'Šta je veb izlog?',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'U realnom svetu, većina prodajnih objekata ima izloge u koje se postavljaju najatraktivniji proizvodi kako bi privukli pažnju prolaznika i na taj način ih privukli u samu prodavnicu.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Baš kao što klasični izlozi privlače pažnju prolaznika u realnom svetu, istu svrhu na internetu imaju veb izlozi. U ovim veb izlozima postavljaju se najatraktivniji proizvodi onlajn prodavnica ili drugih vebsajtova koji se bave prodajom različitih proizvoda, kako bi privukli pažnju internet korisnika i usmerili ih ka svom vebsajtu ili onlajn prodavnici.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Tehnički gledano, veb izlog je internet prostor koji svaki prodavac može individualno zakupiti, urediti ga, popuniti artiklima i podacima koje želi da prikaže, povezati sa svojim glavnim vebsajtom, a potom ga javno objaviti.',
+      },
+      {
+        type: 'pNormal',
+        content:
+          'Infotrg omogućava iznajmljivanje ovakvih internet prostora svakom prodavcu, pružajući im priliku da na atraktivan način predstave svoje proizvode i povećaju svoju vidljivost na internetu.',
+      },
+    ],
   },
   {
     id: 'enciklopedijaData-02',

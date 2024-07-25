@@ -47,7 +47,7 @@ const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
         {renderGridSystem({
           contentData,
           columns: columns,
-          useLink: true,
+          useLink: false,
           children: (block) => (
             <ContentBlock
               title={block.title}
@@ -55,6 +55,7 @@ const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
               coverImage={block.coverImage}
               contentBlocks={[]}
               openContentModal={() => {}}
+              content={block.content}
             />
           ),
         })}

@@ -18,6 +18,7 @@ export interface BasicInformation {
   coverImage?: string;
   date?: string;
   name?: string;
+  content?: any[];
 }
 
 export interface BasicTimInformation {

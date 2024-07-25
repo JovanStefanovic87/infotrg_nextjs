@@ -48,7 +48,7 @@ const BussinessCooperation: React.FC = () => {
         {renderGridSystem({
           contentData,
           columns: columns,
-          useLink: true,
+          useLink: false,
           children: (block: BasicInformation) => (
             <ContentBlock
               title={''}

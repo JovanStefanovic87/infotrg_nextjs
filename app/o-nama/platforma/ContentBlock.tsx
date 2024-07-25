@@ -7,6 +7,9 @@ import ImageModal from '@/app/components/modals/ImageModal';
 import Devider from '@/app/components/ui/Devider';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitileWrap from '@/app/components/text/BlockTitileWrap';
+import ContentModalInnerContainer from '@/app/components/containers/ContentModalInnerContainer';
+import ContentModalContainer from '@/app/components/containers/ContentModalContainer';
+import ContentDisplay from './ContentDisplay';
 
 interface Props {
   title: string;
@@ -14,6 +17,7 @@ interface Props {
   coverImage?: string;
   contentBlocks: ContentBlockItem[];
   openContentModal?: (contentBlocks: ContentBlockItem[]) => void;
+  content?: any;
 }
 
 const ContentBlock: React.FC<Props> = ({
@@ -22,37 +26,43 @@ const ContentBlock: React.FC<Props> = ({
   coverImage,
   contentBlocks,
   openContentModal,
+  content,
 }) => {
-  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-  const openImageModal = (image: string) => {
-    setSelectedImage(image);
-    setIsImageModalOpen(true);
+  const handleOpenModal = () => {
+    if (openContentModal) {
+      openContentModal(contentBlocks);
+    }
+    setIsModalOpen(true);
   };
 
-  const closeImageModal = () => {
-    setIsImageModalOpen(false);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
     <>
       <ContentBlockContainer
         contentBlocks={contentBlocks}
-        openContentModal={() => openContentModal}
+        openContentModal={handleOpenModal}
         isLink={false}
+        useModal={true}
       >
-        <div className='cursor-pointer w-full p-2 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
+        <div className='w-full p-2 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
           <div className='flex flex-col h-full bg-gradient-white p-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
             <BlockTitileWrap text={title} />
             {coverImage && (
               <div className='mt-4'>
-                <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
+                <CoverImage src={coverImage} alt={title} />
               </div>
             )}
             <BlockText description={description} maxLines={2} align='center' />
             <div className='mt-auto'>
-              <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
+              <button
+                className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'
+                onClick={handleOpenModal}
+              >
                 Vidi još
               </button>
             </div>
@@ -60,8 +70,12 @@ const ContentBlock: React.FC<Props> = ({
         </div>
       </ContentBlockContainer>
 
-      {isImageModalOpen && (
-        <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
+      {isModalOpen && (
+        <ContentModalContainer onContentModalClose={handleCloseModal}>
+          <ContentModalInnerContainer>
+            <ContentDisplay data={content} />
+          </ContentModalInnerContainer>
+        </ContentModalContainer>
       )}
     </>
   );

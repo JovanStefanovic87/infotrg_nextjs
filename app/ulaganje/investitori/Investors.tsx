@@ -5,7 +5,6 @@ import { contentData } from './investorsData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
-import Modal from './Modal';
 import Investor from './Investor';
 import ContentModalContainer from '@/app/components/containers/ContentModalContainer';
 import ContentModalInnerContainer from '@/app/components/containers/ContentModalInnerContainer';
