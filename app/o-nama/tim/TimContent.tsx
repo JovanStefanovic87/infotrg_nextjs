@@ -6,6 +6,7 @@ import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import Link from 'next/link';
+import renderGridSystem from '@/app/helpers/renderGridSystem';
 
 const TimContent: NextPage = () => {
   useEffect(() => {

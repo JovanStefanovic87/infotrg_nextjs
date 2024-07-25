@@ -7,6 +7,8 @@ import PageContainer from '../../components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
 import Devider from '@/app/components/ui/Devider';
 import UnorderedList from '@/app/components/text/UnorderedList';
+import renderGridSystem from '@/app/helpers/renderGridSystem';
+import { BasicInformation } from '@/app/helpers/types';
 
 const BussinessCooperation: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
@@ -36,43 +38,6 @@ const BussinessCooperation: React.FC = () => {
 
   if (columns === null) return null;
 
-  const renderGrid = () => {
-    const rows: JSX.Element[] = [];
-    const totalBlocks = contentData.length;
-    const maxColumns = Math.min(columns, totalBlocks);
-
-    for (let i = 0; i < totalBlocks; i += maxColumns) {
-      const rowItems = contentData.slice(i, i + maxColumns);
-      const colWidth = `calc(${100 / maxColumns}%)`;
-
-      rows.push(
-        <div
-          key={i}
-          className='grid items-stretch content-stretch justify-stretch'
-          style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
-        >
-          {rowItems.map((block: any, index: number) => {
-            const remainingColumns = maxColumns - rowItems.length;
-            const colSpan = remainingColumns > 0 ? maxColumns : 1;
-
-            return (
-              <div key={index} style={{ gridColumn: `span ${colSpan}` }}>
-                <ContentBlock
-                  title={''}
-                  description={block.description}
-                  coverImage={block.coverImage}
-                  contentBlocks={[]}
-                  openContentModal={() => {}}
-                />
-              </div>
-            );
-          })}
-        </div>,
-      );
-    }
-    return rows;
-  };
-
   return (
     <PageContainer>
       <H1 title='POSLOVNA SARADNJA' pb='0' />
@@ -80,7 +45,20 @@ const BussinessCooperation: React.FC = () => {
         <H2Title text='SAŽET PRIKAZ POSLOVNE SARADNJE' padding={10} />
       </div>
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
-        {renderGrid()}
+        {renderGridSystem({
+          contentData,
+          columns: columns,
+          useLink: true,
+          children: (block: BasicInformation) => (
+            <ContentBlock
+              title={''}
+              description={block.description}
+              coverImage={block.coverImage}
+              contentBlocks={[]}
+              openContentModal={() => {}}
+            />
+          ),
+        })}
       </div>
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
       <div className='sm:p-2'>

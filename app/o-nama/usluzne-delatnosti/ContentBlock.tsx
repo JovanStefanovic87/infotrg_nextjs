@@ -1,6 +1,6 @@
-import ContentBlockContainer from '../components/containers/ContentBlockContainer';
-import CoverImage from '../components/image/CoverImage';
-import { ContentBlockItem } from '../helpers/types';
+import ContentBlockContainer from '../../components/containers/ContentBlockContainer';
+import CoverImage from '../../components/image/CoverImage';
+import { ContentBlockItem } from '../../helpers/types';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitileWrap from '@/app/components/text/BlockTitileWrap';
 

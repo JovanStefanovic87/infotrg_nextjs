@@ -1,16 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import { contentData as rawContentData } from './serviceActivitiesData';
 import ContentBlock from './ContentBlock';
-import H2Title from '@/app/components/text/H2Title';
+import H1 from '../../components/text/H1';
+import PageContainer from '../../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
+import { BasicInformation } from '@/app/helpers/types';
 
-interface Props {
-  contentData: any[];
-  title: string;
-  id: string;
-}
-
-const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
+const ServiceActivities: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -38,16 +35,20 @@ const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
 
   if (columns === null) return null;
 
+  const contentData = rawContentData.filter(
+    (item): item is BasicInformation & { id: string; coverImage: string } =>
+      item.id !== undefined && item.coverImage !== undefined,
+  );
+
   return (
-    <div className='mt-4' id={id}>
-      <div className='p-2'>
-        <H2Title text={title} padding={10} />
-      </div>
-      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden'>
+    <PageContainer>
+      <H1 title='USLUŽNE DELATNOSTI INFOTRGA' />
+      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData,
           columns: columns,
           useLink: true,
+          path: '/o-nama/usluzne-delatnosti/',
           children: (block) => (
             <ContentBlock
               title={block.title}
@@ -59,8 +60,8 @@ const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
           ),
         })}
       </div>
-    </div>
+    </PageContainer>
   );
 };
 
-export default InfotrgPlatform;
+export default ServiceActivities;

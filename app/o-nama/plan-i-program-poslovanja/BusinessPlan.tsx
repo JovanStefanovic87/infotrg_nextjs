@@ -1,15 +1,23 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData, listOfLinks } from './BussinessPlanData';
+import { contentData as rawContentData, listOfLinks as rawListOfLinks } from './BussinessPlanData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
 import ContentBlockLinks from './ContentBlockLinks';
-import Link from 'next/link';
 import Devider2 from '@/app/components/ui/Devider2';
+import renderGridSystem from '@/app/helpers/renderGridSystem';
 
-const BussinessCooperation: React.FC = () => {
+interface BasicInformation {
+  id: string | undefined;
+  title: string;
+  description: string;
+  date?: string;
+  coverImage: string;
+}
+
+const BussinesPlan: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -37,98 +45,13 @@ const BussinessCooperation: React.FC = () => {
 
   if (columns === null) return null;
 
-  const renderGrid = () => {
-    const rows: JSX.Element[] = [];
-    const totalBlocks = contentData.length;
-    const maxColumns = Math.min(columns || 1, 3);
+  const contentData = rawContentData.filter(
+    (item): item is BasicInformation & { id: string } => item.id !== undefined,
+  );
 
-    let rowIndex = 0;
-
-    while (rowIndex < totalBlocks) {
-      const rowItems = contentData.slice(rowIndex, rowIndex + maxColumns);
-
-      let colWidth;
-      if (rowItems.length === 1) {
-        colWidth = `100%`;
-      } else if (rowItems.length === 2) {
-        colWidth = `50%`;
-      } else {
-        colWidth = `calc(${100 / maxColumns}%)`;
-      }
-
-      rows.push(
-        <div
-          key={rowIndex}
-          className='grid items-stretch content-stretch justify-stretch'
-          style={{ gridTemplateColumns: `repeat(${rowItems.length}, ${colWidth})` }}
-        >
-          {rowItems.map((block: any, index: number) => (
-            <div key={index} style={{ gridColumn: `span 1` }}>
-              <ContentBlock
-                title={''}
-                description={block.description}
-                date={block.date}
-                coverImage={block.coverImage}
-                contentBlocks={[]}
-                openContentModal={() => {}}
-              />
-            </div>
-          ))}
-        </div>,
-      );
-
-      rowIndex += maxColumns;
-    }
-
-    return rows;
-  };
-
-  const renderGridLinks = () => {
-    const rows: JSX.Element[] = [];
-    const totalBlocks = listOfLinks.length;
-    const maxColumns = Math.min(columns || 1, 3);
-
-    let rowIndex = 0;
-
-    while (rowIndex < totalBlocks) {
-      const rowItems = listOfLinks.slice(rowIndex, rowIndex + maxColumns);
-
-      let colWidth;
-      if (rowItems.length === 1) {
-        colWidth = `100%`;
-      } else if (rowItems.length === 2) {
-        colWidth = `50%`;
-      } else {
-        colWidth = `calc(${100 / maxColumns}%)`;
-      }
-
-      rows.push(
-        <div
-          key={rowIndex}
-          className='grid items-stretch content-stretch justify-stretch'
-          style={{ gridTemplateColumns: `repeat(${rowItems.length}, ${colWidth})` }}
-        >
-          {rowItems.map((block) => (
-            <Link key={block.id} href={`/o-nama/plan-i-program-poslovanja/${block.id}`}>
-              <ContentBlockLinks
-                title={block.title}
-                description={block.description}
-                contentBlocks={[]}
-                openContentModal={() => {}}
-              />
-            </Link>
-          ))}
-          <div className='flex sm:hidden'>
-            <Devider2 marginY={4} />
-          </div>
-        </div>,
-      );
-
-      rowIndex += maxColumns;
-    }
-
-    return rows;
-  };
+  const listOfLinks = rawListOfLinks.filter(
+    (item): item is BasicInformation & { id: string } => item.id !== undefined,
+  );
 
   return (
     <PageContainer>
@@ -137,12 +60,44 @@ const BussinessCooperation: React.FC = () => {
         <H2Title text='SAŽET PRIKAZ PLANA I PROGRAMA POSLOVANJA' padding={10} />
       </div>
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
-        {renderGrid()}
+        {renderGridSystem({
+          contentData,
+          columns,
+          useLink: false,
+          children: (block) => (
+            <ContentBlock
+              title={block.title}
+              description={block.description}
+              date={block.date || ''} // Ensure date is passed here
+              coverImage={block.coverImage}
+              contentBlocks={[]}
+              openContentModal={() => {}}
+            />
+          ),
+        })}
       </div>
       <H2Title text='OPŠIRNIJI PRIKAZ PLANA I PROGRAMA POSLOVANJA' padding={24} />
-      <div className='bg-transparent rounded-md overflow-hidden mb-4'>{renderGridLinks()}</div>
+      <div className='bg-transparent rounded-md overflow-hidden mb-4'>
+        {renderGridSystem({
+          contentData: listOfLinks,
+          columns,
+          useLink: true,
+          path: '/o-nama/plan-i-program-poslovanja/',
+          children: (block) => (
+            <ContentBlockLinks
+              title={block.title}
+              description={block.description}
+              contentBlocks={[]}
+              openContentModal={() => {}}
+            />
+          ),
+        })}
+        <div className='flex sm:hidden'>
+          <Devider2 marginY={4} />
+        </div>
+      </div>
     </PageContainer>
   );
 };
 
-export default BussinessCooperation;
+export default BussinesPlan;
