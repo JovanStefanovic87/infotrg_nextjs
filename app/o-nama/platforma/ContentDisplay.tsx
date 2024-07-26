@@ -1,24 +1,27 @@
 import React from 'react';
-import { BasicInformation } from '../../helpers/types';
+import { highlightedText } from './InfotrgPlatformData';
 import TextNormal from '@/app/components/text/TextNormal';
-import H2 from '@/app/components/text/H2';
+import HighlightText from '@/app/components/text/HighlightText';
+import TextNormalWrapped from '@/app/components/text/TextNormalWrapped';
+import H3Title from '@/app/components/text/H3Title';
 
 interface Props {
   data: any;
-  title: string;
 }
 
-const ContentDisplay: React.FC<Props> = ({ data, title }) => {
+const ContentDisplay: React.FC<Props> = ({ data }) => {
   return (
     <div className='flex flex-col gap-4'>
-      <h2 className='text-2xl font-bold'>{title}</h2>
       {data &&
         data.map((item: any, index: number) => (
           <div key={index}>
-            {item.type === 'h3' && (
-              <H2 text={item.content.toUpperCase()} color='black' align='center' marginBottom='4' />
-            )}
+            {item.type === 'h3' && <H3Title text={item.content.toUpperCase()} padding={4} />}
             {item.type === 'pNormal' && <TextNormal text={item.content} />}
+            {item.type === 'pNormalWrapped' && (
+              <TextNormalWrapped>
+                <HighlightText text={item.content} keywords={highlightedText} number={item.order} />
+              </TextNormalWrapped>
+            )}
           </div>
         ))}
     </div>
