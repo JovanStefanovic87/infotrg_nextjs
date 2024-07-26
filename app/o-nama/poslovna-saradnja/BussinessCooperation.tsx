@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData, listOfLinks } from './BussinessCooperationData';
+import { contentData, hyperlinks } from './BussinessCooperationData'; // Use hyperlinks instead of listOfLinks
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
@@ -63,7 +63,7 @@ const BussinessCooperation: React.FC = () => {
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
       <div className='sm:p-2'>
         <div className='flex justify-center bg-gradient-white p-8 items-start md:items-center rounded-md'>
-          <UnorderedList items={listOfLinks} />
+          <UnorderedList items={hyperlinks} /> {/* Use hyperlinks here */}
         </div>
       </div>
     </PageContainer>
