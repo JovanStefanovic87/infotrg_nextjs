@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import ContentBlock from './ContentBlock';
+import ContentBlockWithModal from '@/app/components/blocks/ContentBlockWithModal';
 import H2Title from '@/app/components/text/H2Title';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 
@@ -49,7 +49,7 @@ const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
           columns: columns,
           useLink: false,
           children: (block) => (
-            <ContentBlock
+            <ContentBlockWithModal
               title={block.title}
               description={block.description}
               coverImage={block.coverImage}

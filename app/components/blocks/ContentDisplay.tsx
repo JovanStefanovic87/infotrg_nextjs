@@ -1,5 +1,5 @@
 import React from 'react';
-import { highlightedText } from './InfotrgPlatformData';
+import { highlightedText } from '../../o-nama/platforma/InfotrgPlatformData';
 import TextNormal from '@/app/components/text/TextNormal';
 import HighlightText from '@/app/components/text/HighlightText';
 import TextNormalWrapped from '@/app/components/text/TextNormalWrapped';

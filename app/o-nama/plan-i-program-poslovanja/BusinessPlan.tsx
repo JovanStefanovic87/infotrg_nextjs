@@ -5,11 +5,11 @@ import {
   listOfLinks as rawListOfLinks,
   mapIdToPath,
 } from './BussinessPlanData';
-import ContentBlock from './ContentBlock';
+import ContentBlockImageNumber from '../../components/blocks/ContentBlockImageNumber';
+import ContentBlock from '../../components/blocks/ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
-import ContentBlockLinks from './ContentBlockLinks';
 import Devider2 from '@/app/components/ui/Devider2';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 
@@ -69,7 +69,7 @@ const BussinesPlan: React.FC = () => {
           columns,
           useLink: false,
           children: (block) => (
-            <ContentBlock
+            <ContentBlockImageNumber
               title={block.title}
               description={block.description}
               date={block.date || ''}
@@ -88,9 +88,10 @@ const BussinesPlan: React.FC = () => {
           useLink: true,
           mapIdToPath: (id: string) => mapIdToPath(id),
           children: (block) => (
-            <ContentBlockLinks
+            <ContentBlock
               title={block.title}
               description={block.description}
+              descriptionAlign='left'
               contentBlocks={[]}
               openContentModal={() => {}}
             />

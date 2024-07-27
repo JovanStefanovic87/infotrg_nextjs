@@ -1,11 +1,10 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData, hyperlinks } from './BussinessCooperationData'; // Use hyperlinks instead of listOfLinks
-import ContentBlock from './ContentBlock';
+import { contentData, hyperlinks } from './BussinessCooperationData';
+import ContentBlock from '../../components/blocks/ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
-import Devider from '@/app/components/ui/Devider';
 import UnorderedList from '@/app/components/text/UnorderedList';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
@@ -56,6 +55,7 @@ const BussinessCooperation: React.FC = () => {
               coverImage={block.coverImage}
               contentBlocks={[]}
               openContentModal={() => {}}
+              isLink={false}
             />
           ),
         })}

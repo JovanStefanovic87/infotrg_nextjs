@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { contentData, mapIdToPath } from './ulaganjeData';
-import ContentBlock from './ContentBlock';
+import ContentBlock from '../components/blocks/ContentBlock';
 import H1 from '../components/text/H1';
 import PageContainer from '../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';

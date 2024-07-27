@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import ContentBlockContainer from '../../components/containers/ContentBlockContainer';
 import CoverImage from '../../components/image/CoverImage';
 import { ContentBlockItem } from '../../helpers/types';
-import ImageModal from '@/app/components/modals/ImageModal';
-import Devider from '@/app/components/ui/Devider';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitileWrap from '@/app/components/text/BlockTitileWrap';
 import ContentModalInnerContainer from '@/app/components/containers/ContentModalInnerContainer';
@@ -53,12 +51,12 @@ const ContentBlock: React.FC<Props> = ({
           <div className='flex flex-col h-full bg-gradient-white p-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
             <BlockTitileWrap text={title} />
             {coverImage && (
-              <div className='mt-4'>
+              <div className='cover-image'>
                 <CoverImage src={coverImage} alt={title} />
               </div>
             )}
             <BlockText description={description} maxLines={2} align='center' />
-            <div className='mt-auto'>
+            <div className='button-container'>
               <button
                 className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'
                 onClick={handleOpenModal}

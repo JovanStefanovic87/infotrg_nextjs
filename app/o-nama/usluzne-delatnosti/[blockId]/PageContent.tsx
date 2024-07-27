@@ -6,7 +6,7 @@ import ImageModal from '../../../components/modals/ImageModal';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
-import ContentBlock from './ContentBlock';
+import ContentBlock from '../../../components/blocks/ContentBlock';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -82,11 +82,12 @@ const PageContent: React.FC = () => {
           {rowItems.map((block: any, index: number) => (
             <div key={index} style={{ gridColumn: `span 1` }}>
               <ContentBlock
-                title={block.coverImage}
+                title={''}
                 description={block.description}
                 coverImage={block.coverImage}
                 contentBlocks={[]}
                 openContentModal={() => openImageModal(block.coverImage)}
+                isLink={false}
               />
             </div>
           ))}

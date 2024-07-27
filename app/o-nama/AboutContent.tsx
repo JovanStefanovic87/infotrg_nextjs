@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData as rawContentData } from './aboutData';
-import ContentBlock from './ContentBlock';
+import { contentData as rawContentData } from './AboutData';
+import ContentBlock from '../components/blocks/ContentBlock';
 import H1 from '../components/text/H1';
 import PageContainer from '../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
