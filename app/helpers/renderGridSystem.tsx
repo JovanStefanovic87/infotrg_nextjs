@@ -1,58 +1,36 @@
 import Link from 'next/link';
-import { ReactNode } from 'react';
+import React from 'react';
+import baseRenderGridSystem from './baseRenderGridSystem'; // Adjust the import path as needed
 import { BasicInformation } from './types';
 
-interface Props {
+interface PropsWithLink {
   contentData: BasicInformation[];
   columns?: number;
   useLink?: boolean;
-  children: (block: BasicInformation) => ReactNode;
-  path?: string;
+  children: (block: BasicInformation) => React.ReactNode;
+  mapIdToPath?: (id: string) => string;
 }
 
-const renderGridSystem = ({ contentData, columns = 1, useLink = true, children, path }: Props) => {
-  const rows: JSX.Element[] = [];
-  const totalBlocks = contentData.length;
-  const maxColumns = Math.min(columns, 3);
+const renderGridSystem = ({
+  contentData,
+  columns = 1,
+  useLink = true,
+  children,
+  mapIdToPath = (id) => id,
+}: PropsWithLink) => {
+  const mapFunction = useLink ? (id: string) => mapIdToPath(id) : () => '#';
 
-  let rowIndex = 0;
-
-  while (rowIndex < totalBlocks) {
-    const rowItems = contentData.slice(rowIndex, rowIndex + maxColumns);
-
-    let colWidth;
-    if (rowItems.length === 1) {
-      colWidth = `100%`;
-    } else if (rowItems.length === 2) {
-      colWidth = `50%`;
-    } else {
-      colWidth = `calc(${100 / maxColumns}%)`;
-    }
-
-    rows.push(
-      <div
-        key={rowIndex}
-        className='grid items-stretch content-stretch justify-stretch'
-        style={{ gridTemplateColumns: `repeat(${rowItems.length}, ${colWidth})` }}
-      >
-        {rowItems.map((block) =>
-          useLink ? (
-            <Link key={block.id} href={`${path}${block.id}`} style={{ gridColumn: `span 1` }}>
-              {children(block)}
-            </Link>
-          ) : (
-            <div key={block.id} style={{ gridColumn: `span 1` }}>
-              {children(block)}
-            </div>
-          ),
-        )}
-      </div>,
-    );
-
-    rowIndex += maxColumns;
-  }
-
-  return rows;
+  return baseRenderGridSystem({
+    contentData,
+    columns,
+    children: (block) =>
+      useLink ? (
+        <Link href={mapFunction(block.id)}>{children(block)}</Link>
+      ) : (
+        <>{children(block)}</>
+      ),
+    mapIdToPath: mapFunction,
+  });
 };
 
 export default renderGridSystem;

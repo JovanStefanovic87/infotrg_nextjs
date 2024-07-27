@@ -64,6 +64,12 @@ export const routes: Route[] = [
         icon: '/icons/investors.svg',
         subRoutes: [],
       },
+      {
+        label: 'Prihodi od investicija',
+        href: '/ulaganje/prihodi-od-investicija',
+        icon: '/icons/investmentIncome.svg',
+        subRoutes: [],
+      },
     ],
   },
   {

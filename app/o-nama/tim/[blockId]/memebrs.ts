@@ -32,6 +32,24 @@ const JOVAN: Omit<MemberData, 'id'> = {
   image: '/images/members/avatar_jovan.bmp',
 };
 
+const NEBOJSA: Omit<MemberData, 'id'> = {
+  name: 'Nebojša Lukić',
+  birth: '',
+  infotrgEngagements: 'od 27.08.2022. godine',
+  phone: '0611366166',
+  image: '/images/members/avatar_nebojsa.bmp',
+};
+
+const NEMANJA: Omit<MemberData, 'id'> = {
+  name: 'Nemanja Komazec',
+  affinities: 'marketing, timski rad, terenski rad na relaciji Sombor-Subotica',
+  previousEngagements: 'distribucija prečistača vazduha i vode “FRASH” (trgovački putnik)',
+  infotrgEngagements: 'od 01.02.2024. godine',
+  phone: '0642922747',
+  email: 'komazecnemanja22@gmail.com',
+  image: '/images/members/avatar_nemanja.bmp',
+};
+
 export const contentData: MemberData[] = [
   {
     id: 'autor',
@@ -52,6 +70,14 @@ export const contentData: MemberData[] = [
   {
     id: 'koordinator',
     ...MIROSLAV,
+  },
+  {
+    id: 'pr-menadzer',
+    ...NEBOJSA,
+  },
+  {
+    id: 'marketing-menadzer',
+    ...NEMANJA,
   },
 ];
 export const contentBlocksData: ContentBlocksData = {
@@ -1097,6 +1123,420 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'hr',
     },
   ],
+  'pr-menadzer': [
+    {
+      type: 'h3',
+      content: 'KONTAKTIRANJE SARADNIKA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontaktiranje potencijalnih investitora',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'KOMUNIKACIJA SA PRODAVCIMA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Navođenje prodavaca na odobravanje platforme',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Navođenje prodavaca na održavanje veb izloga',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Navođenje prodavaca na reklamiranje',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Navođenje prodavaca na affiliate marketing',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'PROMOVISANJE SADRŽAJA PLATFORME',
+    },
+    {
+      type: 'pNormal',
+      content: 'Promovisanje reklama',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Promovisanje veb izloga',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Promovisanje enciklopedije proizvoda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'ANKETIRANJE',
+    },
+    {
+      type: 'pNormal',
+      content: 'Anketiranje tehničkog plana',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'SARADNJA NA IZRADI PROMOTIVNOG MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Saradnja na izradi promotivnih flajera',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'KONTROLA ŠTAMPANJA PROMOTIVNOG MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontrola štampanja promotivnih flajera',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'DISTRIBUCIJA PROMOTIVNOG MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Distribucija promotivnih flajera prodavcima',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'DOPUNSKO POPISIVANJE PROIZVODA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Dopunsko popisivanje asortimana proizvoda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'SELEKCIJA PROIZVODA ZA OBJAVLJIVANJE',
+    },
+    {
+      type: 'pNormal',
+      content: 'Selekcija proizvoda za probne stranice enciklopedije proizvoda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Selekcija proizvoda za privremene veb izloge',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'PRIPREMA DOKUMENATA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Priprema plana rada',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'RAZMATRANJE DOKUMENATA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Razmatranje projektne dokumentacije',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Razmatranje investicionog plana',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'POTPISIVANJE DOKUMENATA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje projektne dokumentacije',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje investicionog plana i programa',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje ugovora',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+  ],
+  'marketing-menadzer': [
+    {
+      type: 'h3',
+      content: 'ANGAŽOVANJE SARADNIKA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Angažovanje promotera na društvenim mrežama',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Organizovanje promoterki ispred ulaza u pijacu',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontaktiranje potencijalnih investitora',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'IZRADA VIDEO MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Izrada video reklame',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'OGLAŠAVANJE PROMOTIVNOG MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Oglašavanje video reklama putem medija',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Oglašavanje bilborda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'ANGAŽMAN NA DRUŠTVENIM MREŽAMA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Otvaranje naloga na društvenim mrežama',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Objavljivanje informacija o proizvodima na društvenim mrežama',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Angažovano širenje kontakta na društvenim mrežama',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'KONTROLA IZRADE PROMOTIVNOG MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontrola štampanja bilborda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontrola štampanja obaveštajnih flajera',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontrola izrade majica za promoterke',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'DISTRIBUCIJA PROMOTIVNOG MATERIJALA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Distribucija promotivnih flajera',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'USMENA PROMOCIJA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Usmena promocija platforme posetiocima pijace',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Anketiranje tehničkog plana',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'NAVOĐENJE KUPACA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Navođenje na praćenje preko društvenih mreža',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Navođenje kupaca na mesto prodaje',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'EVIDENTIRANJE',
+    },
+    {
+      type: 'pNormal',
+      content: 'Evidentiranje porasta pregleda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'SARADNJA NA GRAFIČKOJ PRIPREMI',
+    },
+    {
+      type: 'pNormal',
+      content: 'Saradnja na grafičkoj pripremi bilborda',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Saradnja na grafičkoj pripremi promotivnih flajera',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'IZRADA DOKUMENATA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Izrada plana rada',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'RAZMATRANJE DOKUMENATA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Razmatranje projektne dokumentacije',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Razmatranje investicionog plana i programa',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'POTPISIVANJE DOKUMENATA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje projektne dokumentacije',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje investicionog plana i programa',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje ugovora',
+      paddingLeft: 'marginLeftMedium',
+    },
+    {
+      type: 'hr',
+    },
+  ],
 };
 
 export const contentBlocks2Data: ContentBlocksData = {
@@ -1466,6 +1906,93 @@ export const contentBlocks2Data: ContentBlocksData = {
     {
       type: 'pNormal',
       content: 'Raspodela zaostalih uplata',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+  ],
+  'pr-menadzer': [
+    {
+      type: 'h3',
+      content: 'OBJAVLJIVANJE REKLAMA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Podsticanje prodavaca na objavljivanje reklama',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'pNormal',
+      content: 'Prosleđivanje prihoda ostvarenih plaćenim oglašavanjem',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'AFFILIATE POSREDNIŠTVO',
+    },
+    {
+      type: 'pNormal',
+      content: 'Podsticanje prodavaca na affiliate posredništvo',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje ugovora sa potencijalnim klijentima',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'pNormal',
+      content: 'Komunikacija sa prodavcima u slučaju ostvarene prodaje',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'STARTER PROGRAM',
+    },
+    {
+      type: 'pNormal',
+      content: 'Potpisivanje ugovora sa potencijalnim prodavcima',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontaktiranje prodavaca u slučaju narudžbe proizvoda',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'pNormal',
+      content: 'Kontaktiranje kupaca u slučaju ostvarene trgovine',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'AUKCIJE',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prosleđivanje podataka o prodavcu',
+      paddingLeft: marginLeftMedium,
+    },
+    {
+      type: 'hr',
+    },
+    {
+      type: 'h3',
+      content: 'DOSTAVA',
+    },
+    {
+      type: 'pNormal',
+      content: 'Komunikacija sa prodavcima u slučaju narudžbe proizvoda',
       paddingLeft: marginLeftMedium,
     },
     {

@@ -1,6 +1,10 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData as rawContentData, listOfLinks as rawListOfLinks } from './BussinessPlanData';
+import {
+  contentData as rawContentData,
+  listOfLinks as rawListOfLinks,
+  mapIdToPath,
+} from './BussinessPlanData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
@@ -68,7 +72,7 @@ const BussinesPlan: React.FC = () => {
             <ContentBlock
               title={block.title}
               description={block.description}
-              date={block.date || ''} // Ensure date is passed here
+              date={block.date || ''}
               coverImage={block.coverImage}
               contentBlocks={[]}
               openContentModal={() => {}}
@@ -82,7 +86,7 @@ const BussinesPlan: React.FC = () => {
           contentData: listOfLinks,
           columns,
           useLink: true,
-          path: '/o-nama/plan-i-program-poslovanja/',
+          mapIdToPath: (id: string) => mapIdToPath(id),
           children: (block) => (
             <ContentBlockLinks
               title={block.title}

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData as rawContentData } from './serviceActivitiesData';
+import { contentData as rawContentData, mapIdToPath } from './serviceActivitiesData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
@@ -48,7 +48,7 @@ const ServiceActivities: React.FC = () => {
           contentData,
           columns: columns,
           useLink: true,
-          path: '/o-nama/usluzne-delatnosti/',
+          mapIdToPath: (id: string) => mapIdToPath(id),
           children: (block) => (
             <ContentBlock
               title={block.title}

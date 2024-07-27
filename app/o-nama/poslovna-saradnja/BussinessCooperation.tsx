@@ -63,7 +63,7 @@ const BussinessCooperation: React.FC = () => {
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
       <div className='sm:p-2'>
         <div className='flex justify-center bg-gradient-white p-8 items-start md:items-center rounded-md'>
-          <UnorderedList items={hyperlinks} /> {/* Use hyperlinks here */}
+          <UnorderedList items={hyperlinks} />
         </div>
       </div>
     </PageContainer>

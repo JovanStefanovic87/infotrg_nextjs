@@ -232,6 +232,11 @@ const usluzneDelatnostiIds = new Set([
   'prihodovanje-od-objavljivanja-reklama',
   'prihodovanje-od-izrade-reklama',
   'prihodovanje-od-usluznog-odrzavanja-veb-izloga',
+  'prihodovanje-od-affiliate-posrednistva',
+  'prihodovanje-od-starter-posrednistva',
+  'prihodovanje-od-aukcija',
+  'prihodovanje-od-dostave',
+  'prihodovanje-na-osnovu-odlozenog-placanja',
 ]);
 
 const hyperlinks = listOfLinks.map((block) => {

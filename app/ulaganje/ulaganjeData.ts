@@ -9,62 +9,57 @@ export interface BasicInformation {
 
 export const contentData: BasicInformation[] = [
   {
-    id: 'block1',
-    title: 'Block 1',
-    description: 'This is the first block.',
-    coverImage: '/images/image1.jpg',
+    id: 'projekat-infotrg',
+    title: 'PROJEKAT INFOTRG',
+    description:
+      'Infotrg je ekonomski projekat namenjen posredovanju između prodavaca i kupaca, direktnom plasiranju proizvoda i objavljavljivanju informacija iz oblasti trgovine putem specijalizovane digitalne platforme.',
+    coverImage: '/images/ulaganje/UL01.jpg',
   },
   {
-    id: 'block2',
-    title: 'Block 2',
-    description: 'This is the second block.',
-    coverImage: '/images/image2.jpg',
-  },
-  {
-    id: 'block3',
-    title: 'Block 3',
-    description: 'This is the second block.',
-    coverImage: '/images/image2.jpg',
-  },
-  {
-    id: 'block4',
-    title: 'Block 4',
-    description: 'This is the second block.',
-    coverImage: '/images/image2.jpg',
+    id: 'plan-i-program-poslovanja',
+    title: 'PLAN I PROGRAM POSLOVANJA',
+    description:
+      'Prema planu i programu poslovanja, Infotrg će se tehnički i kapacitetno razvijati do 31.03.2026. godine, nakon čega se očekuje period profitabilnog i samoodrživog poslovanja.',
+    coverImage: '/images/ulaganje/UL02.jpg',
   },
   {
     id: 'investicioni-fond',
     title: 'INVESTICIONI FOND',
     description:
-      'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
+      'Tokom neprofitabilnog perioda (do 31.03.2026. godine), svi troškovi razvoja Infotrga biće pokriveni iz investicionog fonda, čija ukupna projektovana vrednost iznosi 50.000 evra. Sredstva iz fonda biće raspoređena i uložena u više razvojnih etapa projekta.',
+    coverImage: '/images/ulaganje/UL03.jpg',
+  },
+  {
+    id: 'investicioni-plan-i-program',
+    title: 'INVESTICIONI PLAN I PROGRAM',
+    description:
+      'Investicioni fond obezbeđuju investitori svojim finansijskim ulozima, u skladu sa investicionim planom i programom koji propisuje njihovo suvlasništvo u projektu, nadležnosti upravljanja, garancije prihoda i druga prava i obaveze.',
+    coverImage: '/images/ulaganje/UL04.jpg',
+  },
+  {
+    id: 'prihodi-od-investicija',
+    title: 'PRIHODI OD INVESTICIJA',
+    description:
+      'Tokom neprofitabilnog perioda, investitori ne mogu očekivati prihode, ali nakon 31.03.2026. godine garantuje im se minimalna mesečna zarada od 10% na sva dotadašnja uložena sredstva, plus dodatni prihodi, plus bonus procenti na sve investicije tokom ranog perioda ulaganja (do kraja 2024. godine).',
+    coverImage: '/images/ulaganje/UL05.jpg',
+  },
+  {
+    id: 'povrat-ulozenih-sredstava',
+    title: 'POVRAT ULOŽENIH SREDSTAVA',
+    description:
+      'Investitori mogu u svakom trenutku zatražiti povrat sredstava uloženih u investicioni fond. U tom slučaju, dobijaju nazad svoj novac u razumnom vremenskom roku i u tačnom iznosu, ali nakon toga gube pravo na suvlasništvo u projektu i pravo na dalja prihodovanja.',
+    coverImage: '/images/ulaganje/UL06.jpg',
+  },
+  {
+    id: 'investitori',
+    title: 'INVESTITORI',
+    description:
+      'Svi investitori su zvanično registrovani kao suvlasnici Infotrga u procentu koji odgovara visini uloženih sredstava. Njihova imena i kontakti javno su dostupni svim ostalim investitorima radi međusobne komunikacije.',
+    coverImage: '/images/ulaganje/UL07.jpg',
   },
 ];
 
 export const contentBlocksData: ContentBlocksData = {
-  block1: [
-    {
-      type: 'text',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    },
-    { type: 'image', url: ['/images/image1.jpg'] },
-    { type: 'text', content: 'Here is some more explanation with an image below.' },
-    { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
-    { type: 'text', content: 'Final part of the explanation.' },
-  ],
-  block2: [
-    { type: 'text', content: 'This is the first part of the explanation.' },
-    { type: 'image', url: ['/images/image1.jpg'] },
-    { type: 'text', content: 'Here is some more explanation with an image below.' },
-    { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
-    { type: 'text', content: 'Final part of the explanation.' },
-  ],
-  block3: [
-    { type: 'text', content: 'This is the first part of the explanation.' },
-    { type: 'image', url: ['/images/image1.jpg'] },
-    { type: 'text', content: 'Here is some more explanation with an image below.' },
-    { type: 'image', url: ['/images/image1.jpg', '/images/image2.jpg'] },
-    { type: 'text', content: 'Final part of the explanation.' },
-  ],
   'investicioni-fond': [
     {
       type: 'pNormal',
@@ -616,3 +611,19 @@ export const hyperlinks = [
     ).toLowerCase()}`,
   },
 ];
+
+const oNamaIds = new Set(['projekat-infotrg']);
+const pppIds = new Set(['plan-i-program-poslovanja']);
+const povratIds = new Set(['povrat-ulozenih-sredstava']);
+
+export const mapIdToPath = (id: string): string => {
+  if (oNamaIds.has(id)) {
+    return `/o-nama/`;
+  } else if (pppIds.has(id)) {
+    return `/o-nama/${id}`;
+  } else if (povratIds.has(id)) {
+    return `/ulaganje/investicioni-plan-i-program/${id}`;
+  } else {
+    return `/ulaganje/${id}`;
+  }
+};

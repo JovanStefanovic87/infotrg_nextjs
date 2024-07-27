@@ -105,13 +105,13 @@ export interface Route {
 export interface MemberData {
   id: string;
   name: string;
-  birth: string;
-  profession: string;
-  affinities: string;
-  previousEngagements: string;
+  birth?: string;
+  profession?: string;
+  affinities?: string;
+  previousEngagements?: string;
   infotrgEngagements: string;
   phone: string;
-  email: string;
+  email?: string;
   image: string;
 }
 

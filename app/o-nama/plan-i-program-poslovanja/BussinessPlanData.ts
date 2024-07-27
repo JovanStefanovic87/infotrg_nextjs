@@ -243,3 +243,7 @@ export const listOfLinks: BasicInformation[] = [
       'Marketing menadžer održava video reklamu na odabranim medijima i prati njenu posećenost. Koordinator preko posredničke mreže organizuje naplatu prihoda od oglašavanja plaćenih reklama na nivou cele Srbije.',
   },
 ];
+
+export const mapIdToPath = (id: string): string => {
+  return `/o-nama/plan-i-program-poslovanja/${id}`;
+};

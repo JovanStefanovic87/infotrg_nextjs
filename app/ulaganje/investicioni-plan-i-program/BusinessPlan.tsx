@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData as rawContentData } from './aboutData';
+import { contentData as rawContentData, mapIdToPath } from './businessPlanData';
 import ContentBlock from './ContentBlock';
-import H1 from '../components/text/H1';
-import PageContainer from '../components/containers/PageContainer';
+import H1 from '../../components/text/H1';
+import PageContainer from '../../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 
-const AboutContent: React.FC = () => {
+const ServiceActivities: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -42,12 +42,13 @@ const AboutContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='O NAMA' />
+      <H1 title='INVESTICIONI PLAN I PROGRAM' />
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData,
           columns: columns,
           useLink: true,
+          mapIdToPath: (id: string) => mapIdToPath(id),
           children: (block) => (
             <ContentBlock
               title={block.title}
@@ -63,4 +64,4 @@ const AboutContent: React.FC = () => {
   );
 };
 
-export default AboutContent;
+export default ServiceActivities;
