@@ -9,6 +9,7 @@ import ContentModalInnerContainer from '@/app/components/containers/ContentModal
 import ContentModalContainer from '@/app/components/containers/ContentModalContainer';
 import ContentDisplay from './ContentDisplay';
 import BlockButton from '../buttons/BlockButton';
+import ContentBlockInnerContainer from '../containers/ContentBlockInnerContainer';
 
 interface Props {
   title: string;
@@ -48,7 +49,7 @@ const ContentBlock: React.FC<Props> = ({
         isLink={false}
         useModal={true}
       >
-        <ContentModalInnerContainer>
+        <ContentBlockInnerContainer>
           <BlockTitileWrap text={title} />
           {coverImage && (
             <div className='cover-image'>
@@ -57,7 +58,7 @@ const ContentBlock: React.FC<Props> = ({
           )}
           <BlockText description={description} maxLines={2} align='center' />
           <BlockButton text='Vidi još' />
-        </ContentModalInnerContainer>
+        </ContentBlockInnerContainer>
       </ContentBlockContainer>
 
       {isModalOpen && (
