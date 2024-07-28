@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Devider2 from '../components/ui/Devider2';
 
 interface renderGridSystem2Props {
   contentBlocks: any[];
@@ -37,9 +38,14 @@ const renderGridSystem2: React.FC<renderGridSystem2Props> = ({
         style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
       >
         {rowItems.map((block, index) => (
-          <div key={index} style={{ gridColumn: `span 1` }}>
-            {block.link ? <Link href={block.link}>{children(block)}</Link> : children(block)}
-          </div>
+          <>
+            <div key={index} style={{ gridColumn: `span 1` }}>
+              {block.link ? <Link href={block.link}>{children(block)}</Link> : children(block)}
+            </div>
+            <div className='block m-auto w-11/12 sm:hidden'>
+              <Devider2 />
+            </div>
+          </>
         ))}
 
         {Array(maxColumns - rowItems.length)

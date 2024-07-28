@@ -8,6 +8,7 @@ import BlockTitileWrap from '@/app/components/text/BlockTitileWrap';
 import ContentModalInnerContainer from '@/app/components/containers/ContentModalInnerContainer';
 import ContentModalContainer from '@/app/components/containers/ContentModalContainer';
 import ContentDisplay from './ContentDisplay';
+import BlockButton from '../buttons/BlockButton';
 
 interface Props {
   title: string;
@@ -47,25 +48,16 @@ const ContentBlock: React.FC<Props> = ({
         isLink={false}
         useModal={true}
       >
-        <div className='w-full p-2 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-          <div className='flex flex-col h-full bg-gradient-white p-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-            <BlockTitileWrap text={title} />
-            {coverImage && (
-              <div className='cover-image'>
-                <CoverImage src={coverImage} alt={title} />
-              </div>
-            )}
-            <BlockText description={description} maxLines={2} align='center' />
-            <div className='button-container'>
-              <button
-                className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'
-                onClick={handleOpenModal}
-              >
-                Vidi još
-              </button>
+        <ContentModalInnerContainer>
+          <BlockTitileWrap text={title} />
+          {coverImage && (
+            <div className='cover-image'>
+              <CoverImage src={coverImage} alt={title} />
             </div>
-          </div>
-        </div>
+          )}
+          <BlockText description={description} maxLines={2} align='center' />
+          <BlockButton text='Vidi još' />
+        </ContentModalInnerContainer>
       </ContentBlockContainer>
 
       {isModalOpen && (

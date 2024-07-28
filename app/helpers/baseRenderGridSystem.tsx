@@ -1,5 +1,6 @@
 import React from 'react';
 import { BasicInformation } from './types';
+import Devider2 from '../components/ui/Devider2';
 
 interface BaseProps {
   contentData: BasicInformation[];
@@ -34,9 +35,14 @@ const baseRenderGridSystem = ({ contentData, columns = 1, children, mapIdToPath 
         style={{ gridTemplateColumns: `repeat(${rowItems.length}, ${colWidth})` }}
       >
         {rowItems.map((block) => (
-          <div key={block.id} style={{ gridColumn: `span 1` }}>
-            {children(block)}
-          </div>
+          <>
+            <div key={block.id} style={{ gridColumn: `span 1` }}>
+              {children(block)}
+            </div>
+            <div className='block m-auto w-11/12 sm:hidden'>
+              <Devider2 />
+            </div>
+          </>
         ))}
       </div>,
     );

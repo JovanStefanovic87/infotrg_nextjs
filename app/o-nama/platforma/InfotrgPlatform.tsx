@@ -51,7 +51,7 @@ const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
           children: (block) => (
             <ContentBlockWithModal
               title={block.title}
-              description={block.description}
+              description={block.description || ''}
               coverImage={block.coverImage}
               contentBlocks={[]}
               openContentModal={() => {}}

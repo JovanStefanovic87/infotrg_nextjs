@@ -8,6 +8,7 @@ import Devider from '@/app/components/ui/Devider';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitle from '@/app/components/text/BlockTitle';
 import ContentBlockInnerContainer from '../containers/ContentBlockInnerContainer';
+import BlockButton from '../buttons/BlockButton';
 
 interface Props {
   title: string;
@@ -17,7 +18,6 @@ interface Props {
   contentBlocks: ContentBlockItem[];
   openContentModal: (contentBlocks: ContentBlockItem[]) => void;
   isLink?: boolean;
-  deviderMarginTop?: string;
   deviderMarginY?: string;
 }
 
@@ -64,16 +64,7 @@ const ContentBlockImageNumber: React.FC<Props> = ({
               <BlockTitle text={date} align='center' bgColor='transparent' />
             </>
           )}
-          {isLink && (
-            <div className='mt-auto'>
-              <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
-                Vidi još
-              </button>
-            </div>
-          )}
-          <div className='block sm:hidden'>
-            <Devider marginY={deviderMarginY} />
-          </div>
+          {isLink && <BlockButton text='Vidi još' />}
         </ContentBlockInnerContainer>
       </ContentBlockContainer>
 

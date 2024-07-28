@@ -7,6 +7,7 @@ import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
 import ContentBlock from '../../../components/blocks/ContentBlock';
+import renderGridSystem2 from '@/app/helpers/renderGridSystem2';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -54,65 +55,29 @@ const PageContent: React.FC = () => {
 
   if (!block || columns === null) return null;
 
-  const renderGrid = () => {
-    const rows: JSX.Element[] = [];
-    const totalBlocks = contentBlocks.length;
-    const maxColumns = Math.min(columns || 1, 3);
-
-    let rowIndex = 0;
-
-    while (rowIndex < totalBlocks) {
-      const rowItems = contentBlocks.slice(rowIndex, rowIndex + maxColumns);
-
-      let colWidth;
-      if (rowItems.length === 1) {
-        colWidth = `calc(${100}%)`;
-      } else if (rowItems.length === 2) {
-        colWidth = `calc(${50}%)`;
-      } else {
-        colWidth = `calc(${100 / maxColumns}%)`;
-      }
-
-      rows.push(
-        <div
-          key={rowIndex}
-          className='grid sm:grid-cols-2 md:grid-cols-3'
-          style={{ gridTemplateColumns: `repeat(${maxColumns}, ${colWidth})` }}
-        >
-          {rowItems.map((block: any, index: number) => (
-            <div key={index} style={{ gridColumn: `span 1` }}>
-              <ContentBlock
-                title={''}
-                description={block.description}
-                coverImage={block.coverImage}
-                contentBlocks={[]}
-                openContentModal={() => openImageModal(block.coverImage)}
-                isLink={false}
-              />
-            </div>
-          ))}
-
-          {Array(maxColumns - rowItems.length)
-            .fill(null)
-            .map((_, emptyIndex) => (
-              <div key={`empty-${emptyIndex}`} />
-            ))}
-        </div>,
-      );
-
-      rowIndex += maxColumns;
-    }
-
-    return rows;
-  };
-
   return (
     <PageContainer>
       <H1 title='USLUŽNE DELATNOSTI INFOTRGA' pb='0' />
       <div className='pb-4 sm:pb-10'>
         <H2Title text={block.label.toUpperCase()} padding={10} />
       </div>
-      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden'>{renderGrid()}</div>
+      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden'>
+        {renderGridSystem2({
+          contentBlocks,
+          columns,
+          useLink: false,
+          children: (block) => (
+            <ContentBlock
+              title={''}
+              description={block.description}
+              coverImage={block.coverImage}
+              contentBlocks={[]}
+              openContentModal={() => openImageModal(block.coverImage)}
+              isLink={false}
+            />
+          ),
+        })}
+      </div>
       {isImageModalOpen && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}

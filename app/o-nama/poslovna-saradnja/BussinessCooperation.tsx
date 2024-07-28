@@ -8,8 +8,11 @@ import H2Title from '@/app/components/text/H2Title';
 import UnorderedList from '@/app/components/text/UnorderedList';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
+import ImageModal from '@/app/components/modals/ImageModal';
 
 const BussinessCooperation: React.FC = () => {
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -35,6 +38,15 @@ const BussinessCooperation: React.FC = () => {
     return () => window.removeEventListener('resize', updateColumns);
   }, []);
 
+  const openImageModal = (image: string) => {
+    setSelectedImage(image);
+    setIsImageModalOpen(true);
+  };
+
+  const closeImageModal = () => {
+    setIsImageModalOpen(false);
+  };
+
   if (columns === null) return null;
 
   return (
@@ -53,7 +65,7 @@ const BussinessCooperation: React.FC = () => {
             description={block.description || ''}
             coverImage={block.coverImage}
             contentBlocks={[]}
-            openContentModal={() => {}}
+            openContentModal={() => openImageModal(block.coverImage || '')}
             isLink={false}
           />
         ),
@@ -64,6 +76,9 @@ const BussinessCooperation: React.FC = () => {
           <UnorderedList items={hyperlinks} />
         </div>
       </div>
+      {isImageModalOpen && (
+        <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
+      )}
     </PageContainer>
   );
 };

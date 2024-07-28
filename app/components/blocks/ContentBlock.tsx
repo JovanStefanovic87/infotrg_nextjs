@@ -5,6 +5,7 @@ import { ContentBlockItem } from '../../helpers/types';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitleWrap from '@/app/components/text/BlockTitileWrap';
 import ContentBlockInnerContainer from '../containers/ContentBlockInnerContainer';
+import BlockButton from '../buttons/BlockButton';
 
 interface Props {
   title: string;
@@ -40,13 +41,7 @@ const ContentBlock: React.FC<Props> = ({
           </div>
         )}
         <BlockText description={description} maxLines={2} align={descriptionAlign} />
-        {isLink && (
-          <div className='mt-auto'>
-            <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
-              Vidi još
-            </button>
-          </div>
-        )}
+        {isLink && <BlockButton text='Vidi još' />}
       </ContentBlockInnerContainer>
     </ContentBlockContainer>
   );

@@ -22,7 +22,7 @@ const renderGridSystem = ({
   return baseRenderGridSystem({
     contentData,
     columns,
-    children: (block) =>
+    children: (block: BasicInformation) =>
       useLink ? (
         <Link href={mapFunction(block.id)}>{children(block)}</Link>
       ) : (

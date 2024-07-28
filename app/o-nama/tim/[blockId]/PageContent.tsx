@@ -120,7 +120,7 @@ const PageContent: React.FC = () => {
           <H2 text={block.id.toUpperCase()} align='center' color={'black'} />
           <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
             <div
-              className={`relative mt-4 flex items-center justify-center h-52 w-52 lg:h-120 lg:w-120 cursor-pointer p-4`}
+              className={`relative mt-4 flex items-center justify-center h-52 w-52 lg:h-120 lg:w-120 p-4`}
             >
               <Image
                 src={block.image}
