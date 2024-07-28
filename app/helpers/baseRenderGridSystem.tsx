@@ -35,14 +35,14 @@ const baseRenderGridSystem = ({ contentData, columns = 1, children, mapIdToPath 
         style={{ gridTemplateColumns: `repeat(${rowItems.length}, ${colWidth})` }}
       >
         {rowItems.map((block) => (
-          <>
+          <React.Fragment key={block.id}>
             <div key={block.id} style={{ gridColumn: `span 1` }}>
               {children(block)}
             </div>
             <div className='block m-auto w-11/12 sm:hidden'>
               <Devider2 />
             </div>
-          </>
+          </React.Fragment>
         ))}
       </div>,
     );

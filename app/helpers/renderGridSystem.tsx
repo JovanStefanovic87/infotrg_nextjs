@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import baseRenderGridSystem from './baseRenderGridSystem';
 import { BasicInformation } from './types';
@@ -24,9 +25,11 @@ const renderGridSystem = ({
     columns,
     children: (block: BasicInformation) =>
       useLink ? (
-        <Link href={mapFunction(block.id)}>{children(block)}</Link>
+        <Link href={mapFunction(block.id)} key={block.id}>
+          {children(block)}
+        </Link>
       ) : (
-        <>{children(block)}</>
+        <React.Fragment key={block.id}>{children(block)}</React.Fragment>
       ),
     mapIdToPath: mapFunction,
   });

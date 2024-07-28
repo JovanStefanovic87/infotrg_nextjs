@@ -37,7 +37,7 @@ const ContentBlock: React.FC<Props> = ({
 
         {coverImage && (
           <div className='mt-4'>
-            <CoverImage src={coverImage} alt={coverImage} useModal />
+            <CoverImage src={coverImage} alt={title} useModal />
           </div>
         )}
         <BlockText description={description} maxLines={2} align={descriptionAlign} />
