@@ -1,12 +1,11 @@
 'use client';
-import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { fullDescriptionDataLinksData, contentBlocksData } from './fullDescriptionData';
-import ImageModal from '../../../components/modals/ImageModal';
+import { useState, useEffect } from 'react';
+import { contentData, contentBlocksData } from './investPlan';
 import H1 from '@/app/components/text/H1';
 import PageContainer from '@/app/components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
-import ContentBlock from '@/app/components/blocks/ContentBlock';
+import ContentBlockImageNumber from '@/app/components/blocks/ContentBlockImageNumber';
 import renderGridSystem2 from '@/app/helpers/renderGridSystem2';
 
 const PageContent: React.FC = () => {
@@ -38,34 +37,32 @@ const PageContent: React.FC = () => {
   const pathname = usePathname();
   const blockId: string = pathname.split('/').pop() || '';
 
-  const block = fullDescriptionDataLinksData.find((item) => item.id === blockId);
-
+  const block = contentData.find((item) => item.id === blockId);
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
 
   if (!block || columns === null) return null;
 
   return (
     <PageContainer>
-      <H1 title='POSLOVNA SARADNJA' pb='0' />
+      <H1 title='INVESTICIONI PLAN I PROGRAM' pb='0' />
       <div className='pb-4 sm:pb-10'>
-        <H2Title text={block.label.toUpperCase()} padding={10} />
+        <H2Title text={block.title.toUpperCase()} padding={10} />
       </div>
-      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden'>
-        {renderGridSystem2({
-          contentBlocks,
-          columns,
-          renderBlock: (block) => (
-            <ContentBlock
-              title={''}
-              description={block.description}
-              coverImage={block.coverImage}
-              contentBlocks={[]}
-              openContentModal={() => {}}
-              isLink={false}
-            />
-          ),
-        })}
-      </div>
+      {renderGridSystem2({
+        contentBlocks,
+        columns,
+        useLink: block.isLink,
+        children: (block) => (
+          <ContentBlockImageNumber
+            title={block.title}
+            description={block.description}
+            coverImage={block.coverImage}
+            contentBlocks={[]}
+            openContentModal={() => {}}
+            isLink={block.isLink}
+          />
+        ),
+      })}
     </PageContainer>
   );
 };

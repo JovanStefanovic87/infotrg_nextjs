@@ -7,14 +7,18 @@ import ImageModal from '@/app/components/modals/ImageModal';
 import Devider from '@/app/components/ui/Devider';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitle from '@/app/components/text/BlockTitle';
+import ContentBlockInnerContainer from '../containers/ContentBlockInnerContainer';
 
 interface Props {
   title: string;
   description: string;
-  date: string;
+  date?: string;
   coverImage?: string;
   contentBlocks: ContentBlockItem[];
   openContentModal: (contentBlocks: ContentBlockItem[]) => void;
+  isLink?: boolean;
+  deviderMarginTop?: string;
+  deviderMarginY?: string;
 }
 
 const ContentBlockImageNumber: React.FC<Props> = ({
@@ -24,6 +28,8 @@ const ContentBlockImageNumber: React.FC<Props> = ({
   coverImage,
   contentBlocks,
   openContentModal,
+  isLink = false,
+  deviderMarginY,
 }) => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
@@ -42,28 +48,36 @@ const ContentBlockImageNumber: React.FC<Props> = ({
       <ContentBlockContainer
         contentBlocks={contentBlocks}
         openContentModal={openContentModal}
-        isLink={false}
+        isLink={isLink ? isLink : false}
       >
-        <div className='cursor-pointer w-full sm:p-2 sm:h-100 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-          <div className='flex flex-col h-full bg-gradient-white px-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-            {coverImage && (
-              <div className='mt-4'>
-                <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
+        <ContentBlockInnerContainer>
+          {coverImage && (
+            <CoverImage src={coverImage} alt={title} openImageModal={openImageModal} useModal />
+          )}
+          <BlockText description={description} maxLines={20} align='center' />
+
+          {date && (
+            <>
+              <div className='sm:block hidden'>
+                <Devider marginY='0' />
               </div>
-            )}
-            <BlockText description={description} maxLines={20} align='center' />
-            <div className='sm:block hidden'>
-              <Devider marginY='0' />
+              <BlockTitle text={date} align='center' bgColor='transparent' />
+            </>
+          )}
+          {isLink && (
+            <div className='mt-auto'>
+              <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
+                Vidi još
+              </button>
             </div>
-            <BlockTitle text={date} align='center' bgColor='transparent' />
-            <div className='block sm:hidden'>
-              <Devider marginY='4' />
-            </div>
+          )}
+          <div className='block sm:hidden'>
+            <Devider marginY={deviderMarginY} />
           </div>
-        </div>
+        </ContentBlockInnerContainer>
       </ContentBlockContainer>
 
-      {isImageModalOpen && (
+      {isImageModalOpen && !isLink && (
         <ImageModal src={selectedImage} alt={`Image`} onClose={closeImageModal} />
       )}
     </>

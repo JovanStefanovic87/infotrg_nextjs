@@ -44,7 +44,7 @@ const baseRenderGridSystem = ({ contentData, columns = 1, children, mapIdToPath 
     rowIndex += maxColumns;
   }
 
-  return rows;
+  return <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>{rows}</div>;
 };
 
 export default baseRenderGridSystem;

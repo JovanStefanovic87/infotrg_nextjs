@@ -63,25 +63,23 @@ const BussinesPlan: React.FC = () => {
       <div className='p-2 pb-4 sm:pb-10'>
         <H2Title text='SAŽET PRIKAZ PLANA I PROGRAMA POSLOVANJA' padding={10} />
       </div>
-      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
-        {renderGridSystem({
-          contentData,
-          columns,
-          useLink: false,
-          children: (block) => (
-            <ContentBlockImageNumber
-              title={block.title}
-              description={block.description}
-              date={block.date || ''}
-              coverImage={block.coverImage}
-              contentBlocks={[]}
-              openContentModal={() => {}}
-            />
-          ),
-        })}
-      </div>
+      {renderGridSystem({
+        contentData,
+        columns,
+        useLink: false,
+        children: (block) => (
+          <ContentBlockImageNumber
+            title={block.title}
+            description={block.description}
+            date={block.date || ''}
+            coverImage={block.coverImage}
+            contentBlocks={[]}
+            openContentModal={() => {}}
+          />
+        ),
+      })}
       <H2Title text='OPŠIRNIJI PRIKAZ PLANA I PROGRAMA POSLOVANJA' padding={24} />
-      <div className='bg-transparent rounded-md overflow-hidden mb-4'>
+      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData: listOfLinks,
           columns,

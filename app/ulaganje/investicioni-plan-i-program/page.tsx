@@ -1,18 +1,17 @@
 import { NextPage } from 'next';
-import BusinessPlan from './BusinessPlan';
+import InvestPlan from './InvestPlan';
 
 export const metadata = {
-  title: 'Infotrg | Poslovna saradnja',
-  description:
-    'Infotrg je spreman za saradnju sa svim zainteresovanim kompanijama. Kontaktirajte nas i saznajte više o mogućnostima saradnje.',
+  title: 'Infotrg | Investicioni plan i program',
+  description: 'Investicioni plan i program Infotrg-a',
 };
 
-const UsluzneDelatnosti: NextPage = () => {
+const InvesticioniPlan: NextPage = () => {
   return (
     <>
-      <BusinessPlan />
+      <InvestPlan />
     </>
   );
 };
 
-export default UsluzneDelatnosti;
+export default InvesticioniPlan;

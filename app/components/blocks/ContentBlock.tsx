@@ -4,6 +4,7 @@ import CoverImage from '../image/CoverImage';
 import { ContentBlockItem } from '../../helpers/types';
 import BlockText from '@/app/components/text/BlockText';
 import BlockTitleWrap from '@/app/components/text/BlockTitileWrap';
+import ContentBlockInnerContainer from '../containers/ContentBlockInnerContainer';
 
 interface Props {
   title: string;
@@ -30,25 +31,23 @@ const ContentBlock: React.FC<Props> = ({
       openContentModal={openContentModal}
       isLink={isLink}
     >
-      <div className='cursor-pointer w-full p-2 h-auto rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-        <div className='flex flex-col h-full bg-gradient-white p-4 rounded-none overflow-auto sm:rounded-md sm:overflow-hidden'>
-          {title && <BlockTitleWrap text={title} />}
+      <ContentBlockInnerContainer>
+        {title && <BlockTitleWrap text={title} />}
 
-          {coverImage && (
-            <div className='mt-4'>
-              <CoverImage src={coverImage} alt={coverImage} useModal />
-            </div>
-          )}
-          <BlockText description={description} maxLines={2} align={descriptionAlign} />
-          {isLink && (
-            <div className='mt-auto'>
-              <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
-                Vidi još
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
+        {coverImage && (
+          <div className='mt-4'>
+            <CoverImage src={coverImage} alt={coverImage} useModal />
+          </div>
+        )}
+        <BlockText description={description} maxLines={2} align={descriptionAlign} />
+        {isLink && (
+          <div className='mt-auto'>
+            <button className='text-blue-500 mt-2 border border-blueLight bg-blueLightest px-4 py-2 rounded-md self-start'>
+              Vidi još
+            </button>
+          </div>
+        )}
+      </ContentBlockInnerContainer>
     </ContentBlockContainer>
   );
 };

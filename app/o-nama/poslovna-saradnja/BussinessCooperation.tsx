@@ -43,23 +43,21 @@ const BussinessCooperation: React.FC = () => {
       <div className='p-2 pb-4 sm:pb-10'>
         <H2Title text='SAŽET PRIKAZ POSLOVNE SARADNJE' padding={10} />
       </div>
-      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
-        {renderGridSystem({
-          contentData,
-          columns: columns,
-          useLink: false,
-          children: (block: BasicInformation) => (
-            <ContentBlock
-              title={''}
-              description={block.description}
-              coverImage={block.coverImage}
-              contentBlocks={[]}
-              openContentModal={() => {}}
-              isLink={false}
-            />
-          ),
-        })}
-      </div>
+      {renderGridSystem({
+        contentData,
+        columns: columns,
+        useLink: false,
+        children: (block: BasicInformation) => (
+          <ContentBlock
+            title={''}
+            description={block.description || ''}
+            coverImage={block.coverImage}
+            contentBlocks={[]}
+            openContentModal={() => {}}
+            isLink={false}
+          />
+        ),
+      })}
       <H2Title text='OPŠIRNIJI PRIKAZ POSLOVNE SARADNJE' padding={24} />
       <div className='sm:p-2'>
         <div className='flex justify-center bg-gradient-white p-8 items-start md:items-center rounded-md'>

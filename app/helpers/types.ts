@@ -14,11 +14,12 @@ export interface Subitem {
 export interface BasicInformation {
   id: string;
   title: string;
-  description: string;
+  description?: string;
   coverImage?: string;
   date?: string;
   name?: string;
   content?: any[];
+  isLink?: boolean;
 }
 
 export interface BasicTimInformation {
@@ -140,4 +141,15 @@ export interface PppLinksData {
   id: string;
   label: string;
   amount: string;
+}
+
+export interface ImageBlockLink {
+  description: string;
+  coverImage?: string;
+  isLink?: boolean;
+  link?: string;
+}
+
+export interface ImageBlockLinkData {
+  [key: string]: ImageBlockLink[];
 }

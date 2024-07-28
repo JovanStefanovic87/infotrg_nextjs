@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
-import baseRenderGridSystem from './baseRenderGridSystem'; // Adjust the import path as needed
+import baseRenderGridSystem from './baseRenderGridSystem';
 import { BasicInformation } from './types';
 
 interface PropsWithLink {

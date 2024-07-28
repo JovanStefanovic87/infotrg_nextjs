@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData as rawContentData, mapIdToPath } from './businessPlanData';
+import { contentData as rawContentData, mapIdToPath } from './InvestPlanData';
 import ContentBlock from '../../components/blocks/ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 
-const ServiceActivities: React.FC = () => {
+const InvestPlan: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const ServiceActivities: React.FC = () => {
           children: (block) => (
             <ContentBlock
               title={block.title}
-              description={block.description}
+              description={block.description || ''}
               coverImage={block.coverImage}
               contentBlocks={[]}
               openContentModal={() => {}}
@@ -64,4 +64,4 @@ const ServiceActivities: React.FC = () => {
   );
 };
 
-export default ServiceActivities;
+export default InvestPlan;
