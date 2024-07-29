@@ -70,7 +70,7 @@ const BussinesPlan: React.FC = () => {
         children: (block) => (
           <ContentBlockImageNumber
             title={block.title}
-            description={block.description}
+            description={block.description || ''}
             date={block.date || ''}
             coverImage={block.coverImage}
             contentBlocks={[]}
@@ -88,7 +88,7 @@ const BussinesPlan: React.FC = () => {
           children: (block) => (
             <ContentBlock
               title={block.title}
-              description={block.description}
+              description={block.description || ''}
               descriptionAlign='left'
               contentBlocks={[]}
               openContentModal={() => {}}

@@ -3,7 +3,7 @@ import PageContent from './PageContent';
 
 export const metadata = {
   title: 'Infotrg | Raspodela investicionog fonda',
-  description: 'Pametna mogućnost ulaganja',
+  description: 'Detalji o raspodeli investicionog fonda kompanije Infotrg.',
 };
 
 const Invest: NextPage = () => {
