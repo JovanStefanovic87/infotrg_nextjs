@@ -489,8 +489,6 @@ export const contentBlocksData: ImageBlockLinkData = {
       description:
         'Na istom primeru investitor koji je uložio 5.000 evra, računajući da će u odnosu na ukupnih 50.000 evra njegov vlasnički udeo biti 10%, u ovom slučaju dobija bonus procente, jer u odnosu na ukupnih 40.000 evra njegov ulog od 5.000 evra čini još veći udeo i iznosi 12,5%.',
       coverImage: '/images/investicioni-plan-i-program/IP92.jpg',
-      isLink: true,
-      link: '/ulaganje/prihodovanje-od-investicija/prihodovanje-od-bonus-procenata',
     },
     {
       description:
