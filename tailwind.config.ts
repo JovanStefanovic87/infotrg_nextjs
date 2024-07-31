@@ -31,6 +31,7 @@ const config: Config = {
         'gradient-white': 'linear-gradient(to right, #FFFFFF, #e9e9e9)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        waveGradient: 'linear-gradient(45deg, #00aaff 25%, #29c2ff 50%, #c6ecff 75%)',
       },
       width: {
         '120': '30rem',
@@ -59,9 +60,9 @@ const config: Config = {
       keyframes: {
         colorChange: {
           '0%': { backgroundColor: '#00aaff' },
-          '25%': { backgroundColor: '#89d8ff' },
+          '25%': { backgroundColor: '#68cdff' },
           '50%': { backgroundColor: '#9fddfc' },
-          '75%': { backgroundColor: '#89d8ff' },
+          '75%': { backgroundColor: '#68cdff' },
           '100%': { backgroundColor: '#00aaff' },
         },
         fadeIn: {
@@ -86,20 +87,13 @@ const config: Config = {
         },
       },
       animation: {
-        colorChange: 'colorChange 5s infinite',
+        colorChange: 'colorChange 10s infinite',
         fadeIn: 'fadeIn 0.5s ease-in-out',
         fadeInLetter: 'fadeIn 0.5s ease-in-out',
         slideInTop: 'slideInTop 2s ease-in',
         rotateHorizontal: 'rotateHorizontal 7s linear infinite',
         delaySvg: 'delaySvg 2s ease-in-out 1s forwards',
         typewriter: 'typewriter 8s steps(7) 1s forwards',
-      },
-      animationDuration: {
-        '100': '100ms', // Add this line
-        '200': '200ms',
-        '300': '300ms',
-        '500': '500ms',
-        '1000': '1000ms',
       },
       fontFamily: {
         corsiva: ['Monotype Corsiva', 'cursive'],

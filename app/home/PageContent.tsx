@@ -75,13 +75,15 @@ PRIDRUŽITE TIMU KAO STALNI ILI POVREMENI SARADNIK.'
           size='xl'
         />
       </div>
-      <div className='flex flex-col items-stretch bg-mainWhite rounded-lg p-6 shadow-lg mb-8'>
+      <div className='flex flex-col items-stretch sm:items-center bg-mainWhite rounded-lg p-6 shadow-lg mb-8'>
         <div className='w-full mb-4'>
           <H3Title text='Kontakt' color='black' />
         </div>
-        <TextSpecifications label='Koordinator projekta' value='Miroslav Ostrogonac' />
-        <TextSpecifications label='Telefon' value='060 145 13 49' />
-        <TextSpecifications label='Email' value='suinfotrg@gmail.com' />
+        <div className='w-full xl:w-1/3'>
+          <TextSpecifications label='Koordinator projekta' value='Miroslav Ostrogonac' />
+          <TextSpecifications label='Telefon' value='060 145 13 49' />
+          <TextSpecifications label='Email' value='suinfotrg@gmail.com' />
+        </div>
       </div>
     </PageContainer>
   );
