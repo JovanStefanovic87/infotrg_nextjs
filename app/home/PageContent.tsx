@@ -1,13 +1,16 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { contentData, mapIdToPath } from './ulaganjeData';
+import { contentData, mapIdToPath } from './pocetnaData';
 import ContentBlock from '../components/blocks/ContentBlock';
-import H1 from '../components/text/H1';
 import PageContainer from '../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
+import AnimationBlock from './AnimationBlock';
+import H2Title from '../components/text/H2Title';
 import H2 from '../components/text/H2';
+import TextSpecifications from '../components/text/TextSpecifications';
+import H3Title from '../components/text/H3Title';
 
-const InvestContent: React.FC = () => {
+const PageContent: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -37,8 +40,11 @@ const InvestContent: React.FC = () => {
 
   return (
     <PageContainer>
-      <H1 title='ULAGANJE U INFOTRG' pb='2rem' />
-      <div className='flex flex-col items-center bg-mainWhite rounded-lg p-6 shadow-lg mb-4'>
+      <AnimationBlock />
+      <div className='mt-1 sm:mt-8 mb-4'>
+        <H2Title text='ULAGANJE U INFOTRG' size='xl' />
+      </div>
+      <div className='flex flex-col items-center bg-mainWhite rounded-lg p-6 shadow-lg mb-8'>
         <H2
           text='Infotrgov investicioni program omogućava svakom fizičkom licu sticanje vlasničkog udela u poslovnom projektu, uz minimalnu mesečnu zaradu od 10% na uložena sredstva i garanciju povrata uloženog novca u slučaju raskida suvlasničkog odnosa.'
           align='center'
@@ -62,8 +68,23 @@ const InvestContent: React.FC = () => {
           ),
         })}
       </div>
+      <div className='mt-1 sm:mt-8 mb-4'>
+        <H2Title
+          text='POSTANITE INVESTITOR I SUVLASNIK INFOTRGA ILI SE
+PRIDRUŽITE TIMU KAO STALNI ILI POVREMENI SARADNIK.'
+          size='xl'
+        />
+      </div>
+      <div className='flex flex-col items-stretch bg-mainWhite rounded-lg p-6 shadow-lg mb-8'>
+        <div className='w-full mb-4'>
+          <H3Title text='Kontakt' color='black' />
+        </div>
+        <TextSpecifications label='Koordinator projekta' value='Miroslav Ostrogonac' />
+        <TextSpecifications label='Telefon' value='060 145 13 49' />
+        <TextSpecifications label='Email' value='suinfotrg@gmail.com' />
+      </div>
     </PageContainer>
   );
 };
 
-export default InvestContent;
+export default PageContent;

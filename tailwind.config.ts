@@ -24,6 +24,7 @@ const config: Config = {
         grayLighter: '#c2c2c2',
         yellowLighter: '#fef08a',
         yellowStrong: '#facc15',
+        yellowLogo: '#FBED24',
         hyperlink: '#0000EE',
       },
       backgroundImage: {
@@ -54,6 +55,54 @@ const config: Config = {
       },
       fontSize: {
         xxxs: '0.6rem',
+      },
+      keyframes: {
+        colorChange: {
+          '0%': { backgroundColor: '#00aaff' },
+          '25%': { backgroundColor: '#89d8ff' },
+          '50%': { backgroundColor: '#9fddfc' },
+          '75%': { backgroundColor: '#89d8ff' },
+          '100%': { backgroundColor: '#00aaff' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideInTop: {
+          '0%': { transform: 'translateY(-500%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        rotateHorizontal: {
+          '0%': { transform: 'rotateY(-90deg)' },
+          '100%': { transform: 'rotateY(90deg)' },
+        },
+        delaySvg: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        typewriter: {
+          '0%': { width: '0ch' },
+          '100%': { width: '7ch' },
+        },
+      },
+      animation: {
+        colorChange: 'colorChange 5s infinite',
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        fadeInLetter: 'fadeIn 0.5s ease-in-out',
+        slideInTop: 'slideInTop 2s ease-in',
+        rotateHorizontal: 'rotateHorizontal 7s linear infinite',
+        delaySvg: 'delaySvg 2s ease-in-out 1s forwards',
+        typewriter: 'typewriter 8s steps(7) 1s forwards',
+      },
+      animationDuration: {
+        '100': '100ms', // Add this line
+        '200': '200ms',
+        '300': '300ms',
+        '500': '500ms',
+        '1000': '1000ms',
+      },
+      fontFamily: {
+        corsiva: ['Monotype Corsiva', 'cursive'],
       },
     },
   },
