@@ -71,7 +71,7 @@ const PageContent: React.FC = () => {
       <div className='mt-1 sm:mt-8 mb-4'>
         <H2Title
           text='POSTANITE INVESTITOR I SUVLASNIK INFOTRGA ILI SE
-PRIDRUŽITE TIMU KAO STALNI ILI POVREMENI SARADNIK.'
+PRIDRUŽITE TIMU KAO STALNI ILI POVREMENI SARADNIK'
           size='xl'
         />
       </div>

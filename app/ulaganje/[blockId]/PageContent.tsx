@@ -15,6 +15,7 @@ import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
 import TextLinked from '@/app/components/text/TextLinked';
 import TextSpecifications from '@/app/components/text/TextSpecifications';
+import H3Title from '@/app/components/text/H3Title';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -78,6 +79,10 @@ const PageContent: React.FC = () => {
                 <H2 text={block.content} align='center' color='black' />
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} align='center' />
+              ): block.type === 'h3Block' ? (
+                <div className='flex items-center justify-center bg-blueMain rounded-lg p-4 mb-4'>
+                <H3Title text={block.content} color='white' />
+                </div>
               ) : block.type === 'h4' ? (
                 <H4 text={block.content} align='left' paddingTop={block.paddingTop} />
               ) : block.type === 'pNormal' ? (
