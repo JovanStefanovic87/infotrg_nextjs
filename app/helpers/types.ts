@@ -20,6 +20,9 @@ export interface BasicInformation {
   name?: string;
   content?: any[];
   isLink?: boolean;
+  opisPosla?: string[];
+  usloviRada?: string[];
+  potrebneKvalifikacije?: string[];
 }
 
 export interface BasicTimInformation {
@@ -82,6 +85,9 @@ export interface ContentBlockItem {
     angažman: string;
     fond: string;
   };
+  opisPosla?: string[];
+  usloviRada?: string[];
+  potrebneKvalifikacije?: string[];
   owner?:
     | 'autor'
     | 'administrator'

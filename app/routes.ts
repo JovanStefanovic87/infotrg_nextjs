@@ -78,10 +78,10 @@ export const routes: Route[] = [
     icon: '/icons/job.svg',
     subRoutes: [],
   },
-  {
+  /* {
     label: 'Kontakt',
     href: '/kontakt',
     icon: '/icons/phoneMail.svg',
     subRoutes: [],
-  },
+  }, */
 ];

@@ -63,7 +63,9 @@ const Footer: React.FC<Props> = () => {
         </div> */}
         {/* Company Info */}
         <div className='text-sm text-gray-300'>
-          <p>&copy; {new Date().getFullYear()} Infotrg. Sva prava zadržana.</p>
+          <p>
+            Infotrg &copy; {new Date().getFullYear()} Sva prava zadržana. - Miroslav Ostrogonac{' '}
+          </p>
         </div>
       </div>
     </footer>

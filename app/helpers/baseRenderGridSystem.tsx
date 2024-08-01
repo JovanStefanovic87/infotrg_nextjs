@@ -7,9 +7,15 @@ interface BaseProps {
   columns?: number;
   children: (block: BasicInformation) => React.ReactNode;
   mapIdToPath: (id: string) => string;
+  useDevider?: boolean;
 }
 
-const baseRenderGridSystem = ({ contentData, columns = 1, children, mapIdToPath }: BaseProps) => {
+const baseRenderGridSystem = ({
+  contentData,
+  columns = 1,
+  children,
+  useDevider = true,
+}: BaseProps) => {
   const rows: JSX.Element[] = [];
   const totalBlocks = contentData.length;
   const maxColumns = Math.min(columns, 3);
@@ -39,9 +45,11 @@ const baseRenderGridSystem = ({ contentData, columns = 1, children, mapIdToPath 
             <div key={block.id} style={{ gridColumn: `span 1` }}>
               {children(block)}
             </div>
-            <div className='block m-auto w-11/12 sm:hidden'>
-              <Devider2 />
-            </div>
+            {useDevider && (
+              <div className='block m-auto w-11/12 sm:hidden'>
+                <Devider2 />
+              </div>
+            )}
           </React.Fragment>
         ))}
       </div>,
