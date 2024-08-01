@@ -73,6 +73,12 @@ export const routes: Route[] = [
     ],
   },
   {
+    label: 'Posao',
+    href: '/posao',
+    icon: '/icons/job.svg',
+    subRoutes: [],
+  },
+  {
     label: 'Kontakt',
     href: '/kontakt',
     icon: '/icons/phoneMail.svg',

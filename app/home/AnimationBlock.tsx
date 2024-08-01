@@ -10,7 +10,7 @@ const AnimationBlock: React.FC = () => {
       <H1 title='INFORMACIJA POKREĆE TRGOVINU' color='white' pb={0} />
       <div className='flex items-start justify-center p-4'>
         <div className='relative flex rounded-xl items-center justify-center bg-waveGradient w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-3xl h-32 sm:h-40 md:h-56 lg:h-72 pb-4 overflow-hidden animated-background'>
-          <div className='absolute w-0 h-0 lg:mb-8 border-l-[48px] border-r-[48px] border-t-[48px] border-t-yellowLogo border-l-transparent border-r-transparent sm:border-l-[72px] sm:border-r-[72px] sm:border-t-[72px] md:border-l-[100px] md:border-r-[100px] md:border-t-[100px] lg:border-l-[150px] lg:border-r-[150px] lg:border-t-[150px] animate-slideInTop'></div>
+          <div className='absolute w-0 h-0 lg:mb-8 border-l-[72px] border-r-[72px] border-t-[48px] border-t-yellowLogo border-l-transparent border-r-transparent sm:border-l-[108px] sm:border-r-[108px] sm:border-t-[72px] md:border-l-[150px] md:border-r-[150px] md:border-t-[100px] lg:border-l-[225px] lg:border-r-[225px] lg:border-t-[150px] animate-slideInTop'></div>
           <div className='absolute transform origin-center w-4 h-10 sm:w-5 sm:h-12 md:w-7 md:h-20 lg:w-10 lg:h-32 animate-rotateHorizontal'>
             <svg
               version='1.1'
@@ -42,7 +42,7 @@ const AnimationBlock: React.FC = () => {
             </svg>
           </div>
         </div>
-        <div className='absolute mt-[6rem] sm:mt-[7rem] md:mt-[9rem] lg:mt-[13rem] text-lg sm:text-xl md:text-4xl lg:text-6xl font-bold text-gray-800 tracking-widest'>
+        <div className='absolute mt-[5.2rem] sm:mt-[7rem] md:mt-[10rem] lg:mt-[13rem] text-lg sm:text-xl md:text-4xl lg:text-6xl font-bold text-gray-800 tracking-widest'>
           <Typewriter text='INNFOTRG' />
         </div>
       </div>
