@@ -57,8 +57,11 @@ export interface ContentBlockItem {
     | 'p'
     | 'hr'
     | 'listEvenly'
+    | 'specification'
     | 'pNormal';
   content?: string;
+  label?: string;
+  value?: string;
   url?: string | string[];
   image?: string[];
   items?: ContentBlockItem[];
@@ -78,6 +81,7 @@ export interface ContentBlockItem {
   marginY?: string;
   color?: string;
   height?: number;
+  link?: string;
   circleContent?: {
     realizator: string;
     period: string;
@@ -88,6 +92,7 @@ export interface ContentBlockItem {
   opisPosla?: string[];
   usloviRada?: string[];
   potrebneKvalifikacije?: string[];
+  paddingTop?: string | number;
   owner?:
     | 'autor'
     | 'administrator'

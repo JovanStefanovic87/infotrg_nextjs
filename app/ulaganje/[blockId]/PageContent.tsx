@@ -12,6 +12,9 @@ import H2 from '@/app/components/text/H2';
 import TextNormal from '@/app/components/text/TextNormal';
 import Devider2 from '@/app/components/ui/Devider2';
 import H3 from '@/app/components/text/H3';
+import H4 from '@/app/components/text/H4';
+import TextLinked from '@/app/components/text/TextLinked';
+import TextSpecifications from '@/app/components/text/TextSpecifications';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -75,15 +78,23 @@ const PageContent: React.FC = () => {
                 <H2 text={block.content} align='center' color='black' />
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} align='center' />
+              ) : block.type === 'h4' ? (
+                <H4 text={block.content} align='left' paddingTop={block.paddingTop} />
               ) : block.type === 'pNormal' ? (
                 <TextNormal
                   text={block.content}
                   weight={block.weight}
                   paddingLeft={block.paddingLeft}
+                  paddingTop={block.paddingTop}
                   align={block.align}
+                  link={block.link}
                 />
               ) : block.type === 'H2BoldCenter' ? (
                 <H2 text={block.content} weight='bold' align='center' color='black' />
+              ) : block.type === 'specification' ? (
+                <div style={{ paddingLeft: block.paddingLeft }}>
+                  <TextSpecifications label={block.label} value={block.value} />
+                </div>
               ) : null}
             </div>
           ))}

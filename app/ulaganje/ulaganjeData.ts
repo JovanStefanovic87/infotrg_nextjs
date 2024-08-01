@@ -385,6 +385,129 @@ export const contentBlocksData: ContentBlocksData = {
       ],
     },
   ],
+  'prihodi-od-investicija': [
+    {
+      type: 'pNormal',
+      content:
+        '➤ Svaki investitor može očekivati stalni mesečni prihod u iznosu od 10% na ukupna uložena sredstva',
+    },
+    {
+      type: 'pNormal',
+      content: '➤ povremeni prihod od dodatnih uslužnih delatnosti',
+    },
+    {
+      type: 'pNormal',
+      content: '➤ mogući prihod od poslovanja u inostranstvu',
+    },
+    {
+      type: 'pNormal',
+      content: '➤ uslovni prihod od bonus procenata',
+    },
+    { type: 'hr', height: 2 },
+    {
+      type: 'h2',
+      content: 'OČEKIVANI PRIHOD',
+    },
+    {
+      type: 'h4',
+      content: 'Poreklo očekivanog prihoda:',
+      align: 'left',
+      paddingTop: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Prihodovanje od plaćenog oglašavanja',
+      paddingLeft: 16,
+      link: 'o-nama/usluzne-delatnosti/oglasavanje',
+    },
+    {
+      type: 'h4',
+      content: 'Parametri očekivanog prihoda:',
+      align: 'left',
+      paddingTop: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Cena plaćene reklame: 10 evra + PDV',
+      paddingLeft: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Tržište plaćenog oglašavanja: 17 reklama / 125.000 stanovnika / 1 mesec',
+      paddingLeft: 16,
+    },
+    {
+      type: 'h4',
+      content: 'Dospeće očekivanog prihoda:',
+      align: 'left',
+      paddingTop: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Očekivani mesečni prihod do 31.03.2026. godine iznosi 0 evra',
+      paddingLeft: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Očekivani mesečni prihod od 01.04.2026. godine iznosi 10% od uloženih sredstava.',
+      paddingLeft: 16,
+    },
+    {
+      type: 'h4',
+      content: 'DPrimeri očekivanih prihoda u odnosu na uloge:',
+      align: 'left',
+      paddingTop: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Uložena sredstva do 31.03.2026. godine = 100 evra',
+      paddingLeft: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Mesečni prihod od 01.04.2026. godine = 10 evra',
+      paddingLeft: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Uložena sredstva do 31.03.2026. godine = 1.000 evra',
+      paddingLeft: 16,
+      paddingTop: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Mesečni prihod od 01.04.2026. godine = 100 evra',
+      paddingLeft: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Uložena sredstva do 31.03.2026. godine = 5.000 evra',
+      paddingLeft: 16,
+      paddingTop: 16,
+    },
+    {
+      type: 'pNormal',
+      content: '➤ Mesečni prihod od 01.04.2026. godine = 500 evra',
+      paddingLeft: 16,
+    },
+    {
+      type: 'h4',
+      content:
+        'Kalkulacija očekivanog prihoda (na primeru pretpostavljenog uloga u iznosu od 1.000 evra)',
+      align: 'left',
+      paddingTop: 16,
+    },
+    {
+      type: 'list',
+      listContent: [
+        {
+          type: 'paragraph2',
+          text: 'Mesečni prihod od 01.04.2026. godine',
+          amount: '100 EUR',
+        },
+      ],
+    },
+  ],
 };
 
 export const hyperlinks = [
