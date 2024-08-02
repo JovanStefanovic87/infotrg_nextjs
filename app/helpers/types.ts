@@ -57,7 +57,8 @@ export interface ContentBlockItem {
     | 'p'
     | 'hr'
     | 'listEvenly'
-    | 'specification'
+    | 'TextBoldList'
+    | 'TextBoldCustom'
     | 'h3Block'
     | 'plus'
     | 'pNormal';
@@ -84,6 +85,7 @@ export interface ContentBlockItem {
   color?: string;
   height?: number;
   link?: string;
+  bullet?: string;
   circleContent?: {
     realizator: string;
     period: string;

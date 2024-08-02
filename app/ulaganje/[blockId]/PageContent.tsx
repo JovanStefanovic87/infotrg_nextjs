@@ -16,6 +16,8 @@ import H4 from '@/app/components/text/H4';
 import TextLinked from '@/app/components/text/TextLinked';
 import TextSpecifications from '@/app/components/text/TextSpecifications';
 import H3Title from '@/app/components/text/H3Title';
+import TextBoldList from '@/app/components/text/TextBoldList';
+import TextBoldCustom from '@/app/components/text/TextBoldCustom';
 
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -79,16 +81,19 @@ const PageContent: React.FC = () => {
                 <H2 text={block.content} align='center' color='black' />
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} align='center' />
-              ): block.type === 'h3Block' ? (
+              ) : block.type === 'h3Block' ? (
                 <div className='flex items-center justify-center bg-blueMain rounded-lg p-4'>
-                  <H3Title text={block.content} color='white'/>
+                  <H3Title text={block.content} color='white' />
                 </div>
-              ): block.type === 'plus' ? (
-                <div className='flex items-center justify-center text-blueMain text-4xl'>
-                  +
-                </div>
+              ) : block.type === 'plus' ? (
+                <div className='flex items-center justify-center text-blueMain text-4xl'>+</div>
               ) : block.type === 'h4' ? (
-                <H4 text={block.content} align='left' paddingTop={block.paddingTop} />
+                <H4
+                  text={block.content}
+                  align='left'
+                  paddingTop={block.paddingTop}
+                  paddingBottom={6}
+                />
               ) : block.type === 'pNormal' ? (
                 <TextNormal
                   text={block.content}
@@ -100,10 +105,19 @@ const PageContent: React.FC = () => {
                 />
               ) : block.type === 'H2BoldCenter' ? (
                 <H2 text={block.content} weight='bold' align='center' color='black' />
-              ) : block.type === 'specification' ? (
-                <div style={{ paddingLeft: block.paddingLeft }}>
-                  <TextSpecifications label={block.label} value={block.value} />
-                </div>
+              ) : block.type === 'TextBoldList' ? (
+                <TextBoldList
+                  bullet={block.bullet}
+                  content={block.content}
+                  paddingLeft={block.paddingLeft}
+                />
+              ) : block.type === 'TextBoldCustom' ? (
+                <TextBoldCustom
+                  label={block.label}
+                  content={block.content}
+                  paddingLeft={block.paddingLeft}
+                  paddingTop={block.paddingTop}
+                />
               ) : null}
             </div>
           ))}

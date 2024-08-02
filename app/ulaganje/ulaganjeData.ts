@@ -1,5 +1,8 @@
 import { ContentBlocksData } from '../helpers/types';
 
+const padding16 = 16;
+const padding32 = 32;
+
 export interface BasicInformation {
   id: string;
   title: string;
@@ -392,21 +395,21 @@ export const contentBlocksData: ContentBlocksData = {
         'Svaki investitor može očekivati stalni mesečni prihod u iznosu od 10% na ukupna uložena sredstva',
     },
     {
-      type: 'plus',  
+      type: 'plus',
     },
     {
       type: 'h3Block',
       content: 'povremeni prihod od dodatnih uslužnih delatnosti',
     },
     {
-      type: 'plus',  
+      type: 'plus',
     },
     {
       type: 'h3Block',
       content: 'mogući prihod od poslovanja u inostranstvu',
     },
     {
-      type: 'plus',  
+      type: 'plus',
     },
     {
       type: 'h3Block',
@@ -421,100 +424,279 @@ export const contentBlocksData: ContentBlocksData = {
       type: 'h4',
       content: 'Poreklo očekivanog prihoda:',
       align: 'left',
-      paddingTop: 16,
+      paddingTop: padding16,
     },
     {
       type: 'pNormal',
       content: '➤ Prihodovanje od plaćenog oglašavanja',
-      paddingLeft: 16,
-      link: 'o-nama/usluzne-delatnosti/oglasavanje',
+      paddingLeft: padding16,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-objavljivanja-reklama',
     },
     {
       type: 'h4',
       content: 'Parametri očekivanog prihoda:',
       align: 'left',
-      paddingTop: 16,
+      paddingTop: padding16,
     },
     {
       type: 'pNormal',
       content: '➤ Cena plaćene reklame: 10 evra + PDV',
-      paddingLeft: 16,
+      paddingLeft: padding16,
     },
     {
       type: 'pNormal',
-      content: '➤ Tržište plaćenog oglašavanja: 17 reklama / 125.000 stanovnika / 1 mesec',
-      paddingLeft: 16,
+      content: 'Tržište plaćenog oglašavanja: 17 reklama / 125.000 stanovnika / 1 mesec',
+      paddingLeft: padding32,
     },
     {
       type: 'h4',
       content: 'Dospeće očekivanog prihoda:',
       align: 'left',
-      paddingTop: 16,
+      paddingTop: padding16,
     },
     {
       type: 'pNormal',
       content: '➤ Očekivani mesečni prihod do 31.03.2026. godine iznosi 0 evra',
-      paddingLeft: 16,
+      paddingLeft: padding16,
     },
     {
       type: 'pNormal',
-      content: '➤ Očekivani mesečni prihod od 01.04.2026. godine iznosi 10% od uloženih sredstava.',
-      paddingLeft: 16,
+      content: 'Očekivani mesečni prihod od 01.04.2026. godine iznosi 10% od uloženih sredstava.',
+      paddingLeft: padding32,
     },
     {
       type: 'h4',
       content: 'DPrimeri očekivanih prihoda u odnosu na uloge:',
       align: 'left',
-      paddingTop: 16,
+      paddingTop: padding16,
     },
     {
       type: 'pNormal',
       content: '➤ Uložena sredstva do 31.03.2026. godine = 100 evra',
-      paddingLeft: 16,
+      paddingLeft: padding16,
     },
     {
       type: 'pNormal',
-      content: '➤ Mesečni prihod od 01.04.2026. godine = 10 evra',
-      paddingLeft: 16,
+      content: 'Mesečni prihod od 01.04.2026. godine = 10 evra',
+      paddingLeft: padding32,
     },
     {
       type: 'pNormal',
       content: '➤ Uložena sredstva do 31.03.2026. godine = 1.000 evra',
-      paddingLeft: 16,
-      paddingTop: 16,
+      paddingLeft: padding16,
+      paddingTop: padding16,
     },
     {
       type: 'pNormal',
-      content: '➤ Mesečni prihod od 01.04.2026. godine = 100 evra',
-      paddingLeft: 16,
+      content: 'Mesečni prihod od 01.04.2026. godine = 100 evra',
+      paddingLeft: padding32,
     },
     {
       type: 'pNormal',
       content: '➤ Uložena sredstva do 31.03.2026. godine = 5.000 evra',
-      paddingLeft: 16,
-      paddingTop: 16,
+      paddingLeft: padding16,
+      paddingTop: padding16,
     },
     {
       type: 'pNormal',
-      content: '➤ Mesečni prihod od 01.04.2026. godine = 500 evra',
-      paddingLeft: 16,
+      content: 'Mesečni prihod od 01.04.2026. godine = 500 evra',
+      paddingLeft: padding32,
     },
     {
       type: 'h4',
       content:
         'Kalkulacija očekivanog prihoda (na primeru pretpostavljenog uloga u iznosu od 1.000 evra)',
       align: 'left',
-      paddingTop: 16,
+      paddingTop: padding16,
     },
     {
-      type: 'list',
-      listContent: [
-        {
-          type: 'paragraph2',
-          text: 'Mesečni prihod od 01.04.2026. godine',
-          amount: '100 EUR',
-        },
-      ],
+      type: 'TextBoldList',
+      content: 'Populacija ispitane tržišne regije = 125.000 stanovnika',
+      bullet: 'a',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Populacija na užem području Srbije = 7.500.000 stanovnika',
+      bullet: 'b',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Ukupni tržišni obim Srbije = (b / a) = 60 tržišnih regija',
+      bullet: 'c',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Mesečni promet plaćenog oglašavanja po jednoj tržišnoj regiji = 17 reklama',
+      bullet: 'd',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content:
+        'Ukupni mesečni promet plaćenog oglašavanja svih tržišnih regija = (c x d) = 1.020 reklama',
+      bullet: 'e',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Cena objavljivanja jedne reklame tokom jednog meseca = 10 evra',
+      bullet: 'f',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Ukupan bruto mesečni prihod od plaćenog oglašavanja = (e x f) = 10.200 evra',
+      bullet: 'g',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Predviđeni mesečni odbitak na ime nenaplaćenih reklama = 200 evra',
+      bullet: 'h',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Ukupan neto mesečni prihod od plaćenog oglašavanja = (g - h) = 10.000 evra',
+      bullet: 'i',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Fond za prihode investitora = 50 % neto prihoda',
+      bullet: 'j',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Ukupni mesečni prihod investitora = (i x j) = 5.000 evra',
+      bullet: 'k',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Vrednost investicionog fonda = 50.000 evra',
+      bullet: 'l',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Pretpostavljen ukupan iznos uloga jednog investitora do 31.03.2026. = 1.000 evra',
+      bullet: 'm',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Učešće jednog investitora na uloženih 1.000 evra = (m / l) = 1/50 = 2 % udela',
+      bullet: 'n',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldList',
+      content: 'Mesečni prihod jednog investitora na uloženih 1.000 evra = (k x n) = 100 evra',
+      bullet: 'o',
+      paddingLeft: padding16,
+    },
+    { type: 'hr', height: 2 },
+    {
+      type: 'h2',
+      content: 'BONUS PRIHODI',
+    },
+    {
+      type: 'h4',
+      content: 'Poreklo bonus prihoda:',
+      align: 'left',
+      paddingTop: padding16,
+    },
+    {
+      type: 'pNormal',
+      content: 'Dodatni prihodi stečeni poslovanjima u nepredvidivim obimima',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'h4',
+      content: 'Mogući bonus prihodi:',
+      align: 'left',
+      paddingTop: padding16,
+    },
+    {
+      type: 'pNormal',
+      content: 'Bonus prihodi od dodatnih uslužnih delatnosti',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od dodatnog oglašavanja',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-objavljivanja-reklama',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od izrade reklama',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-izrade-reklama',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od održavanja veb izloga',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-usluznog-odrzavanja-veb-izloga',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od affiliate marketinga',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-affiliate-posrednistva',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od starter programa',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-starter-posrednistva',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od aukcija',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-aukcija',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od dostave',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-od-dostave',
+    },
+    {
+      type: 'pNormal',
+      content: 'Prihodi od usluge odloženog plaćanja',
+      paddingLeft: padding32,
+      link: '/o-nama/usluzne-delatnosti/prihodovanje-na-osnovu-odlozenog-placanja',
+    },
+    {
+      type: 'pNormal',
+      content: 'Bonus procenti',
+      paddingLeft: padding16,
+      link: '/ulaganje/investicioni-plan-i-program/bonus-procenti',
+    },
+    {
+      type: 'pNormal',
+      content: 'Bonusi iz inostranstva (ukoliko se obim posla proširi van granica Srbije)',
+      paddingLeft: padding16,
+    },
+    {
+      type: 'TextBoldCustom',
+      label: 'Dospeće bonus prihoda:',
+      content: 'povremeno ili uslovno',
+      paddingTop: padding16,
+    },
+    {
+      type: 'TextBoldCustom',
+      label: 'Kalkulabilnost prihoda:',
+      content: 'promenjljiva ili neodređena',
+      paddingTop: padding16,
     },
   ],
 };
