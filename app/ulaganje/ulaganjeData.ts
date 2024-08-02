@@ -392,12 +392,21 @@ export const contentBlocksData: ContentBlocksData = {
         'Svaki investitor može očekivati stalni mesečni prihod u iznosu od 10% na ukupna uložena sredstva',
     },
     {
+      type: 'plus',  
+    },
+    {
       type: 'h3Block',
       content: 'povremeni prihod od dodatnih uslužnih delatnosti',
     },
     {
+      type: 'plus',  
+    },
+    {
       type: 'h3Block',
       content: 'mogući prihod od poslovanja u inostranstvu',
+    },
+    {
+      type: 'plus',  
     },
     {
       type: 'h3Block',

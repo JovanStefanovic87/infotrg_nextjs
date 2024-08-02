@@ -59,6 +59,7 @@ export interface ContentBlockItem {
     | 'listEvenly'
     | 'specification'
     | 'h3Block'
+    | 'plus'
     | 'pNormal';
   content?: string;
   label?: string;
