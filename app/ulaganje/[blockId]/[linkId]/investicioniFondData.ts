@@ -269,7 +269,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Količina stranica u koloru u jednom nacrtu = 6 stranica u koloru',
+      content: 'a.) Količina stranica u boji u jednom nacrtu = 6 stranica u boji',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -279,17 +279,17 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'c.) Količina stranica u koloru za 5 nacrta = (a x b) = 30 stranica u koloru',
+      content: 'c.) Količina stranica u boji za 5 nacrta = (a x b) = 30 stranica u boji',
       paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'd.) Cena štampanja 1 stranice u koloru = 30 dinara',
+      content: 'd.) Cena štampanja 1 stranice u boji = 30 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Cena štampanja 30 stranica u koloru (c x d) = 900 dinara = 7,5 EUR',
+      content: 'e.) Cena štampanja 30 stranica u boji (c x d) = 900 dinara = 7,5 EUR',
       paddingLeft: marginLeftMedium,
     },
   ],
@@ -599,7 +599,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno doradu nacrta tehničkog plana = 30 sati',
+      content: 'a.) Vreme potrebno za doradu nacrta tehničkog plana = 30 sati',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -645,7 +645,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'd.) Vreme potrebo za povezivanje stranica jedne relacije = 1 sat',
+      content: 'd.) Vreme potrebno za povezivanje stranica jedne relacije = 1 sat',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -1324,12 +1324,12 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'd.) Cena autorskog angažmana po satu = 5 evra',
+      content: 'd.) Cena autorskog angažmana po satu = 7,5 evra',
       paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'e.) Cena autorskog angažmana za izradu Plana rada = (c x d) = 30 evra',
+      content: 'e.) Cena autorskog angažmana za izradu Plana rada = (c x d) = 45 evra',
       paddingLeft: marginLeftMedium,
     },
     { type: 'hr' },
@@ -1339,7 +1339,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: '0 EUR',
+      content: '43 EUR',
       paddingLeft: marginLeftSmall,
       weight: 'bold',
     },
@@ -2514,7 +2514,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transkacije, komintenti, iznos i datum.',
+        'Prilikom svake novčane transakcije (prihoda ili rashoda), koordinator pored beleške u dokumentu za evidenciju budžeta popunjava i štampa priznanicu na kojoj su naznačeni razlozi transakcije, komintenti, iznos i datum.',
     },
     {
       type: 'p',
@@ -2570,7 +2570,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Svaka odštampana priznanica za novčane transkacije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
+        'Svaka odštampana priznanica za novčane transakcije se potpisuje u dva primerka koji se prilažu potpisnicima i čuvaju u arhivi kao dokaz uplate ili isplate.',
     },
     {
       type: 'p',
@@ -3562,7 +3562,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Cena SSL sertirikata na svaka tri meseca = 20 evra',
+      content: 'a.) Cena SSL sertifikata na svaka tri meseca = 20 evra',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -3707,7 +3707,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'text',
-      content: 'Administrator potpisuje Ugovor o delu sa za prvu etapu.',
+      content: 'Administrator potpisuje Ugovor o delu za prvu etapu.',
     },
     {
       type: 'p',
@@ -4117,7 +4117,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'f.) Cena štampanja dve priznanice A6 = 12 dinara',
+      content: 'f.) Cena štampanja dve priznanice A6 = 4 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -4196,7 +4196,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'f.) Cena štampanja dve priznanice A6 = 12 dinara',
+      content: 'f.) Cena štampanja dve priznanice A6 = 4 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -6317,7 +6317,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno za obilazak i i pronalaženje odgovarajućeg artikla = 6 minuta',
+      content: 'a.) Vreme potrebno za obilazak i pronalaženje odgovarajućeg artikla = 6 minuta',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -6328,7 +6328,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'p',
       content:
-        'c.) Ukupno vreme potrrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
+        'c.) Ukupno vreme potrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -6518,7 +6518,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.',
+        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih besplatnih reklama.',
     },
     {
       type: 'p',
@@ -6670,7 +6670,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara = 0,5 evra',
+      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -8322,7 +8322,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno za obilazak i i pronalaženje odgovarajućeg artikla = 6 minuta',
+      content: 'a.) Vreme potrebno za obilazak i pronalaženje odgovarajućeg artikla = 6 minuta',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -8333,7 +8333,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'p',
       content:
-        'c.) Ukupno vreme potrrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sata',
+        'c.) Ukupno vreme potrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sata',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -9015,7 +9015,8 @@ export const contentBlocksData: ContentBlocksData = {
   'priprema-platforme-za-enciklopediju-proizvoda': [
     {
       type: 'text',
-      content: 'Vebmaster osposobljava platformu za četvrtu etapu, uvodeći na platformi',
+      content:
+        'Vebmaster osposobljava platformu za četvrtu etapu, uvodeći na platformi mogućnost otvaranja enciklopedije proizvoda u kojoj se detaljno opisuju pojedini proizvodi.',
     },
     { type: 'hr' },
     {
@@ -9066,7 +9067,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara = 0,5 evra',
+      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -9291,7 +9292,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara = 0,5 evra',
+      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -10023,7 +10024,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Rukovodeći se primerima probnih stranica enciklopedije proizvoda, PR menadžer obilazi prodavce na buvljaku I navodi ih na samostalno objavljivanje novih stranica o proizvodima.',
+        'Rukovodeći se primerima probnih stranica enciklopedije proizvoda, PR menadžer obilazi prodavce na buvljaku i navodi ih na samostalno objavljivanje novih stranica o proizvodima.',
     },
     { type: 'hr' },
     {
@@ -10074,7 +10075,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara = 0,5 evra',
+      content: 'g.) Cena štampanja jednog ugovora = (a x f) = 30 dinara',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -11344,7 +11345,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno za obilazak i i pronalaženje odgovarajućeg artikla = 6 minuta',
+      content: 'a.) Vreme potrebno za obilazak i pronalaženje odgovarajućeg artikla = 6 minuta',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -11355,7 +11356,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'p',
       content:
-        'c.) Ukupno vreme potrrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
+        'c.) Ukupno vreme potrebno za selekciju jednog proizvoda (a + b) = 12 minuta = 0,2 sati',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -11480,7 +11481,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'p',
       content:
-        'f.) Ukupno vreme za za pripremu prez. artikala veb izloga = (d x e) = 240 minuta = 4 sata',
+        'f.) Ukupno vreme za pripremu prez. artikala za veb izloga = (d x e) = 240 minuta = 4 sata',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -12315,7 +12316,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'a.) Vreme potrebno za obilazak i i pronalaženje odgovarajućeg artikla = 6 minuta',
+      content: 'a.) Vreme potrebno za obilazak i pronalaženje odgovarajućeg artikla = 6 minuta',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -12442,7 +12443,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Administrator objavljuje reklame odabranih proizvod na odgovarajućim stranicama platforme.',
+        'Administrator objavljuje reklame odabranih proizvoda na odgovarajućim stranicama platforme.',
     },
     {
       type: 'p',
@@ -12497,7 +12498,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.',
+        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih besplatnih reklama.',
     },
     {
       type: 'p',
@@ -12540,7 +12541,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih bespaltnih reklama.',
+        'Ukoliko tokom vremena reklamirani proizvodi promene lokaciju prodaje ili cene, administrator vrši obnovu takvih besplatnih reklama.',
     },
     {
       type: 'p',
@@ -12851,7 +12852,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Marketing menadžer osmišljava koncept, vizuelni motiv i tekstulni slogan bilborda putem kojeg će se reklamirati Infotrg platforma.',
+        'Marketing menadžer osmišljava koncept, vizuelni motiv i tekstualni slogan bilborda putem kojeg će se reklamirati Infotrg platforma.',
     },
     {
       type: 'p',
@@ -13007,17 +13008,17 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'Cena održavanja bilborda za tri nedelje = 390 evra',
+      content: 'a.) Cena održavanja bilborda za tri nedelje = 390 evra',
       paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'Broj bilborda = 2 bilborda',
+      content: 'b.) Broj bilborda = 2 bilborda',
       paddingLeft: marginLeftMedium,
     },
     {
       type: 'p',
-      content: 'Ukupna cena održavanja bilborda = (a x b) = 780 evra',
+      content: 'c.) Ukupna cena održavanja bilborda = (a x b) = 780 evra',
       paddingLeft: marginLeftMedium,
     },
     {
@@ -13309,7 +13310,7 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'p',
-      content: 'e.) Ukupna cena promovisanje affiliate posredništva = (c x d) = 150 evra',
+      content: 'e.) Ukupna cena promovisanja affiliate posredništva = (c x d) = 150 evra',
       paddingLeft: marginLeftMedium,
     },
     { type: 'hr' },
@@ -14248,7 +14249,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'text',
       content:
-        'Administrator dostavlja spisak I elektronske kontakte svih prodajnih objekata u Srbiji.',
+        'Administrator dostavlja spisak i elektronske kontakte svih prodajnih objekata u Srbiji.',
     },
     { type: 'hr' },
     {
