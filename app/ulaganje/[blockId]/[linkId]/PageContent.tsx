@@ -14,15 +14,13 @@ import H4 from '@/app/components/text/H4';
 import Text from '@/app/components/text/Text';
 import Devider2 from '@/app/components/ui/Devider2';
 import TextNormal from '@/app/components/text/TextNormal';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const PageContent: React.FC = () => {
+  useScrollToTop();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const marginLeftSmall = '2vw';
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);

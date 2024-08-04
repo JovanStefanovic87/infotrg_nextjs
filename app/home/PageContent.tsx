@@ -9,13 +9,12 @@ import H2Title from '../components/text/H2Title';
 import H2 from '../components/text/H2';
 import TextSpecifications from '../components/text/TextSpecifications';
 import H3Title from '../components/text/H3Title';
+import useScrollToTop from '../helpers/useScrollToTop';
 
 const PageContent: React.FC = () => {
   const [columns, setColumns] = useState<number | null>(null);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
 
   useEffect(() => {
     const updateColumns = () => {

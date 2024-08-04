@@ -9,15 +9,13 @@ import UnorderedList from '@/app/components/text/UnorderedList';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 import ImageModal from '@/app/components/modals/ImageModal';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const BussinessCooperation: React.FC = () => {
+  useScrollToTop();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const updateColumns = () => {

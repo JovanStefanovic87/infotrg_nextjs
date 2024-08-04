@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ContentBlockWithModal from '@/app/components/blocks/ContentBlockWithModal';
 import H2Title from '@/app/components/text/H2Title';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 interface Props {
   contentData: any[];
@@ -11,11 +12,8 @@ interface Props {
 }
 
 const InfotrgPlatform: React.FC<Props> = ({ contentData, title, id }) => {
+  useScrollToTop();
   const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const updateColumns = () => {

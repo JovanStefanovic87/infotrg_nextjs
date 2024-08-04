@@ -15,7 +15,7 @@ import TextNormal from '@/app/components/text/TextNormal';
 import Devider2 from '@/app/components/ui/Devider2';
 import Image from 'next/image';
 import TextSpecifications from '@/app/components/text/TextSpecifications';
-import { ContentBlocksData, MemberData } from '@/app/helpers/types';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 interface Props {
   [key: string]: string;
@@ -27,6 +27,7 @@ interface ContentTitleProps {
 }
 
 const ContentTitle: React.FC<ContentTitleProps> = ({ keyName, type }) => {
+  useScrollToTop();
   const getTitleText = () => {
     if (type === 'maintain') {
       return `ZADUŽENJA ${keyName.toUpperCase()}A NA ODRŽAVANJU I UNAPREĐIVANJU INFOTRGA`;
@@ -89,10 +90,6 @@ const PageContent: React.FC = () => {
         return 'black';
     }
   };
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);

@@ -7,8 +7,10 @@ import PageContainer from '@/app/components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
 import ContentBlockImageNumber from '@/app/components/blocks/ContentBlockImageNumber';
 import renderGridSystem2 from '@/app/helpers/renderGridSystem2';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const PageContent: React.FC = () => {
+  useScrollToTop();
   const [columns, setColumns] = useState<number | null>(null);
 
   useEffect(() => {
@@ -28,10 +30,6 @@ const PageContent: React.FC = () => {
     updateColumns();
     window.addEventListener('resize', updateColumns);
     return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
   }, []);
 
   const pathname = usePathname();

@@ -12,6 +12,7 @@ import PageContainer from '../../components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
 import Devider2 from '@/app/components/ui/Devider2';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 interface BasicInformation {
   id: string | undefined;
@@ -22,11 +23,8 @@ interface BasicInformation {
 }
 
 const BussinesPlan: React.FC = () => {
+  useScrollToTop();
   const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const updateColumns = () => {

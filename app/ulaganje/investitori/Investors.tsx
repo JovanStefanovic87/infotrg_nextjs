@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { NextPage } from 'next';
 import { contentData } from './investorsData';
 import ContentBlock from './ContentBlock';
@@ -8,16 +8,14 @@ import PageContainer from '../../components/containers/PageContainer';
 import Investor from './Investor';
 import ContentModalContainer from '@/app/components/containers/ContentModalContainer';
 import ContentModalInnerContainer from '@/app/components/containers/ContentModalInnerContainer';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const Investors: NextPage = () => {
+  useScrollToTop();
   const [modalData, setModalData] = useState<{
     type: 'investment' | 'withdrawal';
     data: any;
   } | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const handleOpenModal = (type: 'investment' | 'withdrawal', data: any) => {
     setModalData({ type, data });

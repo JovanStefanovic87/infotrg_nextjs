@@ -6,13 +6,11 @@ import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const InvestPlan: React.FC = () => {
+  useScrollToTop();
   const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const updateColumns = () => {

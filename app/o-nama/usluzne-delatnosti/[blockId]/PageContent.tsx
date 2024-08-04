@@ -8,8 +8,10 @@ import PageContainer from '@/app/components/containers/PageContainer';
 import H2Title from '@/app/components/text/H2Title';
 import ContentBlock from '../../../components/blocks/ContentBlock';
 import renderGridSystem2 from '@/app/helpers/renderGridSystem2';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const PageContent: React.FC = () => {
+  useScrollToTop();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const [columns, setColumns] = useState<number | null>(null);
@@ -31,10 +33,6 @@ const PageContent: React.FC = () => {
     updateColumns();
     window.addEventListener('resize', updateColumns);
     return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
   }, []);
 
   const openImageModal = (image: string) => {

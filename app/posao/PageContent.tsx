@@ -10,13 +10,11 @@ import ContentBlockSpacification from '../components/blocks/ContentBlockSpacific
 import H3Title from '../components/text/H3Title';
 import TextSpecifications from '../components/text/TextSpecifications';
 import Link from 'next/link';
+import useScrollToTop from '../helpers/useScrollToTop';
 
 const AboutContent: React.FC = () => {
+  useScrollToTop();
   const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const updateColumns = () => {

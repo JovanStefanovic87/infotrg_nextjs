@@ -6,18 +6,11 @@ import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import Link from 'next/link';
-import renderGridSystem from '@/app/helpers/renderGridSystem';
+import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const TimContent: NextPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+  useScrollToTop();
   const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const updateColumns = () => {
