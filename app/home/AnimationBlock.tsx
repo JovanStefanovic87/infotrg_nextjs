@@ -17,7 +17,7 @@ const AnimationBlock: React.FC = () => {
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 1200 2700'
               preserveAspectRatio='xMidYMid meet'
-              shape-rendering='geometricPrecision'
+              shapeRendering='geometricPrecision'
             >
               <g transform='translate(0,2700) scale(0.1,-0.1)' fill='#000000' stroke='none'>
                 <path
