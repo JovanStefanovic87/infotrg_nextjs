@@ -20,7 +20,7 @@ const TextNormal: React.FC<Props> = ({
   if (!link) {
     return (
       <p
-        className={`text-${align} text-pretty font-${weight} text-grayDarkest text-xs md:text-sm lg:text-base leading-relaxed`}
+        className={`text-${align} text-pretty font-${weight} text-grayDarkest text-base leading-relaxed`}
         style={{ paddingLeft, paddingTop }}
       >
         {text}
@@ -30,7 +30,7 @@ const TextNormal: React.FC<Props> = ({
 
   return (
     <p
-      className={`text-${align} text-pretty font-${weight} text-grayDarkest text-xs md:text-sm lg:text-base leading-relaxed`}
+      className={`text-${align} text-pretty font-${weight} text-grayDarkest text-base leading-relaxed`}
       style={{ paddingLeft, paddingTop }}
     >
       <Link href={link}>

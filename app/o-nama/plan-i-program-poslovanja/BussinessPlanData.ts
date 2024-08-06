@@ -124,7 +124,7 @@ export const listOfLinks: BasicInformation[] = [
   },
   {
     id: 'mart-2024',
-    title: 'Mart 2024.',
+    title: 'Mart - April 2024.',
     description:
       'Nakon ankete, vebmaster dorađuje tehnički plan projekta na osnovu kojeg će se izrađivati zvanična platforma.',
   },

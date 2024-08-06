@@ -11,6 +11,7 @@ import { BasicInformation } from '@/app/helpers/types';
 import ImageModal from '@/app/components/modals/ImageModal';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
 import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
+import ContentDescriptionText from '@/app/components/text/ContentDescriptionText';
 
 const BussinessCooperation: React.FC = () => {
   useScrollToTop();
@@ -32,7 +33,14 @@ const BussinessCooperation: React.FC = () => {
   return (
     <PageContainer>
       <H1 title='POSLOVNA SARADNJA' pb='0' />
-      <div className='p-2 pb-4 sm:pb-10'>
+      <div className='pt-8'>
+        <ContentDescriptionText
+          text='Strategija razvoja Infotrga odvija se kroz deset osnovnih koraka, tokom kojih su uspostavljena pravila međusobne komunikacije i raspodele radnih zaduženja među saradnicima.'
+          align='center'
+          color='black'
+        />
+      </div>
+      <div className='px-2 pt-0 sm:pt-2'>
         <H2Title text='SAŽET PRIKAZ POSLOVNE SARADNJE' padding={10} />
       </div>
       {renderGridSystem({

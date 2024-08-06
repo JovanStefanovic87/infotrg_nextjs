@@ -6,6 +6,7 @@ import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import Link from 'next/link';
 import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
+import ContentDescriptionText from '@/app/components/text/ContentDescriptionText';
 
 const TimContent: NextPage = () => {
   const columns = useResponsiveColumns(1);
@@ -61,7 +62,11 @@ const TimContent: NextPage = () => {
   return (
     <PageContainer>
       <H1 title='INFOTRG TIM' />
-
+      <ContentDescriptionText
+        text='Upravni tim Infotrga čine sedam saradnika.'
+        align='center'
+        color='black'
+      />
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGrid()}
       </div>

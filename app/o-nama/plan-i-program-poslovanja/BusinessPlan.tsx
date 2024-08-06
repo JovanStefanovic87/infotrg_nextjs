@@ -13,6 +13,7 @@ import Devider2 from '@/app/components/ui/Devider2';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
 import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
+import ContentDescriptionText from '@/app/components/text/ContentDescriptionText';
 
 interface BasicInformation {
   id: string | undefined;
@@ -37,7 +38,14 @@ const BussinesPlan: React.FC = () => {
   return (
     <PageContainer>
       <H1 title='PLAN I PROGRAM POSLOVANJA' pb='0' />
-      <div className='p-2 pb-4 sm:pb-10'>
+      <div className='pt-8'>
+        <ContentDescriptionText
+          text='Plan i program poslovanja prikazuje raspored svih zadatih ciljeva i predviđenih poslova za određeni vremenski period.'
+          align='center'
+          color='black'
+        />
+      </div>
+      <div className='px-2 pt-0 sm:pt-2'>
         <H2Title text='SAŽET PRIKAZ PLANA I PROGRAMA POSLOVANJA' padding={10} />
       </div>
       {renderGridSystem({
@@ -45,17 +53,20 @@ const BussinesPlan: React.FC = () => {
         columns,
         useLink: false,
         children: (block) => (
-          <ContentBlockImageNumber
-            title={block.title}
+          <ContentBlock
+            title={block.date || ''}
             description={block.description || ''}
-            date={block.date || ''}
             coverImage={block.coverImage}
             contentBlocks={[]}
             openContentModal={() => {}}
+            isLink={false}
+            useModal={true}
           />
         ),
       })}
-      <H2Title text='OPŠIRNIJI PRIKAZ PLANA I PROGRAMA POSLOVANJA' padding={24} />
+      <div className='px-2 pt-0 pb-5'>
+        <H2Title text='OPŠIRNIJI PRIKAZ PLANA I PROGRAMA POSLOVANJA' />
+      </div>
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData: listOfLinks,

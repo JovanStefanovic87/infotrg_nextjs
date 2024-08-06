@@ -16,7 +16,7 @@ export const contentData: BasicInformation[] = [
     title: 'PROJEKAT INFOTRG',
     description:
       'Infotrg je ekonomski projekat namenjen posredovanju između prodavaca i kupaca, direktnom plasiranju proizvoda i objavljavljivanju informacija iz oblasti trgovine putem specijalizovane digitalne platforme.',
-    coverImage: '/images/ulaganje/UL01.jpg',
+    coverImage: '/images/home/NA01.jpg',
   },
   {
     id: 'plan-i-program-poslovanja',
@@ -67,7 +67,7 @@ export const contentBlocksData: ContentBlocksData = {
     {
       type: 'pNormal',
       content:
-        'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja. Sredstva iz investicionog fonda se raspoređuju i ulažu u više razvojnih etapa projekta.',
+        'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja.',
     },
     { type: 'hr', height: 2 },
     {

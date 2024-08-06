@@ -59,8 +59,6 @@ export const contentBlocksData: ImageBlockLinkData = {
     {
       description: 'Investitor može biti svako punoletno lice bez ikakvih drugih uslova.',
       coverImage: '/images/investicioni-plan-i-program/IP13.jpg',
-      isLink: true,
-      link: '/o-nama/',
     },
     {
       description:

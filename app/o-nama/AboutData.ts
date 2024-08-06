@@ -5,14 +5,14 @@ export const contentData: BasicInformation[] = [
     id: 'o-nama/usluzne-delatnosti',
     title: 'USLUŽNE DELATNOSTI INFOTRGA',
     description:
-      'Infotrg je ekonomski projekat koji se bavi posredovanjem između prodavaca i kupaca, direktnim plasmanom proizvoda, kao i objavljivanjem informacija u oblasti trgovine putem specijalizovane digitalne platforme.',
+      'Infotrg je uslužni servis za objavljivanje informacija o proizvodima i prodajnim objektima, izradu i oglašavanje reklama, posredovanje u trgovini, iznajmljivanje i održavanje personalnih elektronskih prodavnica.',
     coverImage: '/images/o-nama/ON01.jpg',
   },
   {
     id: 'o-nama/platforma',
     title: 'INFOTRG PLATFORMA',
     description:
-      'Infotrg platforma je elektronski servis namenjen objavljivanju informacija o proizvodima i prodajnim objektima, i sadrži tri osnovne korisničke funkcije: veb izlog, funkciju “gde da kupim?” i enciklopediju proizvoda.',
+      'Infotrg platforma je elektronski medij za pretragu proizvoda i njihovih lokacija prodaje, iznajmljivanje i uređivanje personalnih elektronskih prodavnica (veb izloga), kao i za objavljivanje i uređivanje zasebnih članaka o pojedinačnim proizvodima.',
     coverImage: '/images/o-nama/ON02.jpg',
   },
   {

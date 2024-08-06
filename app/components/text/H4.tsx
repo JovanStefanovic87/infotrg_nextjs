@@ -24,7 +24,7 @@ const H4: React.FC<Props> = ({
   return (
     <div>
       <h4
-        className={`text-xs sm:text-base text-${color} text-wrap font-${weight} text-${align} overflow-hidden whitespace-nowrap`}
+        className={`text-base text-${color} text-wrap font-${weight} text-${align} overflow-hidden whitespace-nowrap`}
         style={{ maxWidth, paddingBottom, paddingTop }}
       >
         {text}

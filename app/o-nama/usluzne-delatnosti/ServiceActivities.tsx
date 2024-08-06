@@ -7,6 +7,8 @@ import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
 import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
+import H2 from '@/app/components/text/H2';
+import ContentDescriptionText from '@/app/components/text/ContentDescriptionText';
 
 const ServiceActivities: React.FC = () => {
   useScrollToTop();
@@ -20,6 +22,11 @@ const ServiceActivities: React.FC = () => {
   return (
     <PageContainer>
       <H1 title='USLUŽNE DELATNOSTI INFOTRGA' />
+      <ContentDescriptionText
+        text='U cilju što boljeg povezivanja kupaca i prodavaca i ostvarivanja efikasnije trgovine, poslovno delovanje Infotrga se odvija kroz osam uslužnih delatnosti.'
+        align='center'
+        color='black'
+      />
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData,
