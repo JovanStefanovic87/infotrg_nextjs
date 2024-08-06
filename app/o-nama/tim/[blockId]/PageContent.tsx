@@ -114,7 +114,7 @@ const PageContent: React.FC = () => {
       <H1 title='INFOTRG TIM' pb='0' />
       <div className='relative pt-2 bg-gradient-white shadow-md rounded-lg p-4 mt-8'>
         <div className='flex flex-col'>
-          <H2 text={block.id.toUpperCase()} align='center' color={'black'} />
+          {block.title && <H2 text={block.title.toUpperCase()} align='center' color={'black'} />}
           <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
             <div
               className={`relative mt-4 flex items-center justify-center h-52 w-52 lg:h-120 lg:w-120 p-4`}

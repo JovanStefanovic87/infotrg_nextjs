@@ -53,30 +53,37 @@ const NEMANJA: Omit<MemberData, 'id'> = {
 export const contentData: MemberData[] = [
   {
     id: 'autor',
+    title: 'AUTOR',
     ...MIROSLAV,
   },
   {
     id: 'administrator',
+    title: 'ADMINISTRATOR',
     ...MIROSLAV,
   },
   {
     id: 'vebmaster',
+    title: 'VEBMASTER',
     ...JOVAN,
   },
   {
     id: 'graficki-dizajner',
+    title: 'GRAFIČKI DIZAJNER',
     ...MIROSLAV,
   },
   {
     id: 'koordinator',
+    title: 'KOORDINATOR',
     ...MIROSLAV,
   },
   {
     id: 'pr-menadzer',
+    title: 'PR MENADŽER',
     ...NEBOJSA,
   },
   {
     id: 'marketing-menadzer',
+    title: 'MARKETING MENADŽER',
     ...NEMANJA,
   },
 ];

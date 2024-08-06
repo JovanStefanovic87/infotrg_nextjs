@@ -120,6 +120,7 @@ export interface Route {
 
 export interface MemberData {
   id: string;
+  title?: string;
   name: string;
   birth?: string;
   profession?: string;

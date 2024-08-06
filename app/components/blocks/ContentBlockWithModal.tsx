@@ -62,7 +62,7 @@ const ContentBlock: React.FC<Props> = ({
       </ContentBlockContainer>
 
       {isModalOpen && (
-        <ContentModalContainer onContentModalClose={handleCloseModal}>
+        <ContentModalContainer onContentModalClose={handleCloseModal} isStandard={false}>
           <ContentModalInnerContainer>
             <ContentDisplay data={content} />
           </ContentModalInnerContainer>

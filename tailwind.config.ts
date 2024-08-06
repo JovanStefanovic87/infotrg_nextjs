@@ -45,6 +45,7 @@ const config: Config = {
       },
       maxHeight: {
         main: 'calc(100dvh - 68px)',
+        mainMinusClose: 'calc(100dvh - 110px)',
         content: '10000px',
       },
       margin: {
@@ -56,6 +57,7 @@ const config: Config = {
       },
       fontSize: {
         xxxs: '0.6rem',
+        xxs2: '0.8rem',
       },
       keyframes: {
         colorChange: {

@@ -5,7 +5,7 @@ export const vebIzlogData: BasicInformation[] = [
     id: 'vebIzlogData-01',
     title: 'Šta je veb izlog?',
     description:
-      'Veb izlog je personalni prostor Infotrg platforme na kojem prodavac može izlagati svoje proizvode.',
+      'Veb izlog je personalni prostor Infotrg platforme u kojem prodavac može izlagati svoje proizvode.',
     coverImage: '/images/platform/PL01.jpg',
     content: [
       {

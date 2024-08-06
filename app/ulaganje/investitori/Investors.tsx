@@ -46,7 +46,7 @@ const Investors: NextPage = () => {
       </div>
 
       {modalData && (
-        <ContentModalContainer onContentModalClose={handleCloseModal}>
+        <ContentModalContainer onContentModalClose={handleCloseModal} isStandard={false}>
           <ContentModalInnerContainer>
             <Investor id={modalData.data.id} view={modalData.type} name={modalData.data.name} />
           </ContentModalInnerContainer>
