@@ -1,5 +1,4 @@
 'use client';
-import React, { useState, useEffect } from 'react';
 import { contentData as rawContentData, mapIdToPath } from './InvestPlanData';
 import ContentBlock from '../../components/blocks/ContentBlock';
 import H1 from '../../components/text/H1';
@@ -7,31 +6,11 @@ import PageContainer from '../../components/containers/PageContainer';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
+import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
 
 const InvestPlan: React.FC = () => {
   useScrollToTop();
-  const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    const updateColumns = () => {
-      const width = window.innerWidth;
-      if (width >= 1280) {
-        setColumns(3);
-      } else if (width >= 1024) {
-        setColumns(2);
-      } else if (width >= 768) {
-        setColumns(2);
-      } else {
-        setColumns(1);
-      }
-    };
-
-    updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-  if (columns === null) return null;
+  const columns = useResponsiveColumns(1);
 
   const contentData = rawContentData.filter(
     (item): item is BasicInformation & { id: string; coverImage: string } =>

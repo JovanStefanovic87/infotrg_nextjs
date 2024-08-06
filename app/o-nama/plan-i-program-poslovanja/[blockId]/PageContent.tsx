@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { pppLinksData, contentBlocksData } from './pppData';
 import ImageModal from '../../../components/modals/ImageModal';

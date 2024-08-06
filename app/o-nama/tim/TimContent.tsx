@@ -1,37 +1,14 @@
 'use client';
-import React, { useState, useEffect } from 'react';
 import { NextPage } from 'next';
 import { contentData } from './timData';
 import ContentBlock from './ContentBlock';
 import H1 from '../../components/text/H1';
 import PageContainer from '../../components/containers/PageContainer';
 import Link from 'next/link';
-import useScrollToTop from '@/app/helpers/useScrollToTop';
+import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
 
 const TimContent: NextPage = () => {
-  useScrollToTop();
-  const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    const updateColumns = () => {
-      const width = window.innerWidth;
-      if (width >= 1280) {
-        setColumns(3);
-      } else if (width >= 1024) {
-        setColumns(2);
-      } else if (width >= 768) {
-        setColumns(2);
-      } else {
-        setColumns(1);
-      }
-    };
-
-    updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-  if (columns === null) return null;
+  const columns = useResponsiveColumns(1);
 
   const renderGrid = () => {
     const rows: JSX.Element[] = [];

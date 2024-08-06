@@ -1,5 +1,4 @@
 'use client';
-import React, { useState, useEffect } from 'react';
 import {
   contentData as rawContentData,
   listOfLinks as rawListOfLinks,
@@ -13,6 +12,7 @@ import H2Title from '@/app/components/text/H2Title';
 import Devider2 from '@/app/components/ui/Devider2';
 import renderGridSystem from '@/app/helpers/renderGridSystem';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
+import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
 
 interface BasicInformation {
   id: string | undefined;
@@ -24,28 +24,7 @@ interface BasicInformation {
 
 const BussinesPlan: React.FC = () => {
   useScrollToTop();
-  const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    const updateColumns = () => {
-      const width = window.innerWidth;
-      if (width >= 1280) {
-        setColumns(3);
-      } else if (width >= 1024) {
-        setColumns(2);
-      } else if (width >= 768) {
-        setColumns(2);
-      } else {
-        setColumns(1);
-      }
-    };
-
-    updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-  if (columns === null) return null;
+  const columns = useResponsiveColumns(1);
 
   const contentData = rawContentData.filter(
     (item): item is BasicInformation & { id: string } => item.id !== undefined,

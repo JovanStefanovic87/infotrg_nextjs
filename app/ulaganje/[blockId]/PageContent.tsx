@@ -13,13 +13,13 @@ import TextNormal from '@/app/components/text/TextNormal';
 import Devider2 from '@/app/components/ui/Devider2';
 import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
+import TextLinked from '@/app/components/text/TextLinked';
+import TextSpecifications from '@/app/components/text/TextSpecifications';
 import H3Title from '@/app/components/text/H3Title';
 import TextBoldList from '@/app/components/text/TextBoldList';
 import TextBoldCustom from '@/app/components/text/TextBoldCustom';
-import useScrollToTop from '@/app/helpers/useScrollToTop';
 
 const PageContent: React.FC = () => {
-  useScrollToTop();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
 

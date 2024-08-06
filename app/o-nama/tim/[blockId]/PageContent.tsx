@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { contentData, contentBlocksData, contentBlocks2Data } from './memebrs';
 import ImageModal from '../../../components/modals/ImageModal';
@@ -91,10 +91,10 @@ const PageContent: React.FC = () => {
     }
   };
 
-  const openImageModal = (image: string) => {
+  /* const openImageModal = (image: string) => {
     setSelectedImage(image);
     setIsImageModalOpen(true);
-  };
+  }; */
 
   const closeImageModal = () => {
     setIsImageModalOpen(false);

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { contentData, hyperlinks } from './BussinessCooperationData';
 import ContentBlock from '../../components/blocks/ContentBlock';
 import H1 from '../../components/text/H1';
@@ -10,31 +10,13 @@ import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 import ImageModal from '@/app/components/modals/ImageModal';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
+import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
 
 const BussinessCooperation: React.FC = () => {
   useScrollToTop();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
-  const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    const updateColumns = () => {
-      const width = window.innerWidth;
-      if (width >= 1280) {
-        setColumns(3);
-      } else if (width >= 1024) {
-        setColumns(2);
-      } else if (width >= 768) {
-        setColumns(2);
-      } else {
-        setColumns(1);
-      }
-    };
-
-    updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
-  }, []);
+  const columns = useResponsiveColumns(1);
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);

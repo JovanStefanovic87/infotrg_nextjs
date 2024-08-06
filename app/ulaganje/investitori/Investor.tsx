@@ -1,5 +1,5 @@
 import React from 'react';
-import { invested, withdrawn } from './investorsData';
+import { invested } from './investorsData';
 
 interface Props {
   id: string;
@@ -9,7 +9,6 @@ interface Props {
 
 const Investor: React.FC<Props> = ({ id, name, view }) => {
   const investments = invested[id] || [];
-  const withdrawals = withdrawn[id] || [];
 
   const totalInvestment = investments
     .reduce((sum, investment) => sum + parseFloat(investment.amount.replace(',', '.')), 0)

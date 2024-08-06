@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { fullDescriptionDataLinksData, contentBlocksData } from './fullDescriptionData';
 import H1 from '@/app/components/text/H1';
@@ -9,31 +9,13 @@ import ContentBlock from '@/app/components/blocks/ContentBlock';
 import renderGridSystem2 from '@/app/helpers/renderGridSystem2';
 import ImageModal from '@/app/components/modals/ImageModal';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
+import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
 
 const PageContent: React.FC = () => {
   useScrollToTop();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
-  const [columns, setColumns] = useState<number | null>(null);
-
-  useEffect(() => {
-    const updateColumns = () => {
-      const width = window.innerWidth;
-      if (width >= 1280) {
-        setColumns(3);
-      } else if (width >= 1024) {
-        setColumns(2);
-      } else if (width >= 768) {
-        setColumns(2);
-      } else {
-        setColumns(1);
-      }
-    };
-
-    updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
-  }, []);
+  const columns = useResponsiveColumns(1);
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);
@@ -51,7 +33,7 @@ const PageContent: React.FC = () => {
 
   const contentBlocks = (contentBlocksData as any)[blockId] || [];
 
-  if (!block || columns === null) return null;
+  if (!block) return null;
 
   return (
     <PageContainer>

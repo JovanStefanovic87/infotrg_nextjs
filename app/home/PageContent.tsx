@@ -9,33 +9,10 @@ import H2Title from '../components/text/H2Title';
 import H2 from '../components/text/H2';
 import TextSpecifications from '../components/text/TextSpecifications';
 import H3Title from '../components/text/H3Title';
-import useScrollToTop from '../helpers/useScrollToTop';
+import useResponsiveColumns from '../helpers/useResponsiveColumns';
 
 const PageContent: React.FC = () => {
-  const [columns, setColumns] = useState<number | null>(null);
-
-  useScrollToTop();
-
-  useEffect(() => {
-    const updateColumns = () => {
-      const width = window.innerWidth;
-      if (width >= 1280) {
-        setColumns(3);
-      } else if (width >= 1024) {
-        setColumns(2);
-      } else if (width >= 768) {
-        setColumns(2);
-      } else {
-        setColumns(1);
-      }
-    };
-
-    updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-  if (columns === null) return null;
+  const columns = useResponsiveColumns(1);
 
   return (
     <PageContainer>
@@ -70,7 +47,7 @@ const PageContent: React.FC = () => {
       <div className='mt-1 sm:mt-8 mb-4'>
         <H2Title
           text='POSTANITE INVESTITOR I SUVLASNIK INFOTRGA ILI SE
-PRIDRUŽITE TIMU KAO STALNI ILI POVREMENI SARADNIK'
+PRIDRUÅ½ITE TIMU KAO STALNI ILI POVREMENI SARADNIK'
           size='xl'
         />
       </div>
