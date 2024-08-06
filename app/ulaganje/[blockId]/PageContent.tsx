@@ -13,8 +13,6 @@ import TextNormal from '@/app/components/text/TextNormal';
 import Devider2 from '@/app/components/ui/Devider2';
 import H3 from '@/app/components/text/H3';
 import H4 from '@/app/components/text/H4';
-import TextLinked from '@/app/components/text/TextLinked';
-import TextSpecifications from '@/app/components/text/TextSpecifications';
 import H3Title from '@/app/components/text/H3Title';
 import TextBoldList from '@/app/components/text/TextBoldList';
 import TextBoldCustom from '@/app/components/text/TextBoldCustom';
@@ -22,6 +20,7 @@ import TextBoldCustom from '@/app/components/text/TextBoldCustom';
 const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
+  const maxWidth = `calc(100vw - ${50}px)`;
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);
@@ -46,7 +45,7 @@ const PageContent: React.FC = () => {
       <div className='relative pt-6 bg-gradient-white shadow-md rounded-lg p-4'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
-            <div key={index}>
+            <div key={index} style={{ maxWidth: maxWidth }}>
               {block.type === 'text' ? (
                 <TextWrapped block={block.content || ''} />
               ) : block.type === 'image' ? (
