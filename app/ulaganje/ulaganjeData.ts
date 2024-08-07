@@ -65,25 +65,6 @@ export const contentData: BasicInformation[] = [
 export const contentBlocksData: ContentBlocksData = {
   'investicioni-fond': [
     {
-      type: 'pNormal',
-      content:
-        'Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja.',
-    },
-    { type: 'hr', height: 2 },
-    {
-      type: 'h2',
-      content: 'VREDNOST INVESTICIONOG FONDA',
-    },
-    {
-      type: 'h2',
-      content: '50.000 EUR',
-    },
-    { type: 'hr', height: 2 },
-    {
-      type: 'h2',
-      content: 'RASPODELA INVESTICIONOG FONDA',
-    },
-    {
       type: 'list',
       listContent: [
         {

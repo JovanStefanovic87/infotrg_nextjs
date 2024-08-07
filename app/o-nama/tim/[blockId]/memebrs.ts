@@ -9,10 +9,7 @@ const MIROSLAV: Omit<MemberData, 'id'> = {
   name: 'Miroslav Ostrogonac',
   birth: '27.04.1975.',
   profession: 'Grafičar',
-  affinities: 'administracija, grafički dizajn, leksikografija, izrada dokumenata',
-  previousEngagements:
-    'kasarna “Vojvoda Živojin Mišić” (četni evidentičar), trgovina “KMS d.o.o.” (magacioner/referent)',
-  infotrgEngagements: 'od 01.08.2022. godine',
+  infotrgEngagements: 'Od 01.08.2022. godine',
   phone: '0601451349',
   email: 'suinfotrg@gmail.com',
   image: '/images/members/avatar_miroslav.bmp',
@@ -21,12 +18,12 @@ const MIROSLAV: Omit<MemberData, 'id'> = {
 const JOVAN: Omit<MemberData, 'id'> = {
   name: 'Jovan Stefanović',
   birth: '21.07.1987.',
-  profession: 'veb programer (web developer)',
+  profession: 'Veb programer (web developer)',
   affinities:
     'Javascript, React, React Native, Typescript, PostgreSQL, Node JS, Figma, NginX, Linux',
   previousEngagements:
-    'veb aplikacija za zakazivanje termina “KLIKTERMIN“ (autor/veb programer), internet stranica za prodaju pasa “CORGIHAPPYHOUSE” (veb programer), mobilna aplikacija za evidenciju servisa klima uređaja “AC INSPECTOR” (veb programer)',
-  infotrgEngagements: 'od 27.08.2022. godine',
+    'Veb aplikacija za zakazivanje termina “KLIKTERMIN“ (autor/veb programer), internet stranica za prodaju pasa “CORGIHAPPYHOUSE” (veb programer), mobilna aplikacija za evidenciju servisa klima uređaja “AC INSPECTOR” (veb programer)',
+  infotrgEngagements: 'Od 27.08.2022. godine',
   phone: '0691120296',
   email: 'jovanstefanovic024@gmail.com',
   image: '/images/members/avatar_jovan.bmp',
@@ -35,16 +32,16 @@ const JOVAN: Omit<MemberData, 'id'> = {
 const NEBOJSA: Omit<MemberData, 'id'> = {
   name: 'Nebojša Lukić',
   birth: '',
-  infotrgEngagements: 'od 27.08.2022. godine',
+  infotrgEngagements: 'Od 27.08.2022. godine',
   phone: '0611366166',
   image: '/images/members/avatar_nebojsa.bmp',
 };
 
 const NEMANJA: Omit<MemberData, 'id'> = {
   name: 'Nemanja Komazec',
-  affinities: 'marketing, timski rad, terenski rad na relaciji Sombor-Subotica',
-  previousEngagements: 'distribucija prečistača vazduha i vode “FRASH” (trgovački putnik)',
-  infotrgEngagements: 'od 01.02.2024. godine',
+  affinities: 'Marketing, timski rad, terenski rad na relaciji Sombor-Subotica',
+  previousEngagements: 'Distribucija prečistača vazduha i vode “FRASH” (trgovački putnik)',
+  infotrgEngagements: 'Od 01.02.2024. godine',
   phone: '0642922747',
   email: 'komazecnemanja22@gmail.com',
   image: '/images/members/avatar_nemanja.bmp',
@@ -55,11 +52,17 @@ export const contentData: MemberData[] = [
     id: 'autor',
     title: 'AUTOR',
     ...MIROSLAV,
+    affinities: 'Grafički dizajn, leksikografija, pisanje scenarija, produkcija društvenih igara',
+    previousEngagements:
+      'Projekat “MICKEY“ (autor), kviz “KVIZANTIJA“ (autor), strip “Zeutron“ (autor)',
   },
   {
     id: 'administrator',
     title: 'ADMINISTRATOR',
     ...MIROSLAV,
+    affinities: 'Administracija, grafički dizajn, leksikografija, izrada dokumenata',
+    previousEngagements:
+      'Kasarna “Vojvoda Živojin Mišić” (četni evidentičar), trgovina “KMS d.o.o.” (magacioner/referent)',
   },
   {
     id: 'vebmaster',
@@ -70,11 +73,17 @@ export const contentData: MemberData[] = [
     id: 'graficki-dizajner',
     title: 'GRAFIČKI DIZAJNER',
     ...MIROSLAV,
+    affinities: 'Grafički dizajn, slikarstvo, crtanje, tehničko crtanje, arhitektura',
+    previousEngagements:
+      'Projekat “MICKEY“ (dizajner), kviz “KVIZANTIJA“ (illustrator), strip “Zeutron“ (crtač)',
   },
   {
     id: 'koordinator',
     title: 'KOORDINATOR',
     ...MIROSLAV,
+    affinities: 'Administracija, trgovina, preduzetništvo, grafički dizajn',
+    previousEngagements:
+      'Trgovina “KMS d.o.o.” (šef magacina), proizvodnja “JADROPLAST” d.o.o. (smenovođa)',
   },
   {
     id: 'pr-menadzer',

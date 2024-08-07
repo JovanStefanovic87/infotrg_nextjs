@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { contentData, contentBlocksData } from '../ulaganjeData';
 import ImageModal from '../../components/modals/ImageModal';
@@ -17,6 +17,7 @@ import H3Title from '@/app/components/text/H3Title';
 import TextBoldList from '@/app/components/text/TextBoldList';
 import TextBoldCustom from '@/app/components/text/TextBoldCustom';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
+import ContentDescriptionText from '@/app/components/text/ContentDescriptionText';
 
 const PageContent: React.FC = () => {
   useScrollToTop();
@@ -43,7 +44,18 @@ const PageContent: React.FC = () => {
   return (
     <PageContainer>
       <H1 title={block.title} />
-      <div className='relative pt-6 bg-gradient-white shadow-md rounded-lg p-4'>
+      <ContentDescriptionText
+        text='Investicioni fond obuhvata sva potrebna finansijska sredstva koja se ulažu u razvoj projekta sve do njegovog samostalnog funkcionisanja.'
+        align='center'
+        color='black'
+      />
+      <ContentDescriptionText text='VREDNOST INVESTICIONOG FONDA:' align='center' color='black'>
+        <H2 text={'50.000 EUR'} color={'black'} />
+      </ContentDescriptionText>
+      <div className='mb-3'>
+        <H2 text='RASPODELA INVESTICIONOG FONDA' align='center' />
+      </div>
+      <div className='relative bg-gradient-white shadow-md rounded-lg p-4'>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
             <div key={index}>
@@ -74,7 +86,12 @@ const PageContent: React.FC = () => {
               ) : block.type === 'list' ? (
                 <OrderedList items={[block]} />
               ) : block.type === 'h2' ? (
-                <H2 text={block.content} align='center' color='black' />
+                <H2
+                  text={block.content}
+                  align='center'
+                  color='black'
+                  marginBottom={block.marginBottom}
+                />
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} align='center' />
               ) : block.type === 'h3Block' ? (
