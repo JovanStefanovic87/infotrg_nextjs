@@ -52,14 +52,12 @@ const ContentBlock: React.FC<Props> = ({
           {title && <BlockTitleWrap text={title} />}
 
           {coverImage && (
-            <div className='mt-4'>
-              <CoverImage
-                src={coverImage}
-                alt={title}
-                openImageModal={openImageModal}
-                useModal={useModal}
-              />
-            </div>
+            <CoverImage
+              src={coverImage}
+              alt={title}
+              openImageModal={openImageModal}
+              useModal={useModal}
+            />
           )}
           <BlockText description={description} maxLines={2} align={descriptionAlign} />
           {isLink && <BlockButton text='Vidi još' />}

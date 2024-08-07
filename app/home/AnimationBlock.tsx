@@ -9,7 +9,7 @@ const AnimationBlock: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTriangleAnimationComplete(true);
-    }, 2000); // Adjust this timing to match the duration of the triangle animation
+    }, 1800); // Adjust this timing to match the duration of the triangle animation
 
     return () => clearTimeout(timer);
   }, []);
@@ -17,13 +17,13 @@ const AnimationBlock: React.FC = () => {
   return (
     <div className='flex items-start justify-center p-2'>
       <div className='relative flex rounded-xl items-center justify-center bg-waveGradient w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-3xl h-32 sm:h-40 md:h-56 lg:h-72 pb-4 overflow-hidden animated-background'>
-      {isTriangleAnimationComplete && (
-          <div className='absolute top-0 left-0 right-0 mt-4 sm:mt-6 md:mt-10 lg:mt-12 text-md font-bold text-black text-center tracking-wider'>
+        {isTriangleAnimationComplete && (
+          <div className='absolute top-4 left-0 right-0 text-xxxs sm:text-xs md:text-base font-bold text-black text-center tracking-wider animate-fadeIn'>
             INFORMACIJA POKREĆE TRGOVINU
           </div>
         )}
-        <div className='absolute w-0 h-0 lg:mb-8 border-l-[72px] border-r-[72px] border-t-[48px] border-t-yellowLogo border-l-transparent border-r-transparent sm:border-l-[108px] sm:border-r-[108px] sm:border-t-[72px] md:border-l-[150px] md:border-r-[150px] md:border-t-[100px] lg:border-l-[225px] lg:border-r-[225px] lg:border-t-[150px] animate-slideInTop'></div>
-        <div className='absolute transform origin-center w-4 h-10 sm:w-5 sm:h-12 md:w-7 md:h-20 lg:w-10 lg:h-32 animate-rotateHorizontal'>
+        <div className='absolute w-0 h-0 mt-4 md:mt-2 lg:mb-8 border-l-[72px] border-r-[72px] border-t-[48px] border-t-yellowLogo border-l-transparent border-r-transparent sm:border-l-[108px] sm:border-r-[108px] sm:border-t-[72px] md:border-l-[150px] md:border-r-[150px] md:border-t-[100px] lg:border-l-[225px] lg:border-r-[225px] lg:border-t-[150px] animate-slideInTop'></div>
+        <div className='absolute transform origin-center mt-4 w-4 h-10 sm:w-5 sm:h-12 md:w-7 md:h-20 lg:w-10 lg:h-32 animate-rotateHorizontal'>
           <svg
             version='1.1'
             xmlns='http://www.w3.org/2000/svg'
@@ -53,10 +53,9 @@ const AnimationBlock: React.FC = () => {
             </g>
           </svg>
         </div>
-        <div className='absolute mt-[5.2rem] sm:mt-[7rem] md:mt-[10rem] lg:mt-[13rem] text-lg sm:text-xl md:text-4xl lg:text-6xl font-bold text-gray-800 tracking-widest'>
+        <div className='absolute mt-[6rem] sm:mt-[7.8rem] md:mt-[10.8rem] lg:mt-[13rem] text-lg sm:text-xl md:text-4xl lg:text-6xl font-bold text-gray-800 tracking-widest'>
           <Typewriter text='INNFOTRG' />
         </div>
-        
       </div>
     </div>
   );

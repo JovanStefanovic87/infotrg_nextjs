@@ -7,6 +7,7 @@ import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
 import useResponsiveColumns from '@/app/helpers/useResponsiveColumns';
+import ContentDescriptionText from '@/app/components/text/ContentDescriptionText';
 
 const InvestPlan: React.FC = () => {
   useScrollToTop();
@@ -20,6 +21,11 @@ const InvestPlan: React.FC = () => {
   return (
     <PageContainer>
       <H1 title='INVESTICIONI PLAN I PROGRAM' />
+      <ContentDescriptionText
+        text='Investicioni plan i program opisuje postupak učlanjivanja investitora, protokol ulaganja finansijskih sredstava, sticanje vlasničkog udela, kao i sva druga prava i obaveze investitora.'
+        align='center'
+        color='black'
+      />
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData,

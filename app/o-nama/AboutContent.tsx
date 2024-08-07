@@ -7,6 +7,7 @@ import renderGridSystem from '@/app/helpers/renderGridSystem';
 import { BasicInformation } from '@/app/helpers/types';
 import useScrollToTop from '../helpers/useScrollToTop';
 import useResponsiveColumns from '../helpers/useResponsiveColumns';
+import ContentDescriptionText from '../components/text/ContentDescriptionText';
 
 const AboutContent: React.FC = () => {
   useScrollToTop();
@@ -20,6 +21,11 @@ const AboutContent: React.FC = () => {
   return (
     <PageContainer>
       <H1 title='O NAMA' />
+      {/* <ContentDescriptionText
+        text='Infotrg platforma je elektronski medij za pretragu proizvoda i njihovih lokacija prodaje, iznajmljivanje i uređivanje personalnih elektronskih prodavnica (veb izloga), kao i za objavljivanje i uređivanje zasebnih članaka o pojedinačnim proizvodima.'
+        align='center'
+        color='black'
+      /> */}
       <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
         {renderGridSystem({
           contentData,
