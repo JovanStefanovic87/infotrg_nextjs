@@ -13,21 +13,24 @@ import useResponsiveColumns from '../helpers/useResponsiveColumns';
 
 const PageContent: React.FC = () => {
   const columns = useResponsiveColumns(1);
+  const INVEST_CALL_TO_ACTION =
+    'POSTANITE INVESTITOR I SUVLASNIK INFOTRGA ILI SE PRIDRUŽITE TIMU KAO STALNI ILI POVREMENI SARADNIK';
 
   return (
     <PageContainer>
       <AnimationBlock />
-      <div className='mt-1 sm:mt-8 mb-4'>
-        <H2Title text='ULAGANJE U INFOTRG' size='xl' />
+      <div className='mt-2 sm:mt-4 mb-4'>
+        {/* <H2Title text='ULAGANJE U INFOTRG' size='xl' /> */}
+        <H2Title text={INVEST_CALL_TO_ACTION} size='xl' />
       </div>
-      <div className='flex flex-col items-center bg-mainWhite rounded-lg p-6 shadow-lg mb-8'>
+      <div className='flex flex-col items-center bg-mainWhite rounded-lg p-6 shadow-lg mb-4 sm:mb-0 mx-0 sm:mx-2'>
         <H2
           text='Infotrgov investicioni program omogućava svakom fizičkom licu sticanje vlasničkog udela u poslovnom projektu, uz minimalnu mesečnu zaradu od 10% na uložena sredstva i garanciju povrata uloženog novca u slučaju raskida suvlasničkog odnosa.'
           align='center'
           color='black'
         />
       </div>
-      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4'>
+      <div className='bg-white sm:bg-transparent rounded-md overflow-hidden mb-4 sm:mb-0 sm:mt-2'>
         {renderGridSystem({
           contentData,
           columns: columns,
@@ -44,14 +47,10 @@ const PageContent: React.FC = () => {
           ),
         })}
       </div>
-      <div className='mt-1 sm:mt-8 mb-4'>
-        <H2Title
-          text='POSTANITE INVESTITOR I SUVLASNIK INFOTRGA ILI SE
-PRIDRUÅ½ITE TIMU KAO STALNI ILI POVREMENI SARADNIK'
-          size='xl'
-        />
+      <div className='mt-1 sm:mt-0 mb-4'>
+        <H2Title text={INVEST_CALL_TO_ACTION} size='xl' />
       </div>
-      <div className='flex flex-col items-stretch sm:items-center bg-mainWhite rounded-lg p-6 shadow-lg mb-8'>
+      <div className='flex flex-col items-stretch sm:items-center bg-mainWhite rounded-lg p-6 shadow-lg'>
         <div className='w-full mb-4'>
           <H3Title text='Kontakt' color='black' />
         </div>

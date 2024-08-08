@@ -8,9 +8,9 @@ export const metadata = {
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className='lg:-mt-8'>
       <PageContent />
-    </>
+    </div>
   );
 };
 

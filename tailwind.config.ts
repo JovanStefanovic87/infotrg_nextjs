@@ -90,11 +90,11 @@ const config: Config = {
       },
       animation: {
         colorChange: 'colorChange 10s infinite',
-        fadeIn: 'fadeIn 0.5s ease-in-out',
+        fadeIn: 'fadeIn 1s ease-in-out',
         fadeInLetter: 'fadeIn 0.5s ease-in-out',
         slideInTop: 'slideInTop 2s ease-in',
         rotateHorizontal: 'rotateHorizontal 7s linear infinite',
-        delaySvg: 'delaySvg 2s ease-in-out 1s forwards',
+        delaySvg: 'ease-in-out 1s forwards',
         typewriter: 'typewriter 8s steps(7) 1s forwards',
       },
       fontFamily: {
@@ -102,6 +102,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    /* require('tailwindcss-animate') */
+  ],
 };
 export default config;

@@ -1,5 +1,3 @@
-import { ContentBlocksData } from '../helpers/types';
-
 export interface BasicInformation {
   id: string;
   title: string;
@@ -13,7 +11,7 @@ export const contentData: BasicInformation[] = [
     title: 'PROJEKAT INFOTRG',
     description:
       'Infotrg je ekonomski projekat namenjen posredovanju između prodavaca i kupaca, direktnom plasiranju proizvoda i objavljavljivanju informacija iz oblasti trgovine putem specijalizovane digitalne platforme.',
-    coverImage: '/images/ulaganje/UL01.jpg',
+    coverImage: '/images/home/NA01.jpg',
   },
   {
     id: 'plan-i-program-poslovanja',
