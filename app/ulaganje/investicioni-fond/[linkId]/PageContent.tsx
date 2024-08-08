@@ -21,6 +21,7 @@ const PageContent: React.FC = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const marginLeftSmall = '2vw';
+  const maxWidth = `calc(100vw - ${50}px)`;
 
   const openImageModal = (image: string) => {
     setSelectedImage(image);
@@ -52,7 +53,7 @@ const PageContent: React.FC = () => {
         </div>
         {contentBlocks.length > 0 &&
           contentBlocks.map((block: any, index: number) => (
-            <div key={index} className='flex flex-col'>
+            <div key={index} className='flex flex-col' style={{ maxWidth: maxWidth }}>
               {block.type === 'text' ? (
                 <div className='py-3'>
                   <TextNormal
@@ -93,7 +94,7 @@ const PageContent: React.FC = () => {
               ) : block.type === 'h3' ? (
                 <H3 text={block.content} />
               ) : block.type === 'h4' ? (
-                <H4 text={block.content} paddingBottom={6} />
+                <H4 text={block.content} paddingBottom={6} wrap={true} />
               ) : block.type === 'p' ? (
                 <Text
                   text={block.content}

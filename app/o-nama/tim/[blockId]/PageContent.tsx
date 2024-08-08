@@ -29,10 +29,20 @@ interface ContentTitleProps {
 const ContentTitle: React.FC<ContentTitleProps> = ({ keyName, type }) => {
   useScrollToTop();
   const getTitleText = () => {
+    const nameMap: { [key: string]: string } = {
+      autor: 'autora',
+      administrator: 'administratora',
+      vebmaster: 'vebmastera',
+      koordinator: 'koordinatora',
+      'graficki-dizajner': 'grafičkog dizajnera',
+      'pr-menadzer': 'pr menadžera',
+      'marketing-menadzer': 'marketing menadžera',
+    };
+    const name = nameMap[keyName] || keyName;
     if (type === 'maintain') {
-      return `ZADUŽENJA ${keyName.toUpperCase()}A NA ODRŽAVANJU I UNAPREĐIVANJU INFOTRGA`;
+      return `ZADUŽENJA ${name.toUpperCase()} NA ODRŽAVANJU I UNAPREĐIVANJU INFOTRGA`;
     } else if (type === 'service') {
-      return `ZADUŽENJA ${keyName.toUpperCase()}A U OKVIRU USLUŽNIH DELATNOSTI INFOTRGA`;
+      return `ZADUŽENJA ${name.toUpperCase()} U OKVIRU USLUŽNIH DELATNOSTI INFOTRGA`;
     }
     return '';
   };
