@@ -439,7 +439,7 @@ export const gdeDaKupimData: BasicInformation[] = [
       {
         type: 'pNormal',
         content:
-          'Kada odabere jedan preglednik, korisnik se lako može prebaciti na drugi preglednik putem glavnog menija gde se nalaze sve tri ponuđene varijante preglednika, ili putem direktne prečice koja se nalazi odmah iznad rezultata pretrage.',
+          'Nakon što je odabrao jedan preglednik, korisnik se lako može prebaciti na drugi preglednik putem glavnog menija gde se nalaze sve tri ponuđene varijante preglednika, ili putem direktne prečice koja se nalazi odmah iznad rezultata pretrage.',
       },
     ],
   },

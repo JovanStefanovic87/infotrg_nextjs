@@ -413,7 +413,7 @@ export const contentBlocksData: ImageBlockLinkData = {
         'Ukupan udeo za investitore dalje razdeljuju pojedinačni investitori i to srazmerno visini svojih uloga, odnosno srazmerno visini svojih vlasničkih udela. Na primer, investitor koji ima 5% vlasničkog udela ostvaruje pravo na 5% ličnog prihoda od ukupnog udela za sve investitore, odnosno pravo na 2,5% od ukupnog prihoda Infotrga bez PDV-a.',
       coverImage: '/images/investicioni-plan-i-program/IP78.jpg',
       isLink: true,
-      link: '/ulaganje/prihodovanje-od-investicija/',
+      link: '/ulaganje/prihodi-od-investicija/',
     },
     {
       description:
