@@ -1,60 +1,82 @@
 import React from 'react';
+import Link from 'next/link';
+
+interface TextPart {
+  text: string;
+  bold?: boolean;
+  link?: string;
+}
 
 interface Props {
-  content: string;
+  content: TextPart[];
   label: string;
   align?: 'left' | 'center' | 'right';
   weight?: 'normal' | 'bold' | 'semibold';
   paddingLeft?: string;
   paddingTop?: string;
-  link?: string;
-  bold?: boolean;
+  wordsWithLinks?: { word: string; url: string }[];
+  wordsToBold?: string[];
 }
 
-const wordsToBold = ['Infotrg', 'platforma', 'investitor', 'prihod', 'reklama'];
+const TextBoldAndLink: React.FC<Props> = ({
+  content,
+  label,
+  align = 'left',
+  weight = 'normal',
+  paddingLeft = '0',
+  paddingTop = '0',
+  wordsWithLinks = [],
+  wordsToBold = [],
+}) => {
+  const processText = (text: string) => {
+    let processedText = text;
 
-const wordsWithLinks = [
-  { word: 'Infotrg', url: '/' },
-  { word: 'platforma', url: '/o-nama/platforma' },
-  // Add more words and URLs as needed
-];
+    // Convert bold words
+    wordsToBold.forEach((word) => {
+      const regex = new RegExp(`(${word})`, 'gi');
+      processedText = processedText.replace(regex, '<strong>$1</strong>');
+    });
 
-const highlightWords = (text: string) => {
-    let highlightedText = text;
-  
-    // Apply hyperlinks first
+    // Convert links
     wordsWithLinks.forEach(({ word, url }) => {
-      const regex = new RegExp(`\\b(${word})\\b`, 'gi');
-      highlightedText = highlightedText.replace(regex, `<a href="${url}" class="text-blue-500 hover:underline">$1</a>`);
+      const regex = new RegExp(`(${word})`, 'gi');
+      processedText = processedText.replace(regex, `<a href="${url}">$1</a>`);
     });
-  
-    // Apply bolding while preserving hyperlinks
-    highlightedText = highlightedText.replace(/(<a[^>]*>)([^<]+)(<\/a>)/g, (match, p1, p2, p3) => {
-      // Bold the text inside links
-      const boldedText = p2.replace(/\b(?:Infotrg|platforma|investitor|prihod|reklama)\b/gi, '<strong>$&</strong>');
-      return `${p1}${boldedText}${p3}`;
-    });
-  
-    return highlightedText;
+
+    return processedText;
   };
 
-  const TextBoldAndLink: React.FC<Props> = ({
-    content,
-    label,
-    align = 'left',
-    weight = 'normal',
-    paddingLeft = '0',
-    paddingTop = '0',
-  }) => {
-    return (
-      <p
-        className={`text-${align} text-pretty font-${weight} text-grayDarkest text-base leading-relaxed`}
-        style={{ paddingLeft, paddingTop }}
-        dangerouslySetInnerHTML={{
-          __html: `<strong>${label}</strong> ${highlightWords(content)}`,
-        }}
-      />
-    );
-  };
+  return (
+    <div
+      className={`text-${align} font-${weight} text-grayDarkest text-base leading-relaxed`}
+      style={{ paddingLeft, paddingTop }}
+    >
+      <strong>{label}</strong>
+      {content.map((part, index) => {
+        const { text, bold, link } = part;
+        const processedText = processText(text);
+
+        return (
+          <React.Fragment key={index}>
+            {link ? (
+              <Link href={link}>
+                <span
+                  dangerouslySetInnerHTML={{ __html: processedText }}
+                  className='font-bold text-hyperlink'
+                />
+              </Link>
+            ) : (
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: bold ? `<strong>${processedText}</strong>` : processedText,
+                }}
+              />
+            )}
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+};
 
 export default TextBoldAndLink;
