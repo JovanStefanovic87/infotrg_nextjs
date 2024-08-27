@@ -38,8 +38,8 @@ export const contentData: BasicInformation[] = [
     id: 'IN-002',
     name: 'Jovan Stefanović',
     email: 'jovanstefanovic024@gmail.com',
-    amount: '1.558,91',
-    share: '3,12',
+    amount: '1.583,91',
+    share: '3,15',
   },
   {
     id: 'IN-003',
@@ -47,6 +47,13 @@ export const contentData: BasicInformation[] = [
     phone: '0692601981',
     amount: '1.400,00',
     share: '2,80',
+  },
+  {
+    id: 'IN-004',
+    name: 'Ivan Ostrogonac',
+    email: 'ostrogonacivan2003@gmail.com',
+    amount: '171,00',
+    share: '0,34',
   },
 ];
 
@@ -77,8 +84,10 @@ export const invested: InvestedData = {
     { date: '27.05.2024.', amount: '40,00', share: '0,08%' },
     { date: '03.06.2024.', amount: '42,73', share: '0,08%' },
     { date: '03.06.2024.', amount: '462,50', share: '0,92%' },
+    { date: '19.08.2024.', amount: '25,00', share: '0,05%' },
   ],
   'IN-003': [{ date: '17.07.2024.', amount: '1400,00', share: '2,80%' }],
+  'IN-004': [{ date: '24.08.2024.', amount: '171,00', share: '0,34%' }],
 };
 
 export const withdrawn: WithdrawnData = {
@@ -91,6 +100,10 @@ export const withdrawn: WithdrawnData = {
     share: '0,00',
   },
   'IN-003': {
+    amount: '0,00',
+    share: '0,00',
+  },
+  'IN-004': {
     amount: '0,00',
     share: '0,00',
   },
