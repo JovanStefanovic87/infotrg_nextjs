@@ -45,8 +45,8 @@ export const contentData: BasicInformation[] = [
     id: 'IN-003',
     name: 'Đorđe Bunić',
     phone: '0692601981',
-    amount: '1.400,00',
-    share: '2,80',
+    amount: '3.400,00',
+    share: '6,80',
   },
   {
     id: 'IN-004',
@@ -54,6 +54,20 @@ export const contentData: BasicInformation[] = [
     email: 'ostrogonacivan2003@gmail.com',
     amount: '171,00',
     share: '0,34',
+  },
+  {
+    id: 'IN-005',
+    name: 'Dragana Filipović',
+    email: 'draganaflpv@gmail.com',
+    amount: '100,00',
+    share: '0,20',
+  },
+  {
+    id: 'IN-006',
+    name: 'Adrien Stefanović',
+    email: 'adrienstefanovic@gmail.com',
+    amount: '30,00',
+    share: '0,06',
   },
 ];
 
@@ -88,8 +102,13 @@ export const invested: InvestedData = {
     { date: '19.08.2024.', amount: '25,00', share: '0,05%' },
     { date: '30.08.2024.', amount: '10,00', share: '0,02%' },
   ],
-  'IN-003': [{ date: '17.07.2024.', amount: '1400,00', share: '2,80%' }],
+  'IN-003': [
+    { date: '17.07.2024.', amount: '1400,00', share: '2,80%' },
+    { date: '19.09.2024.', amount: '2000,00', share: '4,00%' },
+  ],
   'IN-004': [{ date: '24.08.2024.', amount: '171,00', share: '0,34%' }],
+  'IN-005': [{ date: '05.10.2024.', amount: '100,00', share: '0,20%' }],
+  'IN-006': [{ date: '05.10.2024.', amount: '30,00', share: '0,06%' }],
 };
 
 export const withdrawn: WithdrawnData = {
