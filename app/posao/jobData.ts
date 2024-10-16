@@ -1,7 +1,7 @@
 import { BasicInformation } from '../helpers/types';
 
 export const contentData: BasicInformation[] = [
-  {
+  /* {
     id: 'graphic-designer',
     title: 'GRAFIČKI DIZAJNER',
     isLink: false,
@@ -24,8 +24,8 @@ export const contentData: BasicInformation[] = [
       'Poželjno posedovanje sopstvene opreme za štampanje',
       'Prebivalište u Subotici',
     ],
-  },
-  {
+  }, */
+  /* {
     id: 'assistant-administrator',
     title: 'ASISTENT ADMINISTRATORA',
     isLink: false,
@@ -48,7 +48,7 @@ export const contentData: BasicInformation[] = [
       'Posedovanje sopstvenog računara',
       'Prebivalište u Subotici',
     ],
-  },
+  }, */
   {
     id: 'pr-manager',
     title: 'PR MENADŽER',

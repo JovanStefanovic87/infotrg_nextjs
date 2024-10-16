@@ -31,8 +31,8 @@ export const contentData: BasicInformation[] = [
     id: 'IN-001',
     name: 'Miroslav Ostrogonac',
     email: 'suinfotrg@gmail.com',
-    amount: '2.250,00',
-    share: '4,50',
+    amount: '2.500,00',
+    share: '5,00',
   },
   {
     id: 'IN-002',
@@ -83,6 +83,34 @@ export const contentData: BasicInformation[] = [
     amount: '10,00',
     share: '0,02%',
   },
+  {
+    id: 'IN-009',
+    name: 'Nemanja Komazec',
+    email: 'komazecnemanja22@gmail.com',
+    amount: '50,00',
+    share: '0,10%',
+  },
+  {
+    id: 'IN-010',
+    name: 'Marija Ostrogonac',
+    email: 'ostrogonacmarija@gmail.com',
+    amount: '100,00',
+    share: '0,20%',
+  },
+  {
+    id: 'IN-011',
+    name: 'Atila Sekula',
+    email: 'sekula1985@yahoo.com',
+    amount: '25,00',
+    share: '0,05%',
+  },
+  {
+    id: 'IN-012',
+    name: 'Vladimir Madžarević',
+    phone: '0643151066',
+    amount: '50,00',
+    share: '0,10%',
+  },
 ];
 
 export const invested: InvestedData = {
@@ -102,6 +130,7 @@ export const invested: InvestedData = {
     { date: '03.06.2024.', amount: '16,92', share: '0,04%' },
     { date: '04.08.2024.', amount: '713,45', share: '1,43%' },
     { date: '31.08.2024.', amount: '250,00', share: '0,50%' },
+    { date: '15.10.2024.', amount: '250,00', share: '0,50%' },
   ],
   'IN-002': [
     { date: '18.02.2023.', amount: '170,94', share: '0,34%' },
@@ -125,6 +154,10 @@ export const invested: InvestedData = {
   'IN-006': [{ date: '05.10.2024.', amount: '30,00', share: '0,06%' }],
   'IN-007': [{ date: '11.10.2024.', amount: '1.709,40', share: '3,42%' }],
   'IN-008': [{ date: '11.10.2024.', amount: '10,00', share: '0,02%' }],
+  'IN-009': [{ date: '14.10.2024.', amount: '50,00', share: '0,10%' }],
+  'IN-010': [{ date: '14.10.2024.', amount: '100,00', share: '0,20%' }],
+  'IN-011': [{ date: '15.10.2024.', amount: '25,00', share: '0,05%' }],
+  'IN-012': [{ date: '15.10.2024.', amount: '50,00', share: '0,10%' }],
 };
 
 export const withdrawn: WithdrawnData = {
