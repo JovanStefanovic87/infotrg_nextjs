@@ -123,6 +123,7 @@ export interface MemberData {
   title?: string;
   name: string;
   birth?: string;
+  education?: string;
   profession?: string;
   affinities?: string;
   previousEngagements?: string;

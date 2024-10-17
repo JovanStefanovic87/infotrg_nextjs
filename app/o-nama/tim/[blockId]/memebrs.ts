@@ -47,6 +47,32 @@ const NEMANJA: Omit<MemberData, 'id'> = {
   image: '/images/members/avatar_nemanja.bmp',
 };
 
+const NORBERT: Omit<MemberData, 'id'> = {
+  name: 'Norbert Takač',
+  birth: '28.04.1989.',
+  education:
+    'Tehničar za pripremu štampe, digitalni tipograf i dizajner - Politehnička škola, Informatičko inženjerstvo - Visoka tehnička škola strukovnih studija',
+  affinities:
+    'Grafički dizajn, priprema za štampu, Microsoft word, Excel, Power Point, web dizajn (CSS, HTML), Corel Draw, Adobe Photoshop, Autodesc Fusion 360, programiranje i servisiranje fiskalnih kasa',
+  previousEngagements:
+    'GTL export - import (elektrotehničar računara i serviser za fiskalnie kase), šteler - tehničar (Continental Contitech Fluid)',
+  infotrgEngagements: 'Od 14.10.2024. godine',
+  phone: '069709380',
+  email: 'bosqeee@gmail.com',
+  image: '/images/members/avatar_norbert.bmp',
+};
+
+const ATILA: Omit<MemberData, 'id'> = {
+  name: 'Atila Sekula',
+  birth: '23.12.1985.',
+  profession: 'Team leader (Continental Subotica)',
+  affinities: 'Administracija, izrada dokumenata, Office paket, korišćenje AI, timski rad.',
+  infotrgEngagements: 'Od 14.10.2024. godine',
+  phone: '0655577446',
+  email: 'sekula1985@yahoo.com',
+  image: '/images/members/avatar_atila.bmp',
+};
+
 export const contentData: MemberData[] = [
   {
     id: 'autor',
@@ -59,10 +85,7 @@ export const contentData: MemberData[] = [
   {
     id: 'administrator',
     title: 'ADMINISTRATOR',
-    ...MIROSLAV,
-    affinities: 'Administracija, grafički dizajn, leksikografija, izrada dokumenata',
-    previousEngagements:
-      'Kasarna “Vojvoda Živojin Mišić” (četni evidentičar), trgovina “KMS d.o.o.” (magacioner/referent)',
+    ...ATILA,
   },
   {
     id: 'vebmaster',
@@ -72,18 +95,15 @@ export const contentData: MemberData[] = [
   {
     id: 'graficki-dizajner',
     title: 'GRAFIČKI DIZAJNER',
-    ...MIROSLAV,
-    affinities: 'Grafički dizajn, slikarstvo, crtanje, tehničko crtanje, arhitektura',
-    previousEngagements:
-      'Projekat “MICKEY“ (dizajner), kviz “KVIZANTIJA“ (illustrator), strip “Zeutron“ (crtač)',
+    ...NORBERT,
   },
   {
     id: 'koordinator',
     title: 'KOORDINATOR',
     ...MIROSLAV,
-    affinities: 'Administracija, trgovina, preduzetništvo, grafički dizajn',
+    affinities: 'Administracija, trgovina, preduzetništvo, grafički dizajn, likovna umetnost',
     previousEngagements:
-      'Trgovina “KMS d.o.o.” (šef magacina), proizvodnja “JADROPLAST” d.o.o. (smenovođa)',
+      'Kasarna “Vojvoda Živojin Mišić” (četni evidentičar), trgovina “KMS d.o.o.” (šef magacina), proizvodnja “JADROPLAST” d.o.o. (smenovođa), projekat “MICKEY“ (dizajner), kviz “KVIZANTIJA“ (autor / ilustrator), strip “Zeutron“ (scenarista / crtač)',
   },
   {
     id: 'pr-menadzer',
