@@ -25,7 +25,7 @@ export const contentData: BasicTimInformation[] = [
   {
     id: 'administrator',
     title: '4.) ADMINISTRATOR',
-    name: 'Miroslav Ostrogonac',
+    name: 'Atila Sekula',
     description: 'Administrator manipuliše podacima na platformi i vodi evidenciju dokumenata.',
     coverImage: '/images/tim/TIM4.jpg',
   },
@@ -46,7 +46,7 @@ export const contentData: BasicTimInformation[] = [
   {
     id: 'graficki-dizajner',
     title: '7.) GRAFIČKI DIZAJNER',
-    name: 'Miroslav Ostrogonac',
+    name: 'Norbert Takač',
     description: 'Grafički dizajner uređuje slike i izrađuje ilustracije.',
     coverImage: '/images/tim/TIM7.jpg',
   },
