@@ -128,7 +128,7 @@ export interface MemberData {
   affinities?: string;
   previousEngagements?: string;
   infotrgEngagements: string;
-  phone: string;
+  phone?: string;
   email?: string;
   image: string;
 }
