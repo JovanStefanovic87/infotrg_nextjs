@@ -111,6 +111,18 @@ export const contentData: BasicInformation[] = [
     amount: '50,00',
     share: '0,10%',
   },
+  {
+    id: 'IN-013',
+    name: 'Radoslava Stantić',
+    amount: '10,00',
+    share: '0,02%',
+  },
+  {
+    id: 'IN-016',
+    name: 'Dražen Bedić',
+    amount: '50,00',
+    share: '0,10%',
+  },
 ];
 
 export const invested: InvestedData = {
@@ -161,6 +173,8 @@ export const invested: InvestedData = {
   'IN-010': [{ date: '14.10.2024.', amount: '100,00', share: '0,20%' }],
   'IN-011': [{ date: '15.10.2024.', amount: '25,00', share: '0,05%' }],
   'IN-012': [{ date: '15.10.2024.', amount: '50,00', share: '0,10%' }],
+  'IN-013': [{ date: '21.10.2024.', amount: '10,00', share: '0,02%' }],
+  'IN-016': [{ date: '22.10.2024.', amount: '50,00', share: '0,10%' }],
 };
 
 export const withdrawn: WithdrawnData = {
@@ -209,6 +223,14 @@ export const withdrawn: WithdrawnData = {
     share: '0,00',
   },
   'IN-012': {
+    amount: '0,00',
+    share: '0,00',
+  },
+  'IN-013': {
+    amount: '0,00',
+    share: '0,00',
+  },
+  'IN-016': {
     amount: '0,00',
     share: '0,00',
   },
