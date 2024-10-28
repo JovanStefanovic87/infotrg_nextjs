@@ -835,23 +835,6 @@ export const contentBlocksData: ContentBlocksData = {
     },
     {
       type: 'h3',
-      content: 'OPREMANJE INVENTARA',
-    },
-    {
-      type: 'pNormal',
-      content: 'Opremanje kancelarijskim priborom',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'pNormal',
-      content: 'Opremanje kancelarijskim materijalom',
-      paddingLeft: marginLeftMedium,
-    },
-    {
-      type: 'hr',
-    },
-    {
-      type: 'h3',
       content: 'ODRŽAVANJE FINANSIJSKIH FONDOVA',
     },
     {
