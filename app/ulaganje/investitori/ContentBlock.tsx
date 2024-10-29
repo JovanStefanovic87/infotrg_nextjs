@@ -1,7 +1,6 @@
 import React from 'react';
 import ContentBlockContainer from '../../components/containers/ContentBlockContainer';
 import BlockTitle from '../../components/text/BlockTitle';
-import { ContentBlockItem } from '../../helpers/types';
 import TextTable from '@/app/components/text/TextTable';
 import Devider2 from '@/app/components/ui/Devider2';
 
@@ -10,22 +9,12 @@ interface Props {
   name: string;
   email?: string;
   phone?: string;
-  contentBlocks: ContentBlockItem[];
-  amount: string;
+  amount?: string;
   share: string;
   onOpenModal: (type: 'investment' | 'withdrawal', data: any) => void;
 }
 
-const ContentBlock: React.FC<Props> = ({
-  id,
-  name,
-  email,
-  phone,
-  contentBlocks,
-  amount,
-  share,
-  onOpenModal,
-}) => {
+const ContentBlock: React.FC<Props> = ({ id, name, email, phone, amount, share, onOpenModal }) => {
   return (
     <ContentBlockContainer contentBlocks={[]} isLink={false} openContentModal={() => {}}>
       <div className='w-full p-2 rounded-md overflow-hidden'>
@@ -36,7 +25,7 @@ const ContentBlock: React.FC<Props> = ({
               <TextTable label='Registarski broj:' value={id} />
               {email && <TextTable label='Email:' value={email} />}
               {phone && <TextTable label='Telefon:' value={phone} />}
-              <TextTable label='Investicija:' value={`${amount} EUR`} />
+              {amount && <TextTable label='Investicija:' value={`${amount} EUR`} />}
               <TextTable label='Udeo:' value={`${share} %`} />
             </div>
             <div className='flex flex-wrap justify-around'>

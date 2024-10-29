@@ -39,7 +39,6 @@ const Investors: NextPage = () => {
             phone={block.phone}
             amount={block.amount}
             share={block.share}
-            contentBlocks={[]}
             onOpenModal={handleOpenModal}
           />
         ))}

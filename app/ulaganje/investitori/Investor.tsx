@@ -11,6 +11,7 @@ interface Props {
 
 const Investor: React.FC<Props> = ({ id, name, view }) => {
   const investments = invested[id] || [];
+  const isAmountPublic = investments.length > 0 && investments[0].amount;
 
   const roundUp = (num: number, precision: number): number => {
     const factor = Math.pow(10, precision);
@@ -19,7 +20,8 @@ const Investor: React.FC<Props> = ({ id, name, view }) => {
 
   const totalInvestment = roundUp(
     investments.reduce(
-      (sum, investment) => sum + parseFloat(investment.amount.replace(',', '.')),
+      (sum, investment) =>
+        sum + (investment.amount ? parseFloat(investment.amount.replace(',', '.')) : 0),
       0,
     ),
     2,
@@ -54,9 +56,12 @@ const Investor: React.FC<Props> = ({ id, name, view }) => {
                   <th className='px-3 py-3 border-b border-gray-200 text-left text-sm font-semibold text-gray-600'>
                     Datum
                   </th>
-                  <th className='px-3 py-3 border-b border-gray-200 text-left text-sm font-semibold text-gray-600'>
-                    Iznos
-                  </th>
+                  {isAmountPublic && (
+                    <th className='px-3 py-3 border-b border-gray-200 text-left text-sm font-semibold text-gray-600'>
+                      Iznos
+                    </th>
+                  )}
+
                   <th className='px-3 py-3 border-b border-gray-200 text-left text-sm font-semibold text-gray-600'>
                     Udeo
                   </th>
@@ -68,9 +73,12 @@ const Investor: React.FC<Props> = ({ id, name, view }) => {
                     <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
                       {investment.date}
                     </td>
-                    <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
-                      {investment.amount.replace(',', '.')} EUR
-                    </td>
+                    {isAmountPublic && (
+                      <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
+                        {investment.amount && investment.amount.replace(',', '.')} EUR
+                      </td>
+                    )}
+
                     <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
                       {investment.share}
                     </td>
@@ -79,7 +87,8 @@ const Investor: React.FC<Props> = ({ id, name, view }) => {
               </tbody>
             </table>
             <p className='text-lg text-black'>
-              <strong>Ukupno:</strong> {totalInvestment} EUR / {totalShare}
+              <strong>Ukupno:</strong> {isAmountPublic && totalInvestment + ' EUR ' + '/'}{' '}
+              {totalShare}
             </p>
           </div>
         </div>
