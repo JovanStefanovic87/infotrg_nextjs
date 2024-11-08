@@ -10,14 +10,22 @@ import ContentModalContainer from '@/app/components/containers/ContentModalConta
 import ContentModalInnerContainer from '@/app/components/containers/ContentModalInnerContainer';
 import useScrollToTop from '@/app/helpers/useScrollToTop';
 
+type Data = {
+  id: string;
+  name: string;
+  share: string;
+};
+
 const Investors: NextPage = () => {
   useScrollToTop();
   const [modalData, setModalData] = useState<{
-    type: 'investment' | 'withdrawal';
-    data: any;
+    type: 'investment' | 'withdrawal' | 'transfer';
+    data: Data;
   } | null>(null);
 
-  const handleOpenModal = (type: 'investment' | 'withdrawal', data: any) => {
+  console.log('modalData', modalData);
+
+  const handleOpenModal = (type: 'investment' | 'withdrawal' | 'transfer', data: Data) => {
     setModalData({ type, data });
   };
 
@@ -39,7 +47,13 @@ const Investors: NextPage = () => {
             phone={block.phone}
             amount={block.amount}
             share={block.share}
-            onOpenModal={handleOpenModal}
+            onOpenModal={(type) =>
+              handleOpenModal(type, {
+                id: block.id,
+                name: block.name,
+                share: block.share,
+              })
+            }
           />
         ))}
       </div>
@@ -47,7 +61,12 @@ const Investors: NextPage = () => {
       {modalData && (
         <ContentModalContainer onContentModalClose={handleCloseModal} isStandard={false}>
           <ContentModalInnerContainer>
-            <Investor id={modalData.data.id} view={modalData.type} name={modalData.data.name} />
+            <Investor
+              id={modalData.data.id}
+              view={modalData.type}
+              name={modalData.data.name}
+              share={modalData.data.share}
+            />
           </ContentModalInnerContainer>
         </ContentModalContainer>
       )}
