@@ -11,10 +11,22 @@ interface Props {
   phone?: string;
   amount?: string;
   share: string;
+  amountMinusTransfer?: string;
+  shareMinusTransfer?: string;
   onOpenModal: (type: 'investment' | 'withdrawal', data: any) => void;
 }
 
-const ContentBlock: React.FC<Props> = ({ id, name, email, phone, amount, share, onOpenModal }) => {
+const ContentBlock: React.FC<Props> = ({
+  id,
+  name,
+  email,
+  phone,
+  amount,
+  share,
+  amountMinusTransfer,
+  shareMinusTransfer,
+  onOpenModal,
+}) => {
   return (
     <ContentBlockContainer contentBlocks={[]} isLink={false} openContentModal={() => {}}>
       <div className='w-full p-2 rounded-md overflow-hidden'>
@@ -25,8 +37,10 @@ const ContentBlock: React.FC<Props> = ({ id, name, email, phone, amount, share, 
               <TextTable label='Registarski broj:' value={id} />
               {email && <TextTable label='Email:' value={email} />}
               {phone && <TextTable label='Telefon:' value={phone} />}
-              {amount && <TextTable label='Investicija:' value={`${amount} EUR`} />}
-              <TextTable label='Udeo:' value={`${share} %`} />
+              {amount && (
+                <TextTable label='Investicija:' value={`${amountMinusTransfer || amount} EUR`} />
+              )}
+              <TextTable label='Udeo:' value={`${shareMinusTransfer || share} %`} />
             </div>
             <div className='flex flex-wrap justify-around'>
               <Devider2 marginY={4} height={2} />

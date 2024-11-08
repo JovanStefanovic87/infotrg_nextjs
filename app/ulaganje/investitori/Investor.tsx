@@ -65,8 +65,7 @@ const Investor: React.FC<Props> = ({ id, name, view, share }) => {
             </table>
             <p className='text-lg text-black'>
               <strong>Ukupno uloženo: </strong>
-              {investorData?.amountMinusTransfer ?? investorData?.amount} EUR /{' '}
-              {investorData?.shareMinusTransfer ?? investorData?.share}%
+              {investorData?.amount} EUR / {investorData?.share}%
             </p>
             {transfers.length > 0 && (
               <>

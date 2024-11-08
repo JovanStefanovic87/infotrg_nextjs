@@ -23,8 +23,6 @@ const Investors: NextPage = () => {
     data: Data;
   } | null>(null);
 
-  console.log('modalData', modalData);
-
   const handleOpenModal = (type: 'investment' | 'withdrawal' | 'transfer', data: Data) => {
     setModalData({ type, data });
   };
@@ -47,6 +45,8 @@ const Investors: NextPage = () => {
             phone={block.phone}
             amount={block.amount}
             share={block.share}
+            amountMinusTransfer={block.amountMinusTransfer}
+            shareMinusTransfer={block.shareMinusTransfer}
             onOpenModal={(type) =>
               handleOpenModal(type, {
                 id: block.id,
