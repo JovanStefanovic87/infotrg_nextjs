@@ -1,6 +1,5 @@
 import React from 'react';
-import { invested, transfered } from './investorsData';
-import H2 from '@/app/components/text/H2';
+import { invested, transfered, contentData } from './investorsData';
 import BlockTitle from '@/app/components/text/BlockTitle';
 
 interface Props {
@@ -11,32 +10,10 @@ interface Props {
 }
 
 const Investor: React.FC<Props> = ({ id, name, view, share }) => {
+  // Pronađi podatke u contentData prema id-u
+  const investorData = contentData.find((item) => item.id === id);
   const investments = invested[id] || [];
   const transfers = transfered[id] || [];
-  const isAmountPublic = investments.length > 0 && investments[0].amount;
-
-  const roundUp = (num: number, precision: number): number => {
-    const factor = Math.pow(10, precision);
-    return Math.ceil(num * factor) / factor;
-  };
-
-  const totalInvestment = roundUp(
-    investments.reduce(
-      (sum, investment) =>
-        sum + (investment.amount ? parseFloat(investment.amount.replace(',', '.')) : 0),
-      0,
-    ),
-    2,
-  ).toFixed(2);
-
-  const totalTransfer = roundUp(
-    transfers.reduce(
-      (sum, transfer) =>
-        sum + (transfer.amount ? parseFloat(transfer.amount.replace(',', '.')) : 0),
-      0,
-    ),
-    2,
-  ).toFixed(2);
 
   return (
     <div>
@@ -58,7 +35,7 @@ const Investor: React.FC<Props> = ({ id, name, view, share }) => {
                   <th className='px-3 py-3 border-b border-gray-200 text-left text-sm font-semibold text-gray-600'>
                     Datum
                   </th>
-                  {isAmountPublic && (
+                  {investorData?.amount && (
                     <th className='px-3 py-3 border-b border-gray-200 text-left text-sm font-semibold text-gray-600'>
                       Iznos
                     </th>
@@ -74,21 +51,22 @@ const Investor: React.FC<Props> = ({ id, name, view, share }) => {
                     <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
                       {investment.date}
                     </td>
-                    {isAmountPublic && (
+                    {investorData?.amount && (
                       <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
-                        {investment.amount && investment.amount.replace(',', '.')} EUR
+                        {investment.amountMinusTransfer || investment.amount} EUR
                       </td>
                     )}
                     <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
-                      {investment.share}
+                      {investment.shareMinusTransfer || investment.share}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
             <p className='text-lg text-black'>
-              <strong>Ukupno uloženo:</strong> {isAmountPublic && `${totalInvestment} EUR / `}
-              {`${share} %`}
+              <strong>Ukupno uloženo: </strong>
+              {investorData?.amountMinusTransfer ?? investorData?.amount} EUR /{' '}
+              {investorData?.shareMinusTransfer ?? investorData?.share}%
             </p>
             {transfers.length > 0 && (
               <>
@@ -114,7 +92,7 @@ const Investor: React.FC<Props> = ({ id, name, view, share }) => {
                           {transfer.date}
                         </td>
                         <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
-                          {transfer.amount && transfer.amount.replace(',', '.')} EUR
+                          {transfer.amount} EUR
                         </td>
                         <td className='px-3 py-4 border-b border-gray-200 text-sm text-gray-700'>
                           {transfer.share}
@@ -124,7 +102,8 @@ const Investor: React.FC<Props> = ({ id, name, view, share }) => {
                   </tbody>
                 </table>
                 <p className='text-lg text-black'>
-                  <strong>Ukupan prenos:</strong> {`${totalTransfer} EUR`}
+                  <strong>Ukupan prenos: </strong> {investorData?.totalTransferedAmount} EUR /{' '}
+                  {investorData?.totalSharedShare}%
                 </p>
               </>
             )}

@@ -3,6 +3,10 @@ interface BasicInformation {
   name: string;
   amount?: string;
   share: string;
+  amountMinusTransfer?: string;
+  shareMinusTransfer?: string;
+  totalTransferedAmount?: string;
+  totalSharedShare?: string;
   email?: string;
   phone?: string;
 }
@@ -11,6 +15,8 @@ interface Invested {
   date: string;
   amount?: string;
   share: string;
+  amountMinusTransfer?: string;
+  shareMinusTransfer?: string;
 }
 
 interface InvestedData {
@@ -31,8 +37,12 @@ export const contentData: BasicInformation[] = [
     id: 'IN-001',
     name: 'Miroslav Ostrogonac',
     email: 'suinfotrg@gmail.com',
-    amount: '2.650,00',
-    share: '5,30',
+    amount: '2.665,00',
+    share: '5,33',
+    shareMinusTransfer: '5,30',
+    amountMinusTransfer: '2.650,00',
+    totalTransferedAmount: '15,00',
+    totalSharedShare: '0,03',
   },
   {
     id: 'IN-002',
