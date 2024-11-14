@@ -63,7 +63,7 @@ const TimContent: NextPage = () => {
     <PageContainer>
       <H1 title='INFOTRG TIM' />
       <ContentDescriptionText
-        text='Upravni tim Infotrga čine sedam saradnika.'
+        text='Upravni tim Infotrga čine sledeći članovi:'
         align='center'
         color='black'
       />
